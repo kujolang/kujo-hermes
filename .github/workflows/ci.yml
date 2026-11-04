@@ -26,6 +26,12 @@ jobs:
       - run: uv pip install --python /tmp/hermes-env/bin/python -e .
       - run: /tmp/hermes-env/bin/python -m hermes_cli.main plugins doctor "$PWD"
       - run: /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps
+      - name: Install plugin into a clean Hermes home
+        run: |
+          /tmp/hermes-env/bin/python -m hermes_cli.main plugins install https://github.com/kujolang/kujo-hermes --ref "$GITHUB_SHA" --yes-deps --no-enable | tee evidence/clean-install.txt
+          test -f "$HERMES_HOME/plugins/kujo-hermes/plugin.yaml"
+        env:
+          HERMES_HOME: ${{ runner.temp }}/kujo-clean-home
       - run: npm ci --prefix scripts/ci-runtime --ignore-scripts
       - run: /tmp/hermes-env/bin/python scripts/install-sources.py --destination /tmp/kujo-sources --only shipcheck packwrite spec eval scout kujo-workflows
       - run: /tmp/hermes-env/bin/python tests/hermes_e2e.py --sources /tmp/kujo-sources --kujo scripts/ci-runtime/node_modules/@kujolang/kujo-linux-x64/bin/kujo --isolation host
@@ -33,4 +39,6 @@ jobs:
         if: always()
         with:
           name: hermes-linux-e2e
-          path: evidence/hermes-e2e.json
+          path: |
+            evidence/hermes-e2e.json
+            evidence/clean-install.txt
