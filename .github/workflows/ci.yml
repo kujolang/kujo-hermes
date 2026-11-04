@@ -20,8 +20,9 @@ jobs:
           python-version: '3.14'
       - uses: astral-sh/setup-uv@v6
       - run: git clone --depth 1 --branch v0.22.7 https://github.com/NousResearch/hermes-agent.git /tmp/hermes
-      - run: uv venv /tmp/hermes-env
-      - run: uv pip install --python /tmp/hermes-env/bin/python -e /tmp/hermes
+      - run: uv sync --project /tmp/hermes --locked --no-default-groups
+        env:
+          UV_PROJECT_ENVIRONMENT: /tmp/hermes-env
       - run: uv pip install --python /tmp/hermes-env/bin/python -e .
       - run: /tmp/hermes-env/bin/python -m hermes_cli.main plugins doctor "$PWD"
       - run: /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps
