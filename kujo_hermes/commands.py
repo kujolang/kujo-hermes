@@ -58,7 +58,7 @@ def plan(item, data, workspace, config):
         value=json.loads(d.get('input_json','{}'))
         if not isinstance(value,dict): raise ValueError('input_json must encode an object')
         # Canonical Dispatch consent remains in force; no --yes or prompt bypass.
-        args=['run',d['topic'],'--workflow-file',str(Path(d['workflow_file']).relative_to(cwd)),'--input-json',json.dumps(value),'--output-root',output('output_dir','.kujo/dispatch'),'--non-interactive']
+        args=['run',d['topic'],'--workflow-file',str(Path(d['workflow_file']).relative_to(cwd)),'--input-json',json.dumps(value),'--output-root',str(Path(output('output_dir','.kujo/dispatch')).relative_to(cwd)),'--non-interactive']
     elif op=='rag': args=['query','--question',d['question'],'--namespace',val('namespace','default')]
     elif op=='rag_ingest': args=['ingest','--path',d['ingest_path'],'--namespace',val('namespace','default'),'--recursive',str(d.get('recursive',True)).lower()]
     elif op=='concord': args=['scan','--dir',str(cwd),'--format','json']
@@ -100,6 +100,15 @@ def plan(item, data, workspace, config):
         entry=root/'loop-engineering/scripts/run-workflow.sh'
         if not entry.is_file(): raise FileNotFoundError('Missing canonical Loop harness')
         return ['/bin/bash',str(entry),'--config',d['config']],cwd,env
+    elif op in ('lint','format','lsp_diagnostics','lsp_complete'):
+        args=[op.replace('_','-'),d['file'],'--json']
+        if op=='format': args+=['--write']
+        if op=='lsp_complete': args+=['--line',val('line'),'--column',val('column')]
+        return [binary,*args],cwd,env
+    elif op=='mcp_make':
+        entry=root/'mcp.kujo'
+        if not entry.is_file(): raise FileNotFoundError('Missing canonical mcp/mcp.kujo')
+        return [binary,'run',str(entry),'--interpreter','--','make',str(cwd),'--out',output('output_dir','.mcp'),'--profile-only','--no-ai'],cwd,env
     elif op=='runtime_version': return [binary,'--version'],cwd,env
     elif op=='runtime_check': return [binary,'check',d['file']],cwd,env
     elif op=='runtime_run': return [binary,'run',d['file'],'--interpreter'],cwd,env

@@ -35,7 +35,7 @@ def register(ctx):
                     raise ValueError('Receipt listing limit cannot exceed 50')
                 return json.dumps(_operation(**args),ensure_ascii=False)
             except Exception as error:
-                return json.dumps({'ok':False,'error':{'type':type(error).__name__,'message':redact(str(error))}})
+                return json.dumps({'ok':False,'error':{'type':type(error).__name__,'message':redact(str(error))[:8192]}})
         ctx.register_tool(name=name,toolset='kujo',schema={'name':name,'description':description,'parameters':params},handler=handler)
     ctx.register_command('kujo',lambda raw: json.dumps(service.doctor() if raw.strip()=='doctor' else service.discover()),description='Kujo catalog or doctor')
     ctx.register_skill('kujo-engineering', Path(__file__).resolve().parent.parent / 'skills/kujo-engineering/SKILL.md', description='Kujo engineering tools and verified workflows')

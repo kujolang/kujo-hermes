@@ -150,6 +150,12 @@
       "repository": "https://github.com/kujolang/workcell.git",
       "commit": "189d7ab6e975301a0e5100b65e8ad3fe4a584573",
       "tested_checkout_dirty": false
+    },
+    {
+      "name": "mcp",
+      "repository": "https://github.com/kujolang/mcp.git",
+      "commit": "77180a3a6c104f0c5b185cefa1f6d0835edb704b",
+      "tested_checkout_dirty": false
     }
   ]
 }

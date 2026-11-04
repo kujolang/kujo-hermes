@@ -28,7 +28,7 @@ class CoreTests(unittest.TestCase):
   self.service=Service(self.cfg,self.root/'state',lambda *a,**k:{'approved':True})
   return item['definition']['id']
  def test_profile_counts(self):
-  self.assertEqual([len(Catalog(Config(profile=x)).exposed()) for x in ['essentials','review','ship','full']],[5,18,29,46])
+  self.assertEqual([len(Catalog(Config(profile=x)).exposed()) for x in ['essentials','review','ship','full']],[5,18,29,51])
  def test_config_rejects_unknown(self):
   for value in [{'yolo':True},{'timeout_seconds':True},{'profile':'other'},{'trusted_workspaces':['.']}]:
    with self.assertRaises(ValueError): Config.parse(value)
@@ -60,7 +60,7 @@ class CoreTests(unittest.TestCase):
  def test_execute_and_receipt(self):
   id=self.extension('print("{\\"value\\":42}")'); result=self.service.execute(id,{},str(self.workspace))
   self.assertTrue(result['ok'],result); self.assertEqual(result['result']['structured']['value'],42)
-  read=self.service.receipts(result['receipt_id'],12000); self.assertTrue(read['verified'])
+  read=self.service.receipts(result['receipt_id']); self.assertTrue(read['verified']); self.assertEqual(json.loads(read['text'])['ability_id'],result['ability_id'])
  def test_receipt_tamper(self):
   id=self.extension('print(1)'); r=self.service.execute(id,{},str(self.workspace)); p=self.root/'state/receipts'/(r['receipt_id']+'.json')
   d=json.loads(p.read_text()); d['status']='forged'; p.write_text(json.dumps(d))
@@ -99,5 +99,30 @@ class CoreTests(unittest.TestCase):
  def test_missing_binary(self):
   id=self.extension('print(1)'); p=self.root/'catalog.json'; a=json.loads(p.read_text()); a[0]['binding']['argv'][0]='/nonexistent/kujo'; p.write_text(json.dumps(a)); self.service.catalog.refresh()
   self.assertFalse(self.service.execute(id,{},str(self.workspace))['ok'])
+
+class MoreBoundaryTests(unittest.TestCase):
+ def test_environment_controls_cannot_be_secret_overrides(self):
+  with self.assertRaises(ValueError): Config.parse({'secrets':['PATH']})
+ def test_redaction_preserves_token_metrics(self):
+  self.assertEqual(redact({'estimated_tokens':32,'token':'secret'}),{'estimated_tokens':32,'token':'[REDACTED]'})
+ def test_unsupported_runtime(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp); binary=root/'kujo'; binary.write_text('#!/bin/sh\necho kujo 0.1.0\n'); binary.chmod(0o700)
+   service=Service(Config(kujo_bin=str(binary)),root/'state')
+   with self.assertRaises(RuntimeError): service.check_runtime()
+ def test_malformed_json_remains_labeled_text(self):
+  result=run([sys.executable,'-c','print("not-json")'],'.',{},3,1024,threading.Event())
+  self.assertEqual(result['stdout'].strip(),'not-json')
+ def test_child_cleanup_after_leader_exits(self):
+  # Child keeps pipes open; timeout must kill the process group, not just the dead leader.
+  result=run([sys.executable,'-c','import subprocess; subprocess.Popen(["/bin/sleep","30"])'],'.',{},.15,1024,threading.Event())
+  self.assertEqual(result['status'],'timeout')
+ def test_artifact_hashes_and_escape(self):
+  from kujo_hermes.evidence import artifact_inventory
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp); (root/'artifact').write_text('verified'); (root/'escape').symlink_to('/etc')
+   result=artifact_inventory(root,{'output_dir':'.'},None)
+   self.assertEqual(len(result['files']),1)
+   self.assertEqual(result['files'][0]['sha256'],__import__('hashlib').sha256(b'verified').hexdigest())
 
 if __name__=='__main__': unittest.main()

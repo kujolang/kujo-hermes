@@ -50,7 +50,7 @@ class Service:
         elif not source or source=='watchdog': ready=True
         elif source=='kujo': ready=shutil.which(self.config.kujo_bin) is not None
         else:
-            entry={'spec':'scripts/spec','workcell':'bin/workcell','kujo-workflows':'loop-engineering/scripts/run-workflow.sh'}.get(source,ENTRYPOINTS.get(source,''))
+            entry={'mcp':'mcp.kujo','spec':'scripts/spec','workcell':'bin/workcell','kujo-workflows':'loop-engineering/scripts/run-workflow.sh'}.get(source,ENTRYPOINTS.get(source,''))
             ready=bool(self.config.ecosystem_root) and (Path(self.config.ecosystem_root)/source/entry).is_file()
         return {'installed':ready,'dependency':source,'note':None if ready else 'Install canonical source and configure ecosystem_root'}
 
@@ -81,6 +81,7 @@ class Service:
         return env
 
     def execute(self,ability,input,workspace,background=False):
+        if len(encoded(input))>65536: raise ValueError('Ability input exceeds 64 KiB')
         invocation=str(uuid.uuid4()); start=int(time.time()*1000)
         item=None; record={'schema':'kujo.hermes.receipt/v1','receipt_id':invocation,'invocation_id':invocation,
             'ability_id':ability,'workspace':str(workspace),'started_at_ms':start,'host':'hermes','status':'preflight',
@@ -175,7 +176,8 @@ class Service:
             else: result['result']={'omitted':True,'bytes':len(encoded(payload)),'hint':'Retrieve receipt with offset/limit; evidence remains on disk'}
         return result
 
-    def receipts(self,receipt_id=None,limit=20,offset=0):
+    def receipts(self,receipt_id=None,limit=None,offset=0):
+        if limit is None: limit=12000 if receipt_id else 20
         folder=self.directory()
         if receipt_id:
             if not re.fullmatch(r'[a-f0-9-]{36}',receipt_id): raise ValueError('Invalid receipt ID')

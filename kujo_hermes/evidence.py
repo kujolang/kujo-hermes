@@ -6,7 +6,7 @@ DEFAULTS={'scout':'.kujo/scout','scent':'.kujo/scent','eval':'.kujo/eval','dispa
  'runledger_start':'.runledger','runledger_finish':'.runledger','casefile':'.casefile/cases',
  'redact_scan':'.redact','redact_sanitize':'.redact','tribunal_review':'.tribunal/runs',
  'howl_render':'dist/howl','lens_check':'.lens/runs/hermes','workcell_run':'.workcell/runs',
- 'packwrite_init':'agent','loop':'.loop-engineering'}
+ 'mcp_make':'.mcp','packwrite_init':'agent','loop':'.loop-engineering'}
 
 def artifact_inventory(workspace,data,operation,max_files=128,max_bytes=10_000_000):
     root=Path(workspace).resolve(); targets=[]
