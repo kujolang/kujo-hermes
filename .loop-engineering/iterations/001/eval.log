@@ -3,7 +3,7 @@
 $ python3 -m unittest discover -s tests
 ................................
 ----------------------------------------------------------------------
-Ran 32 tests in 5.163s
+Ran 32 tests in 5.372s
 
 OK
 gate unit_tests: pass

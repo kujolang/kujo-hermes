@@ -16,6 +16,7 @@ partial
 - line 10 [already-done] Automated tests, real host E2E and live-model conversation pass
 - line 11 [already-done] Architecture, configuration, parity, security and testing documentation
 - line 12 [already-done] Reproducible demo and unsubmitted marketplace materials
+- line 13 [already-done] Clean Git plugin installation and dependency validation certified on Linux Python 3.14 (CI run 41925825469)
 
 ## Verification
 
@@ -29,13 +30,13 @@ partial
 
 ## Remaining
 
-- line 13 [external-blocked] Clean network dependency installation certified (blocked by isolated runtime PyPI download timeout; see validator log)
 - line 14 [external-blocked] Browser/container execution certified (blocked by pinned browser absent, Docker daemon unavailable)
 - line 15 [needs-contract-first] Full producer/domain parity certified (needs-contract-first: gateway bindings and absent Foreman interface; docs/parity.md)
 
 ## External Blockers
 
 - checklist-external-blocked-line-13: Resolve the external dependency, then rerun checklist mode.
+- checklist-external-blocked-line-14: Resolve the external dependency, then rerun checklist mode.
 - checklist-external-blocked-line-14: Resolve the external dependency, then rerun checklist mode.
 
 ## Next Start

@@ -1,13 +1,12 @@
 # Context
 
 - objective: Build and verify standalone native Kujo Hermes integration
-- git_head: 1b00583
+- git_head: 75d563a
 - changed_files:
-  - catalog/abilities.json
-  - catalog/sources.lock.json
-  - kujo_hermes/commands.py
-  - kujo_hermes/evidence.py
-  - kujo_hermes/plugin.py
-  - kujo_hermes/service.py
-  - tests/test_core.py
+  - README.md
+  - agent/HANDOFF.md
+  - docs/acceptance.md
+  - docs/compatibility.md
+  - docs/readiness.md
+  - evidence/loop-final.log
 - checklist_classification: checklist.tsv

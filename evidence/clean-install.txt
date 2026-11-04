@@ -1,0 +1,10 @@
+Warning: custom (unreviewed) source — not from the Hermes catalog.
+Cloning https://github.com/kujolang/kujo-hermes...
+
+╭───────────────────────────── ✓ Installed ─────────────────────────────╮
+│ Plugin installed: https://github.com/kujolang/kujo-hermes             │
+│ Location: /home/runner/work/_temp/kujo-clean-home/plugins/kujo-hermes │
+╰───────────────────────────────────────────────────────────────────────╯
+
+Plugin installed but not enabled. Run `hermes plugins enable kujo-hermes` to
+activate.

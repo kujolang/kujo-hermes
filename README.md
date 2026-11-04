@@ -8,7 +8,7 @@ Kujo Hermes owns its Hermes adapter and calls canonical Kujo tools directly. It 
 
 ## Install
 
-Requirements: Hermes **0.22.7+**, Python 3.11+, macOS or Linux, Git, and a separately installed official Kujo runtime **>=1.6,<2** (tested with official 1.8.0; partial checks with a 1.9.0 development build). Some products have additional requirements. Hermes installs the bounded `jsonschema>=4.23,<5` Python dependency through its plugin mechanism.
+Requirements: Hermes **0.22.7+**, the Python runtime supported by Hermes (3.14 for this release), macOS or Linux, Git, and a separately installed official Kujo runtime **>=1.6,<2** (tested with official 1.8.0; partial checks with a 1.9.0 development build). Some products have additional requirements. Hermes installs the bounded `jsonschema>=4.23,<5` Python dependency through its plugin mechanism.
 
 ```sh
 hermes plugins install https://github.com/kujolang/kujo-hermes --no-enable

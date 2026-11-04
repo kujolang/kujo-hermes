@@ -1,0 +1,19 @@
+Selected validation and E2E lines; full log: https://github.com/kujolang/kujo-hermes/actions/runs/41925825469
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1273263Z ✓ manifest — plugin.yaml parses
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1275256Z ✓ manifest fields — name, version, description present
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1277977Z ✓ requires_hermes — spec '>=0.22.7' parses
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1280613Z ✓ config schema — shape valid
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1282596Z ✓ requires_env — all entries UPPER_SNAKE
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1284388Z ✓ oauth — not declared
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1287505Z ✓ loadable — entry: __init__.py
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1290357Z ✓ python dependencies — 1 requirements from pyproject
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1292725Z ✓ capability probe — register() ran in isolation
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1295119Z ✓ declared tools — matches registrations
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1297419Z ✓ declared hooks — matches registrations
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1299455Z ✓ declared middleware — matches registrations
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1302042Z ✓ built-in tool collisions — no collisions
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1303719Z ✓ security scan — safe
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1306709Z ✓ no core override — no runtime rebinds of Hermes core
+host	Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps	2026-11-04T22:31:13.1312388Z Validation passed.
+host	Install plugin into a clean Hermes home	2026-11-04T22:31:23.6601877Z ╭───────────────────────────── ✓ Installed ─────────────────────────────╮
+host	Run /tmp/hermes-env/bin/python tests/hermes_e2e.py --sources /tmp/kujo-sources --kujo scripts/ci-runtime/node_modules/@kujolang/kujo-linux-x64/bin/kujo --isolation host	2026-11-04T22:31:36.6515388Z PASS real Hermes load, discovery, denial, approval, canonical workflow, receipts, failure, unload

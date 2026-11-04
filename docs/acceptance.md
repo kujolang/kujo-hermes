@@ -10,6 +10,6 @@
 - [x] Automated tests, real host E2E and live-model conversation pass
 - [x] Architecture, configuration, parity, security and testing documentation
 - [x] Reproducible demo and unsubmitted marketplace materials
-- [ ] Clean network dependency installation certified (blocked by isolated runtime PyPI download timeout; see validator log)
+- [x] Clean Git plugin installation and dependency validation certified on Linux Python 3.14 (CI run 41925825469)
 - [ ] Browser/container execution certified (blocked by pinned browser absent, Docker daemon unavailable)
 - [ ] Full producer/domain parity certified (needs-contract-first: gateway bindings and absent Foreman interface; docs/parity.md)

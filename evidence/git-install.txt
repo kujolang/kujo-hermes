@@ -1,0 +1,40 @@
+Fresh temporary Hermes home; official Git install at exact SHA. --no-deps leaves disabled; dependency-install certification remains blocked.
+Warning: custom (unreviewed) source — not from the Hermes catalog.
+Cloning https://github.com/kujolang/kujo-hermes...
+Preparing the isolated Hermes runtime…
+  → Installing Python dependencies…
+  ✗ Installing Python dependencies failed; last 20 lines of output:
+      Resolved 5 packages in 14ms
+      WARN Retry attempt #0. Sleeping 1.33640602s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.093314276s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.298497784s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.130855452s before the next attempt
+      WARN Retry attempt #1. Sleeping 1.58475677s before the next attempt
+      WARN Retry attempt #1. Sleeping 1.070100437s before the next attempt
+      WARN Retry attempt #1. Sleeping 3.528898191s before the next attempt
+      WARN Retry attempt #1. Sleeping 2.487688479s before the next attempt
+      WARN Retry attempt #2. Sleeping 6.418539817s before the next attempt
+      WARN Retry attempt #2. Sleeping 2.269688398s before the next attempt
+      WARN Retry attempt #2. Sleeping 3.853508096s before the next attempt
+      WARN Retry attempt #2. Sleeping 2.931535832s before the next attempt
+      error: Failed to download `ruamel-yaml==0.18.16`
+        cause: Request failed after 3 retries in 45.0s
+        cause: Failed to fetch: https://files.pythonhosted.org/packages/0f/73/bb1bc2529f852e7bf64a2dec885e89ff9f5cc7bbf6c9340eed30ff2c69c5/ruamel.yaml-0.18.16-py3-none-any.whl
+        cause: error sending request for url (https://files.pythonhosted.org/packages/0f/73/bb1bc2529f852e7bf64a2dec885e89ff9f5cc7bbf6c9340eed30ff2c69c5/ruamel.yaml-0.18.16-py3-none-any.whl)
+        cause: client error (Connect)
+        cause: operation timed out
+      hint: `ruamel-yaml` (v0.18.16) was included because `hermes-pm-runtime` (v0.0.0) depends on `ruamel-yaml`
+Error: Plugin 'kujo-hermes' was not published: venv: uv sync exited 2: nload
+`ruamel-yaml==0.18.16`
+  cause: Request failed after 3 retries in 45.0s
+  cause: Failed to fetch:
+https://files.pythonhosted.org/packages/0f/73/bb1bc2529f852e7bf64a2dec885e89ff9f
+5cc7bbf6c9340eed30ff2c69c5/ruamel.yaml-0.18.16-py3-none-any.whl
+  cause: error sending request for url
+(https://files.pythonhosted.org/packages/0f/73/bb1bc2529f852e7bf64a2dec885e89ff9
+f5cc7bbf6c9340eed30ff2c69c5/ruamel.yaml-0.18.16-py3-none-any.whl)
+  cause: client error (Connect)
+  cause: operation timed out
+
+hint: `ruamel-yaml` (v0.18.16) was included because `hermes-pm-runtime` (v0.0.0)
+depends on `ruamel-yaml` — retry, or run `hermes pm doctor`
