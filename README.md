@@ -60,7 +60,7 @@ hermes plugins enable kujo-hermes
 hermes plugins doctor ~/.hermes/plugins/kujo-hermes
 ```
 
-Start a new Hermes conversation. Use `/kujo doctor` to check configuration and dependencies. Installation performs no repository work. An empty trust list allows discovery and diagnostics but denies execution.
+Restart Hermes after changing plugin settings, including its gateway if it is running. Start a new conversation and use `/kujo doctor` to check configuration and dependencies. Installation performs no repository work. An empty trust list allows discovery and diagnostics but denies execution.
 
 ## Usage
 
