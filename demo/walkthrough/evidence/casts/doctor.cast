@@ -1,0 +1,3 @@
+{"version":2,"width":100,"height":24,"timestamp":1793832713,"command":"/Users/robertdevore/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main plugins doctor /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/video/home/plugins/kujo-hermes","env":{"SHELL":"/bin/zsh"}}
+[2.158786, "o", "Plugin Doctor: \r\n/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/video/home/plugi\r\nns/kujo-hermes\r\n  manifest: kujo-hermes 0.1.0 (standalone)\r\n  OK: runtime discovery, manifest parsing, import, and registration passed\r\n  registrations: 6 tool(s), 2 hook(s)\r\n"]
+[2.306652, "x", "0"]

@@ -1,0 +1,17 @@
+{
+  "source": "demo/walkthrough/evidence/casts/eval.cast",
+  "windows": [
+    [
+      174.5,
+      181.5,
+      7
+    ],
+    [
+      220.8,
+      223.51,
+      2.71
+    ]
+  ],
+  "duration": 9.71,
+  "note": "Original terminal bytes. Waiting time cut; terminal state preserved."
+}

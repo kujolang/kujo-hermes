@@ -1,0 +1,15 @@
+{
+  "cue": "benefit",
+  "text": "Less command memorization. Reusable context. Checks you can repeat, and results you can trace. Install the plugin, trust your repository, and ask Hermes.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "fb52b2caf7cb628510223b485f2123c6f45803b6e9b90aa5683dcabbd8ad964d",
+  "audio_sha256": "fa006cdd63d286bb80b37acc7a2718ead451c89b021b0577a8755a7105852366",
+  "duration": 10.96,
+  "request_id": "WJBDmgAbOOd4ynOk8Vws",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:33Z"
+}

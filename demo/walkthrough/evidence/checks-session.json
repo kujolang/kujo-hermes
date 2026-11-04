@@ -1,0 +1,103 @@
+{
+  "session_id": "local-2571db58d6ae5c0e878f367a46b091e9d3360f167cbcb5191ed8f000d950418b",
+  "host": "Hermes v0.22.7",
+  "model": "local qwen3.5:hermes-demo (Qwen3.5 4B)",
+  "source_cast_sha256": "5fa8de0d7b3604bbaabcbd8cfbb6e4e54cc9c820a699ca45d5f7e3df6800222d",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Validate my specification and summarize my task context in /private/tmp/kujo-hermes-video-20261104. Call kujo_inspect with ability=kujo.spec.contract.validate, then kujo_execute with ability=kujo.spec.contract.validate, input={\"file\":\"task.spec.json\"}, workspace=/private/tmp/kujo-hermes-video-20261104. Next call kujo_inspect with ability=kujo.packwrite.pack.summary, then kujo_execute with that ability, input={}, workspace=/private/tmp/kujo-hermes-video-20261104. These are Ability IDs, not tool names. Report actual validation and phase count in under 80 words."
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_umfwtwst",
+          "call_id": "call_umfwtwst",
+          "response_item_id": "fc_umfwtwst",
+          "type": "function",
+          "function": {
+            "name": "kujo_inspect",
+            "arguments": "{\"ability\":\"kujo.spec.contract.validate\"}"
+          }
+        },
+        {
+          "id": "call_d3vboil5",
+          "call_id": "call_d3vboil5",
+          "response_item_id": "fc_d3vboil5",
+          "type": "function",
+          "function": {
+            "name": "kujo_inspect",
+            "arguments": "{\"ability\":\"kujo.packwrite.pack.summary\"}"
+          }
+        },
+        {
+          "id": "call_l02dvfv3",
+          "call_id": "call_l02dvfv3",
+          "response_item_id": "fc_l02dvfv3",
+          "type": "function",
+          "function": {
+            "name": "kujo_execute",
+            "arguments": "{\"ability\":\"kujo.spec.contract.validate\",\"input\":{\"file\":\"task.spec.json\"},\"workspace\":\"/private/tmp/kujo-hermes-video-20261104\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"definition\": {\"schema\": \"kujo.ability/v1\", \"id\": \"kujo.spec.contract.validate\", \"version\": \"1.0.0\", \"title\": \"Validate task contract\", \"description\": \"Validate a Kujo Spec task contract without changing it.\", \"input_schema\": {\"type\": \"object\", \"required\": [\"file\"], \"properties\": {\"path\": {\"type\": \"string\", \"maxLength\": 4096, \"default\": \".\"}, \"file\": {\"type\": \"string\", \"minLength\": 1, \"maxLength\": 4096}, \"strict\": {\"type\": \"boolean\", \"default\": false}}, \"additionalProperties\": false}, \"output_schema\": {\"type\": \"object\", \"additionalProperties\": true}, \"effects\": [{\"kind\": \"read\", \"resource\": \"kujo.spec.contract\"}], \"idempotency\": {\"mode\": \"intrinsic\"}}, \"definition_digest\": \"9ae720f315922c292598b4d231ec130e866f2306e55b349c7ad50e338ee90d02\", \"binding\": {\"source\": \"spec\", \"operation\": \"spec\"}, \"approval_required\": false, \"installed\": true, \"dependency\": \"spec\", \"note\": null}",
+      "tool_name": "kujo_inspect"
+    },
+    {
+      "role": "tool",
+      "content": "{\"definition\": {\"schema\": \"kujo.ability/v1\", \"id\": \"kujo.packwrite.pack.summary\", \"version\": \"1.0.0\", \"title\": \"Summarize agent pack\", \"description\": \"Summarize an existing PackWrite pack, including phases, missing files, warnings, and next action.\", \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\", \"maxLength\": 4096, \"default\": \".\"}, \"output_dir\": {\"type\": \"string\", \"maxLength\": 4096, \"default\": \"agent\"}, \"config\": {\"type\": \"string\", \"maxLength\": 4096}}, \"additionalProperties\": false}, \"output_schema\": {\"type\": \"object\", \"additionalProperties\": true}, \"effects\": [{\"kind\": \"read\", \"resource\": \"kujo.packwrite.pack\"}], \"idempotency\": {\"mode\": \"intrinsic\"}}, \"definition_digest\": \"0410d56faec085375ccd06e417bc16b63bde4d28c85f35288f3ce09193915753\", \"binding\": {\"source\": \"packwrite\", \"operation\": \"packwrite_summary\"}, \"approval_required\": false, \"installed\": true, \"dependency\": \"packwrite\", \"note\": null}",
+      "tool_name": "kujo_inspect"
+    },
+    {
+      "role": "tool",
+      "content": "{\"ok\": true, \"status\": \"completed\", \"receipt_id\": \"5be26dbb-4b50-4521-9526-809fda7eae41\", \"receipt_digest\": \"f08f0547a429e983e610651592cb2a59123b2b24136172ee5ff7b512f37f50dc\", \"ability_id\": \"kujo.spec.contract.validate\", \"error\": null, \"result\": {\"status\": \"completed\", \"exit_code\": 0, \"stderr\": \"\", \"duration_ms\": 1647, \"structured\": {\"errors\": [], \"valid\": true, \"warnings\": []}, \"stdout_digest\": \"09c21b5aac2557bbf649848b4b1ac8ab6f7b445171af51890f6658a0a1a722f5\"}}",
+      "tool_name": "kujo_execute"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_9a8m4a6t",
+          "call_id": "call_9a8m4a6t",
+          "response_item_id": "fc_9a8m4a6t",
+          "type": "function",
+          "function": {
+            "name": "kujo_execute",
+            "arguments": "{\"ability\":\"kujo.packwrite.pack.summary\",\"input\":{},\"workspace\":\"/private/tmp/kujo-hermes-video-20261104\"}"
+          }
+        },
+        {
+          "id": "call_yrupgwgc",
+          "call_id": "call_yrupgwgc",
+          "response_item_id": "fc_yrupgwgc",
+          "type": "function",
+          "function": {
+            "name": "kujo_receipts",
+            "arguments": "{\"limit\":200}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "{\"ok\": true, \"status\": \"completed\", \"receipt_id\": \"d47b1f00-2908-4125-b5f5-250cf9748070\", \"receipt_digest\": \"157f42a757a4110bca0a26cb4845d898b1cf029e4a4da8f2a01e16e3efa1c24d\", \"ability_id\": \"kujo.packwrite.pack.summary\", \"error\": null, \"result\": {\"status\": \"completed\", \"exit_code\": 0, \"stderr\": \"\", \"duration_ms\": 339, \"structured\": {\"errors\": [], \"missing_files\": [], \"next_command\": \"packwrite prompt deepseek\", \"ok\": true, \"output_dir\": \"agent\", \"phase_count\": 7, \"warnings\": []}, \"stdout_digest\": \"6440e776597499a5267470641654d1f073800fb15afa093d092b57bcf7100351\"}}",
+      "tool_name": "kujo_execute"
+    },
+    {
+      "role": "tool",
+      "content": "{\"ok\": false, \"error\": {\"type\": \"ValueError\", \"message\": \"Receipt listing limit cannot exceed 50\"}}",
+      "tool_name": "kujo_receipts"
+    },
+    {
+      "role": "assistant",
+      "content": "Specification validated with no errors or warnings. PackWrite context: 7-phase build targeting `/agent` with deepseek LLM. Next phase is prompt deepseek. No missing files. Both abilities installed and executed successfully."
+    }
+  ]
+}

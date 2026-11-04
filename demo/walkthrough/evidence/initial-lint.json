@@ -1,0 +1,56 @@
+{
+  "ok": false,
+  "errorCount": 5,
+  "warningCount": 0,
+  "infoCount": 0,
+  "findings": [
+    {
+      "code": "invalid_composition_variables_declaration",
+      "severity": "error",
+      "message": "data-composition-variables entry [0] is missing or has invalid: label. Type must be one of string, number, color, boolean, enum, font, image.",
+      "fixHint": "Give entry [0] a string id and label, a supported type, and a default, e.g. {\"id\":\"title\",\"type\":\"string\",\"label\":\"Title\",\"default\":\"Hello\"}.",
+      "snippet": "<html lang=\"en\" data-composition-variables='[{\"id\":\"paper\",\"type\":\"color\",\"default\":\"#f9f9f9\"}]'>",
+      "file": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+      "line": 1,
+      "column": 16
+    },
+    {
+      "code": "missing_local_asset",
+      "severity": "error",
+      "file": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/compositions/approval.html",
+      "message": "<img> element references local file(s) not found in the project: assets/eval-approval.png. The renderer will silently skip these and produce a video with missing visuals.",
+      "fixHint": "Add \"assets/eval-approval.png\" to the project directory, or update the src attribute to point to an existing file. Common cause: captured asset filenames are unreliable (heygen-logo.svg often contains Google, nvidia-logo.svg may contain Autodesk, etc.). Open the contact sheets and verify the file actually exists at this path before referencing it."
+    },
+    {
+      "code": "missing_local_asset",
+      "severity": "error",
+      "file": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/compositions/discover.html",
+      "message": "<img> element references local file(s) not found in the project: assets/discover-0.png. The renderer will silently skip these and produce a video with missing visuals.",
+      "fixHint": "Add \"assets/discover-0.png\" to the project directory, or update the src attribute to point to an existing file. Common cause: captured asset filenames are unreliable (heygen-logo.svg often contains Google, nvidia-logo.svg may contain Autodesk, etc.). Open the contact sheets and verify the file actually exists at this path before referencing it."
+    },
+    {
+      "code": "missing_local_asset",
+      "severity": "error",
+      "file": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/compositions/proof.html",
+      "message": "<img> element references local file(s) not found in the project: assets/eval-result.png. The renderer will silently skip these and produce a video with missing visuals.",
+      "fixHint": "Add \"assets/eval-result.png\" to the project directory, or update the src attribute to point to an existing file. Common cause: captured asset filenames are unreliable (heygen-logo.svg often contains Google, nvidia-logo.svg may contain Autodesk, etc.). Open the contact sheets and verify the file actually exists at this path before referencing it."
+    },
+    {
+      "code": "missing_local_asset",
+      "severity": "error",
+      "file": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/compositions/request.html",
+      "message": "<img> element references local file(s) not found in the project: assets/checks-0.png. The renderer will silently skip these and produce a video with missing visuals.",
+      "fixHint": "Add \"assets/checks-0.png\" to the project directory, or update the src attribute to point to an existing file. Common cause: captured asset filenames are unreliable (heygen-logo.svg often contains Google, nvidia-logo.svg may contain Autodesk, etc.). Open the contact sheets and verify the file actually exists at this path before referencing it."
+    }
+  ],
+  "filesScanned": 10,
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.13",
+    "updateAvailable": false,
+    "checkedAt": "2026-11-04T22:43:28.807Z",
+    "skillsOutdated": 4,
+    "skillsMissing": 0,
+    "updateNotice": "For the user: 4 installed HyperFrames skills are out of date (this run is HyperFrames CLI 0.9.13). To update them, run: npx hyperframes update"
+  }
+}

@@ -1,0 +1,35 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing 11 frames at [0s, 0.18s, 0.34s, 0.5s, 13.6s, 25.8s, 56s, 60s, 66s, 77s, 84.8s] from walkthrough
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+[hyperframes] snapshot: frame 1/11 at 0s
+[hyperframes] snapshot: frame 2/11 at 0.18s
+[hyperframes] snapshot: frame 3/11 at 0.34s
+[hyperframes] snapshot: frame 4/11 at 0.5s
+[hyperframes] snapshot: frame 5/11 at 13.6s
+[hyperframes] snapshot: frame 6/11 at 25.8s
+[hyperframes] snapshot: frame 7/11 at 56s
+[hyperframes] snapshot: frame 8/11 at 60s
+[hyperframes] snapshot: frame 9/11 at 66s
+[hyperframes] snapshot: frame 10/11 at 77s
+[hyperframes] snapshot: frame 11/11 at 84.8s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/.hyperframes/video-state.json
+
+◇  11 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-00-at-0s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-01-at-0.18s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-02-at-0.34s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-03-at-0.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-04-at-13.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-05-at-25.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-06-at-56s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-07-at-60s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-08-at-66s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-09-at-77s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/frame-10-at-84.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/contact-sheet-1.jpg (grid view for AI review)
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/detail-review/contact-sheet-2.jpg (grid view for AI review)

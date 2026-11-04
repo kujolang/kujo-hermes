@@ -1,0 +1,3 @@
+# Preserve original vendor bytes, terminal evidence, logs, and patch context spaces.
+assets/gsap.min.js -whitespace
+evidence/** -whitespace

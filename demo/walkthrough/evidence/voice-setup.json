@@ -1,0 +1,15 @@
+{
+  "cue": "setup",
+  "text": "Before you commit, ask Hermes to check your repository. Kujo Hermes connects the agent directly to Kujo's developer tools.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "580a98505afa83b0bea98b4e8dacad1eaa663c5108a8f9e2e4737bcc99f6eaf3",
+  "audio_sha256": "145367a500d05e85573c508cee57141699423c144b920978aefe6051a114f00a",
+  "duration": 7.92,
+  "request_id": "YeN0dsNWFIeOByEv1Rjf",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:03Z"
+}

@@ -1,0 +1,12 @@
+{
+  "source": "demo/walkthrough/evidence/casts/discover.cast",
+  "windows": [
+    [
+      79.5,
+      80.2,
+      1.8
+    ]
+  ],
+  "duration": 1.8,
+  "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
+}

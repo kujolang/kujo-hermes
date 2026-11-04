@@ -1,0 +1,57 @@
+diff --git a/README.md b/README.md
+index 6138f16..3353a86 100644
+--- a/README.md
++++ b/README.md
+@@ -10,6 +10,8 @@ Kujo Hermes calls the official Kujo tools directly through its own native adapte
+ 
+ **Status:** verified with real Hermes and Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
+ 
++Watch the [85-second walkthrough](demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4): a free local model discovers tools, runs checks with approval, and retrieves verified evidence. [Recording and reproduction details](demo/walkthrough/README.md).
++
+ ## Install
+ 
+ Requirements:
+diff --git a/agent/HANDOFF.md b/agent/HANDOFF.md
+index 9d4de5b..49cf07f 100644
+--- a/agent/HANDOFF.md
++++ b/agent/HANDOFF.md
+@@ -11,3 +11,7 @@ External browser/container prerequisites and unbound producer domains. Clean ins
+ 
+ ## Next Agent Notes
+ Start with docs/readiness.md and submission/checklist.md. Preserve explicit human approvals, source pins and the distinct receipt contract. Do not mark blocked certification as passed. Use the exact reproducible scripts after resolving prerequisites.
++
++## Walkthrough video milestone — 2026-11-04
++
++The 85-second walkthrough is recorded and rendered at `demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4`, with official Kujo/Hermes logo bumpers and Siren V4 narration. Real local Qwen3.5 4B drove Hermes discovery, Spec validation, PackWrite summary, approved Eval, and receipt retrieval. The small model needed guided prompts and a receipt follow-up. Source recordings, exact tool responses, copied receipts, editable scenes, and verification scripts are under `demo/walkthrough/`. See its README and REVIEW before revising or publishing. Broader ecosystem certification gaps above remain unchanged; no external submission is authorized.
+diff --git a/demo/script.md b/demo/script.md
+index 958ea12..1766bf4 100644
+--- a/demo/script.md
++++ b/demo/script.md
+@@ -1,5 +1,7 @@
+ # Reproducible demo: target 85 seconds
+ 
++The finished [85-second walkthrough](walkthrough/delivery/kujo-hermes-walkthrough.mp4) and its [exact recorded prompts and evidence](walkthrough/README.md) are available. The sequence below remains an alternative live demo.
++
+ Prepare a fresh sample repository:
+ 
+ ```sh
+diff --git a/docs/readiness.md b/docs/readiness.md
+index 81a4bd9..20c3a81 100644
+--- a/docs/readiness.md
++++ b/docs/readiness.md
+@@ -21,6 +21,7 @@ Architecture, exact-schema inventory, parity matrix, configuration, security not
+ | Linux supported runtime | Python 3.14, clean locked Hermes dependencies, plugin dependency validation and real host workflow passed | `evidence/ci-linux.json`, `evidence/hermes-linux-e2e.json` |
+ | Clean independent installation | Real Git install at full SHA into a fresh Hermes home, dependencies approved and plugin left disabled | `evidence/clean-install.txt`, CI run 41925825469 |
+ | Reproducible demo | All five real fixture operations passed | `evidence/demo-verification.json` |
++| Recorded walkthrough | Local free-model Hermes run: discovery, Spec, PackWrite, approved Eval 2/2 and verified receipt; 85-second video | `demo/walkthrough/evidence/` |
+ | Source installation | Exact official ShipCheck commit installed by helper | `evidence/source-install.txt` |
+ | Loop / PackWrite development | Actual harness gates and pack compiler used; first gate defect corrected | `.loop-engineering/`, `evidence/packwrite.log` |
+ | Performance | 20 local samples, serialized schema bytes and latency; no tokenizer or speedup claims | `evidence/performance.json` |
+@@ -35,6 +36,6 @@ A test-only CLI callback supplies approval decisions in automated E2E tests. A s
+ - **Foreman / other applications:** no canonical Foreman executable or repository was found. Agency Runner/Relay and additional application domains lack verified native bindings; inventory entries remain explicit gaps. No invented interface is exposed.
+ - **Local download failures:** local isolated-runtime downloads time out against PyPI. Fresh installation and dependency validation succeeded in Linux CI run 41925825469. Local failures remain in `evidence/git-install.txt` and `hermes-validation-final.txt`; they no longer block the clean-install acceptance criterion.
+ - **Compatibility:** live verification is macOS with Hermes v0.22.7 and official Kujo 1.8.0. Windows is unsupported. Linux Python 3.14 CI and canonical host E2E also pass. The local Kujo 1.9 development build lacks runtime-db; version checks alone cannot certify optional native features.
+-- **Marketplace / demo:** record the prepared demo; review the full-SHA catalog candidate and validate with dependency installation. Obtain explicit authorization before opening the catalog PR, posting the video or submitting the links. The user-provided deadline is November 11, 2026 at 5 PM EST; verify current event terms.
++- **Marketplace / demo:** the [85-second walkthrough](../demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4) is recorded; watch and listen before posting. Review the full-SHA catalog candidate and validate with dependency installation. Obtain explicit authorization before opening the catalog PR, posting the video or submitting the links. The user-provided deadline is November 11, 2026 at 5 PM EST; verify current event terms.
+ 
+ The verified operations are ready to use. Full tool coverage and marketplace submission still require the work listed above.

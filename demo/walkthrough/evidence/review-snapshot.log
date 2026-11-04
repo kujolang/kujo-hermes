@@ -1,0 +1,142 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing review frames (beats, seams, phone) from walkthrough
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+   Review: 18 beat(s) and 8 seam(s) within 0–85s
+[hyperframes] snapshot: frame 1/58 at 0.3s
+[hyperframes] snapshot: frame 2/58 at 1.9s
+[hyperframes] snapshot: frame 3/58 at 4.1s
+[hyperframes] snapshot: frame 4/58 at 7.935s
+[hyperframes] snapshot: frame 5/58 at 12.37s
+[hyperframes] snapshot: frame 6/58 at 17.965s
+[hyperframes] snapshot: frame 7/58 at 24.16s
+[hyperframes] snapshot: frame 8/58 at 28.395s
+[hyperframes] snapshot: frame 9/58 at 33.23s
+[hyperframes] snapshot: frame 10/58 at 37.785s
+[hyperframes] snapshot: frame 11/58 at 42.94s
+[hyperframes] snapshot: frame 12/58 at 48.215s
+[hyperframes] snapshot: frame 13/58 at 54.09s
+[hyperframes] snapshot: frame 14/58 at 61.405s
+[hyperframes] snapshot: frame 15/58 at 69.32s
+[hyperframes] snapshot: frame 16/58 at 74.675s
+[hyperframes] snapshot: frame 17/58 at 80.63s
+[hyperframes] snapshot: frame 18/58 at 82.665s
+[hyperframes] snapshot: frame 19/58 at 3.6s
+[hyperframes] snapshot: frame 20/58 at 3.7s
+[hyperframes] snapshot: frame 21/58 at 3.8s
+[hyperframes] snapshot: frame 22/58 at 3.9s
+[hyperframes] snapshot: frame 23/58 at 4s
+[hyperframes] snapshot: frame 24/58 at 11.87s
+[hyperframes] snapshot: frame 25/58 at 11.97s
+[hyperframes] snapshot: frame 26/58 at 12.07s
+[hyperframes] snapshot: frame 27/58 at 12.17s
+[hyperframes] snapshot: frame 28/58 at 12.27s
+[hyperframes] snapshot: frame 29/58 at 23.66s
+[hyperframes] snapshot: frame 30/58 at 23.76s
+[hyperframes] snapshot: frame 31/58 at 23.86s
+[hyperframes] snapshot: frame 32/58 at 23.96s
+[hyperframes] snapshot: frame 33/58 at 24.06s
+[hyperframes] snapshot: frame 34/58 at 32.73s
+[hyperframes] snapshot: frame 35/58 at 32.83s
+[hyperframes] snapshot: frame 36/58 at 32.93s
+[hyperframes] snapshot: frame 37/58 at 33.03s
+[hyperframes] snapshot: frame 38/58 at 33.13s
+[hyperframes] snapshot: frame 39/58 at 42.44s
+[hyperframes] snapshot: frame 40/58 at 42.54s
+[hyperframes] snapshot: frame 41/58 at 42.64s
+[hyperframes] snapshot: frame 42/58 at 42.74s
+[hyperframes] snapshot: frame 43/58 at 42.84s
+[hyperframes] snapshot: frame 44/58 at 53.59s
+[hyperframes] snapshot: frame 45/58 at 53.69s
+[hyperframes] snapshot: frame 46/58 at 53.79s
+[hyperframes] snapshot: frame 47/58 at 53.89s
+[hyperframes] snapshot: frame 48/58 at 53.99s
+[hyperframes] snapshot: frame 49/58 at 68.82s
+[hyperframes] snapshot: frame 50/58 at 68.92s
+[hyperframes] snapshot: frame 51/58 at 69.02s
+[hyperframes] snapshot: frame 52/58 at 69.12s
+[hyperframes] snapshot: frame 53/58 at 69.22s
+[hyperframes] snapshot: frame 54/58 at 80.13s
+[hyperframes] snapshot: frame 55/58 at 80.23s
+[hyperframes] snapshot: frame 56/58 at 80.33s
+[hyperframes] snapshot: frame 57/58 at 80.43s
+[hyperframes] snapshot: frame 58/58 at 80.53s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/.hyperframes/video-state.json
+
+◇  58 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-01-at-0.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-02-at-1.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-03-at-4.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-04-at-7.935s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-05-at-12.37s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-06-at-17.965s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-07-at-24.16s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-08-at-28.395s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-09-at-33.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-10-at-37.785s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-11-at-42.94s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-12-at-48.215s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-13-at-54.09s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-14-at-61.405s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-15-at-69.32s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-16-at-74.675s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-17-at-80.63s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/beat-18-at-82.665s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-01-1-at-3.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-01-2-at-3.7s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-01-3-at-3.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-01-4-at-3.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-01-5-at-4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-02-1-at-11.87s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-02-2-at-11.97s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-02-3-at-12.07s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-02-4-at-12.17s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-02-5-at-12.27s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-03-1-at-23.66s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-03-2-at-23.76s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-03-3-at-23.86s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-03-4-at-23.96s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-03-5-at-24.06s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-04-1-at-32.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-04-2-at-32.83s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-04-3-at-32.93s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-04-4-at-33.03s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-04-5-at-33.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-05-1-at-42.44s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-05-2-at-42.54s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-05-3-at-42.64s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-05-4-at-42.74s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-05-5-at-42.84s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-06-1-at-53.59s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-06-2-at-53.69s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-06-3-at-53.79s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-06-4-at-53.89s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-06-5-at-53.99s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-07-1-at-68.82s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-07-2-at-68.92s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-07-3-at-69.02s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-07-4-at-69.12s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-07-5-at-69.22s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-08-1-at-80.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-08-2-at-80.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-08-3-at-80.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-08-4-at-80.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/seam-08-5-at-80.53s.png
+   Beat sheet (settled frame per scene): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-beats-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-beats-2.jpg
+     0.3s intro · 1.9s intro mid · 4.1s setup · 7.935s setup mid · 12.37s discover · 17.965s discover mid · 24.16s request · 28.395s request mid · 33.23s approval · 37.785s approval mid · 42.94s proof · 48.215s proof mid · 54.09s breadth · 61.405s breadth mid · 69.32s benefit · 74.675s benefit mid · 80.63s outro · 82.665s outro mid
+   Seam 1 at 3.8s (intro -> setup): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-01.jpg
+   Seam 2 at 12.07s (setup -> discover): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-02.jpg
+   Seam 3 at 23.86s (discover -> request): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-03.jpg
+   Seam 4 at 32.93s (request -> approval): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-04.jpg
+   Seam 5 at 42.64s (approval -> proof): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-05.jpg
+   Seam 6 at 53.79s (proof -> breadth): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-06.jpg
+   Seam 7 at 69.02s (breadth -> benefit): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-07.jpg
+   Seam 8 at 80.33s (benefit -> outro): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-seam-08.jpg
+   Phone sheet (beats at 360 px wide): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-phone-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/review/review-phone-2.jpg
+   discover holds several timed clips; run --review --composition discover to review its cuts.
+   request holds several timed clips; run --review --composition request to review its cuts.
+   breadth holds several timed clips; run --review --composition breadth to review its cuts.

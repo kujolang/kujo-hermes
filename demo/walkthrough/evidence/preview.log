@@ -1,0 +1,13 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+┌  hyperframes preview
+
+  Project   walkthrough
+  Studio    http://localhost:3048/#project/walkthrough
+  Server    http://localhost:3048
+  Desktop   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?src=cli
+
+  Running in the background. Log: /Users/robertdevore/.local/state/hyperframes/previews/71cd4024ae71ecb9.log
+  Changes reload automatically in the studio.
+
+  Stop with: hyperframes preview "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough" --stop
+

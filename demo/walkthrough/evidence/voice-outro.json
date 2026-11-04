@@ -1,0 +1,15 @@
+{
+  "cue": "outro",
+  "text": "Kujo. Trust at the speed of AI.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "7dc3640f56baf364f8b70221c8054c68563dc6d80bcc3b47803c723597a97b0b",
+  "audio_sha256": "c41c91d2b69a9cd5b85028df87c344a071c9a5e27dd8b8402da7595b9a72ab4c",
+  "duration": 3.44,
+  "request_id": "8ODEQ5MpJTyazViz28vg",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:34Z"
+}

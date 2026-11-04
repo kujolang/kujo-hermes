@@ -1,0 +1,15 @@
+{
+  "cue": "discover",
+  "text": "Start by discovering what's installed. ShipCheck checks release readiness. PackWrite organizes task context. Spec validates requirements, and Eval runs your checks.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "c4d86cb32d39e2a76a74bff7bf0dedaf7a5df62ac5c79493032f6138a3d2a4a2",
+  "audio_sha256": "9c749331e01a24ad52b5f50348a9edd10adb17a8961cc298c7d117ef33559328",
+  "duration": 11.44,
+  "request_id": "hy90PLjtcnWnS2gu5nZ9",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:07Z"
+}

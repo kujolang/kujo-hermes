@@ -1,0 +1,33 @@
+[
+  {
+    "file": "assets/kujo-logomark.svg",
+    "source": "https://kujolang.ai/assets/images/kujo-logomark.svg",
+    "sha256": "cecb66eae65116fadf29a93ce3adae28956b17cfaf1e8d9e0910c280935ef412",
+    "use": "Unmodified official logo for identification; no affiliation claim"
+  },
+  {
+    "file": "assets/hermes-logo.png",
+    "source": "https://github.com/NousResearch/hermes-agent/blob/b200f5bc60e31588ba2cb60e288029c4a54ba5fa/website/static/img/logo.png",
+    "sha256": "dc364cddcd5b80a8a24d2c40ee52a8839b562e8cbaa7e4ba04c3e2b8257fff9c",
+    "use": "Unmodified official logo for identification; no affiliation claim"
+  },
+  {
+    "file": "assets/music-original.wav",
+    "source": "../kujo-hyperframes/trust-at-speed/audio/music.wav (original Kujo composition)",
+    "sha256": "9c3a2f31fc9180c4e0f162a213d4338f290e91cfa0c5ae85c27a7972e1fccd5d"
+  },
+  {
+    "file": "assets/DepartureMono-Regular.woff2",
+    "source": "opencode-kujo-walkthrough/production/brand-intro/assets (Departure Mono, OFL)",
+    "sha256": "5b4fed1daa90708aa9c6ee1190abca9dc22164a1c1def0020386e46b61038cfb"
+  },
+  {
+    "file": "assets/gsap.min.js",
+    "source": "opencode-kujo-walkthrough/production/brand-intro/assets (GSAP runtime)",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "source": "https://github.com/NousResearch/hermes-agent/blob/b200f5bc60e31588ba2cb60e288029c4a54ba5fa/website/docusaurus.config.ts",
+    "note": "Hermes source ships the Nous girl mark as its app/favicon identity; use unmodified official mark with Hermes text label."
+  }
+]

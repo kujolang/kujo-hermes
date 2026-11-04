@@ -1,0 +1,12 @@
+{
+  "source": "demo/walkthrough/evidence/casts/checks.cast",
+  "windows": [
+    [
+      125.9,
+      129,
+      3
+    ]
+  ],
+  "duration": 3,
+  "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
+}

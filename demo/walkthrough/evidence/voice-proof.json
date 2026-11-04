@@ -1,0 +1,15 @@
+{
+  "cue": "proof",
+  "text": "These are real tool results. Follow the receipt to see which Ability ran, its command, and evidence hashes. Execution success doesn't automatically mean release-ready.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "1ca84f794f82d95fa770928128b9e6c8932409353d8b748a108f6aa890ded498",
+  "audio_sha256": "a08c19e9f47ec9293edcad4d00269dbc8133a54ee7b5b5947b8badc71fabc681",
+  "duration": 10.8,
+  "request_id": "benWRN6E0GwZy5j1CXLa",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:23Z"
+}

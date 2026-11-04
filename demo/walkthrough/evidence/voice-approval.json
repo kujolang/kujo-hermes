@@ -1,0 +1,15 @@
+{
+  "cue": "approval",
+  "text": "Hermes loads each tool's schema when it needs it. Operations that change state require approval. You decide what runs in your trusted workspace.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "28562b1eacf3ac165ddaf44e0215c4af9ced09a9bd4fb2435c079bd5f1715f50",
+  "audio_sha256": "4aa40793d4722c8eb29e62b9f4f4b9b77a2ac7746e040da58857812ede70b12f",
+  "duration": 9.36,
+  "request_id": "1XIpNOy74qdVt9BrYOH9",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:14Z"
+}

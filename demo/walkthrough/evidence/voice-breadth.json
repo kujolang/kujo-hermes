@@ -1,0 +1,15 @@
+{
+  "cue": "breadth",
+  "text": "There are fifty-one bindings across code inspection, verification, workflows, and observability. Scout, Scent, Dispatch, RunLedger, and Watchdog extend the workflow. Workcell and Lens need their own prerequisites.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "11fde59839f0b5f21535fa2a09dcefc75d3929108736b5891ad3e28d83df5abc",
+  "audio_sha256": "9fff0898a4a2686c94addde488cb345c1f45d5df3abe7021c34a7a6344fda83d",
+  "duration": 14.88,
+  "request_id": "WSua1Wi97p6iB4vrrZvY",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:27Z"
+}

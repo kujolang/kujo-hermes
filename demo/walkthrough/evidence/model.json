@@ -1,0 +1,20 @@
+{
+  "provider": "Ollama on http://127.0.0.1:11434/v1",
+  "base_model": "qwen3.5:4b",
+  "demo_alias": "qwen3.5:hermes-demo",
+  "context_tokens": 65536,
+  "inference": "local CPU; no inference API fee",
+  "hermes_release": "v0.22.7",
+  "hermes_source_commit": "b200f5bc60e31588ba2cb60e288029c4a54ba5fa",
+  "kujo_runtime": "1.8.0",
+  "source_blobs_reported_by_ollama_show": [
+    "sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50",
+    "sha256-e56a899b1540860385465756dd308c84417410b94dbc1c380adffd20a921ca60"
+  ],
+  "capture_date": "2026-11-04",
+  "cleanup": "Task-specific model aliases removed after capture to free render disk; source Modelfile retained.",
+  "limitations": "Guided prompts and receipt follow-up required. Waiting time shortened in edit. Voice generation was separately billable.",
+  "ollama_version": "0.40.13",
+  "capture_python": "3.11.16 (existing local dependency environment)",
+  "supported_runtime_certification": "Separate Linux Python 3.14 CI evidence in main repository"
+}

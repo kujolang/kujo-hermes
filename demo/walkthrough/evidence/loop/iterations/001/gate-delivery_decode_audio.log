@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "file": "delivery/kujo-hermes-walkthrough.mp4",
+  "sha256": "a1cc698e2b848340ffebb2a7e485de850653934ff1bc66fd2286dfcbda717bca",
+  "bytes": 4863120,
+  "duration_seconds": 85.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": 2550,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "sample_rate": 48000,
+  "full_decode": "passed",
+  "integrated_lufs": -14.24,
+  "true_peak_dbtp": -1.24,
+  "listening_review": false
+}

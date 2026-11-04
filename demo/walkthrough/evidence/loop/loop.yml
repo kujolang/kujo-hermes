@@ -1,0 +1,24 @@
+objective: "Deliver the verified 85-second Kujo Hermes walkthrough with official logo bumpers, free local inference, real approvals and receipts"
+max_iterations: 1
+max_no_progress: 1
+max_consecutive_failures: 1
+allowed_actions: [read_files, edit_files, run_tests]
+blocked_actions: [deploy, production_config_change]
+eval_gates:
+  - id: recorded_tool_evidence
+    command: "python3 demo/walkthrough/scripts/verify_evidence.py"
+    required: true
+  - id: delivery_decode_audio
+    command: "python3 demo/walkthrough/scripts/verify_delivery.py"
+    required: true
+  - id: packwrite_context
+    command: "KUJO=$PWD/.local/runtime/kujo ../packwrite/bin/packwrite validate"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false
+  push: false
+memory:
+  enabled: false

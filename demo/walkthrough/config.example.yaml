@@ -1,0 +1,29 @@
+# Replace paths with your actual absolute paths. Keep this in a separate HERMES_HOME.
+plugins:
+  enabled: [kujo-hermes]
+  entries:
+    kujo-hermes:
+      settings:
+        ecosystem_root: /absolute/path/to/canonical-kujo-sources
+        kujo_bin: /absolute/path/to/kujo
+        trusted_workspaces: [/absolute/path/to/demo-repository]
+        profile: full
+providers:
+  local-demo:
+    api: http://127.0.0.1:11434/v1
+    api_key: local-placeholder
+    default_model: qwen3.5:hermes-demo
+    extra_body:
+      reasoning_effort: none
+model:
+  provider: local-demo
+  default: qwen3.5:hermes-demo
+tools:
+  tool_search:
+    enabled: "off"
+approvals:
+  mode: manual
+  timeout: 300
+agent:
+  max_turns: 12
+  run_budget_seconds: 600

@@ -1,0 +1,15 @@
+{
+  "cue": "request",
+  "text": "Here, a free local model drives Hermes. We ask it to inspect a Python project, validate its specification, and check the results.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "c7788ae8b0e0996832bb8785d2087249fc9e5129a75c125d6b39768e17461170",
+  "audio_sha256": "031001b56a3f1a81ff5311958d6b2aa543394860af3224629d871f17d7b325cf",
+  "duration": 8.72,
+  "request_id": "ivFRA6EHMRPPzbI35Wsy",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:10Z"
+}

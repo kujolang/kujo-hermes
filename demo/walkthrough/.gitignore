@@ -1,0 +1,13 @@
+.hyperframes/
+node_modules/
+assets/*.wav
+assets/*.mp3
+renders/
+scripts/__pycache__/
+evidence/early-review/
+evidence/setup-review/
+evidence/discovery-review/
+evidence/review/*.png
+evidence/logo-review/
+evidence/approval-review/
+evidence/detail-review/*.png
