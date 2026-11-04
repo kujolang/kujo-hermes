@@ -2,4 +2,7 @@
 
 ## 0.1.0
 
-Initial independent native Hermes integration: six compact tools; canonical Ability schema discovery; reference profiles; direct canonical CLI routing; dynamic reviewed bindings; native human approval hooks; workspace trust; bounded process execution; cancellation; integrity-checked receipts; source installation; real canonical and Hermes verification; marketplace and demo preparation.
+- Six native Hermes tools for discovery, inspection, execution, status, receipts and diagnostics.
+- Canonical Ability schemas and profiles, direct CLI calls and dynamic bindings reviewed by the operator.
+- Native human approvals, workspace trust, process limits, cancellation and verifiable receipt hashes.
+- Source installation, real Kujo and Hermes tests, marketplace drafts and a reproducible demo script.

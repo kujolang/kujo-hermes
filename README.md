@@ -1,20 +1,30 @@
 # Kujo Hermes
 
-Native Hermes tools for Kujo's engineering ecosystem: repository intelligence, context packs, specifications, verification, orchestration and execution evidence. Works on repositories in the languages supported by each underlying tool; Kujo language development is one part of the integration.
+[![Version](https://img.shields.io/badge/version-0.1.0-black)](https://github.com/kujolang/kujo-hermes)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+[![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
-Kujo Hermes owns its Hermes adapter and calls canonical Kujo tools directly. It does **not** install, import or require CommandCode, Kujo CMD, Pi, OpenCode, or their plugins.
+Use Kujo's developer tools inside Hermes to inspect repositories, prepare context, validate specifications, run checks and workflows, and retrieve execution receipts. Each tool supports its own set of languages; the plugin covers much more than Kujo language development.
 
-**Status:** working integration with real Hermes and canonical-tool evidence. Some ecosystem operations still require external services, credentials or container infrastructure. See the [readiness report](docs/readiness.md) and [per-Ability inventory](docs/abilities.md); complete ecosystem certification is not claimed.
+Kujo Hermes calls the official Kujo tools directly through its own native adapter. It requires no CommandCode, Kujo CMD, Pi or OpenCode installation or plugin.
+
+**Status:** verified with real Hermes and Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
 
 ## Install
 
-Requirements: Hermes **0.22.7+**, the Python runtime supported by Hermes (3.14 for this release), macOS or Linux, Git, and a separately installed official Kujo runtime **>=1.6,<2** (tested with official 1.8.0; partial checks with a 1.9.0 development build). Some products have additional requirements. Hermes installs the bounded `jsonschema>=4.23,<5` Python dependency through its plugin mechanism.
+Requirements:
+
+- Hermes **0.22.7+** and its supported Python runtime (3.14 for this release).
+- macOS or Linux, with Git installed.
+- An official Kujo runtime **>=1.6,<2**, installed separately. Tests used official 1.8.0, with partial checks on a 1.9.0 development build.
+
+Some tools need additional dependencies. Hermes installs `jsonschema>=4.23,<5` when it installs the plugin.
 
 ```sh
 hermes plugins install https://github.com/kujolang/kujo-hermes --no-enable
 ```
 
-For a local checkout, use the documented directory installation:
+To install a local checkout:
 
 ```sh
 mkdir -p ~/.hermes/plugins
@@ -22,14 +32,14 @@ cp -R /path/to/kujo-hermes ~/.hermes/plugins/kujo-hermes
 hermes plugins doctor ~/.hermes/plugins/kujo-hermes
 ```
 
-Install canonical sources once, or point at existing trusted checkouts. This explicit helper fetches official repositories at full commit pins, verifies the commit, and never executes downloaded code or replaces an existing checkout:
+Install the tool sources once, or use existing trusted checkouts. This helper fetches official repositories at exact commits and verifies each commit. It neither executes downloaded code nor replaces existing checkouts:
 
 ```sh
 python3 ~/.hermes/plugins/kujo-hermes/scripts/install-sources.py \
   --destination ~/.local/share/kujo/hermes-sources
 ```
 
-The helper is source dependency setup, not a plugin updater. It does not download a runtime or browser binaries. Install the runtime from [official Kujo](https://github.com/kujolang/kujo). Inspect the source lock before running setup. Use `--dry-run` or `--only shipcheck packwrite spec eval scout` for a smaller install.
+The helper installs source dependencies only. It does not update the plugin or download runtime or browser binaries. Install the runtime from [official Kujo](https://github.com/kujolang/kujo). Inspect the source lock before running setup. Use `--dry-run` or `--only shipcheck packwrite spec eval scout` for a smaller install.
 
 Add settings under your active Hermes profile's `config.yaml` (replace every example path with an absolute path):
 
@@ -63,13 +73,13 @@ Ask Hermes:
 - “Run the Loop engineering workflow and verify its verdict.”
 - “Show the receipts from the last workflow.”
 
-Six native tools keep the model surface small: `kujo_discover`, `kujo_inspect`, `kujo_execute`, `kujo_status`, `kujo_receipts`, and `kujo_doctor`. Descriptions and input schemas load only when selected. The bundled engineering skill explains discovery and evidence use.
+Hermes exposes six native tools: `kujo_discover`, `kujo_inspect`, `kujo_execute`, `kujo_status`, `kujo_receipts`, and `kujo_doctor`. Descriptions and input schemas load only when selected. The bundled engineering skill explains discovery and evidence use.
 
-`kujo_execute` returns execution status and a receipt reference. Successful command execution does **not** mean ShipCheck reports release readiness or Concord reports no drift. Inspect the structured product verdict. Large results stay in receipts and can be retrieved in bounded pages. Long operations support background execution and cancellation by invocation ID.
+`kujo_execute` returns execution status and a receipt reference. Successful command execution does **not** mean ShipCheck reports release readiness or Concord reports no drift. Inspect the structured product verdict. Retrieve large results from receipts in pages. Long operations support background execution and cancellation by invocation ID.
 
 ## Profiles
 
-Profiles preserve Kujo CMD exposure semantics without depending on its implementation:
+Profiles offer the same reference tool groups as Kujo CMD:
 
 | Profile | Abilities | Coverage |
 |---|---:|---|
@@ -78,15 +88,15 @@ Profiles preserve Kujo CMD exposure semantics without depending on its implement
 | ship | 29 | Eval, evidence capture, rendering and browser checks |
 | full | 51 | All 38 reference capabilities plus Workcell, Loop, MCP and language tooling |
 
-Profiles only control exposure. They never authorize execution. Missing dependencies stay visible with an actionable installation explanation. New operator-reviewed catalogs are loaded on refresh, without adding more Hermes tools. See [configuration and extensions](docs/configuration.md).
+Profiles choose which Abilities appear; they do not grant permission to run them. Missing dependencies remain visible with installation guidance. Refresh loads new catalogs reviewed by the operator without adding more Hermes tools. See [configuration and extensions](docs/configuration.md).
 
 ## Security and disclosure
 
-Kujo Hermes reads trusted repositories and configured canonical source checkouts outside plugin storage. It starts local canonical processes with argument arrays, bounded time/output, and an isolated HOME. Approved Eval, Loop, Muzzle, Dispatch and runtime operations may themselves execute repository commands. These tools are not sandboxed by this plugin; use Workcell when isolation is required.
+Kujo Hermes reads trusted repositories and configured canonical source checkouts outside plugin storage. It starts local tools with argument arrays, time and output limits, and an isolated HOME. Approved Eval, Loop, Muzzle, Dispatch and runtime operations may themselves execute repository commands. These tools are not sandboxed by this plugin; use Workcell when isolation is required.
 
-Every mutating/external operation and every extension requires a matching, fresh human Hermes approval. The adapter observes native approval events and consumes a request-bound grant once. Smart-model approval, YOLO, unattended auto-approve and an agent-supplied boolean do not create that grant. Downstream Kujo restrictions remain active. A denied downstream approval is reported, not bypassed.
+Every operation that changes state or has external effects, and every extension, requires fresh human approval in Hermes. The adapter matches the approval to the exact request and accepts it once. Smart-model approval, YOLO, unattended auto-approve and an agent-supplied boolean do not create that grant. Downstream Kujo restrictions remain active. The plugin reports any denial from the underlying tool.
 
-No automatic telemetry, background discovery, external MCP configuration, runtime downloads or plugin self-updates. Explicit Watchdog operations use loopback HTTP. Networked canonical tools can contact their configured providers only when invoked and approved. Credentials come through explicitly named Hermes secret-scope variables; the plugin never reads provider credential stores. Receipts are local, redacted, hash-checked records, not signed attestations. See [security](SECURITY.md).
+No automatic telemetry, background discovery, external MCP configuration, runtime downloads or plugin self-updates. Explicit Watchdog operations use loopback HTTP. Networked canonical tools can contact their configured providers only when invoked and approved. Credentials come from configured Hermes secret-scope variables; the plugin never reads provider credential stores. Receipts are local, redacted, hash-checked records, not signed attestations. See [security](SECURITY.md).
 
 ## Development and verification
 
@@ -99,6 +109,6 @@ PYTHONPATH=/path/to/hermes-agent python3 tests/hermes_e2e.py \
 hermes plugins validate . --install-deps
 ```
 
-The Hermes script uses the actual loader, tool registry, approval gate and canonical binaries. Its deterministic human-decision callback is test-only, is not installed, and is explicitly identified in evidence. `--interactive` lets an operator supply decisions. It is not a fabricated LLM conversation. See [testing](docs/testing.md), [architecture](docs/architecture.md), [parity](docs/parity.md), [compatibility](docs/compatibility.md), and the [demo](demo/script.md).
+The Hermes script uses the actual loader, tool registry, approval gate and canonical binaries. Automated tests supply approval decisions through a test-only callback, which the evidence identifies. Use `--interactive` to answer prompts yourself. A separate live-model test verifies a real Hermes conversation. See [testing](docs/testing.md), [architecture](docs/architecture.md), [parity](docs/parity.md), [compatibility](docs/compatibility.md), and the [demo](demo/script.md).
 
-Updates use Hermes's normal plugin update mechanism. Disable/unload cancels owned work and unregisters tools/hooks. Receipts survive updates in Hermes's profile-scoped plugin data directory. Retention and deletion are operator-owned.
+Updates use Hermes's normal plugin update mechanism. Disable/unload cancels owned work and unregisters tools/hooks. Receipts survive updates in the active Hermes profile's plugin data directory. The operator decides when to delete them.

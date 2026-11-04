@@ -1,6 +1,6 @@
 # Kujo CMD parity and host-specific differences
 
-Reference: Kujo CMD 0.3.1 at `7dedc530ea004c414c561325f91d63f6c4925ee9`. All 38 reference IDs have Hermes bindings. See [per-operation evidence](abilities.md), [schemas/dependencies](ability-inventory.json), and [source provenance](provenance.json). Implemented is not synonymous with certified.
+Reference: Kujo CMD 0.3.1 at `7dedc530ea004c414c561325f91d63f6c4925ee9`. All 38 reference IDs have Hermes bindings. See [per-operation evidence](abilities.md), [schemas/dependencies](ability-inventory.json), and [source provenance](provenance.json). A binding may exist without passing a real execution test.
 
 | Reference feature | Hermes implementation | Evidence / limit |
 |---|---|---|
@@ -28,10 +28,10 @@ Reference: Kujo CMD 0.3.1 at `7dedc530ea004c414c561325f91d63f6c4925ee9`. All 38 
 
 ## Broader catalog research
 
-The canonical Ability package owns contracts, digests, profiles and the execution runtime. It explicitly does not ship a global production catalog. Its devkit is fixture-only and cannot legitimately be sold as production execution. Current MCP launch metadata names CMS (6 operations), SSG (10) and MCP core (2); these producers expose application/library-specific bindings. The repository-review pack is a canonical library, not a universal command executable.
+The canonical Ability package owns contracts, digests, profiles and the execution runtime. It explicitly does not ship a global production catalog. Its devkit provides test fixtures, not production execution. Current MCP launch metadata names CMS (6 operations), SSG (10) and MCP core (2); these producers expose application/library-specific bindings. The repository-review pack is a canonical library, not a universal command executable.
 
-The [organization inventory](ecosystem-inventory.json) covers every repository returned by the organization listing, its checked-out interfaces, and every tracked non-fixture JSON Ability definition found under primary available checkouts. Duplicate producer/host projections remain attributed rather than falsely counted as unique operations. SDK/provider libraries and websites are not mislabeled as developer CLIs.
+The [organization inventory](ecosystem-inventory.json) covers every repository returned by the organization listing, its checked-out interfaces, and every tracked non-fixture JSON Ability definition found under primary available checkouts. Repeated definitions retain their source attribution and do not count as unique operations. The inventory distinguishes SDKs, provider libraries and websites from developer CLIs.
 
-CMS/SSG/MCP producer execution is not auto-enabled by scanning definitions. No authenticated application gateway was configured, and a portable definition alone supplies no executable implementation or permissions. These operations need an explicit operator-reviewed binding or future tested gateway adapter. This is an explicit coverage gap, not an assertion that the producer is unsupported everywhere.
+CMS/SSG/MCP producer execution is not auto-enabled by scanning definitions. No authenticated application gateway was configured, and a portable definition alone supplies no executable implementation or permissions. These operations need an explicit operator-reviewed binding or future tested gateway adapter. These producer operations remain a coverage gap in Kujo Hermes.
 
-Workcell, Loop and runtime execution are additional direct integrations. Kujo Foreman was not present as a repository or verified executable in the current organization inventory or inspected workflows; no guessed `foreman` command is exposed. Agency Runner/Relay and other new applications are recorded in the organization inventory but not silently mapped to unrelated operations. Their domain execution remains an integration gap until a verified binding and tests are provided.
+Workcell, Loop and runtime execution are additional direct integrations. Kujo Foreman was not present as a repository or verified executable in the current organization inventory or inspected workflows; the plugin therefore exposes no `foreman` command. Agency Runner/Relay and other new applications are recorded in the organization inventory but have no execution bindings. Supporting them requires verified bindings and execution tests.
