@@ -1,0 +1,9 @@
+{
+  "commit": "61e3b216570bcd40e5fb5c3f489278440086fcfa",
+  "artifact": "dist/kujo-hermes-0.1.0.tar.gz",
+  "sha256": "b3dc367c586347d6cb1e3b24142d8a6f48f9a777e2bec2a415f4428ba1309a57",
+  "format": "Git source archive; no runtime binaries",
+  "tested_implementation_commit": "75d563ae223f2a700ef761fb97d4f867e4733d14",
+  "subsequent_changes": "Documentation and recorded evidence only",
+  "reproduce": "git archive --format=tar.gz --prefix=kujo-hermes/ --output=dist/kujo-hermes-0.1.0.tar.gz 61e3b216570bcd40e5fb5c3f489278440086fcfa"
+}
