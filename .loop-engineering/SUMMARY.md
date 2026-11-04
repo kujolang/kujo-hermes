@@ -26,7 +26,7 @@ partial
 
 ## Commits
 
-- none
+- Commits were made by the agent outside the harness: implementation 1b00583/fac178b; supported-runtime CI 63c9be5/7c32b87/75d563a; evidence 61e3b21; package pin 868df7c. Pushed to origin/main.
 
 ## Remaining
 
@@ -35,9 +35,9 @@ partial
 
 ## External Blockers
 
-- checklist-external-blocked-line-13: Resolve the external dependency, then rerun checklist mode.
-- checklist-external-blocked-line-14: Resolve the external dependency, then rerun checklist mode.
-- checklist-external-blocked-line-14: Resolve the external dependency, then rerun checklist mode.
+- Optional browser/container prerequisites remain blocked (evidence/optional-tools.json).
+- Producer gateways need verified contracts/bindings (docs/parity.md).
+- Clean installation is resolved by CI 41925825469; historical append-only classifications are not current blockers.
 
 ## Next Start
 

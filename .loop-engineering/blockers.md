@@ -1,18 +1,13 @@
-# External Blockers
+# Current external blockers
+
+The harness appends historical classifications. This final snapshot reconciles them against docs/acceptance.md; prior classifications remain in iteration evidence. Clean installation is resolved by CI 41925825469.
 
 blockers:
-  - id: checklist-external-blocked-line-13
-    command: "checklist classification"
-    evidence: "docs/acceptance.md:13"
+  - id: optional-browser-container-prerequisites
     status: external-blocked
-    next_action: "Resolve the external dependency, then rerun checklist mode."
-  - id: checklist-external-blocked-line-14
-    command: "checklist classification"
-    evidence: "docs/acceptance.md:14"
-    status: external-blocked
-    next_action: "Resolve the external dependency, then rerun checklist mode."
-  - id: checklist-external-blocked-line-14
-    command: "checklist classification"
-    evidence: "docs/acceptance.md:14"
-    status: external-blocked
-    next_action: "Resolve the external dependency, then rerun checklist mode."
+    evidence: evidence/optional-tools.json
+    next_action: Install the pinned Lens browser and expose an approved Workcell engine/image, then rerun optional checks.
+  - id: producer-gateway-contracts
+    status: needs-contract-first
+    evidence: docs/parity.md
+    next_action: Establish verified canonical producer bindings; do not infer a Foreman executable.
