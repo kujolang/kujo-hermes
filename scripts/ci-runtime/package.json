@@ -1,0 +1,8 @@
+{
+  "name": "kujo-hermes-ci-runtime",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@kujolang/kujo-linux-x64": "1.8.0"
+  }
+}
