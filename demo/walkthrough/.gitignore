@@ -11,3 +11,5 @@ evidence/review/*.png
 evidence/logo-review/
 evidence/approval-review/
 evidence/detail-review/*.png
+
+.waveform-cache/
