@@ -1,0 +1,27 @@
+name: kujo-hermes
+version: "0.1.0"
+description: "Kujo engineering, context, verification, orchestration and execution receipts for Hermes"
+author: Kujo
+requires_hermes: ">=0.22.7"
+provides_tools:
+  - kujo_discover
+  - kujo_inspect
+  - kujo_execute
+  - kujo_status
+  - kujo_receipts
+  - kujo_doctor
+provides_hooks:
+  - pre_tool_call
+  - post_approval_response
+python_dependencies:
+  - "jsonschema>=4.23,<5"
+config_schema:
+  ecosystem_root: {type: str, default: "", description: "Absolute root containing canonical Kujo source checkouts"}
+  kujo_bin: {type: str, default: kujo, description: "Kujo >=1.6,<2 executable"}
+  trusted_workspaces: {type: list, default: [], description: "Exact trusted absolute repository roots"}
+  profile: {type: str, default: essentials, description: "essentials, review, ship, full"}
+  timeout_seconds: {type: int, default: 240}
+  max_output_bytes: {type: int, default: 524288}
+  extension_catalogs: {type: list, default: [], description: "Operator-reviewed absolute Ability catalog paths"}
+  denied_abilities: {type: list, default: []}
+  secrets: {type: list, default: [], description: "Names explicitly passed through Hermes secret scope to canonical processes"}

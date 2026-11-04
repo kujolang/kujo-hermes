@@ -1,0 +1,155 @@
+{
+  "schema": "kujo.hermes.sources/v1",
+  "sources": [
+    {
+      "name": "casefile",
+      "repository": "https://github.com/kujolang/casefile.git",
+      "commit": "92e1d9bee2faaba322476e82dcea7510850885e0",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "changebucket",
+      "repository": "https://github.com/kujolang/changebucket.git",
+      "commit": "030eea63c60449f82c9ba2680227485d318fdb6d",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "concord",
+      "repository": "https://github.com/kujolang/concord.git",
+      "commit": "f8812e7f00f55e4d1d3f46e70d902bce89ec7be7",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "dispatch",
+      "repository": "https://github.com/kujolang/dispatch.git",
+      "commit": "18b5c737a73904ae942f0bd1c3baa1f77c2bfb40",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "dossier",
+      "repository": "https://github.com/kujolang/dossier.git",
+      "commit": "670def8c62e690bcd3c0936cd85b224257ca4a03",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "eval",
+      "repository": "https://github.com/kujolang/eval.git",
+      "commit": "c1b263a10702c2fa8ab61ed507029a6bfec2e03d",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "fence",
+      "repository": "https://github.com/kujolang/fence.git",
+      "commit": "d3173049b5365af975624fddd48e943d39738c75",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "howl",
+      "repository": "https://github.com/kujolang/howl.git",
+      "commit": "769af8827ab7f32e3b5f009d50f7643a45144fea",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "kennel",
+      "repository": "https://github.com/kujolang/kennel.git",
+      "commit": "6e2fc20560037970df5202e1b1ca8f61c3395570",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "kujo-workflows",
+      "repository": "https://github.com/kujolang/kujo-workflows.git",
+      "commit": "1d25503515f03a4c0d4457b327686d92ccc9c68a",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "lens",
+      "repository": "https://github.com/kujolang/lens.git",
+      "commit": "91049646d70c11bf0c6071f39cf7dfac6b1ba70b",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "muzzle",
+      "repository": "https://github.com/kujolang/muzzle.git",
+      "commit": "2d508d338537a25f000170c8bb4dc10ef3d75aeb",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "packwrite",
+      "repository": "https://github.com/kujolang/packwrite.git",
+      "commit": "b8467535c74263abc59fd3f48028b67d42cd7e68",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "patchbrief",
+      "repository": "https://github.com/kujolang/patchbrief.git",
+      "commit": "92c5cc833730dc427b54a069e9a275bad5969ddc",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "rag",
+      "repository": "https://github.com/kujolang/rag.git",
+      "commit": "406965813653a2ddfdc938177e14720c3370153a",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "redact",
+      "repository": "https://github.com/kujolang/redact.git",
+      "commit": "8bb7a0c251a82044320b42654e22a5371b76a9f6",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "runledger",
+      "repository": "https://github.com/kujolang/runledger.git",
+      "commit": "ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "scent",
+      "repository": "https://github.com/kujolang/scent.git",
+      "commit": "d71da6cbb6f4a1fb9d438743a4ad9e00614da266",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "scout",
+      "repository": "https://github.com/kujolang/scout.git",
+      "commit": "f3a874fa0e95e26c52ef9ec4d23b0f52d8372089",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "shipcheck",
+      "repository": "https://github.com/kujolang/shipcheck.git",
+      "commit": "7eedd9e02d8730d65e06e16f4984d909d23539bc",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "spec",
+      "repository": "https://github.com/kujolang/spec.git",
+      "commit": "36da0d7216587809e32dedb91dee3cf4b9e50af1",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "tribunal",
+      "repository": "https://github.com/kujolang/tribunal.git",
+      "commit": "fa4ffd2c9bb6ee5d8285dfb5c161b844e6e75b7c",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "versionseal",
+      "repository": "https://github.com/kujolang/versionseal.git",
+      "commit": "f005374d72026a57c5246b6ed38473209e4bfc32",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "watchdog",
+      "repository": "https://github.com/kujolang/watchdog.git",
+      "commit": "7a0bd9a63d68421831ed66d6eed29805c48e1b24",
+      "tested_checkout_dirty": false
+    },
+    {
+      "name": "workcell",
+      "repository": "https://github.com/kujolang/workcell.git",
+      "commit": "189d7ab6e975301a0e5100b65e8ad3fe4a584573",
+      "tested_checkout_dirty": false
+    }
+  ]
+}

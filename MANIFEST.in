@@ -1,0 +1,5 @@
+include plugin.yaml __init__.py README.md LICENSE SECURITY.md
+recursive-include catalog *.json
+recursive-include skills *.md
+recursive-include docs *.md *.json
+recursive-include scripts *.py

@@ -1,0 +1,2214 @@
+[
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.ability.catalog.list",
+      "version": "1.0.0",
+      "title": "List Kujo abilities",
+      "description": "List the canonical Kujo Abilities exposed by the active local profile.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.ability.catalog"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": null,
+    "operation": "catalog"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.ability.receipts.list",
+      "version": "1.0.0",
+      "title": "Inspect Ability receipts",
+      "description": "Read recent local Ability receipts for audit and run correlation.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50
+          },
+          "include_result": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.ability.receipts"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": null,
+    "operation": "receipts"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.scout.repository.inspect",
+      "version": "1.0.0",
+      "title": "Inspect repository with Scout",
+      "description": "Generate a bounded, agent-readable Scout repository intelligence pack.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "quick": {
+            "type": "boolean",
+            "default": true
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".kujo/scout"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.files"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.scout.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "scout",
+    "operation": "scout"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.scent.context.pack",
+      "version": "1.0.0",
+      "title": "Build Scent context pack",
+      "description": "Build a token-budgeted, redacted local context pack for agent handoff.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "task"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "task": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          },
+          "budget": {
+            "type": "integer",
+            "minimum": 256,
+            "maximum": 200000,
+            "default": 12000
+          },
+          "dry_run": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.files"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.scent.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "scent",
+    "operation": "scent"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.patchbrief.changes.summarize",
+      "version": "1.0.0",
+      "title": "Summarize git changes",
+      "description": "Summarize the current git diff into a structured PatchBrief.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "json",
+              "markdown"
+            ],
+            "default": "json"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.git"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "patchbrief",
+    "operation": "patchbrief"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.changebucket.changes.measure",
+      "version": "1.0.0",
+      "title": "Measure change footprint",
+      "description": "Measure changed files, churn, categories, and blast-radius signals with ChangeBucket.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "base": {
+            "type": "string",
+            "maxLength": 512,
+            "default": "HEAD"
+          },
+          "max_files": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "max_churn": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.git"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "changebucket",
+    "operation": "changebucket"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.shipcheck.repository.scan",
+      "version": "1.0.0",
+      "title": "Scan release readiness",
+      "description": "Run an informational ShipCheck release-readiness scan against a local repository.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.release"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "shipcheck",
+    "operation": "shipcheck"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.fence.architecture.check",
+      "version": "1.0.0",
+      "title": "Check architecture boundaries",
+      "description": "Check a repository against its Fence architecture policy.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "changed_only": {
+            "type": "boolean",
+            "default": false
+          },
+          "baseline": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.architecture"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "fence",
+    "operation": "fence"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.spec.contract.validate",
+      "version": "1.0.0",
+      "title": "Validate task contract",
+      "description": "Validate a Kujo Spec task contract without changing it.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "strict": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.spec.contract"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "spec",
+    "operation": "spec"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.eval.suite.run",
+      "version": "1.0.0",
+      "title": "Run Eval suite",
+      "description": "Execute a deterministic Kujo Eval suite and return structured verification evidence.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "config"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "config": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".kujo/eval"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.eval.commands"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.eval.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "eval",
+    "operation": "eval"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.runledger.runs.report",
+      "version": "1.0.0",
+      "title": "Report agent runs",
+      "description": "Render the local RunLedger record set for the selected repository.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "task": {
+            "type": "string",
+            "maxLength": 8192
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.runledger.records"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "runledger",
+    "operation": "runledger"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.dispatch.workflow.validate",
+      "version": "1.0.0",
+      "title": "Validate Dispatch workflow",
+      "description": "Validate a Dispatch workflow and explain configuration errors without running agents.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "workflow_file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "workflow_file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.dispatch.workflow"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "dispatch",
+    "operation": "dispatch"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.rag.knowledge.query",
+      "version": "1.0.0",
+      "title": "Query local Kujo RAG",
+      "description": "Query a locally installed Kujo RAG index and return citations.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          },
+          "namespace": {
+            "type": "string",
+            "maxLength": 256,
+            "default": "default"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.rag.index"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "rag",
+    "operation": "rag"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.watchdog.service.health",
+      "version": "1.0.0",
+      "title": "Check local Watchdog",
+      "description": "Read health from an optional loopback-only Kujo Watchdog service.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "maxLength": 2048,
+            "default": "http://127.0.0.1:7700"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.watchdog.telemetry"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "watchdog",
+    "operation": "watchdog"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.concord.artifacts.scan",
+      "version": "1.0.0",
+      "title": "Scan artifact drift",
+      "description": "Scan repository documentation, examples, evaluations, and metadata for drift with Concord.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "concord",
+    "operation": "concord"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.casefile.failure.capture",
+      "version": "1.0.0",
+      "title": "Capture failure evidence",
+      "description": "Create a redacted CaseFile evidence bundle from an existing local log file.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "log_file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "log_file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 200,
+            "default": "hermes-failure"
+          },
+          "notes": {
+            "type": "string",
+            "maxLength": 4000
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".casefile/cases"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.failure.logs"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.casefile.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "casefile",
+    "operation": "casefile",
+    "upstream_definition_digest": "fbc5b3ad1a117e437699068e1a9e82a0996435ac6216503ef05efdae42f6642b",
+    "host_transformations": {
+      "input_defaults": {
+        "name": "hermes-failure"
+      }
+    }
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.muzzle.workflow.run",
+      "version": "1.0.0",
+      "title": "Run quiet workflow",
+      "description": "Run a repository-defined Muzzle workflow with bounded output and its safety policy.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "workflow"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "workflow": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+          },
+          "args": {
+            "type": "array",
+            "maxItems": 32,
+            "items": {
+              "type": "string",
+              "maxLength": 2048
+            }
+          },
+          "approve_network": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.muzzle.workflow"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.muzzle.logs"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "muzzle",
+    "operation": "muzzle"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.kennel.project.validate",
+      "version": "1.0.0",
+      "title": "Validate Kennel project",
+      "description": "Validate the local Kennel manifest and dependency declarations without installing packages.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.kennel.manifest"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "kennel",
+    "operation": "kennel_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.kennel.dependencies.install",
+      "version": "1.0.0",
+      "title": "Install Kennel dependencies",
+      "description": "Resolve and install the dependencies declared by a local Kennel project.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "allow_mutable_ref": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.kennel.registry"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.kennel.dependencies"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "kennel",
+    "operation": "kennel_install"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.dispatch.workflow.run",
+      "version": "1.0.0",
+      "title": "Run Dispatch workflow",
+      "description": "Execute a validated Dispatch workflow and retain its local run evidence.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "topic",
+          "workflow_file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "topic": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "workflow_file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "input_json": {
+            "type": "string",
+            "maxLength": 32768,
+            "default": "{}"
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".kujo/dispatch"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.dispatch.agents"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.dispatch.runs"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "dispatch",
+    "operation": "dispatch_run"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.rag.knowledge.ingest",
+      "version": "1.0.0",
+      "title": "Ingest local knowledge",
+      "description": "Ingest a bounded local path into the configured Kujo RAG namespace.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "ingest_path"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "ingest_path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "namespace": {
+            "type": "string",
+            "maxLength": 256,
+            "default": "default"
+          },
+          "recursive": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.rag.embeddings"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.rag.index"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "rag",
+    "operation": "rag_ingest"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.watchdog.telemetry.record",
+      "version": "1.0.0",
+      "title": "Record Watchdog telemetry",
+      "description": "Submit one metadata-only correlated event to an optional loopback Kujo Watchdog service.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unset",
+              "ok",
+              "error",
+              "cancelled",
+              "timeout",
+              "denied"
+            ],
+            "default": "ok"
+          },
+          "session_id": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "run_id": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "agent_id": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "tool_call_id": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 2048,
+            "default": "http://127.0.0.1:7700"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.watchdog.telemetry"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "watchdog",
+    "operation": "watchdog_record"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.redact.document.scan",
+      "version": "1.0.0",
+      "title": "Scan document for sensitive data",
+      "description": "Scan a bounded local text or Markdown document with a canonical Redact policy and retain a metadata-only audit run.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "file",
+          "policy"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "policy": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "audit_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".redact"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.redact.documents"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.redact.audit"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "redact",
+    "operation": "redact_scan"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.redact.document.sanitize",
+      "version": "1.0.0",
+      "title": "Sanitize sensitive document",
+      "description": "Create a deterministic redacted copy of a bounded local text or Markdown document and verify the result.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "file",
+          "policy",
+          "output_file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "policy": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "output_file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "audit_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".redact"
+          },
+          "fail_on_risk": {
+            "type": "string",
+            "enum": [
+              "medium",
+              "high"
+            ],
+            "default": "high"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.redact.documents"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.redact.documents"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.redact.audit"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "redact",
+    "operation": "redact_sanitize"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.versionseal.records.validate",
+      "version": "1.0.0",
+      "title": "Validate VersionSeal records",
+      "description": "Validate the checksums and contracts in a local VersionSeal state directory without changing approvals.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "state_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".versionseal"
+          },
+          "record_id": {
+            "type": "string",
+            "maxLength": 160
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.versionseal.records"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "versionseal",
+    "operation": "versionseal_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.packwrite.pack.validate",
+      "version": "1.0.0",
+      "title": "Validate agent pack",
+      "description": "Deterministically validate an existing PackWrite agent execution pack.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "agent"
+          },
+          "config": {
+            "type": "string",
+            "maxLength": 4096
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.packwrite.pack"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "packwrite",
+    "operation": "packwrite_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.packwrite.pack.summary",
+      "version": "1.0.0",
+      "title": "Summarize agent pack",
+      "description": "Summarize an existing PackWrite pack, including phases, missing files, warnings, and next action.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "agent"
+          },
+          "config": {
+            "type": "string",
+            "maxLength": 4096
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.packwrite.pack"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "packwrite",
+    "operation": "packwrite_summary"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.packwrite.pack.init",
+      "version": "1.0.0",
+      "title": "Generate agent pack",
+      "description": "Generate and validate a PackWrite execution pack from a local mega-prompt through a configured provider.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "prompt_file",
+          "provider",
+          "model"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "prompt_file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "provider": {
+            "type": "string",
+            "enum": [
+              "deepseek",
+              "openai",
+              "local"
+            ]
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "agent"
+          },
+          "config": {
+            "type": "string",
+            "maxLength": 4096
+          },
+          "overwrite": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.packwrite.provider"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.packwrite.pack"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "packwrite",
+    "operation": "packwrite_init"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.runledger.runs.start",
+      "version": "1.0.0",
+      "title": "Start RunLedger record",
+      "description": "Start a local RunLedger record for an agent run and capture its initial git state.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "provider",
+          "model",
+          "task"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "task": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "prompt_file": {
+            "type": "string",
+            "maxLength": 4096
+          },
+          "ledger_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".runledger"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.git"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.runledger.records"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "runledger",
+    "operation": "runledger_start"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.runledger.runs.finish",
+      "version": "1.0.0",
+      "title": "Finish RunLedger record",
+      "description": "Finalize a local RunLedger record with an explicit status and verdict.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "run_id",
+          "status",
+          "verdict"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "partial",
+              "fail",
+              "abandoned"
+            ]
+          },
+          "verdict": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "notes": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "ledger_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".runledger"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.repository.git"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.runledger.records"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "runledger",
+    "operation": "runledger_finish"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.tribunal.proposal.validate",
+      "version": "1.0.0",
+      "title": "Validate decision proposal",
+      "description": "Validate a consequential decision proposal against Tribunal's bounded input contract without starting a hearing.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.tribunal.proposal"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "tribunal",
+    "operation": "tribunal_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.tribunal.review.mock",
+      "version": "1.0.0",
+      "title": "Run offline decision hearing",
+      "description": "Run a deterministic credential-free Tribunal hearing and retain its sealed local decision evidence.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "panel": {
+            "type": "string",
+            "enum": [
+              "executioner-only",
+              "fast-two-model",
+              "strategic-five"
+            ],
+            "default": "fast-two-model"
+          },
+          "storage_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".tribunal/runs"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.tribunal.proposal"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.tribunal.evidence"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "tribunal",
+    "operation": "tribunal_review",
+    "upstream_definition_digest": "a4d1a3afcb5e96a135de1f27b52bdab285668c353026aa1baed922349ab2cfd8",
+    "host_transformations": {
+      "input_defaults": {
+        "storage_dir": ".tribunal/runs"
+      }
+    }
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.dossier.records.validate",
+      "version": "1.0.0",
+      "title": "Validate evidence ledger",
+      "description": "Validate record contracts, checksums, and append-only events in a local Dossier state directory.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "state_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".dossier"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.dossier.records"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "dossier",
+    "operation": "dossier_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.dossier.records.report",
+      "version": "1.0.0",
+      "title": "Report evidence ledger",
+      "description": "Read a bounded report of claims, sources, evidence, conflicts, quotations, consent, freshness, and rights records.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "state_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".dossier"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000,
+            "default": 100
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.dossier.records"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "dossier",
+    "operation": "dossier_report"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.howl.showcase.validate",
+      "version": "1.0.0",
+      "title": "Validate showcase manifest",
+      "description": "Validate a Howl showcase manifest and every referenced example without rendering artifacts.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "manifest": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "howl.json"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.howl.showcase"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "howl",
+    "operation": "howl_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.howl.showcase.render",
+      "version": "1.0.0",
+      "title": "Render showcase artifacts",
+      "description": "Render deterministic SVG, Markdown, or HTML showcase artifacts and a local gallery from a Howl manifest.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "manifest": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "howl.json"
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "dist/howl"
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "all",
+              "svg",
+              "html",
+              "markdown"
+            ],
+            "default": "all"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.howl.showcase"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.howl.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "howl",
+    "operation": "howl_render"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.lens.flow.validate",
+      "version": "1.0.0",
+      "title": "Validate browser flow",
+      "description": "Validate a Lens browser flow's structure and safety constraints without launching a browser.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "flow_file"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "flow_file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.lens.flow"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "lens",
+    "operation": "lens_flow_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.lens.page.check",
+      "version": "1.0.0",
+      "title": "Check rendered page",
+      "description": "Open a local or explicitly allowed external page in a real browser and retain deterministic Lens QA evidence.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "url"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".lens/runs/hermes"
+          },
+          "quick": {
+            "type": "boolean",
+            "default": true
+          },
+          "html": {
+            "type": "boolean",
+            "default": true
+          },
+          "allow_external": {
+            "type": "boolean",
+            "default": false
+          },
+          "timeout_seconds": {
+            "type": "integer",
+            "minimum": 5,
+            "maximum": 300,
+            "default": 30
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.lens.browser"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.lens.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "source": "lens",
+    "operation": "lens_check",
+    "upstream_definition_digest": "219c25fa1604e03b3053afadf29c5e0be044c33e5e0ce7d267957c0b84b0238d",
+    "host_transformations": {
+      "input_defaults": {
+        "output_dir": ".lens/runs/hermes"
+      }
+    }
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.workcell.definition.validate",
+      "version": "1.0.0",
+      "title": "Workcell validate",
+      "description": "Workcell validate using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "file"
+        ],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.workcell.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "workcell",
+    "operation": "workcell_validate"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.workcell.definition.inspect",
+      "version": "1.0.0",
+      "title": "Workcell inspect",
+      "description": "Workcell inspect using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "file"
+        ],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.workcell.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "workcell",
+    "operation": "workcell_inspect"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.workcell.definition.run",
+      "version": "1.0.0",
+      "title": "Workcell run",
+      "description": "Workcell run using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "file"
+        ],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.workcell.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "none"
+      }
+    },
+    "source": "workcell",
+    "operation": "workcell_run"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.workcell.runtime.doctor",
+      "version": "1.0.0",
+      "title": "Workcell runtime diagnostics",
+      "description": "Workcell runtime diagnostics using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.workcell.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "workcell",
+    "operation": "workcell_doctor"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.workflows.loop.run",
+      "version": "1.0.0",
+      "title": "Run Loop engineering gates",
+      "description": "Run Loop engineering gates using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "config": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "config"
+        ],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.kujo_workflows.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "none"
+      }
+    },
+    "source": "kujo-workflows",
+    "operation": "loop"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.runtime.version.inspect",
+      "version": "1.0.0",
+      "title": "Inspect Kujo runtime version",
+      "description": "Inspect Kujo runtime version using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.kujo.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "kujo",
+    "operation": "runtime_version"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.runtime.source.check",
+      "version": "1.0.0",
+      "title": "Check Kujo source",
+      "description": "Check Kujo source using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "file"
+        ],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "read",
+          "resource": "kujo.kujo.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "intrinsic"
+      }
+    },
+    "source": "kujo",
+    "operation": "runtime_check"
+  },
+  {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.runtime.source.run",
+      "version": "1.0.0",
+      "title": "Run Kujo source",
+      "description": "Run Kujo source using the canonical Kujo interface.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "file"
+        ],
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object"
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.kujo.execution"
+        }
+      ],
+      "idempotency": {
+        "mode": "none"
+      }
+    },
+    "source": "kujo",
+    "operation": "runtime_run"
+  }
+]
