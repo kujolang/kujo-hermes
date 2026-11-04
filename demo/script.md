@@ -1,5 +1,7 @@
 # Reproducible demo: target 85 seconds
 
+The finished [85-second walkthrough](walkthrough/delivery/kujo-hermes-walkthrough.mp4) and its [exact recorded prompts and evidence](walkthrough/README.md) are available. The sequence below remains an alternative live demo.
+
 Prepare a fresh sample repository:
 
 ```sh

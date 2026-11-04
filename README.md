@@ -10,6 +10,8 @@ Kujo Hermes calls the official Kujo tools directly through its own native adapte
 
 **Status:** verified with real Hermes and Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
 
+Watch the [85-second walkthrough](demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4): a free local model discovers tools, runs checks with approval, and retrieves verified evidence. [Recording and reproduction details](demo/walkthrough/README.md).
+
 ## Install
 
 Requirements:

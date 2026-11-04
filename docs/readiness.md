@@ -21,6 +21,7 @@ Architecture, exact-schema inventory, parity matrix, configuration, security not
 | Linux supported runtime | Python 3.14, clean locked Hermes dependencies, plugin dependency validation and real host workflow passed | `evidence/ci-linux.json`, `evidence/hermes-linux-e2e.json` |
 | Clean independent installation | Real Git install at full SHA into a fresh Hermes home, dependencies approved and plugin left disabled | `evidence/clean-install.txt`, CI run 41925825469 |
 | Reproducible demo | All five real fixture operations passed | `evidence/demo-verification.json` |
+| Recorded walkthrough | Local free-model Hermes run: discovery, Spec, PackWrite, approved Eval 2/2 and verified receipt; 85-second video | `demo/walkthrough/evidence/` |
 | Source installation | Exact official ShipCheck commit installed by helper | `evidence/source-install.txt` |
 | Loop / PackWrite development | Actual harness gates and pack compiler used; first gate defect corrected | `.loop-engineering/`, `evidence/packwrite.log` |
 | Performance | 20 local samples, serialized schema bytes and latency; no tokenizer or speedup claims | `evidence/performance.json` |
@@ -35,6 +36,6 @@ A test-only CLI callback supplies approval decisions in automated E2E tests. A s
 - **Foreman / other applications:** no canonical Foreman executable or repository was found. Agency Runner/Relay and additional application domains lack verified native bindings; inventory entries remain explicit gaps. No invented interface is exposed.
 - **Local download failures:** local isolated-runtime downloads time out against PyPI. Fresh installation and dependency validation succeeded in Linux CI run 41925825469. Local failures remain in `evidence/git-install.txt` and `hermes-validation-final.txt`; they no longer block the clean-install acceptance criterion.
 - **Compatibility:** live verification is macOS with Hermes v0.22.7 and official Kujo 1.8.0. Windows is unsupported. Linux Python 3.14 CI and canonical host E2E also pass. The local Kujo 1.9 development build lacks runtime-db; version checks alone cannot certify optional native features.
-- **Marketplace / demo:** record the prepared demo; review the full-SHA catalog candidate and validate with dependency installation. Obtain explicit authorization before opening the catalog PR, posting the video or submitting the links. The user-provided deadline is November 11, 2026 at 5 PM EST; verify current event terms.
+- **Marketplace / demo:** the [85-second walkthrough](../demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4) is recorded; watch and listen before posting. Review the full-SHA catalog candidate and validate with dependency installation. Obtain explicit authorization before opening the catalog PR, posting the video or submitting the links. The user-provided deadline is November 11, 2026 at 5 PM EST; verify current event terms.
 
 The verified operations are ready to use. Full tool coverage and marketplace submission still require the work listed above.
