@@ -1,0 +1,27 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: git diff --check
+  host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - uses: astral-sh/setup-uv@v6
+      - run: git clone --depth 1 --branch v0.22.7 https://github.com/NousResearch/hermes-agent.git /tmp/hermes
+      - run: uv venv /tmp/hermes-env
+      - run: uv pip install --python /tmp/hermes-env/bin/python -e /tmp/hermes
+      - run: uv pip install --python /tmp/hermes-env/bin/python -e .
+      - run: /tmp/hermes-env/bin/python -m hermes_cli.main plugins doctor "$PWD"
+      - run: /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate "$PWD" --install-deps

@@ -1,0 +1,4 @@
+Plugin Doctor: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes
+  manifest: kujo-hermes 0.1.0 (standalone)
+  OK: runtime discovery, manifest parsing, import, and registration passed
+  registrations: 6 tool(s), 0 hook(s)

@@ -1,0 +1,89 @@
+{
+  "kind": "real Lens browser and Workcell engine checks; external blockers retained",
+  "results": [
+    {
+      "ok": false,
+      "status": "failed",
+      "receipt_id": "cc12d315-bd87-4023-b3df-03a680688f01",
+      "receipt_digest": "efa9918657d9fa8ce870c6ee9351dc7a6491de37e7371eebe47ea5e46c48667e",
+      "ability_id": "kujo.lens.page.check",
+      "error": {
+        "type": "failed",
+        "message": "Canonical command did not complete successfully"
+      },
+      "result": {
+        "status": "completed",
+        "exit_code": 3,
+        "stdout": "Lens error: Browser launch failed: browserType.launch: Executable doesn't exist at [REDACTED]/chromium_headless_shell-1228/chrome-headless-shell-mac-x64/chrome-headless-shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     npx playwright install                                 \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\n",
+        "stderr": "",
+        "duration_ms": 834
+      }
+    },
+    {
+      "ok": false,
+      "status": "failed",
+      "receipt_id": "fe1a7746-cf78-43ec-bb68-375d79ca0f41",
+      "receipt_digest": "a7de81460e6da798a73f050d2659bdd016c5441e350b0bdcd00bb1d5826982ec",
+      "ability_id": "kujo.workcell.runtime.doctor",
+      "error": {
+        "type": "failed",
+        "message": "Canonical command did not complete successfully"
+      },
+      "result": {
+        "status": "completed",
+        "exit_code": 3,
+        "stdout": "Workcell doctor\n===============\n[PASSED] Kujo runtime: kujo 1.8.0\n[PASSED] Git CLI: git version 2.42.0\n[PASSED] Docker CLI: Docker version 29.6.1, build 8900f1d330\n[BLOCKED] Docker daemon: Docker daemon is not reachable: failed to connect to the docker API at unix:///var/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /var/run/docker.sock: connect: no such file or directory\n  Remediation: Start Docker Desktop or the Docker daemon\n[BLOCKED] Docker security profiles: failed to connect to the docker API at unix:///var/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /var/run/docker.sock: connect: no such file or directory\n  Remediation: Expose a reachable Docker daemon with its default security profiles enabled\n[PASSED] Source repository: Git repository: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-optional-p1jcwfc6/repo\n[WARNING] Optional Kujo tooling: optional sibling tools not found: [runledger, changebucket, shipcheck, fence]\n  Remediation: Install sibling tools only when their integrations are needed; core Workcell runtime does not require them\n[PASSED] Temporary directory: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-optional-p1jcwfc6/state/home\n[PASSED] Temporary directory write: temporary directory is writable\n[PASSED] Host platform: Darwin\n\nPassed: 7  Warnings: 1  Blocked: 2\n",
+        "stderr": "",
+        "duration_ms": 548
+      }
+    },
+    {
+      "ok": false,
+      "status": "failed",
+      "receipt_id": "2cf19798-3aa4-4a80-9b57-fc54458eb09c",
+      "receipt_digest": "13b68417dad974d9543b4efe8f01e32b31c4073c096c500197886261006a053b",
+      "ability_id": "kujo.workcell.definition.run",
+      "error": {
+        "type": "failed",
+        "message": "Canonical command did not complete successfully"
+      },
+      "result": {
+        "status": "completed",
+        "exit_code": 4,
+        "stderr": "",
+        "duration_ms": 1146,
+        "structured": {
+          "backend": {
+            "adapter_id": "docker",
+            "provider_id": ""
+          },
+          "cancelled": false,
+          "changed_files": 0,
+          "cleanup_status": "complete",
+          "cost": {
+            "class": "unknown",
+            "status": "unknown"
+          },
+          "declared_artifacts": 0,
+          "error": "inspect Docker security profiles exited with code 1: failed to connect to the docker API at unix:///var/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /var/run/docker.sock: connect: no such file or directory",
+          "exit_code": 4,
+          "ok": false,
+          "output_dir": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-optional-p1jcwfc6/repo/.workcell/runs/wc-08ff4b8668784af7a674a31f8cb9dc9e",
+          "preservation": {
+            "actual_mode": "none",
+            "path": "preservation.json",
+            "requested_mode": "none",
+            "status": "satisfied"
+          },
+          "receipt_path": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-optional-p1jcwfc6/repo/.workcell/runs/wc-08ff4b8668784af7a674a31f8cb9dc9e/receipt.json",
+          "run_id": "wc-08ff4b8668784af7a674a31f8cb9dc9e",
+          "schema_version": "workcell-run-summary/v1",
+          "stage": "preparing",
+          "timed_out": false,
+          "verification": false
+        },
+        "stdout_digest": "f7ac3a256c60fd7f493adccaf06cdb8bcae41dcc70fceca6278d3caa9e4cc7dd"
+      }
+    }
+  ]
+}

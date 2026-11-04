@@ -1,0 +1,11 @@
+{
+  "runs": 20,
+  "medians": {
+    "initialization_ms": 0.19110649009235203,
+    "discovery_ms": 113.6898449913133,
+    "inspection_ms": 0.35191301140002906
+  },
+  "native_tool_definition_bytes": 2647,
+  "full_catalog_response_bytes": 14700,
+  "token_count": "Not measured: model tokenizer dependent"
+}

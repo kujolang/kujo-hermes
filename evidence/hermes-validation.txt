@@ -1,0 +1,59 @@
+Preparing the isolated Hermes runtime…
+  → Installing Python dependencies…
+  ✗ Installing Python dependencies failed; last 20 lines of output:
+      Resolved 5 packages in 11ms
+      WARN Retry attempt #0. Sleeping 1.077908441s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.755689797s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.892713462s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.114659149s before the next attempt
+      WARN Retry attempt #1. Sleeping 1.28747029s before the next attempt
+      WARN Retry attempt #1. Sleeping 1.710417332s before the next attempt
+      WARN Retry attempt #1. Sleeping 2.056488492s before the next attempt
+      WARN Retry attempt #1. Sleeping 2.713550594s before the next attempt
+      WARN Retry attempt #2. Sleeping 2.605496938s before the next attempt
+      WARN Retry attempt #2. Sleeping 6.326200597s before the next attempt
+      WARN Retry attempt #2. Sleeping 3.730042781s before the next attempt
+      WARN Retry attempt #2. Sleeping 2.835917939s before the next attempt
+      error: Failed to download `packaging==26.3`
+        cause: Request failed after 3 retries in 45.0s
+        cause: Failed to fetch: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl
+        cause: error sending request for url (https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl)
+        cause: client error (Connect)
+        cause: operation timed out
+      hint: `packaging` (v26.3) was included because `hermes-pm-runtime` (v0.0.0) depends on `packaging`
+dependency preparation failed: venv: uv sync exited 2: t
+error: Failed to download `packaging==26.3`
+  cause: Request failed after 3 retries in 45.0s
+  cause: Failed to fetch: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl
+  cause: error sending request for url (https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl)
+  cause: client error (Connect)
+  cause: operation timed out
+
+hint: `packaging` (v26.3) was included because `hermes-pm-runtime` (v0.0.0) depends on `packaging` — retry, or run `hermes pm doctor`
+
+✓ manifest — plugin.yaml parses
+✓ manifest fields — name, version, description present
+✓ requires_hermes — spec '>=0.22.7' parses
+✓ config schema — shape valid
+✓ requires_env — all entries UPPER_SNAKE
+✓ oauth — not declared
+✓ loadable — entry: __init__.py
+✓ python dependencies — 1 requirements from pyproject
+✓ capability probe — register() ran in isolation
+✓ declared tools — matches registrations
+✓ declared hooks — matches registrations
+✓ declared middleware — matches registrations
+✓ built-in tool collisions — no collisions
+✓ security scan — safe
+✓ no core override — no runtime rebinds of Hermes core
+⚠ private core imports (catalog rule 9: public surfaces only; these can break on
+any release): scripts/hermes-e2e.py:19 hermes_cli.plugins.get_plugin_manager;
+scripts/hermes-e2e.py:21
+tools.approval_context.reset_hermes_interactive_context;
+scripts/hermes-e2e.py:23 tools.terminal_tool.set_approval_callback;
+scripts/hermes-e2e.py:19 hermes_cli.plugins.resolve_pre_tool_block;
+scripts/hermes-e2e.py:21 tools.approval_context.set_hermes_interactive_context.
+Use ctx.* / documented plugin APIs, or open an issue for the seam you need.
+◆ Isolation — runs in the plugin host (plugins.isolation: host)
+
+Validation passed.

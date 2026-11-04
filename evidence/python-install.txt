@@ -1,0 +1,23 @@
+Obtaining file:///Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: jsonschema<5,>=4.23 in /Users/robertdevore/.hermes/hermes-agent/venv/lib/python3.11/site-packages (from kujo-hermes==0.1.0) (4.26.0)
+Requirement already satisfied: attrs>=22.2.0 in /Users/robertdevore/.hermes/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema<5,>=4.23->kujo-hermes==0.1.0) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /Users/robertdevore/.hermes/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema<5,>=4.23->kujo-hermes==0.1.0) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /Users/robertdevore/.hermes/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema<5,>=4.23->kujo-hermes==0.1.0) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in /Users/robertdevore/.hermes/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema<5,>=4.23->kujo-hermes==0.1.0) (2026.6.3)
+Requirement already satisfied: typing-extensions>=4.4.0 in /Users/robertdevore/.hermes/hermes-agent/venv/lib/python3.11/site-packages (from referencing>=0.28.4->jsonschema<5,>=4.23->kujo-hermes==0.1.0) (4.16.0)
+Building wheels for collected packages: kujo-hermes
+  Building editable for kujo-hermes (pyproject.toml): started
+  Building editable for kujo-hermes (pyproject.toml): finished with status 'done'
+  Created wheel for kujo-hermes: filename=kujo_hermes-0.1.0-0.editable-py3-none-any.whl size=3710 sha256=b92bb0fa18a6961b9d76bef35acefa861dc561aa2504a77850831cc9fa721e4a
+  Stored in directory: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/pip-ephem-wheel-cache-_ti5f5d1/wheels/ad/c9/6d/ab97be42b7efb97296e1a6b7e29a14a9e28ce325d924373798
+Successfully built kujo-hermes
+Installing collected packages: kujo-hermes
+Successfully installed kujo-hermes-0.1.0

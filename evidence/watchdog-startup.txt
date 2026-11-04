@@ -1,0 +1,57 @@
+Type checking warnings:
+  [KUJORUN001] [runtime] Type Error: Comparison '==' between incompatible types: Int and Bool
+  --> 0:0
+   = help: Convert one value to match the type of the other
+   = note: Comparison operators require both operands to have compatible types
+
+
+=== Watchdog ===
+
+Host: 127.0.0.1
+Port: 56591
+Database: /var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-services-8nmlrgso/watchdog.db
+Proxy config: watchdog_proxy_config.json
+Sources config: watchdog_sources.json
+API auth mode: off
+Proxy auth mode: off
+Deployment profile: local
+Dashboard Dither Kit JavaScript: vendor/dither-charts.js
+Dashboard Dither Kit CSS: vendor/dither-charts.css
+Dashboard Departure Mono font: vendor/fonts/DepartureMono-Regular.woff2
+Proxy timeout seconds: 120
+Max proxy body bytes: 1048576
+Max parse body bytes: 524288
+Telemetry redaction mode: basic
+Content capture mode: off
+Rate limit mode: off
+Rate limit max requests: 60
+Rate limit window seconds: 60
+Rate limit max buckets: 5000
+Rate limit bucket ttl seconds: 600
+Identifier max length: 128
+Export max rows: 10000
+Exporter profiles: 0
+Export queue max records per profile: 50000
+Export queue max bytes per profile: 67108864
+Context limit catalog: config/context_limit_catalog.json
+Context warning ratio: 0.8
+Context critical ratio: 0.95
+Backup default enabled: true
+Backup default interval minutes: 1440
+Backup default directory: data/backups
+Backup encryption key configured: false
+Warning: API auth is disabled. Review the configured bind host and network exposure.
+Use local-only networking, firewall rules, or a reverse proxy before non-local exposure.
+
+Database ready: /var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-services-8nmlrgso/watchdog.db
+
+Watchdog:        http://localhost:56591
+API stats:       http://localhost:56591/api/stats
+Proxy config:    http://localhost:56591/api/proxy-config
+Proxy endpoint:  http://localhost:56591/proxy/v1/chat/completions
+
+Press Ctrl+C to stop.
+
+Starting HTTP server on 127.0.0.1:56591...
+Server listening on http://127.0.0.1:56591
+Press Ctrl+C to stop

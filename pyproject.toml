@@ -7,6 +7,6 @@ version = "0.1.0"
 description = "Native Hermes integration for Kujo engineering, context, verification and execution tools"
 requires-python = ">=3.11"
 dependencies = ["jsonschema>=4.23,<5"]
-license = "MIT"
+license = {text = "MIT"}
 [tool.setuptools.packages.find]
 include = ["kujo_hermes*"]

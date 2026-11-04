@@ -1,0 +1,349 @@
+diff --git a/catalog/abilities.json b/catalog/abilities.json
+index fa4618c..ccf1f8e 100644
+--- a/catalog/abilities.json
++++ b/catalog/abilities.json
+@@ -2210,5 +2210,189 @@
+     },
+     "source": "kujo",
+     "operation": "runtime_run"
++  },
++  {
++    "definition": {
++      "schema": "kujo.ability/v1",
++      "id": "kujo.hermes.lint.execute",
++      "version": "1.0.0",
++      "title": "Lint Kujo source",
++      "description": "Lint Kujo source through the canonical executable interface.",
++      "input_schema": {
++        "type": "object",
++        "properties": {
++          "file": {
++            "type": "string",
++            "minLength": 1,
++            "maxLength": 4096
++          }
++        },
++        "required": [
++          "file"
++        ],
++        "additionalProperties": false
++      },
++      "output_schema": {},
++      "effects": [
++        {
++          "kind": "read",
++          "resource": "kujo.kujo.files"
++        }
++      ],
++      "idempotency": {
++        "mode": "intrinsic"
++      }
++    },
++    "source": "kujo",
++    "operation": "lint"
++  },
++  {
++    "definition": {
++      "schema": "kujo.ability/v1",
++      "id": "kujo.hermes.format.execute",
++      "version": "1.0.0",
++      "title": "Format Kujo source",
++      "description": "Format Kujo source through the canonical executable interface.",
++      "input_schema": {
++        "type": "object",
++        "properties": {
++          "file": {
++            "type": "string",
++            "minLength": 1,
++            "maxLength": 4096
++          }
++        },
++        "required": [
++          "file"
++        ],
++        "additionalProperties": false
++      },
++      "output_schema": {},
++      "effects": [
++        {
++          "kind": "write",
++          "resource": "kujo.kujo.files"
++        }
++      ],
++      "idempotency": {
++        "mode": "none"
++      }
++    },
++    "source": "kujo",
++    "operation": "format"
++  },
++  {
++    "definition": {
++      "schema": "kujo.ability/v1",
++      "id": "kujo.hermes.lsp.diagnostics.execute",
++      "version": "1.0.0",
++      "title": "Get Kujo editor diagnostics",
++      "description": "Get Kujo editor diagnostics through the canonical executable interface.",
++      "input_schema": {
++        "type": "object",
++        "properties": {
++          "file": {
++            "type": "string",
++            "minLength": 1,
++            "maxLength": 4096
++          }
++        },
++        "required": [
++          "file"
++        ],
++        "additionalProperties": false
++      },
++      "output_schema": {},
++      "effects": [
++        {
++          "kind": "read",
++          "resource": "kujo.kujo.files"
++        }
++      ],
++      "idempotency": {
++        "mode": "intrinsic"
++      }
++    },
++    "source": "kujo",
++    "operation": "lsp_diagnostics"
++  },
++  {
++    "definition": {
++      "schema": "kujo.ability/v1",
++      "id": "kujo.hermes.lsp.complete.execute",
++      "version": "1.0.0",
++      "title": "Get Kujo completion candidates",
++      "description": "Get Kujo completion candidates through the canonical executable interface.",
++      "input_schema": {
++        "type": "object",
++        "properties": {
++          "file": {
++            "type": "string",
++            "minLength": 1,
++            "maxLength": 4096
++          },
++          "line": {
++            "type": "integer",
++            "minimum": 1
++          },
++          "column": {
++            "type": "integer",
++            "minimum": 1
++          }
++        },
++        "required": [
++          "file",
++          "line",
++          "column"
++        ],
++        "additionalProperties": false
++      },
++      "output_schema": {},
++      "effects": [
++        {
++          "kind": "read",
++          "resource": "kujo.kujo.files"
++        }
++      ],
++      "idempotency": {
++        "mode": "intrinsic"
++      }
++    },
++    "source": "kujo",
++    "operation": "lsp_complete"
++  },
++  {
++    "definition": {
++      "schema": "kujo.ability/v1",
++      "id": "kujo.hermes.mcp.make.execute",
++      "version": "1.0.0",
++      "title": "Generate Kujo MCP repository profile",
++      "description": "Generate Kujo MCP repository profile through the canonical executable interface.",
++      "input_schema": {
++        "type": "object",
++        "properties": {
++          "output_dir": {
++            "type": "string",
++            "default": ".mcp",
++            "maxLength": 4096,
++            "minLength": 1
++          }
++        },
++        "required": [],
++        "additionalProperties": false
++      },
++      "output_schema": {},
++      "effects": [
++        {
++          "kind": "write",
++          "resource": "kujo.mcp.files"
++        }
++      ],
++      "idempotency": {
++        "mode": "none"
++      }
++    },
++    "source": "mcp",
++    "operation": "mcp_make"
+   }
+ ]
+diff --git a/catalog/sources.lock.json b/catalog/sources.lock.json
+index b8ab0b8..7074f87 100644
+--- a/catalog/sources.lock.json
++++ b/catalog/sources.lock.json
+@@ -150,6 +150,12 @@
+       "repository": "https://github.com/kujolang/workcell.git",
+       "commit": "189d7ab6e975301a0e5100b65e8ad3fe4a584573",
+       "tested_checkout_dirty": false
++    },
++    {
++      "name": "mcp",
++      "repository": "https://github.com/kujolang/mcp.git",
++      "commit": "77180a3a6c104f0c5b185cefa1f6d0835edb704b",
++      "tested_checkout_dirty": false
+     }
+   ]
+ }
+diff --git a/kujo_hermes/commands.py b/kujo_hermes/commands.py
+index 2205f5b..ca61237 100644
+--- a/kujo_hermes/commands.py
++++ b/kujo_hermes/commands.py
+@@ -58,7 +58,7 @@ def plan(item, data, workspace, config):
+         value=json.loads(d.get('input_json','{}'))
+         if not isinstance(value,dict): raise ValueError('input_json must encode an object')
+         # Canonical Dispatch consent remains in force; no --yes or prompt bypass.
+-        args=['run',d['topic'],'--workflow-file',str(Path(d['workflow_file']).relative_to(cwd)),'--input-json',json.dumps(value),'--output-root',output('output_dir','.kujo/dispatch'),'--non-interactive']
++        args=['run',d['topic'],'--workflow-file',str(Path(d['workflow_file']).relative_to(cwd)),'--input-json',json.dumps(value),'--output-root',str(Path(output('output_dir','.kujo/dispatch')).relative_to(cwd)),'--non-interactive']
+     elif op=='rag': args=['query','--question',d['question'],'--namespace',val('namespace','default')]
+     elif op=='rag_ingest': args=['ingest','--path',d['ingest_path'],'--namespace',val('namespace','default'),'--recursive',str(d.get('recursive',True)).lower()]
+     elif op=='concord': args=['scan','--dir',str(cwd),'--format','json']
+@@ -100,6 +100,15 @@ def plan(item, data, workspace, config):
+         entry=root/'loop-engineering/scripts/run-workflow.sh'
+         if not entry.is_file(): raise FileNotFoundError('Missing canonical Loop harness')
+         return ['/bin/bash',str(entry),'--config',d['config']],cwd,env
++    elif op in ('lint','format','lsp_diagnostics','lsp_complete'):
++        args=[op.replace('_','-'),d['file'],'--json']
++        if op=='format': args+=['--write']
++        if op=='lsp_complete': args+=['--line',val('line'),'--column',val('column')]
++        return [binary,*args],cwd,env
++    elif op=='mcp_make':
++        entry=root/'mcp.kujo'
++        if not entry.is_file(): raise FileNotFoundError('Missing canonical mcp/mcp.kujo')
++        return [binary,'run',str(entry),'--interpreter','--','make',str(cwd),'--out',output('output_dir','.mcp'),'--profile-only','--no-ai'],cwd,env
+     elif op=='runtime_version': return [binary,'--version'],cwd,env
+     elif op=='runtime_check': return [binary,'check',d['file']],cwd,env
+     elif op=='runtime_run': return [binary,'run',d['file'],'--interpreter'],cwd,env
+diff --git a/kujo_hermes/evidence.py b/kujo_hermes/evidence.py
+index 906f2a9..f368787 100644
+--- a/kujo_hermes/evidence.py
++++ b/kujo_hermes/evidence.py
+@@ -6,7 +6,7 @@ DEFAULTS={'scout':'.kujo/scout','scent':'.kujo/scent','eval':'.kujo/eval','dispa
+  'runledger_start':'.runledger','runledger_finish':'.runledger','casefile':'.casefile/cases',
+  'redact_scan':'.redact','redact_sanitize':'.redact','tribunal_review':'.tribunal/runs',
+  'howl_render':'dist/howl','lens_check':'.lens/runs/hermes','workcell_run':'.workcell/runs',
+- 'packwrite_init':'agent','loop':'.loop-engineering'}
++ 'mcp_make':'.mcp','packwrite_init':'agent','loop':'.loop-engineering'}
+ 
+ def artifact_inventory(workspace,data,operation,max_files=128,max_bytes=10_000_000):
+     root=Path(workspace).resolve(); targets=[]
+diff --git a/kujo_hermes/plugin.py b/kujo_hermes/plugin.py
+index 7eb6189..466654b 100644
+--- a/kujo_hermes/plugin.py
++++ b/kujo_hermes/plugin.py
+@@ -35,7 +35,7 @@ def register(ctx):
+                     raise ValueError('Receipt listing limit cannot exceed 50')
+                 return json.dumps(_operation(**args),ensure_ascii=False)
+             except Exception as error:
+-                return json.dumps({'ok':False,'error':{'type':type(error).__name__,'message':redact(str(error))}})
++                return json.dumps({'ok':False,'error':{'type':type(error).__name__,'message':redact(str(error))[:8192]}})
+         ctx.register_tool(name=name,toolset='kujo',schema={'name':name,'description':description,'parameters':params},handler=handler)
+     ctx.register_command('kujo',lambda raw: json.dumps(service.doctor() if raw.strip()=='doctor' else service.discover()),description='Kujo catalog or doctor')
+     ctx.register_skill('kujo-engineering', Path(__file__).resolve().parent.parent / 'skills/kujo-engineering/SKILL.md', description='Kujo engineering tools and verified workflows')
+diff --git a/kujo_hermes/service.py b/kujo_hermes/service.py
+index 5f90f06..7fce47a 100644
+--- a/kujo_hermes/service.py
++++ b/kujo_hermes/service.py
+@@ -50,7 +50,7 @@ class Service:
+         elif not source or source=='watchdog': ready=True
+         elif source=='kujo': ready=shutil.which(self.config.kujo_bin) is not None
+         else:
+-            entry={'spec':'scripts/spec','workcell':'bin/workcell','kujo-workflows':'loop-engineering/scripts/run-workflow.sh'}.get(source,ENTRYPOINTS.get(source,''))
++            entry={'mcp':'mcp.kujo','spec':'scripts/spec','workcell':'bin/workcell','kujo-workflows':'loop-engineering/scripts/run-workflow.sh'}.get(source,ENTRYPOINTS.get(source,''))
+             ready=bool(self.config.ecosystem_root) and (Path(self.config.ecosystem_root)/source/entry).is_file()
+         return {'installed':ready,'dependency':source,'note':None if ready else 'Install canonical source and configure ecosystem_root'}
+ 
+@@ -81,6 +81,7 @@ class Service:
+         return env
+ 
+     def execute(self,ability,input,workspace,background=False):
++        if len(encoded(input))>65536: raise ValueError('Ability input exceeds 64 KiB')
+         invocation=str(uuid.uuid4()); start=int(time.time()*1000)
+         item=None; record={'schema':'kujo.hermes.receipt/v1','receipt_id':invocation,'invocation_id':invocation,
+             'ability_id':ability,'workspace':str(workspace),'started_at_ms':start,'host':'hermes','status':'preflight',
+@@ -175,7 +176,8 @@ class Service:
+             else: result['result']={'omitted':True,'bytes':len(encoded(payload)),'hint':'Retrieve receipt with offset/limit; evidence remains on disk'}
+         return result
+ 
+-    def receipts(self,receipt_id=None,limit=20,offset=0):
++    def receipts(self,receipt_id=None,limit=None,offset=0):
++        if limit is None: limit=12000 if receipt_id else 20
+         folder=self.directory()
+         if receipt_id:
+             if not re.fullmatch(r'[a-f0-9-]{36}',receipt_id): raise ValueError('Invalid receipt ID')
+diff --git a/tests/test_core.py b/tests/test_core.py
+index b346e3b..d08cfe3 100644
+--- a/tests/test_core.py
++++ b/tests/test_core.py
+@@ -28,7 +28,7 @@ class CoreTests(unittest.TestCase):
+   self.service=Service(self.cfg,self.root/'state',lambda *a,**k:{'approved':True})
+   return item['definition']['id']
+  def test_profile_counts(self):
+-  self.assertEqual([len(Catalog(Config(profile=x)).exposed()) for x in ['essentials','review','ship','full']],[5,18,29,46])
++  self.assertEqual([len(Catalog(Config(profile=x)).exposed()) for x in ['essentials','review','ship','full']],[5,18,29,51])
+  def test_config_rejects_unknown(self):
+   for value in [{'yolo':True},{'timeout_seconds':True},{'profile':'other'},{'trusted_workspaces':['.']}]:
+    with self.assertRaises(ValueError): Config.parse(value)
+@@ -60,7 +60,7 @@ class CoreTests(unittest.TestCase):
+  def test_execute_and_receipt(self):
+   id=self.extension('print("{\\"value\\":42}")'); result=self.service.execute(id,{},str(self.workspace))
+   self.assertTrue(result['ok'],result); self.assertEqual(result['result']['structured']['value'],42)
+-  read=self.service.receipts(result['receipt_id'],12000); self.assertTrue(read['verified'])
++  read=self.service.receipts(result['receipt_id']); self.assertTrue(read['verified']); self.assertEqual(json.loads(read['text'])['ability_id'],result['ability_id'])
+  def test_receipt_tamper(self):
+   id=self.extension('print(1)'); r=self.service.execute(id,{},str(self.workspace)); p=self.root/'state/receipts'/(r['receipt_id']+'.json')
+   d=json.loads(p.read_text()); d['status']='forged'; p.write_text(json.dumps(d))
+@@ -100,4 +100,29 @@ class CoreTests(unittest.TestCase):
+   id=self.extension('print(1)'); p=self.root/'catalog.json'; a=json.loads(p.read_text()); a[0]['binding']['argv'][0]='/nonexistent/kujo'; p.write_text(json.dumps(a)); self.service.catalog.refresh()
+   self.assertFalse(self.service.execute(id,{},str(self.workspace))['ok'])
+ 
++class MoreBoundaryTests(unittest.TestCase):
++ def test_environment_controls_cannot_be_secret_overrides(self):
++  with self.assertRaises(ValueError): Config.parse({'secrets':['PATH']})
++ def test_redaction_preserves_token_metrics(self):
++  self.assertEqual(redact({'estimated_tokens':32,'token':'secret'}),{'estimated_tokens':32,'token':'[REDACTED]'})
++ def test_unsupported_runtime(self):
++  with tempfile.TemporaryDirectory() as tmp:
++   root=Path(tmp); binary=root/'kujo'; binary.write_text('#!/bin/sh\necho kujo 0.1.0\n'); binary.chmod(0o700)
++   service=Service(Config(kujo_bin=str(binary)),root/'state')
++   with self.assertRaises(RuntimeError): service.check_runtime()
++ def test_malformed_json_remains_labeled_text(self):
++  result=run([sys.executable,'-c','print("not-json")'],'.',{},3,1024,threading.Event())
++  self.assertEqual(result['stdout'].strip(),'not-json')
++ def test_child_cleanup_after_leader_exits(self):
++  # Child keeps pipes open; timeout must kill the process group, not just the dead leader.
++  result=run([sys.executable,'-c','import subprocess; subprocess.Popen(["/bin/sleep","30"])'],'.',{},.15,1024,threading.Event())
++  self.assertEqual(result['status'],'timeout')
++ def test_artifact_hashes_and_escape(self):
++  from kujo_hermes.evidence import artifact_inventory
++  with tempfile.TemporaryDirectory() as tmp:
++   root=Path(tmp); (root/'artifact').write_text('verified'); (root/'escape').symlink_to('/etc')
++   result=artifact_inventory(root,{'output_dir':'.'},None)
++   self.assertEqual(len(result['files']),1)
++   self.assertEqual(result['files'][0]['sha256'],__import__('hashlib').sha256(b'verified').hexdigest())
++
+ if __name__=='__main__': unittest.main()

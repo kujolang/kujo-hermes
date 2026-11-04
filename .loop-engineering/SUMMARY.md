@@ -1,0 +1,43 @@
+# Loop Engineering Summary
+
+## Verdict
+
+partial
+
+## Completed
+
+- line 3 [already-done] Standalone native Hermes plugin without CommandCode or Kujo CMD dependency
+- line 4 [already-done] Actual Hermes interfaces and canonical tool execution
+- line 5 [already-done] All 38 reference bindings; broader inventory and verified gaps documented
+- line 6 [already-done] ShipCheck, PackWrite, Eval, Spec and additional tooling work through adapter
+- line 7 [already-done] Dynamic discovery, schema validation and profiles
+- line 8 [already-done] Native human approval, workspace trust, timeouts, cancellation and cleanup
+- line 9 [already-done] Structured outputs, distinct receipts and actionable dependency errors
+- line 10 [already-done] Automated tests, real host E2E and live-model conversation pass
+- line 11 [already-done] Architecture, configuration, parity, security and testing documentation
+- line 12 [already-done] Reproducible demo and unsubmitted marketplace materials
+
+## Verification
+
+- passed: unit_tests, diff_check
+- blocked: none
+- failed: none
+
+## Commits
+
+- none
+
+## Remaining
+
+- line 13 [external-blocked] Clean network dependency installation certified (blocked by isolated runtime PyPI download timeout; see validator log)
+- line 14 [external-blocked] Browser/container execution certified (blocked by pinned browser absent, Docker daemon unavailable)
+- line 15 [needs-contract-first] Full producer/domain parity certified (needs-contract-first: gateway bindings and absent Foreman interface; docs/parity.md)
+
+## External Blockers
+
+- checklist-external-blocked-line-13: Resolve the external dependency, then rerun checklist mode.
+- checklist-external-blocked-line-14: Resolve the external dependency, then rerun checklist mode.
+
+## Next Start
+
+- remaining checklist items require another iteration or external action

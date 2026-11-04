@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "status": "completed",
+  "receipt_id": "c37f0de1-161c-4ad0-935a-d908aefe86ed",
+  "receipt_digest": "11784588274b4159f4da844710febfbe22f3c4672d431385b478014e0e790f7a",
+  "ability_id": "kujo.packwrite.pack.init",
+  "error": null,
+  "result": {
+    "status": "completed",
+    "exit_code": 0,
+    "stdout": "PackWrite init: starting\n[1/8] Resolving mega prompt...\n[2/8] Checking output directory safety...\n[3/8] Collecting repository context...\n[4/8] Building distillation prompt...\n[5/8] Requesting model output from local/gemma4:31b-cloud...\n[6/8] Parsing and validating the returned manifest...\n[7/8] Writing pack files to agent/...\nGenerated files:\n    agent/MASTER.md\n    agent/TODO.md\n    agent/HANDOFF.md\n    agent/DECISIONS.md\n    agent/REVIEW_CHECKLIST.md\n    agent/DEEPSEEK_START.md\n    agent/CODEX_REVIEW_PROMPT.md\n    agent/phases/00-project-brief.md\n    agent/phases/01-adapter-foundation.md\n    agent/phases/02-workspace-trust.md\n    agent/phases/03-discovery-registration.md\n    agent/phases/04-inspection-validation.md\n    agent/phases/05-execution-engine.md\n    agent/phases/06-lifecycle-management.md\n    agent/phases/07-output-redaction.md\n    agent/phases/08-verifiable-receipts.md\n    agent/phases/09-cmd-capabilities.md\n    agent/phases/10-advanced-ops.md\n    agent/phases/11-doctor-tool.md\n    agent/phases/12-final-delivery.md\n[8/8] Running pack validation...\nPackWrite generated an agent pack.\n\n  Output:     agent/\n  Provider:   local\n  Model:      gemma4:31b-cloud\n  Files:      20\n  Phases:     13\n  Validation: passed with 0 warnings\n\nNext:\n  packwrite prompt deepseek\n",
+    "stderr": "",
+    "duration_ms": 26558
+  }
+}

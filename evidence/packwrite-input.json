@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "agent/MASTER.md",
+      "content": "# Kujo Hermes\nStandalone native Hermes tooling. See MEGA_PROMPT.md and docs/architecture.md. Canonical tools retain implementation ownership.\n"
+    },
+    {
+      "path": "agent/TODO.md",
+      "content": "# Implementation phases\n- [ ] Research interfaces\n- [ ] Independent native adapter\n- [ ] Security and lifecycle\n- [ ] Real tool and host verification\n- [ ] Review and corrections\n- [ ] Packaging and handoff\n"
+    },
+    {
+      "path": "agent/HANDOFF.md",
+      "content": "# Handoff\n## Current Status\nImplementation underway.\n## Completed Phases\nResearch.\n## Known Issues\nSee docs/readiness.md.\n## Next Agent Notes\nRun verification and correct defects.\n"
+    },
+    {
+      "path": "agent/DECISIONS.md",
+      "content": "# Decisions\n## Confirmed\nStandalone Python Hermes adapter and canonical Kujo CLI calls.\n## Open\nRemaining unverified catalog operations.\n## Log\n2026-11-04: Preserve host independence and fail-closed approvals.\n"
+    },
+    {
+      "path": "agent/REVIEW_CHECKLIST.md",
+      "content": "# Review\n## Security\n- [ ] Verify denied approvals\n- [ ] Verify path boundaries\n## Runtime\n- [ ] Verify cancellation\n- [ ] Verify output limits\n## Integration\n- [ ] Real Hermes loader\n- [ ] Canonical tools\n"
+    },
+    {
+      "path": "agent/DEEPSEEK_START.md",
+      "content": "# Implementation\nRead MASTER.md then execute TODO.md with required evidence.\nWork autonomously through all phases.\n"
+    },
+    {
+      "path": "agent/CODEX_REVIEW_PROMPT.md",
+      "content": "# Independent review\nReview the implementation against MEGA_PROMPT.md and verify negative cases. Do not infer success from exit codes alone.\nProvide a score and repair checklist.\n"
+    },
+    {
+      "path": "agent/phases/00-project-brief.md",
+      "content": "# Brief\nComprehensive Kujo ecosystem integration for Hermes with no CommandCode dependency.\n\n## Goal\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Scope\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Out of scope\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Acceptance criteria\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Read before starting\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Implementation notes\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Suggested checks\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n## Handoff requirements\nSee MEGA_PROMPT.md and docs/readiness.md.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    },
+    {
+      "path": "agent/phases/01-research.md",
+      "content": "# Research\nInspect canonical interfaces, implement the scoped requirement and preserve reproducible checks in evidence/. Acceptance requires actual behavior and documented gaps.\n\n## Goal\nComplete this bounded phase.\n## Scope\nKujo Hermes source and evidence.\n## Out of scope\nExternal publication and upstream product rewrites.\n## Acceptance criteria\nTests prove actual behavior; unresolved gaps are documented.\n## Read before starting\nMEGA_PROMPT.md and canonical source.\n## Implementation notes\nPreserve approvals and independent ownership.\n## Suggested checks\nUnit, real CLI and real Hermes checks.\n## Handoff requirements\nSave evidence and update readiness.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    },
+    {
+      "path": "agent/phases/02-adapter.md",
+      "content": "# Adapter\nInspect canonical interfaces, implement the scoped requirement and preserve reproducible checks in evidence/. Acceptance requires actual behavior and documented gaps.\n\n## Goal\nComplete this bounded phase.\n## Scope\nKujo Hermes source and evidence.\n## Out of scope\nExternal publication and upstream product rewrites.\n## Acceptance criteria\nTests prove actual behavior; unresolved gaps are documented.\n## Read before starting\nMEGA_PROMPT.md and canonical source.\n## Implementation notes\nPreserve approvals and independent ownership.\n## Suggested checks\nUnit, real CLI and real Hermes checks.\n## Handoff requirements\nSave evidence and update readiness.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    },
+    {
+      "path": "agent/phases/03-security.md",
+      "content": "# Security\nInspect canonical interfaces, implement the scoped requirement and preserve reproducible checks in evidence/. Acceptance requires actual behavior and documented gaps.\n\n## Goal\nComplete this bounded phase.\n## Scope\nKujo Hermes source and evidence.\n## Out of scope\nExternal publication and upstream product rewrites.\n## Acceptance criteria\nTests prove actual behavior; unresolved gaps are documented.\n## Read before starting\nMEGA_PROMPT.md and canonical source.\n## Implementation notes\nPreserve approvals and independent ownership.\n## Suggested checks\nUnit, real CLI and real Hermes checks.\n## Handoff requirements\nSave evidence and update readiness.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    },
+    {
+      "path": "agent/phases/04-verification.md",
+      "content": "# Verification\nInspect canonical interfaces, implement the scoped requirement and preserve reproducible checks in evidence/. Acceptance requires actual behavior and documented gaps.\n\n## Goal\nComplete this bounded phase.\n## Scope\nKujo Hermes source and evidence.\n## Out of scope\nExternal publication and upstream product rewrites.\n## Acceptance criteria\nTests prove actual behavior; unresolved gaps are documented.\n## Read before starting\nMEGA_PROMPT.md and canonical source.\n## Implementation notes\nPreserve approvals and independent ownership.\n## Suggested checks\nUnit, real CLI and real Hermes checks.\n## Handoff requirements\nSave evidence and update readiness.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    },
+    {
+      "path": "agent/phases/05-correction.md",
+      "content": "# Correction\nInspect canonical interfaces, implement the scoped requirement and preserve reproducible checks in evidence/. Acceptance requires actual behavior and documented gaps.\n\n## Goal\nComplete this bounded phase.\n## Scope\nKujo Hermes source and evidence.\n## Out of scope\nExternal publication and upstream product rewrites.\n## Acceptance criteria\nTests prove actual behavior; unresolved gaps are documented.\n## Read before starting\nMEGA_PROMPT.md and canonical source.\n## Implementation notes\nPreserve approvals and independent ownership.\n## Suggested checks\nUnit, real CLI and real Hermes checks.\n## Handoff requirements\nSave evidence and update readiness.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    },
+    {
+      "path": "agent/phases/06-packaging.md",
+      "content": "# Packaging\nInspect canonical interfaces, implement the scoped requirement and preserve reproducible checks in evidence/. Acceptance requires actual behavior and documented gaps.\n\n## Goal\nComplete this bounded phase.\n## Scope\nKujo Hermes source and evidence.\n## Out of scope\nExternal publication and upstream product rewrites.\n## Acceptance criteria\nTests prove actual behavior; unresolved gaps are documented.\n## Read before starting\nMEGA_PROMPT.md and canonical source.\n## Implementation notes\nPreserve approvals and independent ownership.\n## Suggested checks\nUnit, real CLI and real Hermes checks.\n## Handoff requirements\nSave evidence and update readiness.\n\n- [ ] Verify implementation behavior.\n- [ ] Preserve reproducible evidence.\n"
+    }
+  ]
+}

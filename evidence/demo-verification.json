@@ -1,0 +1,281 @@
+{
+  "kind": "real reproducible demo commands; no video recorded",
+  "results": [
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "d14706c7-d87b-4229-a276-8b8cf6c8a123",
+      "receipt_digest": "9f47072cfde250a0ba316c94c76d350aafe28074df76b3012acb0da0601832fc",
+      "ability_id": "kujo.scout.repository.inspect",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Scanning: /private/tmp/kujo-hermes-demo-verified\nOutput: /private/tmp/kujo-hermes-demo-verified/.kujo/scout/kujo-hermes-demo-verified-20261104-221729-1793830649275-8c57cac5\nCode files analyzed: 20\nDependencies: 2\nRoutes: 0\nSecurity findings: 0\nOutput profile: minimal\nScan manifest: /private/tmp/kujo-hermes-demo-verified/.kujo/scout/kujo-hermes-demo-verified-20261104-221729-1793830649275-8c57cac5/scan_manifest.json\nDone.\n",
+        "stderr": "",
+        "duration_ms": 189
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "dd828e0b-ec63-4427-b97a-ec24e3590c38",
+      "receipt_digest": "fef49743680df45d0f3c20f73572505357a0116b1a94651c43e5bf930f01609d",
+      "ability_id": "kujo.packwrite.pack.summary",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 127,
+        "structured": {
+          "errors": [],
+          "missing_files": [],
+          "next_command": "packwrite prompt deepseek",
+          "ok": true,
+          "output_dir": "agent",
+          "phase_count": 7,
+          "warnings": []
+        },
+        "stdout_digest": "6440e776597499a5267470641654d1f073800fb15afa093d092b57bcf7100351"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "604a30f0-cbea-455e-af3b-1b09cf72f453",
+      "receipt_digest": "28a2c23fd217eb153711b365e5daab6109564f07150f3248d46eff8101ade7a5",
+      "ability_id": "kujo.spec.contract.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 658,
+        "structured": {
+          "errors": [],
+          "valid": true,
+          "warnings": []
+        },
+        "stdout_digest": "09c21b5aac2557bbf649848b4b1ac8ab6f7b445171af51890f6658a0a1a722f5"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "1e53d52a-8efc-44aa-be3a-9ddd83036e76",
+      "receipt_digest": "e142dbf7a44dc4244ea6044780ae74398f6992ba88276c79774764320b49ff1b",
+      "ability_id": "kujo.eval.suite.run",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 421,
+        "structured": {
+          "data": {
+            "active_policy_stage": "",
+            "cache_metric_bytes_reused": 0,
+            "cache_metric_candidates": 0,
+            "cache_metric_hits": 0,
+            "cache_metric_misses": 0,
+            "cache_metric_unique_files": 0,
+            "duration_ms": 249,
+            "failed": 0,
+            "parallel_fallback_reason": "",
+            "parallel_mode": "serial",
+            "parallel_prefetch_duration_ms": 0,
+            "parallel_prefetched_files": 0,
+            "parallel_requested": false,
+            "parallel_used": false,
+            "parallel_workers": 1,
+            "passed": 2,
+            "skipped": 0,
+            "suite_description": "",
+            "suite_name": "hermes-demo",
+            "suite_version": "0.0.0",
+            "test_results": [
+              {
+                "check": "command_succeeds",
+                "description": "",
+                "details": {
+                  "allowed_command_patterns": [],
+                  "allowed_commands": [],
+                  "blocked_arg_patterns": [],
+                  "command": "python3 -m unittest discover -s tests",
+                  "command_pattern_match_mode": "substring",
+                  "exit_code": 0,
+                  "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+                  "stdout": ""
+                },
+                "message": "Command succeeded (exit 0)",
+                "name": "unit suite",
+                "passed": true,
+                "skipped": false
+              },
+              {
+                "check": "file_exists",
+                "description": "",
+                "details": {
+                  "exists": true,
+                  "path": "calculator.py"
+                },
+                "message": "File exists: calculator.py",
+                "name": "implementation exists",
+                "passed": true,
+                "skipped": false
+              }
+            ],
+            "timestamp": "",
+            "total": 2
+          },
+          "error": "",
+          "ok": true
+        },
+        "stdout_digest": "dada5d2b3126600b3c64a73507b421be83b23af79773fc5b2594bd1cf88fb9d3"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "3799dcb9-9a49-4460-a916-65c1505d01e7",
+      "receipt_digest": "179095db505687de10df8bd03200e8886ee3fdcf6ca3a8b5f010f044398b5499",
+      "ability_id": "kujo.shipcheck.repository.scan",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 74,
+        "structured": {
+          "checks": [
+            {
+              "detail": "",
+              "message": "Git repository detected",
+              "name": "git-repo",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "README found: README.md",
+              "name": "readme",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "LICENSE found: LICENSE",
+              "name": "license",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "Ignore files found: .gitignore",
+              "name": "ignore-files",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "Test directory found: tests/",
+              "name": "tests-exist",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "Add a lint script or Makefile target",
+              "message": "No lint command detected",
+              "name": "lint-command",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Add a format script or Makefile target",
+              "message": "No format command detected",
+              "name": "format-command",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Consider adding CI (e.g., .github/workflows/ci.yml)",
+              "message": "No CI configuration detected",
+              "name": "ci-config",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "",
+              "message": "README has install/quickstart instructions",
+              "name": "readme-install",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "README has usage/examples",
+              "name": "readme-usage",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "Add examples to help users get started",
+              "message": "No examples/ or demo/ directory found",
+              "name": "examples",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Consider adding a docs/ directory",
+              "message": "No docs/ directory found",
+              "name": "docs",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "",
+              "message": "VERSION file found: 0.1.0",
+              "name": "version-metadata",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "Changelog found: CHANGELOG.md",
+              "name": "changelog",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "Add kennel.toml for Kujo package metadata (if this is a Kujo project)",
+              "message": "No kennel.toml found",
+              "name": "kennel-manifest",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Define 'entry' in kennel.toml [kujo] section or add a main .kujo script",
+              "message": "No clear entry point detected",
+              "name": "entry-point",
+              "passed": 0,
+              "severity": "warning"
+            }
+          ],
+          "dir": "/private/tmp/kujo-hermes-demo-verified",
+          "project_type": "unknown",
+          "summary": {
+            "failed_errors": 0,
+            "gate_passed": 1,
+            "passed": 9,
+            "total_checks": 16,
+            "warnings": 7
+          },
+          "tool": "shipcheck",
+          "version": "1.0.2"
+        },
+        "stdout_digest": "962c8e6709fcab092a7d25257e7f7d68fa4d54ef9a57af423a53f8eeea7eaa24"
+      }
+    }
+  ]
+}

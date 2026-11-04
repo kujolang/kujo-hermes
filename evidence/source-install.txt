@@ -1,0 +1,5 @@
+shipcheck 7eedd9e02d8730d65e06e16f4984d909d23539bc /private/tmp/kujo-hermes-sources/shipcheck
+From https://github.com/kujolang/shipcheck
+ * branch            7eedd9e02d8730d65e06e16f4984d909d23539bc -> FETCH_HEAD
+HEAD is now at 7eedd9e release: prepare ShipCheck 1.0.2
+Sources ready. Install the official Kujo runtime separately; set ecosystem_root and kujo_bin in Hermes settings.

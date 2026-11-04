@@ -1,0 +1,50 @@
+Preparing the isolated Hermes runtime…
+  → Installing Python dependencies…
+  ✗ Installing Python dependencies failed; last 20 lines of output:
+      Resolved 5 packages in 12ms
+      WARN Retry attempt #0. Sleeping 1.578170202s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.223467469s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.411699943s before the next attempt
+      WARN Retry attempt #0. Sleeping 1.542332222s before the next attempt
+      WARN Retry attempt #1. Sleeping 1.783745517s before the next attempt
+      WARN Retry attempt #1. Sleeping 1.583224067s before the next attempt
+      WARN Retry attempt #1. Sleeping 3.869617436s before the next attempt
+      WARN Retry attempt #1. Sleeping 3.568054919s before the next attempt
+      WARN Retry attempt #2. Sleeping 1.173352843s before the next attempt
+      WARN Retry attempt #2. Sleeping 5.981669189s before the next attempt
+      WARN Retry attempt #2. Sleeping 6.418627744s before the next attempt
+      WARN Retry attempt #2. Sleeping 5.771496847s before the next attempt
+      error: Failed to download `truststore==0.10.5`
+        cause: Request failed after 3 retries in 44.2s
+        cause: Failed to fetch: https://files.pythonhosted.org/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl
+        cause: error sending request for url (https://files.pythonhosted.org/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl)
+        cause: client error (Connect)
+        cause: operation timed out
+      hint: `truststore` (v0.10.5) was included because `hermes-pm-runtime` (v0.0.0) depends on `truststore`
+dependency preparation failed: venv: uv sync exited 2: ed to download `truststore==0.10.5`
+  cause: Request failed after 3 retries in 44.2s
+  cause: Failed to fetch: https://files.pythonhosted.org/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl
+  cause: error sending request for url (https://files.pythonhosted.org/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl)
+  cause: client error (Connect)
+  cause: operation timed out
+
+hint: `truststore` (v0.10.5) was included because `hermes-pm-runtime` (v0.0.0) depends on `truststore` — retry, or run `hermes pm doctor`
+
+✓ manifest — plugin.yaml parses
+✓ manifest fields — name, version, description present
+✓ requires_hermes — spec '>=0.22.7' parses
+✓ config schema — shape valid
+✓ requires_env — all entries UPPER_SNAKE
+✓ oauth — not declared
+✓ loadable — entry: __init__.py
+✓ python dependencies — 1 requirements from pyproject
+✓ capability probe — register() ran in isolation
+✓ declared tools — matches registrations
+✓ declared hooks — matches registrations
+✓ declared middleware — matches registrations
+✓ built-in tool collisions — no collisions
+✓ security scan — safe
+✓ no core override — no runtime rebinds of Hermes core
+◆ Isolation — runs in the plugin host (plugins.isolation: host)
+
+Validation passed.

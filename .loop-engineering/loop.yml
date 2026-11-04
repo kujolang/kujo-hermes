@@ -1,0 +1,24 @@
+objective: "Build and verify standalone native Kujo Hermes integration"
+checklist_file: "docs/acceptance.md"
+max_iterations: 8
+max_no_progress: 2
+max_consecutive_failures: 3
+allowed_actions: [read_files, edit_files, run_tests, commit_local_changes]
+blocked_actions: [deploy, destructive_cleanup, production_config_change]
+eval_gates:
+  - id: unit_tests
+    command: "python3 -m unittest discover -s tests"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false
+  strategy: small_meaningful
+  push: false
+memory:
+  enabled: true
+  provider: strata
+  project: "Agent Notes"
+  mode: consolidate
+  retrieval_tests: true

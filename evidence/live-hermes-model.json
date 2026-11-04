@@ -1,0 +1,184 @@
+{
+  "model": "gemma4:31b-cloud",
+  "response": {
+    "final_response": "Receipt ID: `d35b3e21-484d-4382-8056-7572cb9c5326`\n\n**Release Blockers (Errors):**\n*   **git-repo**: Not a git repository (Run 'git init' to initialize)\n*   **tests-exist**: No test directory or test files found\n*   **version-metadata**: No version metadata found (Add kennel.toml, VERSION file, or package.json)\n*   **changelog**: No changelog found (Add a CHANGELOG.md)",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Use the native Kujo tools to discover ShipCheck, inspect its schema, run it on /var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace, then retrieve its receipt. Report the actual release blockers and receipt ID. Do not invoke other tools.",
+        "timestamp": 1793830951.400942
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "finish_reason": "tool_calls",
+        "timestamp": 1793830953.152833,
+        "tool_calls": [
+          {
+            "id": "call_b64au76d",
+            "call_id": "call_b64au76d",
+            "response_item_id": "fc_b64au76d",
+            "type": "function",
+            "function": {
+              "name": "tool_search",
+              "arguments": "{\"queries\":[\"ShipCheck\"]}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "name": "tool_search",
+        "tool_name": "tool_search",
+        "content": "{\"queries\": [\"ShipCheck\"], \"total_available\": 6, \"results\": [{\"query\": \"ShipCheck\", \"matches\": [\"kujo_discover\"]}], \"tools\": {\"kujo_discover\": {\"source\": \"plugin\", \"source_name\": \"kujo\", \"description\": \"Find Kujo engineering Abilities: ShipCheck, PackWrite, Eval, Spec, Scout, Workcell, Loop and more. Returns compact metadata; inspect a selected Ability before execution.\", \"required\": []}}}",
+        "tool_call_id": "call_b64au76d",
+        "timestamp": 1793830953.188565
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "finish_reason": "tool_calls",
+        "timestamp": 1793830953.739383,
+        "tool_calls": [
+          {
+            "id": "call_ukwnn6c0",
+            "call_id": "call_ukwnn6c0",
+            "response_item_id": "fc_ukwnn6c0",
+            "type": "function",
+            "function": {
+              "name": "tool_describe",
+              "arguments": "{\"names\":[\"kujo_discover\",\"kujo_inspect\",\"kujo_execute\",\"kujo_receipts\"]}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "name": "tool_describe",
+        "tool_name": "tool_describe",
+        "content": "{\"tools\": {\"kujo_discover\": {\"description\": \"Find Kujo engineering Abilities: ShipCheck, PackWrite, Eval, Spec, Scout, Workcell, Loop and more. Returns compact metadata; inspect a selected Ability before execution.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"query\": {\"type\": \"string\", \"maxLength\": 200}, \"refresh\": {\"type\": \"boolean\"}, \"offset\": {\"type\": \"integer\", \"minimum\": 0}, \"limit\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 100}}, \"required\": [], \"additionalProperties\": false}}, \"kujo_inspect\": {\"description\": \"Get one canonical Kujo Ability input/output schema, effects, identity and installation status.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"ability\": {\"type\": \"string\", \"minLength\": 1, \"maxLength\": 4096}}, \"required\": [\"ability\"], \"additionalProperties\": false}}, \"kujo_execute\": {\"description\": \"Execute a discovered Kujo Ability in an operator-trusted workspace. Mutations require Hermes approval; no approval boolean is accepted. Returns a verifiable receipt. Use background for long tasks.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"ability\": {\"type\": \"string\", \"minLength\": 1, \"maxLength\": 4096}, \"input\": {\"type\": \"object\", \"properties\": {}, \"required\": []}, \"workspace\": {\"type\": \"string\", \"minLength\": 1, \"maxLength\": 4096}, \"background\": {\"type\": \"boolean\"}}, \"required\": [\"ability\", \"input\", \"workspace\"], \"additionalProperties\": false}}, \"kujo_receipts\": {\"description\": \"List recent execution receipts or retrieve a hash-verified receipt in bounded pages. limit is characters for a receipt, count when listing.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"receipt_id\": {\"type\": \"string\", \"minLength\": 1, \"maxLength\": 4096}, \"limit\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 12000}, \"offset\": {\"type\": \"integer\", \"minimum\": 0}}, \"required\": [], \"additionalProperties\": false}}}}",
+        "tool_call_id": "call_ukwnn6c0",
+        "timestamp": 1793830953.746229
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "finish_reason": "tool_calls",
+        "timestamp": 1793830954.2312908,
+        "tool_calls": [
+          {
+            "id": "call_irbrisf6",
+            "call_id": "call_irbrisf6",
+            "response_item_id": "fc_irbrisf6",
+            "type": "function",
+            "function": {
+              "name": "tool_call",
+              "arguments": "{\"calls\":[{\"arguments\":{\"query\":\"ShipCheck\"},\"name\":\"kujo_discover\"}]}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "name": "kujo_discover",
+        "tool_name": "kujo_discover",
+        "content": "{\"profile\": \"full\", \"total\": 1, \"abilities\": [{\"id\": \"kujo.shipcheck.repository.scan\", \"title\": \"Scan release readiness\", \"effects\": [{\"kind\": \"read\", \"resource\": \"kujo.repository.release\"}], \"approval_required\": false, \"installed\": true, \"dependency\": \"shipcheck\", \"note\": null}], \"next_offset\": null}",
+        "tool_call_id": "call_irbrisf6",
+        "timestamp": 1793830954.294017
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "finish_reason": "tool_calls",
+        "timestamp": 1793830954.920298,
+        "tool_calls": [
+          {
+            "id": "call_ftzcocd3",
+            "call_id": "call_ftzcocd3",
+            "response_item_id": "fc_ftzcocd3",
+            "type": "function",
+            "function": {
+              "name": "tool_call",
+              "arguments": "{\"calls\":[{\"arguments\":{\"ability\":\"kujo.shipcheck.repository.scan\"},\"name\":\"kujo_inspect\"}]}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "name": "kujo_inspect",
+        "tool_name": "kujo_inspect",
+        "content": "{\"definition\": {\"schema\": \"kujo.ability/v1\", \"id\": \"kujo.shipcheck.repository.scan\", \"version\": \"1.0.0\", \"title\": \"Scan release readiness\", \"description\": \"Run an informational ShipCheck release-readiness scan against a local repository.\", \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\", \"maxLength\": 4096, \"default\": \".\"}}, \"additionalProperties\": false}, \"output_schema\": {\"type\": \"object\", \"additionalProperties\": true}, \"effects\": [{\"kind\": \"read\", \"resource\": \"kujo.repository.release\"}], \"idempotency\": {\"mode\": \"intrinsic\"}}, \"definition_digest\": \"493d9e2070db5b0a49733b255544d3b585e7c6d04a515a3933f40a738d37818d\", \"binding\": {\"source\": \"shipcheck\", \"operation\": \"shipcheck\"}, \"approval_required\": false, \"installed\": true, \"dependency\": \"shipcheck\", \"note\": null}",
+        "tool_call_id": "call_ftzcocd3",
+        "timestamp": 1793830954.93379
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "finish_reason": "tool_calls",
+        "timestamp": 1793830955.8339431,
+        "tool_calls": [
+          {
+            "id": "call_l5ixmufb",
+            "call_id": "call_l5ixmufb",
+            "response_item_id": "fc_l5ixmufb",
+            "type": "function",
+            "function": {
+              "name": "tool_call",
+              "arguments": "{\"calls\":[{\"arguments\":{\"ability\":\"kujo.shipcheck.repository.scan\",\"input\":{\"path\":\"/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\"},\"workspace\":\"/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\"},\"name\":\"kujo_execute\"}]}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "name": "kujo_execute",
+        "tool_name": "kujo_execute",
+        "content": "{\"ok\": true, \"status\": \"completed\", \"receipt_id\": \"d35b3e21-484d-4382-8056-7572cb9c5326\", \"receipt_digest\": \"d1180c4c3c9c26ba2e2418104c81de7b24ca617b406df2c0a9bc5ff015210ed0\", \"ability_id\": \"kujo.shipcheck.repository.scan\", \"error\": null, \"result\": {\"status\": \"completed\", \"exit_code\": 0, \"stderr\": \"\", \"duration_ms\": 87, \"structured\": {\"checks\": [{\"detail\": \"Run 'git init' to initialize\", \"message\": \"Not a git repository\", \"name\": \"git-repo\", \"passed\": 0, \"severity\": \"error\"}, {\"detail\": \"\", \"message\": \"README found: README.md\", \"name\": \"readme\", \"passed\": 1, \"severity\": \"info\"}, {\"detail\": \"Consider adding a LICENSE file\", \"message\": \"No LICENSE file found\", \"name\": \"license\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add a .gitignore to exclude build artifacts\", \"message\": \"No .gitignore found\", \"name\": \"ignore-files\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add a tests/ directory or test files\", \"message\": \"No test directory or test files found\", \"name\": \"tests-exist\", \"passed\": 0, \"severity\": \"error\"}, {\"detail\": \"Add a lint script or Makefile target\", \"message\": \"No lint command detected\", \"name\": \"lint-command\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add a format script or Makefile target\", \"message\": \"No format command detected\", \"name\": \"format-command\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Consider adding CI (e.g., .github/workflows/ci.yml)\", \"message\": \"No CI configuration detected\", \"name\": \"ci-config\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add an 'Install' or 'Quick Start' section\", \"message\": \"README may lack install instructions\", \"name\": \"readme-install\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add a 'Usage' section with examples\", \"message\": \"README may lack usage instructions\", \"name\": \"readme-usage\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add examples to help users get started\", \"message\": \"No examples/ or demo/ directory found\", \"name\": \"examples\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Consider adding a docs/ directory\", \"message\": \"No docs/ directory found\", \"name\": \"docs\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Add kennel.toml, VERSION file, or package.json with version\", \"message\": \"No version metadata found\", \"name\": \"version-metadata\", \"passed\": 0, \"severity\": \"error\"}, {\"detail\": \"Add a CHANGELOG.md to track version changes\", \"message\": \"No changelog found\", \"name\": \"changelog\", \"passed\": 0, \"severity\": \"error\"}, {\"detail\": \"Add kennel.toml for Kujo package metadata (if this is a Kujo project)\", \"message\": \"No kennel.toml found\", \"name\": \"kennel-manifest\", \"passed\": 0, \"severity\": \"warning\"}, {\"detail\": \"Define 'entry' in kennel.toml [kujo] section or add a main .kujo script\", \"message\": \"No clear entry point detected\", \"name\": \"entry-point\", \"passed\": 0, \"severity\": \"warning\"}], \"dir\": \"/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\", \"project_type\": \"unknown\", \"summary\": {\"failed_errors\": 4, \"gate_passed\": 0, \"passed\": 1, \"total_checks\": 16, \"warnings\": 11}, \"tool\": \"shipcheck\", \"version\": \"1.0.2\"}, \"stdout_digest\": \"ced13df363a7b1dbfc573a91e20b078325f77dff4f091ad8c5024c5982d258c3\"}}",
+        "tool_call_id": "call_l5ixmufb",
+        "timestamp": 1793830955.946611
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "finish_reason": "tool_calls",
+        "timestamp": 1793830956.541705,
+        "tool_calls": [
+          {
+            "id": "call_hk73yrhf",
+            "call_id": "call_hk73yrhf",
+            "response_item_id": "fc_hk73yrhf",
+            "type": "function",
+            "function": {
+              "name": "tool_call",
+              "arguments": "{\"calls\":[{\"arguments\":{\"receipt_id\":\"d35b3e21-484d-4382-8056-7572cb9c5326\"},\"name\":\"kujo_receipts\"}]}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "name": "kujo_receipts",
+        "tool_name": "kujo_receipts",
+        "content": "{\"receipt_id\": \"d35b3e21-484d-4382-8056-7572cb9c5326\", \"verified\": true, \"total_chars\": 4401, \"offset\": 0, \"text\": \"{\\\"ability_id\\\": \\\"kujo.shipcheck.repository.scan\\\", \\\"ability_version\\\": \\\"1.0.0\\\", \\\"approval\\\": {\\\"approved\\\": false, \\\"required\\\": false}, \\\"artifacts\\\": {\\\"bytes_hashed\\\": 0, \\\"files\\\": [], \\\"truncated\\\": false}, \\\"command\\\": [\\\"/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/runtime/kujo\\\", \\\"run\\\", \\\"/Users/robertdevore/2026/Kujolang/kujo-repos/shipcheck/shipcheck.kujo\\\", \\\"--interpreter\\\", \\\"--\\\", \\\"scan\\\", \\\"--dir\\\", \\\"/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\\\", \\\"--format\\\", \\\"json\\\"], \\\"completed_at_ms\\\": 1793830955937, \\\"cwd\\\": \\\"/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\\\", \\\"definition_digest\\\": \\\"493d9e2070db5b0a49733b255544d3b585e7c6d04a515a3933f40a738d37818d\\\", \\\"duration_ms\\\": 91, \\\"effects\\\": [{\\\"kind\\\": \\\"read\\\", \\\"resource\\\": \\\"kujo.repository.release\\\"}], \\\"host\\\": \\\"hermes\\\", \\\"input_digest\\\": \\\"abdc17e8a465cecd7777aba4231807149c100973ba0c8da3e976f0d543a5f130\\\", \\\"invocation_id\\\": \\\"d35b3e21-484d-4382-8056-7572cb9c5326\\\", \\\"receipt_id\\\": \\\"d35b3e21-484d-4382-8056-7572cb9c5326\\\", \\\"request_digest\\\": \\\"b54a5d35f335ca402d77083db84877075e8a3defddc60df0392eea0d47da8a17\\\", \\\"result\\\": {\\\"duration_ms\\\": 87, \\\"exit_code\\\": 0, \\\"status\\\": \\\"completed\\\", \\\"stderr\\\": \\\"\\\", \\\"stdout_digest\\\": \\\"ced13df363a7b1dbfc573a91e20b078325f77dff4f091ad8c5024c5982d258c3\\\", \\\"structured\\\": {\\\"checks\\\": [{\\\"detail\\\": \\\"Run 'git init' to initialize\\\", \\\"message\\\": \\\"Not a git repository\\\", \\\"name\\\": \\\"git-repo\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"error\\\"}, {\\\"detail\\\": \\\"\\\", \\\"message\\\": \\\"README found: README.md\\\", \\\"name\\\": \\\"readme\\\", \\\"passed\\\": 1, \\\"severity\\\": \\\"info\\\"}, {\\\"detail\\\": \\\"Consider adding a LICENSE file\\\", \\\"message\\\": \\\"No LICENSE file found\\\", \\\"name\\\": \\\"license\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add a .gitignore to exclude build artifacts\\\", \\\"message\\\": \\\"No .gitignore found\\\", \\\"name\\\": \\\"ignore-files\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add a tests/ directory or test files\\\", \\\"message\\\": \\\"No test directory or test files found\\\", \\\"name\\\": \\\"tests-exist\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"error\\\"}, {\\\"detail\\\": \\\"Add a lint script or Makefile target\\\", \\\"message\\\": \\\"No lint command detected\\\", \\\"name\\\": \\\"lint-command\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add a format script or Makefile target\\\", \\\"message\\\": \\\"No format command detected\\\", \\\"name\\\": \\\"format-command\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Consider adding CI (e.g., .github/workflows/ci.yml)\\\", \\\"message\\\": \\\"No CI configuration detected\\\", \\\"name\\\": \\\"ci-config\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add an 'Install' or 'Quick Start' section\\\", \\\"message\\\": \\\"README may lack install instructions\\\", \\\"name\\\": \\\"readme-install\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add a 'Usage' section with examples\\\", \\\"message\\\": \\\"README may lack usage instructions\\\", \\\"name\\\": \\\"readme-usage\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add examples to help users get started\\\", \\\"message\\\": \\\"No examples/ or demo/ directory found\\\", \\\"name\\\": \\\"examples\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Consider adding a docs/ directory\\\", \\\"message\\\": \\\"No docs/ directory found\\\", \\\"name\\\": \\\"docs\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Add kennel.toml, VERSION file, or package.json with version\\\", \\\"message\\\": \\\"No version metadata found\\\", \\\"name\\\": \\\"version-metadata\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"error\\\"}, {\\\"detail\\\": \\\"Add a CHANGELOG.md to track version changes\\\", \\\"message\\\": \\\"No changelog found\\\", \\\"name\\\": \\\"changelog\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"error\\\"}, {\\\"detail\\\": \\\"Add kennel.toml for Kujo package metadata (if this is a Kujo project)\\\", \\\"message\\\": \\\"No kennel.toml found\\\", \\\"name\\\": \\\"kennel-manifest\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}, {\\\"detail\\\": \\\"Define 'entry' in kennel.toml [kujo] section or add a main .kujo script\\\", \\\"message\\\": \\\"No clear entry point detected\\\", \\\"name\\\": \\\"entry-point\\\", \\\"passed\\\": 0, \\\"severity\\\": \\\"warning\\\"}], \\\"dir\\\": \\\"/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\\\", \\\"project_type\\\": \\\"unknown\\\", \\\"summary\\\": {\\\"failed_errors\\\": 4, \\\"gate_passed\\\": 0, \\\"passed\\\": 1, \\\"total_checks\\\": 16, \\\"warnings\\\": 11}, \\\"tool\\\": \\\"shipcheck\\\", \\\"version\\\": \\\"1.0.2\\\"}}, \\\"schema\\\": \\\"kujo.hermes.receipt/v1\\\", \\\"started_at_ms\\\": 1793830955846, \\\"status\\\": \\\"completed\\\", \\\"workspace\\\": \\\"/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-host-e2e-3utziwz3/workspace\\\", \\\"receipt_digest\\\": \\\"d1180c4c3c9c26ba2e2418104c81de7b24ca617b406df2c0a9bc5ff015210ed0\\\"}\", \"next_offset\": null}",
+        "tool_call_id": "call_hk73yrhf",
+        "timestamp": 1793830956.5604742
+      },
+      {
+        "role": "assistant",
+        "content": "Receipt ID: `d35b3e21-484d-4382-8056-7572cb9c5326`\n\n**Release Blockers (Errors):**\n*   **git-repo**: Not a git repository (Run 'git init' to initialize)\n*   **tests-exist**: No test directory or test files found\n*   **version-metadata**: No version metadata found (Add kennel.toml, VERSION file, or package.json)\n*   **changelog**: No changelog found (Add a CHANGELOG.md)",
+        "finish_reason": "stop",
+        "timestamp": 1793830957.663826
+      }
+    ],
+    "api_calls": 7,
+    "completed": true,
+    "turn_exit_reason": "text_response(finish_reason=stop)",
+    "failed": false,
+    "partial": false,
+    "model": "gemma4:31b-cloud",
+    "provider": "custom",
+    "input_tokens": 5159,
+    "output_tokens": 496
+  }
+}

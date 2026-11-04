@@ -1,0 +1,13 @@
+
+## gate: unit_tests
+$ python3 -m unittest discover -s tests
+................................
+----------------------------------------------------------------------
+Ran 32 tests in 5.163s
+
+OK
+gate unit_tests: pass
+
+## gate: diff_check
+$ git diff --check
+gate diff_check: pass

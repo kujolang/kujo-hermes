@@ -1,0 +1,45 @@
+{
+  "kujo-cmd": {
+    "repo": "https://github.com/kujolang/kujo-cmd",
+    "commit": "7dedc530ea004c414c561325f91d63f6c4925ee9"
+  },
+  "kujo-pi": {
+    "repo": "https://github.com/kujolang/kujo-pi",
+    "commit": "fe15c9ac0c8a4d854833730e833b698a78127604"
+  },
+  "kujo-opencode": {
+    "repo": "https://github.com/kujolang/kujo-opencode",
+    "commit": "818f70a9bdbfe753dac38d3feeda5bf208ebc1c4"
+  },
+  "mcp": {
+    "repo": "https://github.com/kujolang/mcp",
+    "commit": "77180a3a6c104f0c5b185cefa1f6d0835edb704b"
+  },
+  "ability": {
+    "repo": "https://github.com/kujolang/ability",
+    "commit": "54764e38787403ed82f51efaea1bf78e321d7546"
+  },
+  "kujo": {
+    "repo": "https://github.com/kujolang/kujo",
+    "commit": "160f4c9de13660db8c64f6871f8fb222839c4883"
+  },
+  "kujo-workflows": {
+    "repo": "https://github.com/kujolang/kujo-workflows",
+    "commit": "1d25503515f03a4c0d4457b327686d92ccc9c68a"
+  },
+  "vendored": {
+    "path": "ability/sdk/python/kujo_ability/__init__.py",
+    "sha256": "7555fa91b12101f79f3bc090aff53277d28cf32ae69e3d6277a1abe2bf682e1e"
+  },
+  "hermes": {
+    "repo": "https://github.com/NousResearch/hermes-agent",
+    "tag": "v0.22.7",
+    "commit": "b200f5bc60e31588ba2cb60e288029c4a54ba5fa"
+  },
+  "runtime_test": {
+    "package": "@kujolang/kujo-darwin-x64",
+    "version": "1.8.0",
+    "sha256": "979d49503d71eb87e5696aea844a51e7129e23c89e36abc8e4d4378bc78985b5",
+    "note": "Official host-independent runtime; copied into ignored local test directory. No host adapter code reused."
+  }
+}

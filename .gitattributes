@@ -1,0 +1,2 @@
+# Unified-diff context prefixes are significant evidence, not source whitespace.
+.loop-engineering/iterations/*/diff.patch -whitespace

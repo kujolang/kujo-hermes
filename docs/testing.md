@@ -1,0 +1,16 @@
+# Verification
+
+Run tests using a Python environment containing `jsonschema` and, for host checks, Hermes's normal dependencies.
+
+- `python3 -m unittest discover -s tests -v`: configuration, profiles, definitions, schema validation, trust, symlinks, missing dependencies, approval binding/consumption, subprocess failure, timeout, cancellation, output bounds, redaction and receipt tampering.
+- `python3 scripts/real-tools.py --sources ROOT --kujo BINARY`: temporary Git workspace; actual canonical tools, no tool mocks. Verifies named output fields, actual Scout manifests, Eval pass/fail totals, Spec validity, PackWrite phase count, Loop verdict and all receipt hashes. Approval is an explicit test callback, not a claim of Hermes integration.
+- `python3 scripts/service-tools.py --sources ROOT --kujo BINARY`: real temporary Watchdog service and SQLite state; owned process cleanup; no fake HTTP server.
+- `PYTHONPATH=HERMES_SOURCE python3 tests/hermes_e2e.py --sources ROOT --kujo BINARY --isolation host`: copies the plugin into a fresh temporary Hermes home, loads through the actual PluginManager, invokes registered tools through native approval hooks, verifies denial then approved mutation, runs a multi-tool engineering workflow, reads receipts, handles failure and unloads. Repeat with `--isolation in_process`.
+- `--interactive` replaces deterministic test decisions with operator input. The automated CLI callback is test-only. The callback is not a human watching an automated test. Add `--live-model gemma4:31b-cloud` with that installed Ollama model for the separately verified real LLM conversation. Evidence records native Hermes deferred discovery (`tool_search`, `tool_describe`, `tool_call`), actual ShipCheck output and verified receipt retrieval.
+- `hermes plugins doctor .` and `hermes plugins validate . --install-deps`: official host discovery and marketplace admission checks. Dependency installation must be distinguished from manifest/runtime validation if network fetching fails.
+- `python3 scripts/measure.py`: measured local initialization/discovery/inspection latency and serialized tool-surface bytes; no estimated token savings.
+- `python3 scripts/install-sources.py --destination ROOT --only shipcheck`: real official source install verified at an exact commit. No upstream code is executed by the installer.
+
+Development used the installed Loop harness and actual PackWrite manifest compiler. The first Loop iteration caught a harness command-quoting issue; the gate command was simplified, not bypassed. PackWrite compiled a deliberately authored offline manifest through its documented fake-response seam, then validated all seven phase files. `evidence/packwrite.log` identifies the provider as fake; it is not presented as model-generated work. A separate live PackWrite init using Ollama `gemma4:31b-cloud` generated 20 files across 13 phases and passed canonical validation (`evidence/live-packwrite.json`).
+
+The repository stores only bounded reviewable evidence. Temporary service databases, source checkouts, runtime binaries and Hermes homes are not shipped. Product artifacts are hashed into local invocation receipts and retained only as selected summarized evidence. The readiness document states which operations are verified, blocked or untested.
