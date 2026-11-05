@@ -1,0 +1,163 @@
+{
+  "platform": "macOS-26.6.2-x86_64-i386-64bit",
+  "benchmark_python": "3.10.5",
+  "runtime_sha256": "979d49503d71eb87e5696aea844a51e7129e23c89e36abc8e4d4378bc78985b5",
+  "sources": [
+    {
+      "name": "casefile",
+      "tested_head": "92e1d9bee2faaba322476e82dcea7510850885e0",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "changebucket",
+      "tested_head": "030eea63c60449f82c9ba2680227485d318fdb6d",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "concord",
+      "tested_head": "f8812e7f00f55e4d1d3f46e70d902bce89ec7be7",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "dispatch",
+      "tested_head": "18b5c737a73904ae942f0bd1c3baa1f77c2bfb40",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "dossier",
+      "tested_head": "670def8c62e690bcd3c0936cd85b224257ca4a03",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "eval",
+      "tested_head": "c1b263a10702c2fa8ab61ed507029a6bfec2e03d",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "fence",
+      "tested_head": "d3173049b5365af975624fddd48e943d39738c75",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "howl",
+      "tested_head": "769af8827ab7f32e3b5f009d50f7643a45144fea",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "kennel",
+      "tested_head": "6e2fc20560037970df5202e1b1ca8f61c3395570",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "kujo-workflows",
+      "tested_head": "1d25503515f03a4c0d4457b327686d92ccc9c68a",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "lens",
+      "tested_head": "91049646d70c11bf0c6071f39cf7dfac6b1ba70b",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "muzzle",
+      "tested_head": "2d508d338537a25f000170c8bb4dc10ef3d75aeb",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "packwrite",
+      "tested_head": "b8467535c74263abc59fd3f48028b67d42cd7e68",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "patchbrief",
+      "tested_head": "92c5cc833730dc427b54a069e9a275bad5969ddc",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "rag",
+      "tested_head": "406965813653a2ddfdc938177e14720c3370153a",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "redact",
+      "tested_head": "8bb7a0c251a82044320b42654e22a5371b76a9f6",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "runledger",
+      "tested_head": "ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "scent",
+      "tested_head": "d71da6cbb6f4a1fb9d438743a4ad9e00614da266",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "scout",
+      "tested_head": "f3a874fa0e95e26c52ef9ec4d23b0f52d8372089",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "shipcheck",
+      "tested_head": "7eedd9e02d8730d65e06e16f4984d909d23539bc",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "spec",
+      "tested_head": "36da0d7216587809e32dedb91dee3cf4b9e50af1",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "tribunal",
+      "tested_head": "fa4ffd2c9bb6ee5d8285dfb5c161b844e6e75b7c",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "versionseal",
+      "tested_head": "f005374d72026a57c5246b6ed38473209e4bfc32",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "watchdog",
+      "tested_head": "7a0bd9a63d68421831ed66d6eed29805c48e1b24",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "workcell",
+      "tested_head": "189d7ab6e975301a0e5100b65e8ad3fe4a584573",
+      "dirty": false,
+      "matches_lock": true
+    },
+    {
+      "name": "mcp",
+      "tested_head": "77180a3a6c104f0c5b185cefa1f6d0835edb704b",
+      "dirty": false,
+      "matches_lock": true
+    }
+  ]
+}

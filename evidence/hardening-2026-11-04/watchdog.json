@@ -1,0 +1,44 @@
+{
+  "kind": "real canonical Watchdog service; no mock server",
+  "results": [
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "8a3ee6a2-05c1-4206-80ed-db3759c23dd9",
+      "receipt_digest": "25f36754322284a585fc19bf78c636ba569cc20c50042167c7d87ea3da53cc58",
+      "ability_id": "kujo.watchdog.service.health",
+      "error": null,
+      "result": {
+        "status": 200,
+        "body": {
+          "data": {
+            "service": "watchdog",
+            "status": "ok"
+          },
+          "ok": true
+        }
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "70229e25-ac5e-4945-ad4b-c9b13dc33864",
+      "receipt_digest": "659db79f2d8c168ae4b4b37994d10110c393d031a934dcdda8422029a1759ee1",
+      "ability_id": "kujo.watchdog.telemetry.record",
+      "error": null,
+      "result": {
+        "status": 200,
+        "body": {
+          "data": {
+            "batch_dbid": 1,
+            "deduplicated": false,
+            "error": "",
+            "ok": true,
+            "records": 1
+          },
+          "ok": true
+        }
+      }
+    }
+  ]
+}

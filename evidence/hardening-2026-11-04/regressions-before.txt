@@ -1,0 +1,128 @@
+test_artifacts_follow_selected_subdirectory (test_hardening.HardeningTests.test_artifacts_follow_selected_subdirectory) ... FAIL
+test_control_character_output_receipt_is_readable (test_hardening.HardeningTests.test_control_character_output_receipt_is_readable) ... ERROR
+test_doctor_rejects_failed_version_command (test_hardening.HardeningTests.test_doctor_rejects_failed_version_command) ... FAIL
+test_large_invalid_output_has_bounded_error_and_retained_evidence (test_hardening.HardeningTests.test_large_invalid_output_has_bounded_error_and_retained_evidence) ... FAIL
+test_output_contract_failure_preserves_evidence (test_hardening.HardeningTests.test_output_contract_failure_preserves_evidence) ... ERROR
+test_receipt_remains_readable_after_output_limit_reduction (test_hardening.HardeningTests.test_receipt_remains_readable_after_output_limit_reduction) ... ERROR
+test_watchdog_ignores_host_proxy_settings (test_hardening.HardeningTests.test_watchdog_ignores_host_proxy_settings) ... ERROR
+
+======================================================================
+ERROR: test_control_character_output_receipt_is_readable (test_hardening.HardeningTests.test_control_character_output_receipt_is_readable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 37, in test_control_character_output_receipt_is_readable
+    page = self.service.receipts(result['receipt_id'], 12000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/kujo_hermes/service.py", line 187, in receipts
+    if len(raw)>self.config.max_output_bytes*2+65536: raise ValueError('Receipt exceeds limit')
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Receipt exceeds limit
+
+======================================================================
+ERROR: test_output_contract_failure_preserves_evidence (test_hardening.HardeningTests.test_output_contract_failure_preserves_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 53, in test_output_contract_failure_preserves_evidence
+    self.assertEqual(receipt['result']['structured'], 42)
+                     ~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+
+======================================================================
+ERROR: test_receipt_remains_readable_after_output_limit_reduction (test_hardening.HardeningTests.test_receipt_remains_readable_after_output_limit_reduction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 45, in test_receipt_remains_readable_after_output_limit_reduction
+    self.assertTrue(service.receipts(result['receipt_id'])['verified'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/kujo_hermes/service.py", line 187, in receipts
+    if len(raw)>self.config.max_output_bytes*2+65536: raise ValueError('Receipt exceeds limit')
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Receipt exceeds limit
+
+======================================================================
+ERROR: test_watchdog_ignores_host_proxy_settings (test_hardening.HardeningTests.test_watchdog_ignores_host_proxy_settings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1351, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1397, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1346, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1106, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1044, in send
+    self.connect()
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1010, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 848, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 102, in test_watchdog_ignores_host_proxy_settings
+    result = watchdog({'url': 'http://127.0.0.1:'+str(server.server_port)})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/kujo_hermes/network.py", line 30, in watchdog
+    with urllib.request.build_opener(NoRedirect).open(req,timeout=5) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/urllib/request.py", line 1377, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 61] Connection refused>
+
+======================================================================
+FAIL: test_artifacts_follow_selected_subdirectory (test_hardening.HardeningTests.test_artifacts_follow_selected_subdirectory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 73, in test_artifacts_follow_selected_subdirectory
+    self.assertEqual([x['path'] for x in result['files']], ['nested/.kujo/scout/report.json'])
+AssertionError: Lists differ: ['.kujo/scout/report.json'] != ['nested/.kujo/scout/report.json']
+
+First differing element 0:
+'.kujo/scout/report.json'
+'nested/.kujo/scout/report.json'
+
+- ['.kujo/scout/report.json']
++ ['nested/.kujo/scout/report.json']
+?   +++++++
+
+
+======================================================================
+FAIL: test_doctor_rejects_failed_version_command (test_hardening.HardeningTests.test_doctor_rejects_failed_version_command)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 82, in test_doctor_rejects_failed_version_command
+    self.assertFalse(service.doctor()['runtime_compatible'])
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_large_invalid_output_has_bounded_error_and_retained_evidence (test_hardening.HardeningTests.test_large_invalid_output_has_bounded_error_and_retained_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpudftfh7i/tests/test_hardening.py", line 60, in test_large_invalid_output_has_bounded_error_and_retained_evidence
+    self.assertLessEqual(len(result['error']['message']), 8192)
+AssertionError: 40301 not less than or equal to 8192
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.479s
+
+FAILED (failures=3, errors=4)
