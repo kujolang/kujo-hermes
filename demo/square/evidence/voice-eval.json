@@ -1,0 +1,15 @@
+{
+  "cue": "eval",
+  "text": "Eval gives you repeatable checks. Here, the unit test passes and the implementation exists. You can inspect both results.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "144e9f8bd126857a13af631977611bce6291a32907e3dd8ce0abcf62d3aa282a",
+  "audio_sha256": "3603b395dbe559a3736755e1174f38dcd753abbd200957265bd9f12601077779",
+  "duration": 8.56,
+  "request_id": "I600QfzmABL7JBnV4O5f",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:42:55Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cue": "control",
+  "text": "You stay in control. In this free-model run, Hermes asks before Eval executes repository checks.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "1ec066ae804e7ed3e617bef248c16c09f19f4bae0b2ec7b391ffff774be548c1",
+  "audio_sha256": "e8603001db216a289cf47cd977aff8684d9e9392a58ebcd883de77b5c490f587",
+  "duration": 7.2,
+  "request_id": "XAZYfgFeNxCki9voHlJm",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:42:52Z"
+}

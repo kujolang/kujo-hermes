@@ -1,0 +1,15 @@
+{
+  "cue": "pack",
+  "text": "PackWrite organizes instructions into an execution pack, so your agent has a clear path. Here, all seven phases are present.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "6061f3012a2389fcbaa5db36d97b7006dbf4559a75afc11f67a0a0ef71413544",
+  "audio_sha256": "a149f1f288b208809b2f6de552ae6f3eeb52b9b28c071e7222b3d5e2f839b686",
+  "duration": 8.48,
+  "request_id": "5pF1nCm2nlHePykNDJnc",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:42:47Z"
+}

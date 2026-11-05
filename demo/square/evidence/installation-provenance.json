@@ -1,0 +1,14 @@
+{
+  "plugin_repository": "https://github.com/kujolang/kujo-hermes",
+  "plugin_commit": "9def2c394042dc9e33c2bf0cc15adb574e0b18f9",
+  "hermes_version": "0.22.7",
+  "hermes_source_commit": "b200f5bc60e31588ba2cb60e288029c4a54ba5fa",
+  "kujo_version": "1.8.0",
+  "python_for_successful_setup": "3.14.9, selected by Hermes PM",
+  "captures": ["install.cast", "setup.cast"],
+  "consent": "Actual native enable and dependency preparation prompts answered yes by the authorized operator",
+  "sources": "26 official repositories fetched at sources.lock.json pins to the default destination",
+  "workspace_trust": "Explicit --trust-workspace . for the sample Git repository",
+  "recording_correction": "Initial recorder retained a Python 3.11 entry point after Hermes prepared 3.14 binary dependencies. Setup was recaptured with the selected supported interpreter. No policy was changed or approval skipped.",
+  "editing": "Download/build waits condensed. Both raw captures retained, including the failed recorder invocation. Exact cut windows accompany the clips."
+}

@@ -39,3 +39,11 @@ A test-only CLI callback supplies approval decisions in automated E2E tests. A s
 - **Marketplace / demo:** the [85-second walkthrough](../demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4) is recorded; watch and listen before posting. Review the full-SHA catalog candidate and validate with dependency installation. Obtain explicit authorization before opening the catalog PR, posting the video or submitting the links. The user-provided deadline is November 11, 2026 at 5 PM EST; verify current event terms.
 
 The verified operations are ready to use. Full tool coverage and marketplace submission still require the work listed above.
+
+## Native setup and square film — November 5, 2026
+
+The public plugin now registers `hermes kujo setup` and `hermes kujo doctor` in Hermes's default in-process mode. Setup verifies the installed runtime, installs 26 pinned canonical source checkouts and writes the active profile through Hermes's configuration API. Workspace trust is explicit. Existing denials, trust and unrelated settings survive. Failed new fetches leave no partial checkout. Isolated-host profiles retain manual configuration; all six native tools still pass there.
+
+Evidence in `demo/square/evidence/` includes 61 passing unit tests, six native setup checks, the actual public GitHub install and successful setup capture, Doctor discovery of 51 bindings, and complete real-host workflows in both plugin modes plus the selected Python 3.14.9 environment. Host workflow approvals use the disclosed test callback; the film's approval excerpt comes from the original real free-model session. The supported Python run checks Scout, PackWrite summary, Spec, Eval, ShipCheck, Loop, denial, receipts and unload. This does not erase other tools' external prerequisites or the limitations above.
+
+The square film is a separate 88-second deliverable, with matched native evidence, paired logos, ten glitch joins and an install call to action. Its review and exported-file measurements live beside the project. No npm wrapper, release publication, catalog pull request or contest submission was added.

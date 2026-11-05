@@ -1,0 +1,320 @@
+{
+  "ok": true,
+  "runtime": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/runtime/kujo",
+  "runtime_version": "kujo 1.8.0",
+  "runtime_compatible": true,
+  "profile": "full",
+  "trusted_workspaces": [
+    "/private/tmp/kujo-hermes-video-20261104"
+  ],
+  "capabilities": [
+    {
+      "id": "kujo.ability.catalog.list",
+      "installed": true,
+      "dependency": null,
+      "note": null
+    },
+    {
+      "id": "kujo.ability.receipts.list",
+      "installed": true,
+      "dependency": null,
+      "note": null
+    },
+    {
+      "id": "kujo.scout.repository.inspect",
+      "installed": true,
+      "dependency": "scout",
+      "note": null
+    },
+    {
+      "id": "kujo.scent.context.pack",
+      "installed": true,
+      "dependency": "scent",
+      "note": null
+    },
+    {
+      "id": "kujo.patchbrief.changes.summarize",
+      "installed": true,
+      "dependency": "patchbrief",
+      "note": null
+    },
+    {
+      "id": "kujo.changebucket.changes.measure",
+      "installed": true,
+      "dependency": "changebucket",
+      "note": null
+    },
+    {
+      "id": "kujo.shipcheck.repository.scan",
+      "installed": true,
+      "dependency": "shipcheck",
+      "note": null
+    },
+    {
+      "id": "kujo.fence.architecture.check",
+      "installed": true,
+      "dependency": "fence",
+      "note": null
+    },
+    {
+      "id": "kujo.spec.contract.validate",
+      "installed": true,
+      "dependency": "spec",
+      "note": null
+    },
+    {
+      "id": "kujo.eval.suite.run",
+      "installed": true,
+      "dependency": "eval",
+      "note": null
+    },
+    {
+      "id": "kujo.runledger.runs.report",
+      "installed": true,
+      "dependency": "runledger",
+      "note": null
+    },
+    {
+      "id": "kujo.dispatch.workflow.validate",
+      "installed": true,
+      "dependency": "dispatch",
+      "note": null
+    },
+    {
+      "id": "kujo.rag.knowledge.query",
+      "installed": true,
+      "dependency": "rag",
+      "note": null
+    },
+    {
+      "id": "kujo.watchdog.service.health",
+      "installed": true,
+      "dependency": "watchdog",
+      "note": null
+    },
+    {
+      "id": "kujo.concord.artifacts.scan",
+      "installed": true,
+      "dependency": "concord",
+      "note": null
+    },
+    {
+      "id": "kujo.casefile.failure.capture",
+      "installed": true,
+      "dependency": "casefile",
+      "note": null
+    },
+    {
+      "id": "kujo.muzzle.workflow.run",
+      "installed": true,
+      "dependency": "muzzle",
+      "note": null
+    },
+    {
+      "id": "kujo.kennel.project.validate",
+      "installed": true,
+      "dependency": "kennel",
+      "note": null
+    },
+    {
+      "id": "kujo.kennel.dependencies.install",
+      "installed": true,
+      "dependency": "kennel",
+      "note": null
+    },
+    {
+      "id": "kujo.dispatch.workflow.run",
+      "installed": true,
+      "dependency": "dispatch",
+      "note": null
+    },
+    {
+      "id": "kujo.rag.knowledge.ingest",
+      "installed": true,
+      "dependency": "rag",
+      "note": null
+    },
+    {
+      "id": "kujo.watchdog.telemetry.record",
+      "installed": true,
+      "dependency": "watchdog",
+      "note": null
+    },
+    {
+      "id": "kujo.redact.document.scan",
+      "installed": true,
+      "dependency": "redact",
+      "note": null
+    },
+    {
+      "id": "kujo.redact.document.sanitize",
+      "installed": true,
+      "dependency": "redact",
+      "note": null
+    },
+    {
+      "id": "kujo.versionseal.records.validate",
+      "installed": true,
+      "dependency": "versionseal",
+      "note": null
+    },
+    {
+      "id": "kujo.packwrite.pack.validate",
+      "installed": true,
+      "dependency": "packwrite",
+      "note": null
+    },
+    {
+      "id": "kujo.packwrite.pack.summary",
+      "installed": true,
+      "dependency": "packwrite",
+      "note": null
+    },
+    {
+      "id": "kujo.packwrite.pack.init",
+      "installed": true,
+      "dependency": "packwrite",
+      "note": null
+    },
+    {
+      "id": "kujo.runledger.runs.start",
+      "installed": true,
+      "dependency": "runledger",
+      "note": null
+    },
+    {
+      "id": "kujo.runledger.runs.finish",
+      "installed": true,
+      "dependency": "runledger",
+      "note": null
+    },
+    {
+      "id": "kujo.tribunal.proposal.validate",
+      "installed": true,
+      "dependency": "tribunal",
+      "note": null
+    },
+    {
+      "id": "kujo.tribunal.review.mock",
+      "installed": true,
+      "dependency": "tribunal",
+      "note": null
+    },
+    {
+      "id": "kujo.dossier.records.validate",
+      "installed": true,
+      "dependency": "dossier",
+      "note": null
+    },
+    {
+      "id": "kujo.dossier.records.report",
+      "installed": true,
+      "dependency": "dossier",
+      "note": null
+    },
+    {
+      "id": "kujo.howl.showcase.validate",
+      "installed": true,
+      "dependency": "howl",
+      "note": null
+    },
+    {
+      "id": "kujo.howl.showcase.render",
+      "installed": true,
+      "dependency": "howl",
+      "note": null
+    },
+    {
+      "id": "kujo.lens.flow.validate",
+      "installed": true,
+      "dependency": "lens",
+      "note": null
+    },
+    {
+      "id": "kujo.lens.page.check",
+      "installed": true,
+      "dependency": "lens",
+      "note": null
+    },
+    {
+      "id": "kujo.workcell.definition.validate",
+      "installed": true,
+      "dependency": "workcell",
+      "note": null
+    },
+    {
+      "id": "kujo.workcell.definition.inspect",
+      "installed": true,
+      "dependency": "workcell",
+      "note": null
+    },
+    {
+      "id": "kujo.workcell.definition.run",
+      "installed": true,
+      "dependency": "workcell",
+      "note": null
+    },
+    {
+      "id": "kujo.workcell.runtime.doctor",
+      "installed": true,
+      "dependency": "workcell",
+      "note": null
+    },
+    {
+      "id": "kujo.workflows.loop.run",
+      "installed": true,
+      "dependency": "kujo-workflows",
+      "note": null
+    },
+    {
+      "id": "kujo.runtime.version.inspect",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.runtime.source.check",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.runtime.source.run",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.hermes.lint.execute",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.hermes.format.execute",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.hermes.lsp.diagnostics.execute",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.hermes.lsp.complete.execute",
+      "installed": true,
+      "dependency": "kujo",
+      "note": null
+    },
+    {
+      "id": "kujo.hermes.mcp.make.execute",
+      "installed": true,
+      "dependency": "mcp",
+      "note": null
+    }
+  ],
+  "receipt_directory": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/home/plugin-data/kujo-hermes/receipts",
+  "telemetry": "off; only explicit watchdog Ability calls send data"
+}

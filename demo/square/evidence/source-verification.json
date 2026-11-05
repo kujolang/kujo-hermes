@@ -1,0 +1,99 @@
+{
+  "ok": true,
+  "shots": [
+    {
+      "scene": "hook",
+      "start": 3.2,
+      "duration": 6.5244,
+      "cue": "hook",
+      "source": "assets/workflow-03-discovery.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "f21a02f1e53a43342d17f125e04cbbe4b0d3a318dabafa7920205a7217bfa9a9"
+    },
+    {
+      "scene": "install",
+      "start": 9.7244,
+      "duration": 9.8844,
+      "cue": "install",
+      "source": "assets/install.mp4",
+      "source_kind": "actual CLI capture",
+      "full_source_width": true,
+      "sha256": "e66fc6f11fa3372c35a2eaeda5af6af742cc7923b3a3183af837d28c01371ecf"
+    },
+    {
+      "scene": "pack",
+      "start": 19.6089,
+      "duration": 9.4844,
+      "cue": "pack",
+      "source": "assets/workflow-02-packwrite.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "1024a8b8e7c9a0fc6328b7e066ab1c0113e70afaad9632b501f166cb862f5827"
+    },
+    {
+      "scene": "spec",
+      "start": 29.0933,
+      "duration": 6.7644,
+      "cue": "spec",
+      "source": "assets/workflow-01-spec.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "665f459823d85ee74fdf7548ae77f0a5f6615aa97cbce0d8a8241b734c0d0c53"
+    },
+    {
+      "scene": "control",
+      "start": 35.8578,
+      "duration": 8.2044,
+      "cue": "control",
+      "source": "assets/approval.mp4",
+      "source_kind": "original free local model approval",
+      "full_source_width": true,
+      "sha256": "9e26f445f5f60ef47ea72dc5ff5c9de69a0fc641b9ccc830abca627656ac1802"
+    },
+    {
+      "scene": "eval",
+      "start": 44.0622,
+      "duration": 9.5644,
+      "cue": "eval",
+      "source": "assets/workflow-05-eval.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "a43f62b295da1b1a6f384c9bdcc1beb77ac24e11a96d28a0cf5043969a450931"
+    },
+    {
+      "scene": "ship",
+      "start": 53.6267,
+      "duration": 8.7644,
+      "cue": "ship",
+      "source": "assets/workflow-07-shipcheck.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "e401aadcd61529069b314cf80f80c0f183eadd9e60f459c7b398e30bfcd72e04"
+    },
+    {
+      "scene": "scout",
+      "start": 62.3911,
+      "duration": 9.4044,
+      "cue": "scout",
+      "source": "assets/workflow-08-scout.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "f87eff8cece9356f4d354e48b55b34ab227f0f0c253b92272a47a0a5fed6c876"
+    },
+    {
+      "scene": "receipt",
+      "start": 71.7956,
+      "duration": 9.0044,
+      "cue": "receipt",
+      "source": "assets/workflow-06-receipt.mp4",
+      "source_kind": "native Hermes evidence viewer from actual tool execution",
+      "full_source_width": true,
+      "sha256": "d977a3f061bd2d41fea2d3b556423d8c6be9c8fa018e07d4cbc2e6ad29f9073c"
+    }
+  ],
+  "native_evidence": "../walkthrough/evidence/v5-workflows/",
+  "approval_evidence": "../walkthrough/evidence/",
+  "installation_evidence": "install.cast",
+  "note": "Existing native viewer footage reused unchanged. New public installation recording. Full width contained; no screen crop or zoom."
+}

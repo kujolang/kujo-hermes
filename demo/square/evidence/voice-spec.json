@@ -1,0 +1,15 @@
+{
+  "cue": "spec",
+  "text": "Spec validates your task contract, so you can check the work against clear acceptance criteria.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "2f271515c6ea55dfad6e93dbb4aa48948afc52ce06a4e92c26d45e1a4c05e8d4",
+  "audio_sha256": "631ccb1107e4fccec07ef3b58696c3e3a3f708b27459b32bab275e6be372c516",
+  "duration": 5.76,
+  "request_id": "Dv3FX04MwzT1MnTgjKR9",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:42:50Z"
+}

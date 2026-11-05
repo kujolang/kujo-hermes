@@ -1,0 +1,71 @@
+{
+  "duration": 88,
+  "fps": 30,
+  "intro": "Kujo Hermes.",
+  "outro": "Kujo. Trust at the speed of AI. Install Kujo Hermes today.",
+  "scenes": [
+    {
+      "id": "hook",
+      "cue": "hook",
+      "title": "Trust the work.\nSee the evidence.",
+      "text": "Hermes moves fast. Kujo helps you check the work and explain what actually happened.",
+      "shot": "03-discovery"
+    },
+    {
+      "id": "install",
+      "cue": "install",
+      "title": "Install. Set up. Ask Hermes.",
+      "text": "With Hermes and Kujo installed, install the plugin, accept the prompts, and run setup for your repository. Then start a new conversation.",
+      "shot": "install"
+    },
+    {
+      "id": "pack",
+      "cue": "pack",
+      "title": "Give your agent\na clear path.",
+      "text": "PackWrite organizes instructions into an execution pack, so your agent has a clear path. Here, all seven phases are present.",
+      "shot": "02-packwrite"
+    },
+    {
+      "id": "spec",
+      "cue": "spec",
+      "title": "Agree on what\ndone means.",
+      "text": "Spec validates your task contract, so you can check the work against clear acceptance criteria.",
+      "shot": "01-spec"
+    },
+    {
+      "id": "control",
+      "cue": "control",
+      "title": "You decide\nwhat runs.",
+      "text": "You stay in control. In this free-model run, Hermes asks before Eval executes repository checks.",
+      "shot": "approval"
+    },
+    {
+      "id": "eval",
+      "cue": "eval",
+      "title": "Check the work.\nSee what passed.",
+      "text": "Eval gives you repeatable checks. Here, the unit test passes and the implementation exists. You can inspect both results.",
+      "shot": "05-eval"
+    },
+    {
+      "id": "ship",
+      "cue": "ship",
+      "title": "Find the gaps\nbefore release.",
+      "text": "ShipCheck flags release-review gaps, so you know what needs attention before you ship. This repository still has warnings.",
+      "shot": "07-shipcheck"
+    },
+    {
+      "id": "scout",
+      "cue": "scout",
+      "title": "Find your way\naround the code.",
+      "text": "Scout maps the repository so you can find your bearings. More tools cover context, workflows, and development, with their own prerequisites.",
+      "shot": "08-scout"
+    },
+    {
+      "id": "receipt",
+      "cue": "receipt",
+      "title": "Hand off evidence.\nKeep the trust.",
+      "text": "Receipts preserve the command, approval, and evidence hashes. The next developer can trace the run without reconstructing your session.",
+      "shot": "06-receipt"
+    }
+  ]
+}

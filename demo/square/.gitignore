@@ -1,0 +1,12 @@
+.hyperframes/
+node_modules/
+.thumbnails/
+.waveform-cache/
+renders/
+assets/*.mp3
+assets/*.wav
+!assets/cmd-sfx-*.mp3
+evidence/review/*.png
+evidence/detail/*.png
+scripts/__pycache__/
+evidence/install-final/*.png

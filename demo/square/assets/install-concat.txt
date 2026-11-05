@@ -1,0 +1,2 @@
+file 'install-step.mp4'
+file 'setup-step.mp4'

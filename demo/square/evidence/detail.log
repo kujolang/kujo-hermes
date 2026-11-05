@@ -1,0 +1,17 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing 2 frames from square
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+   Sampling 2 frames within 46–48s
+[hyperframes] snapshot: frame 1/2 at 46s
+[hyperframes] snapshot: frame 2/2 at 48s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/.hyperframes/video-state.json
+
+◇  2 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/detail
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/detail/frame-00-at-46s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/detail/frame-01-at-48s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/detail/contact-sheet.jpg (grid view for AI review)

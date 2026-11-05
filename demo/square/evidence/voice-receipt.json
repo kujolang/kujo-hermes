@@ -1,0 +1,15 @@
+{
+  "cue": "receipt",
+  "text": "Receipts preserve the command, approval, and evidence hashes. The next developer can trace the run without reconstructing your session.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "56dccf2bffaea608ced270be3a9a042fc0ace419483253d2c53395bd79d36229",
+  "audio_sha256": "28e527ea3411caed02876c2410d245cf43bda155d1ed0d485a69bfb049961754",
+  "duration": 8.0,
+  "request_id": "6E95t30Z3VgYPgwFfM5l",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:43:04Z"
+}

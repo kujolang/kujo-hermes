@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "host": "/tmp/kujo-hermes-host",
+  "tests": [
+    "actual native dry run leaves configuration unchanged",
+    "actual source setup saves exact workspace",
+    "denied Ability and existing profile preserved",
+    "unrelated native configuration preserved",
+    "pinned-source rerun succeeds",
+    "malformed config rejected without overwrite"
+  ],
+  "test_workspace": "temporary Git fixture; removed after test"
+}

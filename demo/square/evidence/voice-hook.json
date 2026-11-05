@@ -1,0 +1,15 @@
+{
+  "cue": "hook",
+  "text": "Hermes moves fast. Kujo helps you check the work and explain what actually happened.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "e6d57a32c6a10712ee91af6c884b484280023be00f98fbbdb9a7f821e7577e0d",
+  "audio_sha256": "b2f82bf4861a775a32bc8e452517fa3c519a921cd154e994ff069092e1d9c8a3",
+  "duration": 5.52,
+  "request_id": "1ATCsmeuEVT6N5y7enwo",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:42:40Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cue": "scout",
+  "text": "Scout maps the repository so you can find your bearings. More tools cover context, workflows, and development, with their own prerequisites.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "f03b83d77ea29c9dbf6852559a8dfbbc2ae8a268d6eda7a895a8538da918d5d0",
+  "audio_sha256": "b992ea540ebffdf60dcdc3e4f5047a676f54d421d47f54d9bd9c498d69bc7b6e",
+  "duration": 8.4,
+  "request_id": "Cp02VQahaEjjn9Nj9RSP",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:43:01Z"
+}

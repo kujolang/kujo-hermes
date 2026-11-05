@@ -1,0 +1,409 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing review frames (beats, seams, phone) from square
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+   Review: 32 beat(s) and 30 seam(s) within 0–88s
+[hyperframes] snapshot: frame 1/182 at 0.3s
+[hyperframes] snapshot: frame 2/182 at 1.6s
+[hyperframes] snapshot: frame 3/182 at 3.24s
+[hyperframes] snapshot: frame 4/182 at 3.5s
+[hyperframes] snapshot: frame 5/182 at 6.462s
+[hyperframes] snapshot: frame 6/182 at 9.764s
+[hyperframes] snapshot: frame 7/182 at 10.024s
+[hyperframes] snapshot: frame 8/182 at 14.667s
+[hyperframes] snapshot: frame 9/182 at 19.649s
+[hyperframes] snapshot: frame 10/182 at 19.909s
+[hyperframes] snapshot: frame 11/182 at 24.351s
+[hyperframes] snapshot: frame 12/182 at 29.133s
+[hyperframes] snapshot: frame 13/182 at 29.393s
+[hyperframes] snapshot: frame 14/182 at 32.475s
+[hyperframes] snapshot: frame 15/182 at 35.898s
+[hyperframes] snapshot: frame 16/182 at 36.158s
+[hyperframes] snapshot: frame 17/182 at 39.96s
+[hyperframes] snapshot: frame 18/182 at 44.102s
+[hyperframes] snapshot: frame 19/182 at 44.362s
+[hyperframes] snapshot: frame 20/182 at 48.845s
+[hyperframes] snapshot: frame 21/182 at 53.667s
+[hyperframes] snapshot: frame 22/182 at 53.927s
+[hyperframes] snapshot: frame 23/182 at 58.009s
+[hyperframes] snapshot: frame 24/182 at 62.431s
+[hyperframes] snapshot: frame 25/182 at 62.691s
+[hyperframes] snapshot: frame 26/182 at 67.094s
+[hyperframes] snapshot: frame 27/182 at 71.836s
+[hyperframes] snapshot: frame 28/182 at 72.096s
+[hyperframes] snapshot: frame 29/182 at 76.298s
+[hyperframes] snapshot: frame 30/182 at 80.84s
+[hyperframes] snapshot: frame 31/182 at 81.1s
+[hyperframes] snapshot: frame 32/182 at 84.4s
+[hyperframes] snapshot: frame 33/182 at 2.75s
+[hyperframes] snapshot: frame 34/182 at 2.85s
+[hyperframes] snapshot: frame 35/182 at 2.95s
+[hyperframes] snapshot: frame 36/182 at 3.05s
+[hyperframes] snapshot: frame 37/182 at 3.15s
+[hyperframes] snapshot: frame 38/182 at 3s
+[hyperframes] snapshot: frame 39/182 at 3.1s
+[hyperframes] snapshot: frame 40/182 at 3.2s
+[hyperframes] snapshot: frame 41/182 at 3.3s
+[hyperframes] snapshot: frame 42/182 at 3.4s
+[hyperframes] snapshot: frame 43/182 at 3.33s
+[hyperframes] snapshot: frame 44/182 at 3.43s
+[hyperframes] snapshot: frame 45/182 at 3.53s
+[hyperframes] snapshot: frame 46/182 at 3.63s
+[hyperframes] snapshot: frame 47/182 at 3.73s
+[hyperframes] snapshot: frame 48/182 at 9.274s
+[hyperframes] snapshot: frame 49/182 at 9.374s
+[hyperframes] snapshot: frame 50/182 at 9.474s
+[hyperframes] snapshot: frame 51/182 at 9.574s
+[hyperframes] snapshot: frame 52/182 at 9.674s
+[hyperframes] snapshot: frame 53/182 at 9.524s
+[hyperframes] snapshot: frame 54/182 at 9.624s
+[hyperframes] snapshot: frame 55/182 at 9.724s
+[hyperframes] snapshot: frame 56/182 at 9.824s
+[hyperframes] snapshot: frame 57/182 at 9.924s
+[hyperframes] snapshot: frame 58/182 at 9.854s
+[hyperframes] snapshot: frame 59/182 at 9.954s
+[hyperframes] snapshot: frame 60/182 at 10.054s
+[hyperframes] snapshot: frame 61/182 at 10.154s
+[hyperframes] snapshot: frame 62/182 at 10.254s
+[hyperframes] snapshot: frame 63/182 at 19.159s
+[hyperframes] snapshot: frame 64/182 at 19.259s
+[hyperframes] snapshot: frame 65/182 at 19.359s
+[hyperframes] snapshot: frame 66/182 at 19.459s
+[hyperframes] snapshot: frame 67/182 at 19.559s
+[hyperframes] snapshot: frame 68/182 at 19.409s
+[hyperframes] snapshot: frame 69/182 at 19.509s
+[hyperframes] snapshot: frame 70/182 at 19.609s
+[hyperframes] snapshot: frame 71/182 at 19.709s
+[hyperframes] snapshot: frame 72/182 at 19.809s
+[hyperframes] snapshot: frame 73/182 at 19.739s
+[hyperframes] snapshot: frame 74/182 at 19.839s
+[hyperframes] snapshot: frame 75/182 at 19.939s
+[hyperframes] snapshot: frame 76/182 at 20.039s
+[hyperframes] snapshot: frame 77/182 at 20.139s
+[hyperframes] snapshot: frame 78/182 at 28.643s
+[hyperframes] snapshot: frame 79/182 at 28.743s
+[hyperframes] snapshot: frame 80/182 at 28.843s
+[hyperframes] snapshot: frame 81/182 at 28.943s
+[hyperframes] snapshot: frame 82/182 at 29.043s
+[hyperframes] snapshot: frame 83/182 at 28.893s
+[hyperframes] snapshot: frame 84/182 at 28.993s
+[hyperframes] snapshot: frame 85/182 at 29.093s
+[hyperframes] snapshot: frame 86/182 at 29.193s
+[hyperframes] snapshot: frame 87/182 at 29.293s
+[hyperframes] snapshot: frame 88/182 at 29.223s
+[hyperframes] snapshot: frame 89/182 at 29.323s
+[hyperframes] snapshot: frame 90/182 at 29.423s
+[hyperframes] snapshot: frame 91/182 at 29.523s
+[hyperframes] snapshot: frame 92/182 at 29.623s
+[hyperframes] snapshot: frame 93/182 at 35.408s
+[hyperframes] snapshot: frame 94/182 at 35.508s
+[hyperframes] snapshot: frame 95/182 at 35.608s
+[hyperframes] snapshot: frame 96/182 at 35.708s
+[hyperframes] snapshot: frame 97/182 at 35.808s
+[hyperframes] snapshot: frame 98/182 at 35.658s
+[hyperframes] snapshot: frame 99/182 at 35.758s
+[hyperframes] snapshot: frame 100/182 at 35.858s
+[hyperframes] snapshot: frame 101/182 at 35.958s
+[hyperframes] snapshot: frame 102/182 at 36.058s
+[hyperframes] snapshot: frame 103/182 at 35.988s
+[hyperframes] snapshot: frame 104/182 at 36.088s
+[hyperframes] snapshot: frame 105/182 at 36.188s
+[hyperframes] snapshot: frame 106/182 at 36.288s
+[hyperframes] snapshot: frame 107/182 at 36.388s
+[hyperframes] snapshot: frame 108/182 at 43.612s
+[hyperframes] snapshot: frame 109/182 at 43.712s
+[hyperframes] snapshot: frame 110/182 at 43.812s
+[hyperframes] snapshot: frame 111/182 at 43.912s
+[hyperframes] snapshot: frame 112/182 at 44.012s
+[hyperframes] snapshot: frame 113/182 at 43.862s
+[hyperframes] snapshot: frame 114/182 at 43.962s
+[hyperframes] snapshot: frame 115/182 at 44.062s
+[hyperframes] snapshot: frame 116/182 at 44.162s
+[hyperframes] snapshot: frame 117/182 at 44.262s
+[hyperframes] snapshot: frame 118/182 at 44.192s
+[hyperframes] snapshot: frame 119/182 at 44.292s
+[hyperframes] snapshot: frame 120/182 at 44.392s
+[hyperframes] snapshot: frame 121/182 at 44.492s
+[hyperframes] snapshot: frame 122/182 at 44.592s
+[hyperframes] snapshot: frame 123/182 at 53.177s
+[hyperframes] snapshot: frame 124/182 at 53.277s
+[hyperframes] snapshot: frame 125/182 at 53.377s
+[hyperframes] snapshot: frame 126/182 at 53.477s
+[hyperframes] snapshot: frame 127/182 at 53.577s
+[hyperframes] snapshot: frame 128/182 at 53.427s
+[hyperframes] snapshot: frame 129/182 at 53.527s
+[hyperframes] snapshot: frame 130/182 at 53.627s
+[hyperframes] snapshot: frame 131/182 at 53.727s
+[hyperframes] snapshot: frame 132/182 at 53.827s
+[hyperframes] snapshot: frame 133/182 at 53.757s
+[hyperframes] snapshot: frame 134/182 at 53.857s
+[hyperframes] snapshot: frame 135/182 at 53.957s
+[hyperframes] snapshot: frame 136/182 at 54.057s
+[hyperframes] snapshot: frame 137/182 at 54.157s
+[hyperframes] snapshot: frame 138/182 at 61.941s
+[hyperframes] snapshot: frame 139/182 at 62.041s
+[hyperframes] snapshot: frame 140/182 at 62.141s
+[hyperframes] snapshot: frame 141/182 at 62.241s
+[hyperframes] snapshot: frame 142/182 at 62.341s
+[hyperframes] snapshot: frame 143/182 at 62.191s
+[hyperframes] snapshot: frame 144/182 at 62.291s
+[hyperframes] snapshot: frame 145/182 at 62.391s
+[hyperframes] snapshot: frame 146/182 at 62.491s
+[hyperframes] snapshot: frame 147/182 at 62.591s
+[hyperframes] snapshot: frame 148/182 at 62.521s
+[hyperframes] snapshot: frame 149/182 at 62.621s
+[hyperframes] snapshot: frame 150/182 at 62.721s
+[hyperframes] snapshot: frame 151/182 at 62.821s
+[hyperframes] snapshot: frame 152/182 at 62.921s
+[hyperframes] snapshot: frame 153/182 at 71.346s
+[hyperframes] snapshot: frame 154/182 at 71.446s
+[hyperframes] snapshot: frame 155/182 at 71.546s
+[hyperframes] snapshot: frame 156/182 at 71.646s
+[hyperframes] snapshot: frame 157/182 at 71.746s
+[hyperframes] snapshot: frame 158/182 at 71.596s
+[hyperframes] snapshot: frame 159/182 at 71.696s
+[hyperframes] snapshot: frame 160/182 at 71.796s
+[hyperframes] snapshot: frame 161/182 at 71.896s
+[hyperframes] snapshot: frame 162/182 at 71.996s
+[hyperframes] snapshot: frame 163/182 at 71.926s
+[hyperframes] snapshot: frame 164/182 at 72.026s
+[hyperframes] snapshot: frame 165/182 at 72.126s
+[hyperframes] snapshot: frame 166/182 at 72.226s
+[hyperframes] snapshot: frame 167/182 at 72.326s
+[hyperframes] snapshot: frame 168/182 at 80.35s
+[hyperframes] snapshot: frame 169/182 at 80.45s
+[hyperframes] snapshot: frame 170/182 at 80.55s
+[hyperframes] snapshot: frame 171/182 at 80.65s
+[hyperframes] snapshot: frame 172/182 at 80.75s
+[hyperframes] snapshot: frame 173/182 at 80.6s
+[hyperframes] snapshot: frame 174/182 at 80.7s
+[hyperframes] snapshot: frame 175/182 at 80.8s
+[hyperframes] snapshot: frame 176/182 at 80.9s
+[hyperframes] snapshot: frame 177/182 at 81s
+[hyperframes] snapshot: frame 178/182 at 80.93s
+[hyperframes] snapshot: frame 179/182 at 81.03s
+[hyperframes] snapshot: frame 180/182 at 81.13s
+[hyperframes] snapshot: frame 181/182 at 81.23s
+[hyperframes] snapshot: frame 182/182 at 81.33s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/.hyperframes/video-state.json
+
+◇  182 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-01-at-0.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-02-at-1.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-03-at-3.24s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-04-at-3.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-05-at-6.462s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-06-at-9.764s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-07-at-10.024s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-08-at-14.667s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-09-at-19.649s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-10-at-19.909s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-11-at-24.351s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-12-at-29.133s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-13-at-29.393s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-14-at-32.475s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-15-at-35.898s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-16-at-36.158s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-17-at-39.96s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-18-at-44.102s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-19-at-44.362s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-20-at-48.845s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-21-at-53.667s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-22-at-53.927s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-23-at-58.009s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-24-at-62.431s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-25-at-62.691s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-26-at-67.094s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-27-at-71.836s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-28-at-72.096s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-29-at-76.298s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-30-at-80.84s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-31-at-81.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/beat-32-at-84.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-01-1-at-2.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-01-2-at-2.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-01-3-at-2.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-01-4-at-3.05s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-01-5-at-3.15s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-02-1-at-3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-02-2-at-3.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-02-3-at-3.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-02-4-at-3.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-02-5-at-3.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-03-1-at-3.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-03-2-at-3.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-03-3-at-3.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-03-4-at-3.63s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-03-5-at-3.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-04-1-at-9.274s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-04-2-at-9.374s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-04-3-at-9.474s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-04-4-at-9.574s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-04-5-at-9.674s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-05-1-at-9.524s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-05-2-at-9.624s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-05-3-at-9.724s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-05-4-at-9.824s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-05-5-at-9.924s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-06-1-at-9.854s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-06-2-at-9.954s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-06-3-at-10.054s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-06-4-at-10.154s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-06-5-at-10.254s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-07-1-at-19.159s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-07-2-at-19.259s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-07-3-at-19.359s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-07-4-at-19.459s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-07-5-at-19.559s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-08-1-at-19.409s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-08-2-at-19.509s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-08-3-at-19.609s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-08-4-at-19.709s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-08-5-at-19.809s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-09-1-at-19.739s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-09-2-at-19.839s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-09-3-at-19.939s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-09-4-at-20.039s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-09-5-at-20.139s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-10-1-at-28.643s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-10-2-at-28.743s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-10-3-at-28.843s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-10-4-at-28.943s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-10-5-at-29.043s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-11-1-at-28.893s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-11-2-at-28.993s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-11-3-at-29.093s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-11-4-at-29.193s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-11-5-at-29.293s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-12-1-at-29.223s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-12-2-at-29.323s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-12-3-at-29.423s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-12-4-at-29.523s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-12-5-at-29.623s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-13-1-at-35.408s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-13-2-at-35.508s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-13-3-at-35.608s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-13-4-at-35.708s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-13-5-at-35.808s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-14-1-at-35.658s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-14-2-at-35.758s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-14-3-at-35.858s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-14-4-at-35.958s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-14-5-at-36.058s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-15-1-at-35.988s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-15-2-at-36.088s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-15-3-at-36.188s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-15-4-at-36.288s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-15-5-at-36.388s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-16-1-at-43.612s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-16-2-at-43.712s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-16-3-at-43.812s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-16-4-at-43.912s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-16-5-at-44.012s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-17-1-at-43.862s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-17-2-at-43.962s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-17-3-at-44.062s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-17-4-at-44.162s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-17-5-at-44.262s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-18-1-at-44.192s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-18-2-at-44.292s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-18-3-at-44.392s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-18-4-at-44.492s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-18-5-at-44.592s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-19-1-at-53.177s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-19-2-at-53.277s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-19-3-at-53.377s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-19-4-at-53.477s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-19-5-at-53.577s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-20-1-at-53.427s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-20-2-at-53.527s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-20-3-at-53.627s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-20-4-at-53.727s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-20-5-at-53.827s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-21-1-at-53.757s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-21-2-at-53.857s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-21-3-at-53.957s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-21-4-at-54.057s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-21-5-at-54.157s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-22-1-at-61.941s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-22-2-at-62.041s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-22-3-at-62.141s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-22-4-at-62.241s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-22-5-at-62.341s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-23-1-at-62.191s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-23-2-at-62.291s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-23-3-at-62.391s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-23-4-at-62.491s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-23-5-at-62.591s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-24-1-at-62.521s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-24-2-at-62.621s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-24-3-at-62.721s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-24-4-at-62.821s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-24-5-at-62.921s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-25-1-at-71.346s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-25-2-at-71.446s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-25-3-at-71.546s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-25-4-at-71.646s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-25-5-at-71.746s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-26-1-at-71.596s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-26-2-at-71.696s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-26-3-at-71.796s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-26-4-at-71.896s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-26-5-at-71.996s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-27-1-at-71.926s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-27-2-at-72.026s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-27-3-at-72.126s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-27-4-at-72.226s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-27-5-at-72.326s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-28-1-at-80.35s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-28-2-at-80.45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-28-3-at-80.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-28-4-at-80.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-28-5-at-80.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-29-1-at-80.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-29-2-at-80.7s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-29-3-at-80.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-29-4-at-80.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-29-5-at-81s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-30-1-at-80.93s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-30-2-at-81.03s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-30-3-at-81.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-30-4-at-81.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/seam-30-5-at-81.33s.png
+   Beat sheet (settled frame per scene): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-beats-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-beats-2.jpg
+     0.3s intro · 1.6s intro mid · 3.24s glitch-0 · 3.5s hook · 6.462s hook mid · 9.764s glitch-1 · 10.024s install · 14.667s install mid · 19.649s glitch-2 · 19.909s pack · 24.351s pack mid · 29.133s glitch-3 · 29.393s spec · 32.475s spec mid · 35.898s glitch-4 · 36.158s control · 39.96s control mid · 44.102s glitch-5 · 44.362s eval · 48.845s eval mid · 53.667s glitch-6 · 53.927s ship · 58.009s ship mid · 62.431s glitch-7 · 62.691s scout · 67.094s scout mid · 71.836s glitch-8 · 72.096s receipt · 76.298s receipt mid · 80.84s glitch-9 · 81.1s outro · 84.4s outro mid
+   Seam 1 at 2.95s (intro -> glitch-0): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-01.jpg
+   Seam 2 at 3.2s (glitch-0 -> hook): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-02.jpg
+   Seam 3 at 3.53s (hook -> glitch-1): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-03.jpg
+   Seam 4 at 9.474s (hook -> glitch-1): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-04.jpg
+   Seam 5 at 9.724s (glitch-1 -> install): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-05.jpg
+   Seam 6 at 10.054s (install -> glitch-2): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-06.jpg
+   Seam 7 at 19.359s (install -> glitch-2): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-07.jpg
+   Seam 8 at 19.609s (glitch-2 -> pack): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-08.jpg
+   Seam 9 at 19.939s (pack -> glitch-3): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-09.jpg
+   Seam 10 at 28.843s (pack -> glitch-3): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-10.jpg
+   Seam 11 at 29.093s (glitch-3 -> spec): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-11.jpg
+   Seam 12 at 29.423s (spec -> glitch-4): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-12.jpg
+   Seam 13 at 35.608s (spec -> glitch-4): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-13.jpg
+   Seam 14 at 35.858s (glitch-4 -> control): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-14.jpg
+   Seam 15 at 36.188s (control -> glitch-5): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-15.jpg
+   Seam 16 at 43.812s (control -> glitch-5): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-16.jpg
+   Seam 17 at 44.062s (glitch-5 -> eval): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-17.jpg
+   Seam 18 at 44.392s (eval -> glitch-6): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-18.jpg
+   Seam 19 at 53.377s (eval -> glitch-6): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-19.jpg
+   Seam 20 at 53.627s (glitch-6 -> ship): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-20.jpg
+   Seam 21 at 53.957s (ship -> glitch-7): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-21.jpg
+   Seam 22 at 62.141s (ship -> glitch-7): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-22.jpg
+   Seam 23 at 62.391s (glitch-7 -> scout): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-23.jpg
+   Seam 24 at 62.721s (scout -> glitch-8): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-24.jpg
+   Seam 25 at 71.546s (scout -> glitch-8): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-25.jpg
+   Seam 26 at 71.796s (glitch-8 -> receipt): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-26.jpg
+   Seam 27 at 72.126s (receipt -> glitch-9): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-27.jpg
+   Seam 28 at 80.55s (receipt -> glitch-9): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-28.jpg
+   Seam 29 at 80.8s (glitch-9 -> outro): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-29.jpg
+   Seam 30 at 81.13s (outro -> end): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-seam-30.jpg
+   Phone sheet (beats at 360 px wide): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-phone-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/square/evidence/review/review-phone-2.jpg

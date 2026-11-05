@@ -1,0 +1,38 @@
+{
+  "voice": "ElevenLabs Siren / eleven_v4, generation tier Creator; per-cue records and character alignment in evidence/",
+  "music": "Original Kujo soundtrack reused from demo/walkthrough/assets/music-original.wav; mastered into committed master.m4a",
+  "effects": "CMD reference and original bundled SFX provenance: ../walkthrough/evidence/cmd-reference.json",
+  "logos": "Official Kujo and Hermes assets reused from the preceding authorized film",
+  "font": "Departure Mono font carried over from the preceding film; Inter resolved by HyperFrames bundled font workflow",
+  "screens": "Existing actual native Hermes recordings; source-verification.json binds hashes and original paths",
+  "assets": [
+    {
+      "path": "assets/master.m4a",
+      "sha256": "4e9db01de3bc387027cc2f15655f1e53256f9d1167e326c075a5888c2f39c5cc"
+    },
+    {
+      "path": "assets/kujo-logomark.svg",
+      "sha256": "cecb66eae65116fadf29a93ce3adae28956b17cfaf1e8d9e0910c280935ef412"
+    },
+    {
+      "path": "assets/hermes-logo.png",
+      "sha256": "dc364cddcd5b80a8a24d2c40ee52a8839b562e8cbaa7e4ba04c3e2b8257fff9c"
+    },
+    {
+      "path": "assets/DepartureMono-Regular.woff2",
+      "sha256": "5b4fed1daa90708aa9c6ee1190abca9dc22164a1c1def0020386e46b61038cfb"
+    },
+    {
+      "path": "assets/cmd-sfx-001.mp3",
+      "sha256": "7ebe61cfd0d69a2d35d9ee3a88c26025101e999d5cc6bfb2df410f820b433042"
+    },
+    {
+      "path": "assets/cmd-sfx-002.mp3",
+      "sha256": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    {
+      "path": "assets/cmd-sfx-005.mp3",
+      "sha256": "760b72bdaad71f83350e2ef3a9d037daf58f44855a05a6cce25d990f1ffb888a"
+    }
+  ]
+}

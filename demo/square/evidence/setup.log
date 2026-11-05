@@ -1,0 +1,114 @@
+Kujo Hermes setup
+Runtime: kujo 1.8.0
+Sources: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources (26 pinned official repositories)
+Profile: full
+Trust: /private/tmp/kujo-hermes-video-20261104
+Execution approvals and existing restrictions remain required.
+casefile 92e1d9bee2faaba322476e82dcea7510850885e0 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/casefile
+From https://github.com/kujolang/casefile
+ * branch            92e1d9bee2faaba322476e82dcea7510850885e0 -> FETCH_HEAD
+HEAD is now at 92e1d9b docs: align CaseFile badges and verify default runtime commands
+changebucket 030eea63c60449f82c9ba2680227485d318fdb6d /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/changebucket
+From https://github.com/kujolang/changebucket
+ * branch            030eea63c60449f82c9ba2680227485d318fdb6d -> FETCH_HEAD
+HEAD is now at 030eea6 Prepare ChangeBucket v1.1.0 source release
+concord f8812e7f00f55e4d1d3f46e70d902bce89ec7be7 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/concord
+From https://github.com/kujolang/concord
+ * branch            f8812e7f00f55e4d1d3f46e70d902bce89ec7be7 -> FETCH_HEAD
+HEAD is now at f8812e7 Prepare Concord 1.1.2 release
+dispatch 18b5c737a73904ae942f0bd1c3baa1f77c2bfb40 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/dispatch
+From https://github.com/kujolang/dispatch
+ * branch            18b5c737a73904ae942f0bd1c3baa1f77c2bfb40 -> FETCH_HEAD
+HEAD is now at 18b5c73 Simplify default Kujo runtime commands
+dossier 670def8c62e690bcd3c0936cd85b224257ca4a03 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/dossier
+From https://github.com/kujolang/dossier
+ * branch            670def8c62e690bcd3c0936cd85b224257ca4a03 -> FETCH_HEAD
+HEAD is now at 670def8 Add Kennel package manifest
+eval c1b263a10702c2fa8ab61ed507029a6bfec2e03d /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/eval
+From https://github.com/kujolang/eval
+ * branch            c1b263a10702c2fa8ab61ed507029a6bfec2e03d -> FETCH_HEAD
+HEAD is now at c1b263a Simplify default Kujo runtime commands
+fence d3173049b5365af975624fddd48e943d39738c75 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/fence
+From https://github.com/kujolang/fence
+ * branch            d3173049b5365af975624fddd48e943d39738c75 -> FETCH_HEAD
+HEAD is now at d317304 Merge pull request #2 from kujolang/codex/capability-release-20261014
+howl 769af8827ab7f32e3b5f009d50f7643a45144fea /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/howl
+From https://github.com/kujolang/howl
+ * branch            769af8827ab7f32e3b5f009d50f7643a45144fea -> FETCH_HEAD
+HEAD is now at 769af88 release: prepare Howl 1.2.0 and native Kennel distribution
+kennel 6e2fc20560037970df5202e1b1ca8f61c3395570 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/kennel
+From https://github.com/kujolang/kennel
+ * branch            6e2fc20560037970df5202e1b1ca8f61c3395570 -> FETCH_HEAD
+HEAD is now at 6e2fc20 Generate canonical sitemap for public registry pages
+kujo-workflows 1d25503515f03a4c0d4457b327686d92ccc9c68a /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/kujo-workflows
+From https://github.com/kujolang/kujo-workflows
+ * branch            1d25503515f03a4c0d4457b327686d92ccc9c68a -> FETCH_HEAD
+HEAD is now at 1d25503 Record weekly workflow audit
+lens 91049646d70c11bf0c6071f39cf7dfac6b1ba70b /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/lens
+From https://github.com/kujolang/lens
+ * branch            91049646d70c11bf0c6071f39cf7dfac6b1ba70b -> FETCH_HEAD
+HEAD is now at 9104964 Use monochrome technology badge colors
+muzzle 2d508d338537a25f000170c8bb4dc10ef3d75aeb /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/muzzle
+From https://github.com/kujolang/muzzle
+ * branch            2d508d338537a25f000170c8bb4dc10ef3d75aeb -> FETCH_HEAD
+HEAD is now at 2d508d3 release: prepare Muzzle 1.1.3
+packwrite b8467535c74263abc59fd3f48028b67d42cd7e68 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/packwrite
+From https://github.com/kujolang/packwrite
+ * branch            b8467535c74263abc59fd3f48028b67d42cd7e68 -> FETCH_HEAD
+HEAD is now at b846753 Add Kennel package manifest
+patchbrief 92c5cc833730dc427b54a069e9a275bad5969ddc /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/patchbrief
+From https://github.com/kujolang/patchbrief
+ * branch            92c5cc833730dc427b54a069e9a275bad5969ddc -> FETCH_HEAD
+HEAD is now at 92c5cc8 release: prepare PatchBrief 1.0.3
+rag 406965813653a2ddfdc938177e14720c3370153a /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/rag
+From https://github.com/kujolang/rag
+ * branch            406965813653a2ddfdc938177e14720c3370153a -> FETCH_HEAD
+HEAD is now at 4069658 fix: report UTF-8 file byte sizes in release manifests
+redact 8bb7a0c251a82044320b42654e22a5371b76a9f6 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/redact
+From https://github.com/kujolang/redact
+ * branch            8bb7a0c251a82044320b42654e22a5371b76a9f6 -> FETCH_HEAD
+HEAD is now at 8bb7a0c Align README badges with Kujo monochrome style
+runledger ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/runledger
+From https://github.com/kujolang/runledger
+ * branch            ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13 -> FETCH_HEAD
+HEAD is now at ab0ec5d release: prepare RunLedger 1.2.1
+scent d71da6cbb6f4a1fb9d438743a4ad9e00614da266 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/scent
+From https://github.com/kujolang/scent
+ * branch            d71da6cbb6f4a1fb9d438743a4ad9e00614da266 -> FETCH_HEAD
+HEAD is now at d71da6c Merge pull request #3 from kujolang/codex/capability-release-20261014
+scout f3a874fa0e95e26c52ef9ec4d23b0f52d8372089 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/scout
+From https://github.com/kujolang/scout
+ * branch            f3a874fa0e95e26c52ef9ec4d23b0f52d8372089 -> FETCH_HEAD
+HEAD is now at f3a874f Prepare Scout v1.1.0 release
+shipcheck 7eedd9e02d8730d65e06e16f4984d909d23539bc /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/shipcheck
+From https://github.com/kujolang/shipcheck
+ * branch            7eedd9e02d8730d65e06e16f4984d909d23539bc -> FETCH_HEAD
+HEAD is now at 7eedd9e release: prepare ShipCheck 1.0.2
+spec 36da0d7216587809e32dedb91dee3cf4b9e50af1 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/spec
+From https://github.com/kujolang/spec
+ * branch            36da0d7216587809e32dedb91dee3cf4b9e50af1 -> FETCH_HEAD
+HEAD is now at 36da0d7 release: prepare Spec 1.0.2
+tribunal fa4ffd2c9bb6ee5d8285dfb5c161b844e6e75b7c /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/tribunal
+From https://github.com/kujolang/tribunal
+ * branch            fa4ffd2c9bb6ee5d8285dfb5c161b844e6e75b7c -> FETCH_HEAD
+HEAD is now at fa4ffd2 Merge pull request #15 from kujolang/codex/ecosystem-alignment-20261022
+versionseal f005374d72026a57c5246b6ed38473209e4bfc32 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/versionseal
+From https://github.com/kujolang/versionseal
+ * branch            f005374d72026a57c5246b6ed38473209e4bfc32 -> FETCH_HEAD
+HEAD is now at f005374 Add Kennel package manifest
+watchdog 7a0bd9a63d68421831ed66d6eed29805c48e1b24 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/watchdog
+From https://github.com/kujolang/watchdog
+ * branch            7a0bd9a63d68421831ed66d6eed29805c48e1b24 -> FETCH_HEAD
+HEAD is now at 7a0bd9a chore: refresh weekly pricing catalogs
+workcell 189d7ab6e975301a0e5100b65e8ad3fe4a584573 /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/workcell
+From https://github.com/kujolang/workcell
+ * branch            189d7ab6e975301a0e5100b65e8ad3fe4a584573 -> FETCH_HEAD
+HEAD is now at 189d7ab release: prepare Workcell 1.3.0 source candidate
+mcp 77180a3a6c104f0c5b185cefa1f6d0835edb704b /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/mcp
+From https://github.com/kujolang/mcp
+ * branch            77180a3a6c104f0c5b185cefa1f6d0835edb704b -> FETCH_HEAD
+HEAD is now at 77180a3 Use monochrome technology badge colors
+Sources ready. Install the official Kujo runtime separately; set ecosystem_root and kujo_bin in Hermes settings.
+Setup complete. Start a new Hermes conversation; restart a running gateway.
+Try: Run ShipCheck and show me the release-review findings.
+Use hermes kujo doctor to inspect optional service and tool dependencies.

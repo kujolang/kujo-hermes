@@ -1,0 +1,15 @@
+{
+  "cue": "ship",
+  "text": "ShipCheck flags release-review gaps, so you know what needs attention before you ship. This repository still has warnings.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "e4e90b229e2fe0f3b1f946e75b87da7163db4eabe6f20e122f8fa449dace7962",
+  "audio_sha256": "585363a151ee85ee34f49a9ebe5f098de8dad7be222f637e06cdc485702c1a4a",
+  "duration": 7.76,
+  "request_id": "NGNvqZbsGi1jVLiBeeyH",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T17:42:58Z"
+}

@@ -1,0 +1,17 @@
+{
+  "source": "evidence/setup.cast",
+  "windows": [
+    [
+      0.2,
+      3.2,
+      2.1
+    ],
+    [
+      36.95,
+      36.95,
+      2.9
+    ]
+  ],
+  "duration": 5.0,
+  "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
+}
