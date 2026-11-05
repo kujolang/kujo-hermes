@@ -1,0 +1,44 @@
+test_deep_output_retains_raw_evidence_and_failure_receipt (test_failure_boundaries.FailureBoundaryTests.test_deep_output_retains_raw_evidence_and_failure_receipt) ...
+  test_deep_output_retains_raw_evidence_and_failure_receipt (test_failure_boundaries.FailureBoundaryTests.test_deep_output_retains_raw_evidence_and_failure_receipt) (depth=129) ... FAIL
+  test_deep_output_retains_raw_evidence_and_failure_receipt (test_failure_boundaries.FailureBoundaryTests.test_deep_output_retains_raw_evidence_and_failure_receipt) (depth=2000) ... ERROR
+test_setup_failures_reap_child_and_close_pipes (test_failure_boundaries.FailureBoundaryTests.test_setup_failures_reap_child_and_close_pipes) ...
+  test_setup_failures_reap_child_and_close_pipes (test_failure_boundaries.FailureBoundaryTests.test_setup_failures_reap_child_and_close_pipes) (target='selectors.DefaultSelector') ... FAIL
+  test_setup_failures_reap_child_and_close_pipes (test_failure_boundaries.FailureBoundaryTests.test_setup_failures_reap_child_and_close_pipes) (target='os.set_blocking') ... FAIL
+
+======================================================================
+ERROR: test_deep_output_retains_raw_evidence_and_failure_receipt (test_failure_boundaries.FailureBoundaryTests.test_deep_output_retains_raw_evidence_and_failure_receipt) (depth=2000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpsjdymslm/tests/test_failure_boundaries.py", line 64, in test_deep_output_retains_raw_evidence_and_failure_receipt
+    self.assertEqual(receipt['result']['stdout'], '['*depth+'0'+']'*depth+'\n')
+                     ~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+
+======================================================================
+FAIL: test_deep_output_retains_raw_evidence_and_failure_receipt (test_failure_boundaries.FailureBoundaryTests.test_deep_output_retains_raw_evidence_and_failure_receipt) (depth=129)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpsjdymslm/tests/test_failure_boundaries.py", line 59, in test_deep_output_retains_raw_evidence_and_failure_receipt
+    self.assertFalse(result['ok'])
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_setup_failures_reap_child_and_close_pipes (test_failure_boundaries.FailureBoundaryTests.test_setup_failures_reap_child_and_close_pipes) (target='selectors.DefaultSelector')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpsjdymslm/tests/test_failure_boundaries.py", line 33, in test_setup_failures_reap_child_and_close_pipes
+    self.assertIsNotNone(proc.poll(), 'child leaked after setup failed')
+AssertionError: unexpectedly None : child leaked after setup failed
+
+======================================================================
+FAIL: test_setup_failures_reap_child_and_close_pipes (test_failure_boundaries.FailureBoundaryTests.test_setup_failures_reap_child_and_close_pipes) (target='os.set_blocking')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpsjdymslm/tests/test_failure_boundaries.py", line 33, in test_setup_failures_reap_child_and_close_pipes
+    self.assertIsNotNone(proc.poll(), 'child leaked after setup failed')
+AssertionError: unexpectedly None : child leaked after setup failed
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.878s
+
+FAILED (failures=3, errors=1)

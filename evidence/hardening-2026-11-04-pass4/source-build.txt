@@ -1,0 +1,126 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=68,<81
+* Getting build dependencies for sdist...
+/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/build-env-2k_nychn/lib/python3.10/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+running egg_info
+writing kujo_hermes.egg-info/PKG-INFO
+writing dependency_links to kujo_hermes.egg-info/dependency_links.txt
+writing requirements to kujo_hermes.egg-info/requires.txt
+writing top-level names to kujo_hermes.egg-info/top_level.txt
+reading manifest file 'kujo_hermes.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'kujo_hermes.egg-info/SOURCES.txt'
+* Building sdist...
+/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/build-env-2k_nychn/lib/python3.10/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+running sdist
+running egg_info
+writing kujo_hermes.egg-info/PKG-INFO
+writing dependency_links to kujo_hermes.egg-info/dependency_links.txt
+writing requirements to kujo_hermes.egg-info/requires.txt
+writing top-level names to kujo_hermes.egg-info/top_level.txt
+reading manifest file 'kujo_hermes.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'kujo_hermes.egg-info/SOURCES.txt'
+running check
+creating kujo_hermes-0.1.0
+creating kujo_hermes-0.1.0/catalog
+creating kujo_hermes-0.1.0/docs
+creating kujo_hermes-0.1.0/docs/audits
+creating kujo_hermes-0.1.0/kujo_hermes
+creating kujo_hermes-0.1.0/kujo_hermes.egg-info
+creating kujo_hermes-0.1.0/kujo_hermes/vendor
+creating kujo_hermes-0.1.0/scripts
+creating kujo_hermes-0.1.0/skills/kujo-engineering
+creating kujo_hermes-0.1.0/tests
+copying files to kujo_hermes-0.1.0...
+copying LICENSE -> kujo_hermes-0.1.0
+copying MANIFEST.in -> kujo_hermes-0.1.0
+copying README.md -> kujo_hermes-0.1.0
+copying SECURITY.md -> kujo_hermes-0.1.0
+copying __init__.py -> kujo_hermes-0.1.0
+copying plugin.yaml -> kujo_hermes-0.1.0
+copying pyproject.toml -> kujo_hermes-0.1.0
+copying catalog/abilities.json -> kujo_hermes-0.1.0/catalog
+copying catalog/profiles.json -> kujo_hermes-0.1.0/catalog
+copying catalog/sources.lock.json -> kujo_hermes-0.1.0/catalog
+copying docs/abilities.md -> kujo_hermes-0.1.0/docs
+copying docs/ability-inventory.json -> kujo_hermes-0.1.0/docs
+copying docs/acceptance.md -> kujo_hermes-0.1.0/docs
+copying docs/architecture.md -> kujo_hermes-0.1.0/docs
+copying docs/compatibility.md -> kujo_hermes-0.1.0/docs
+copying docs/configuration.md -> kujo_hermes-0.1.0/docs
+copying docs/ecosystem-inventory.json -> kujo_hermes-0.1.0/docs
+copying docs/organization.json -> kujo_hermes-0.1.0/docs
+copying docs/parity.md -> kujo_hermes-0.1.0/docs
+copying docs/provenance.json -> kujo_hermes-0.1.0/docs
+copying docs/readiness.md -> kujo_hermes-0.1.0/docs
+copying docs/testing.md -> kujo_hermes-0.1.0/docs
+copying docs/audits/repository-hardening-pass2.md -> kujo_hermes-0.1.0/docs/audits
+copying docs/audits/repository-hardening-pass3.md -> kujo_hermes-0.1.0/docs/audits
+copying docs/audits/repository-hardening.md -> kujo_hermes-0.1.0/docs/audits
+copying kujo_hermes/__init__.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/approval.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/catalog.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/commands.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/config.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/evidence.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/network.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/plugin.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/process.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes/service.py -> kujo_hermes-0.1.0/kujo_hermes
+copying kujo_hermes.egg-info/PKG-INFO -> kujo_hermes-0.1.0/kujo_hermes.egg-info
+copying kujo_hermes.egg-info/SOURCES.txt -> kujo_hermes-0.1.0/kujo_hermes.egg-info
+copying kujo_hermes.egg-info/dependency_links.txt -> kujo_hermes-0.1.0/kujo_hermes.egg-info
+copying kujo_hermes.egg-info/requires.txt -> kujo_hermes-0.1.0/kujo_hermes.egg-info
+copying kujo_hermes.egg-info/top_level.txt -> kujo_hermes-0.1.0/kujo_hermes.egg-info
+copying kujo_hermes/vendor/__init__.py -> kujo_hermes-0.1.0/kujo_hermes/vendor
+copying kujo_hermes/vendor/ability.py -> kujo_hermes-0.1.0/kujo_hermes/vendor
+copying scripts/demo-check.py -> kujo_hermes-0.1.0/scripts
+copying scripts/install-sources.py -> kujo_hermes-0.1.0/scripts
+copying scripts/inventory.py -> kujo_hermes-0.1.0/scripts
+copying scripts/live-packwrite.py -> kujo_hermes-0.1.0/scripts
+copying scripts/measure.py -> kujo_hermes-0.1.0/scripts
+copying scripts/optional-tools.py -> kujo_hermes-0.1.0/scripts
+copying scripts/real-tools.py -> kujo_hermes-0.1.0/scripts
+copying scripts/service-tools.py -> kujo_hermes-0.1.0/scripts
+copying skills/kujo-engineering/SKILL.md -> kujo_hermes-0.1.0/skills/kujo-engineering
+copying tests/test_approval.py -> kujo_hermes-0.1.0/tests
+copying tests/test_core.py -> kujo_hermes-0.1.0/tests
+copying tests/test_failure_boundaries.py -> kujo_hermes-0.1.0/tests
+copying tests/test_hardening.py -> kujo_hermes-0.1.0/tests
+copying tests/test_lifecycle.py -> kujo_hermes-0.1.0/tests
+copying tests/test_normalization.py -> kujo_hermes-0.1.0/tests
+copying kujo_hermes.egg-info/SOURCES.txt -> kujo_hermes-0.1.0/kujo_hermes.egg-info
+Writing kujo_hermes-0.1.0/setup.cfg
+Creating tar archive
+removing 'kujo_hermes-0.1.0' (and everything under it)
+Successfully built kujo_hermes-0.1.0.tar.gz
