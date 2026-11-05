@@ -1,0 +1,2938 @@
+{
+  "kind": "real canonical CLI integration; explicit test approval callback",
+  "runtime": "kujo 1.8.0",
+  "results": [
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "6d426e82-f26c-4b81-84d9-b5460f132df9",
+      "receipt_digest": "e5822bf87fb04705299a055c4531a2ee952931264af88f65b38e7e31cb9ef9db",
+      "ability_id": "kujo.ability.catalog.list",
+      "error": null,
+      "result": {
+        "profile": "full",
+        "total": 51,
+        "abilities": [
+          {
+            "id": "kujo.ability.catalog.list",
+            "title": "List Kujo abilities",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.ability.catalog"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": null,
+            "note": null
+          },
+          {
+            "id": "kujo.ability.receipts.list",
+            "title": "Inspect Ability receipts",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.ability.receipts"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": null,
+            "note": null
+          },
+          {
+            "id": "kujo.scout.repository.inspect",
+            "title": "Inspect repository with Scout",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.files"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.scout.artifacts"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "scout",
+            "note": null
+          },
+          {
+            "id": "kujo.scent.context.pack",
+            "title": "Build Scent context pack",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.files"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.scent.artifacts"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "scent",
+            "note": null
+          },
+          {
+            "id": "kujo.patchbrief.changes.summarize",
+            "title": "Summarize git changes",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.git"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "patchbrief",
+            "note": null
+          },
+          {
+            "id": "kujo.changebucket.changes.measure",
+            "title": "Measure change footprint",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.git"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "changebucket",
+            "note": null
+          },
+          {
+            "id": "kujo.shipcheck.repository.scan",
+            "title": "Scan release readiness",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.release"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "shipcheck",
+            "note": null
+          },
+          {
+            "id": "kujo.fence.architecture.check",
+            "title": "Check architecture boundaries",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.architecture"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "fence",
+            "note": null
+          },
+          {
+            "id": "kujo.spec.contract.validate",
+            "title": "Validate task contract",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.spec.contract"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "spec",
+            "note": null
+          },
+          {
+            "id": "kujo.eval.suite.run",
+            "title": "Run Eval suite",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.eval.commands"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.eval.artifacts"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "eval",
+            "note": null
+          },
+          {
+            "id": "kujo.runledger.runs.report",
+            "title": "Report agent runs",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.runledger.records"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "runledger",
+            "note": null
+          },
+          {
+            "id": "kujo.dispatch.workflow.validate",
+            "title": "Validate Dispatch workflow",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.dispatch.workflow"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "dispatch",
+            "note": null
+          },
+          {
+            "id": "kujo.rag.knowledge.query",
+            "title": "Query local Kujo RAG",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.rag.index"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "rag",
+            "note": null
+          },
+          {
+            "id": "kujo.watchdog.service.health",
+            "title": "Check local Watchdog",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.watchdog.telemetry"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "watchdog",
+            "note": null
+          },
+          {
+            "id": "kujo.concord.artifacts.scan",
+            "title": "Scan artifact drift",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.artifacts"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "concord",
+            "note": null
+          },
+          {
+            "id": "kujo.casefile.failure.capture",
+            "title": "Capture failure evidence",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.failure.logs"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.casefile.artifacts"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "casefile",
+            "note": null
+          },
+          {
+            "id": "kujo.muzzle.workflow.run",
+            "title": "Run quiet workflow",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.muzzle.workflow"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.muzzle.logs"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "muzzle",
+            "note": null
+          },
+          {
+            "id": "kujo.kennel.project.validate",
+            "title": "Validate Kennel project",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.kennel.manifest"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "kennel",
+            "note": null
+          },
+          {
+            "id": "kujo.kennel.dependencies.install",
+            "title": "Install Kennel dependencies",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.kennel.registry"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.kennel.dependencies"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "kennel",
+            "note": null
+          },
+          {
+            "id": "kujo.dispatch.workflow.run",
+            "title": "Run Dispatch workflow",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.dispatch.agents"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.dispatch.runs"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "dispatch",
+            "note": null
+          },
+          {
+            "id": "kujo.rag.knowledge.ingest",
+            "title": "Ingest local knowledge",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.rag.embeddings"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.rag.index"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "rag",
+            "note": null
+          },
+          {
+            "id": "kujo.watchdog.telemetry.record",
+            "title": "Record Watchdog telemetry",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.watchdog.telemetry"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "watchdog",
+            "note": null
+          },
+          {
+            "id": "kujo.redact.document.scan",
+            "title": "Scan document for sensitive data",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.redact.documents"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.redact.audit"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "redact",
+            "note": null
+          },
+          {
+            "id": "kujo.redact.document.sanitize",
+            "title": "Sanitize sensitive document",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.redact.documents"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.redact.documents"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.redact.audit"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "redact",
+            "note": null
+          },
+          {
+            "id": "kujo.versionseal.records.validate",
+            "title": "Validate VersionSeal records",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.versionseal.records"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "versionseal",
+            "note": null
+          },
+          {
+            "id": "kujo.packwrite.pack.validate",
+            "title": "Validate agent pack",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.packwrite.pack"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "packwrite",
+            "note": null
+          },
+          {
+            "id": "kujo.packwrite.pack.summary",
+            "title": "Summarize agent pack",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.packwrite.pack"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "packwrite",
+            "note": null
+          },
+          {
+            "id": "kujo.packwrite.pack.init",
+            "title": "Generate agent pack",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.packwrite.provider"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.packwrite.pack"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "packwrite",
+            "note": null
+          },
+          {
+            "id": "kujo.runledger.runs.start",
+            "title": "Start RunLedger record",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.git"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.runledger.records"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "runledger",
+            "note": null
+          },
+          {
+            "id": "kujo.runledger.runs.finish",
+            "title": "Finish RunLedger record",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.repository.git"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.runledger.records"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "runledger",
+            "note": null
+          },
+          {
+            "id": "kujo.tribunal.proposal.validate",
+            "title": "Validate decision proposal",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.tribunal.proposal"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "tribunal",
+            "note": null
+          },
+          {
+            "id": "kujo.tribunal.review.mock",
+            "title": "Run offline decision hearing",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.tribunal.proposal"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.tribunal.evidence"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "tribunal",
+            "note": null
+          },
+          {
+            "id": "kujo.dossier.records.validate",
+            "title": "Validate evidence ledger",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.dossier.records"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "dossier",
+            "note": null
+          },
+          {
+            "id": "kujo.dossier.records.report",
+            "title": "Report evidence ledger",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.dossier.records"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "dossier",
+            "note": null
+          },
+          {
+            "id": "kujo.howl.showcase.validate",
+            "title": "Validate showcase manifest",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.howl.showcase"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "howl",
+            "note": null
+          },
+          {
+            "id": "kujo.howl.showcase.render",
+            "title": "Render showcase artifacts",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.howl.showcase"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.howl.artifacts"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "howl",
+            "note": null
+          },
+          {
+            "id": "kujo.lens.flow.validate",
+            "title": "Validate browser flow",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.lens.flow"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "lens",
+            "note": null
+          },
+          {
+            "id": "kujo.lens.page.check",
+            "title": "Check rendered page",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.lens.browser"
+              },
+              {
+                "kind": "write",
+                "resource": "kujo.lens.artifacts"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "lens",
+            "note": null
+          },
+          {
+            "id": "kujo.workcell.definition.validate",
+            "title": "Workcell validate",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.workcell.execution"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "workcell",
+            "note": null
+          },
+          {
+            "id": "kujo.workcell.definition.inspect",
+            "title": "Workcell inspect",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.workcell.execution"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "workcell",
+            "note": null
+          },
+          {
+            "id": "kujo.workcell.definition.run",
+            "title": "Workcell run",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.workcell.execution"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "workcell",
+            "note": null
+          },
+          {
+            "id": "kujo.workcell.runtime.doctor",
+            "title": "Workcell runtime diagnostics",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.workcell.execution"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "workcell",
+            "note": null
+          },
+          {
+            "id": "kujo.workflows.loop.run",
+            "title": "Run Loop engineering gates",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.kujo_workflows.execution"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "kujo-workflows",
+            "note": null
+          },
+          {
+            "id": "kujo.runtime.version.inspect",
+            "title": "Inspect Kujo runtime version",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.kujo.execution"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.runtime.source.check",
+            "title": "Check Kujo source",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.kujo.execution"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.runtime.source.run",
+            "title": "Run Kujo source",
+            "effects": [
+              {
+                "kind": "external",
+                "resource": "kujo.kujo.execution"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.hermes.lint.execute",
+            "title": "Lint Kujo source",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.kujo.files"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.hermes.format.execute",
+            "title": "Format Kujo source",
+            "effects": [
+              {
+                "kind": "write",
+                "resource": "kujo.kujo.files"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.hermes.lsp.diagnostics.execute",
+            "title": "Get Kujo editor diagnostics",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.kujo.files"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.hermes.lsp.complete.execute",
+            "title": "Get Kujo completion candidates",
+            "effects": [
+              {
+                "kind": "read",
+                "resource": "kujo.kujo.files"
+              }
+            ],
+            "approval_required": false,
+            "installed": true,
+            "dependency": "kujo",
+            "note": null
+          },
+          {
+            "id": "kujo.hermes.mcp.make.execute",
+            "title": "Generate Kujo MCP repository profile",
+            "effects": [
+              {
+                "kind": "write",
+                "resource": "kujo.mcp.files"
+              }
+            ],
+            "approval_required": true,
+            "installed": true,
+            "dependency": "mcp",
+            "note": null
+          }
+        ],
+        "next_offset": null
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "95f9d127-b009-4149-940a-47a02eee960f",
+      "receipt_digest": "cbef1c4f826fafabf2048c0112a8c3ab13a42418d926a8956e9ccd6b5db95973",
+      "ability_id": "kujo.shipcheck.repository.scan",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 93,
+        "structured": {
+          "checks": [
+            {
+              "detail": "",
+              "message": "Git repository detected",
+              "name": "git-repo",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "README found: README.md",
+              "name": "readme",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "LICENSE found: LICENSE",
+              "name": "license",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "Add a .gitignore to exclude build artifacts",
+              "message": "No .gitignore found",
+              "name": "ignore-files",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Add a tests/ directory or test files",
+              "message": "No test directory or test files found",
+              "name": "tests-exist",
+              "passed": 0,
+              "severity": "error"
+            },
+            {
+              "detail": "Add a lint script or Makefile target",
+              "message": "No lint command detected",
+              "name": "lint-command",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Add a format script or Makefile target",
+              "message": "No format command detected",
+              "name": "format-command",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Consider adding CI (e.g., .github/workflows/ci.yml)",
+              "message": "No CI configuration detected",
+              "name": "ci-config",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Add an 'Install' or 'Quick Start' section",
+              "message": "README may lack install instructions",
+              "name": "readme-install",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Add a 'Usage' section with examples",
+              "message": "README may lack usage instructions",
+              "name": "readme-usage",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "",
+              "message": "Examples directory found with 1 entries",
+              "name": "examples",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "Consider adding a docs/ directory",
+              "message": "No docs/ directory found",
+              "name": "docs",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "",
+              "message": "kennel.toml found with version field",
+              "name": "version-metadata",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "",
+              "message": "Changelog found: CHANGELOG.md",
+              "name": "changelog",
+              "passed": 1,
+              "severity": "info"
+            },
+            {
+              "detail": "Add missing [package] fields",
+              "message": "kennel.toml found but missing fields: description license",
+              "name": "kennel-manifest",
+              "passed": 0,
+              "severity": "warning"
+            },
+            {
+              "detail": "Define 'entry' in kennel.toml [kujo] section or add a main .kujo script",
+              "message": "No clear entry point detected",
+              "name": "entry-point",
+              "passed": 0,
+              "severity": "warning"
+            }
+          ],
+          "dir": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo",
+          "project_type": "kujo",
+          "summary": {
+            "failed_errors": 1,
+            "gate_passed": 0,
+            "passed": 6,
+            "total_checks": 16,
+            "warnings": 9
+          },
+          "tool": "shipcheck",
+          "version": "1.0.2"
+        },
+        "stdout_digest": "6f489e2ae52fb2eb9cb88c0d42c4f7fe59ba17d41dd7f9a0cd35bba30817ad62"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "443e98c5-9ea9-413f-9740-640a8fc2bf45",
+      "receipt_digest": "74248b2fef3d7c4b2b9f1d9546da078df4965659656f6c989a269aa5946fcaa5",
+      "ability_id": "kujo.patchbrief.changes.summarize",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 417,
+        "structured": {
+          "analysis": {
+            "diff_bytes_analyzed": 163,
+            "diff_error": false,
+            "diff_max_bytes": 1048576,
+            "diff_truncated": false
+          },
+          "branch": "main",
+          "files": [
+            {
+              "language": "Markdown",
+              "path": "README.md"
+            },
+            {
+              "language": "JSON",
+              "path": ".dossier/metadata.json"
+            },
+            {
+              "language": "JSON",
+              "path": ".muzzle/manifests/build-check.json"
+            },
+            {
+              "language": "Shell",
+              "path": ".muzzle/workflows/build-check.sh"
+            },
+            {
+              "language": "JSON",
+              "path": ".versionseal/metadata.json"
+            },
+            {
+              "language": "Markdown",
+              "path": "decision.md"
+            },
+            {
+              "language": "Unknown",
+              "path": "example.txt"
+            },
+            {
+              "language": "Markdown",
+              "path": "examples/research-report/sources/source.md"
+            },
+            {
+              "language": "TOML",
+              "path": "fence.toml"
+            },
+            {
+              "language": "JSON",
+              "path": "howl.json"
+            },
+            {
+              "language": "TOML",
+              "path": "kennel.toml"
+            },
+            {
+              "language": "Markdown",
+              "path": "knowledge/hermes.md"
+            },
+            {
+              "language": "JSON",
+              "path": "lens-flow.json"
+            },
+            {
+              "language": "YAML",
+              "path": "redact-policy.yaml"
+            },
+            {
+              "language": "JSON",
+              "path": "simple-workflow.json"
+            },
+            {
+              "language": "JSON",
+              "path": "workcell.json"
+            }
+          ],
+          "likely_purpose": "Bug fix, Documentation",
+          "recent_commits": [
+            "90491bb fixture"
+          ],
+          "repo": "repo",
+          "risk_areas": [
+            "No high-risk patterns detected (heuristic check only)"
+          ],
+          "summary": {
+            "files_changed": 16,
+            "lines_added": 2,
+            "lines_removed": 0
+          },
+          "tool": "patchbrief",
+          "version": "1.0.3"
+        },
+        "stdout_digest": "efbb4970170604c9b67ebe70c2b17294c872f98f230c6e3fbc44d32b7e9c91f8"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "5786bf88-7fc8-4dd1-a94d-438b38176299",
+      "receipt_digest": "4303a0e644e17784b6fa3d853d3d6d55af4040b7ac2d56936a2696c62193a4ae",
+      "ability_id": "kujo.changebucket.changes.measure",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 243,
+        "structured": {
+          "base": "HEAD",
+          "budget": {
+            "checked": false,
+            "failures": [],
+            "passed": true
+          },
+          "categories": {
+            "ci": [],
+            "config": [
+              "fence.toml",
+              "kennel.toml"
+            ],
+            "dependency_manifests": [],
+            "docs": [
+              "README.md",
+              "decision.md",
+              "examples/research-report/sources/source.md",
+              "knowledge/hermes.md"
+            ],
+            "generated": [],
+            "lockfiles": [],
+            "other": [
+              ".dossier/metadata.json",
+              ".muzzle/manifests/build-check.json",
+              ".versionseal/metadata.json",
+              "example.txt",
+              "howl.json",
+              "lens-flow.json",
+              "redact-policy.yaml",
+              "simple-workflow.json",
+              "workcell.json"
+            ],
+            "scripts": [
+              ".muzzle/workflows/build-check.sh"
+            ],
+            "source": [],
+            "tests": []
+          },
+          "files": [
+            {
+              "additions": 2,
+              "binary": false,
+              "categories": [
+                "docs"
+              ],
+              "churn": 2,
+              "deletions": 0,
+              "path": "README.md",
+              "status": "modified"
+            },
+            {
+              "additions": 7,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 7,
+              "deletions": 0,
+              "path": ".dossier/metadata.json",
+              "status": "added"
+            },
+            {
+              "additions": 15,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 15,
+              "deletions": 0,
+              "path": ".muzzle/manifests/build-check.json",
+              "status": "added"
+            },
+            {
+              "additions": 15,
+              "binary": false,
+              "categories": [
+                "scripts"
+              ],
+              "churn": 15,
+              "deletions": 0,
+              "path": ".muzzle/workflows/build-check.sh",
+              "status": "added"
+            },
+            {
+              "additions": 7,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 7,
+              "deletions": 0,
+              "path": ".versionseal/metadata.json",
+              "status": "added"
+            },
+            {
+              "additions": 19,
+              "binary": false,
+              "categories": [
+                "docs"
+              ],
+              "churn": 19,
+              "deletions": 0,
+              "path": "decision.md",
+              "status": "added"
+            },
+            {
+              "additions": 1,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 1,
+              "deletions": 0,
+              "path": "example.txt",
+              "status": "added"
+            },
+            {
+              "additions": 1,
+              "binary": false,
+              "categories": [
+                "docs"
+              ],
+              "churn": 1,
+              "deletions": 0,
+              "path": "examples/research-report/sources/source.md",
+              "status": "added"
+            },
+            {
+              "additions": 73,
+              "binary": false,
+              "categories": [
+                "config"
+              ],
+              "churn": 73,
+              "deletions": 0,
+              "path": "fence.toml",
+              "status": "added"
+            },
+            {
+              "additions": 1,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 1,
+              "deletions": 0,
+              "path": "howl.json",
+              "status": "added"
+            },
+            {
+              "additions": 4,
+              "binary": false,
+              "categories": [
+                "config"
+              ],
+              "churn": 4,
+              "deletions": 0,
+              "path": "kennel.toml",
+              "status": "added"
+            },
+            {
+              "additions": 1,
+              "binary": false,
+              "categories": [
+                "docs"
+              ],
+              "churn": 1,
+              "deletions": 0,
+              "path": "knowledge/hermes.md",
+              "status": "added"
+            },
+            {
+              "additions": 20,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 20,
+              "deletions": 0,
+              "path": "lens-flow.json",
+              "status": "added"
+            },
+            {
+              "additions": 17,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 17,
+              "deletions": 0,
+              "path": "redact-policy.yaml",
+              "status": "added"
+            },
+            {
+              "additions": 1,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 1,
+              "deletions": 0,
+              "path": "simple-workflow.json",
+              "status": "added"
+            },
+            {
+              "additions": 16,
+              "binary": false,
+              "categories": [
+                "other"
+              ],
+              "churn": 16,
+              "deletions": 0,
+              "path": "workcell.json",
+              "status": "added"
+            }
+          ],
+          "generated_at": "2026-11-05T03:43:58Z",
+          "head": "working tree",
+          "summary": {
+            "binary_files": 0,
+            "files_added": 15,
+            "files_changed": 16,
+            "files_deleted": 0,
+            "files_modified": 1,
+            "files_renamed": 0,
+            "lines_added": 200,
+            "lines_deleted": 0,
+            "risk_level": "medium",
+            "total_churn": 200
+          }
+        },
+        "stdout_digest": "95ea07e4f25508f8d1abba7b30fbc36cf2d585ea696dffd0c122a145057e13b1"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "86c26001-e523-4bc4-97d7-618277b86284",
+      "receipt_digest": "b19f5285fade898567035a55da6d2f7b11c347436546225ebd1f632dae0ce7c8",
+      "ability_id": "kujo.spec.contract.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 868,
+        "structured": {
+          "errors": [],
+          "valid": true,
+          "warnings": []
+        },
+        "stdout_digest": "09c21b5aac2557bbf649848b4b1ac8ab6f7b445171af51890f6658a0a1a722f5"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "6a676fb6-56c1-4d37-ae6a-80652654783f",
+      "receipt_digest": "91a207b0d6e71b8606bf220afde576751adbb044cd1b02319260700e2eaf9c49",
+      "ability_id": "kujo.packwrite.pack.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 164,
+        "structured": {
+          "errors": [],
+          "ok": true,
+          "warnings": []
+        },
+        "stdout_digest": "202d12a3a0d39740a89a015ef02f0d929f29c76c546c849afd280a4534e5da2c"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "04f8cc4c-2953-4292-b103-bb99536314d1",
+      "receipt_digest": "62a718bb1224ca5a79961205908c3499cc26dca968930773c2e2c6709209df8a",
+      "ability_id": "kujo.packwrite.pack.summary",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 154,
+        "structured": {
+          "errors": [],
+          "missing_files": [],
+          "next_command": "packwrite prompt deepseek",
+          "ok": true,
+          "output_dir": "agent",
+          "phase_count": 7,
+          "warnings": []
+        },
+        "stdout_digest": "6440e776597499a5267470641654d1f073800fb15afa093d092b57bcf7100351"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "8c843622-de7a-4dec-92dd-af9f70257ca9",
+      "receipt_digest": "bb2b0dec98686fcbfc75b47c6f5cfc66c2456781dac84abee05dfc58db3b0ff4",
+      "ability_id": "kujo.eval.suite.run",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 305,
+        "structured": {
+          "data": {
+            "active_policy_stage": "",
+            "cache_metric_bytes_reused": 0,
+            "cache_metric_candidates": 0,
+            "cache_metric_hits": 0,
+            "cache_metric_misses": 0,
+            "cache_metric_unique_files": 0,
+            "duration_ms": 86,
+            "failed": 0,
+            "parallel_fallback_reason": "",
+            "parallel_mode": "serial",
+            "parallel_prefetch_duration_ms": 0,
+            "parallel_prefetched_files": 0,
+            "parallel_requested": false,
+            "parallel_used": false,
+            "parallel_workers": 1,
+            "passed": 2,
+            "skipped": 0,
+            "suite_description": "",
+            "suite_name": "hermes-real",
+            "suite_version": "0.0.0",
+            "test_results": [
+              {
+                "check": "file_exists",
+                "description": "",
+                "details": {
+                  "exists": true,
+                  "path": "README.md"
+                },
+                "message": "File exists: README.md",
+                "name": "readme exists",
+                "passed": true,
+                "skipped": false
+              },
+              {
+                "check": "output_contains",
+                "description": "",
+                "details": {
+                  "allowed_command_patterns": [],
+                  "allowed_commands": [],
+                  "blocked_arg_patterns": [],
+                  "command": "printf verified-hermes",
+                  "command_pattern_match_mode": "substring",
+                  "exit_code": 0,
+                  "expected": "verified-hermes",
+                  "found": true,
+                  "stdout": "verified-hermes"
+                },
+                "message": "Output contains expected text",
+                "name": "output value",
+                "passed": true,
+                "skipped": false
+              }
+            ],
+            "timestamp": "",
+            "total": 2
+          },
+          "error": "",
+          "ok": true
+        },
+        "stdout_digest": "1bc9cd923c2a75466ede9b8ca4f6fca9c0ffb6c49794edab6dc12cbd371fd2d4"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "9f224868-f933-415d-bc55-8f81100c911d",
+      "receipt_digest": "eaa34b0fcc8cb22ae1c217c2b49d87210acbca20a1601225397d8edd84049482",
+      "ability_id": "kujo.scout.repository.inspect",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Scanning: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo\nOutput: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.kujo/scout/repo-20261105-034359-1793850239652-d9542910\nCode files analyzed: 45\nDependencies: 0\nRoutes: 0\nSecurity findings: 0\nOutput profile: minimal\nScan manifest: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.kujo/scout/repo-20261105-034359-1793850239652-d9542910/scan_manifest.json\nDone.\n",
+        "stderr": "",
+        "duration_ms": 259
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "1d05c1a6-3c82-4d17-a342-a86eefcc2ca4",
+      "receipt_digest": "40c95b85cac4befe687f44cc44d5737fcd1221cf6fcb4132261d0b7f2c85596b",
+      "ability_id": "kujo.scent.context.pack",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 268,
+        "structured": {
+          "budget": 12000,
+          "context_json": null,
+          "context_md": null,
+          "estimated_tokens": 6253,
+          "excluded_count": 13,
+          "included_files": 40,
+          "output_dir": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.scent/packs/unix-1793850240000-ae4e021d-163b-468f-bf5c-24a638e31e26",
+          "selected_files": [
+            {
+              "estimated_tokens": 13,
+              "path": "README.md",
+              "reason": "instruction file, docs/readme",
+              "score": 130,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 38,
+              "path": ".dossier/metadata.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 349,
+              "path": ".kujo/eval/artifact-manifest.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 19,
+              "path": ".kujo/eval/badge.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 223,
+              "path": ".kujo/eval/cli-summary.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 116,
+              "path": ".kujo/eval/eval-report.md.cache.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 523,
+              "path": ".kujo/eval/evaluation-result.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 23,
+              "path": ".kujo/eval/history.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 1,
+              "path": ".kujo/eval/last_failures.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 277,
+              "path": ".kujo/eval/last_run.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 51,
+              "path": ".kujo/eval/summary.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 534,
+              "path": ".kujo/scout/repo-20261105-034359-1793850239652-d9542910/intelligence.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 111,
+              "path": ".kujo/scout/repo-20261105-034359-1793850239652-d9542910/scan_manifest.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 95,
+              "path": ".muzzle/manifests/build-check.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 39,
+              "path": ".versionseal/metadata.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 63,
+              "path": "eval.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 398,
+              "path": "fence.toml",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 30,
+              "path": "howl.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 17,
+              "path": "kennel.toml",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 202,
+              "path": "lens-flow.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 49,
+              "path": "loop.yml",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 104,
+              "path": "redact-policy.yaml",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 102,
+              "path": "simple-workflow.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 431,
+              "path": "task.spec.yml",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 172,
+              "path": "workcell.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 159,
+              "path": "workflow.json",
+              "reason": "config/build file",
+              "score": 12,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 165,
+              "path": ".kujo/eval/eval-report.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 247,
+              "path": ".kujo/scout/repo-20261105-034359-1793850239652-d9542910/README.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 3,
+              "path": "CHANGELOG.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 45,
+              "path": "agent/CODEX_REVIEW_PROMPT.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 53,
+              "path": "agent/DECISIONS.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 29,
+              "path": "agent/DEEPSEEK_START.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 663,
+              "path": "agent/HANDOFF.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 36,
+              "path": "agent/MASTER.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 87,
+              "path": "agent/REVIEW_CHECKLIST.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 59,
+              "path": "agent/TODO.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 166,
+              "path": "agent/phases/00-project-brief.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 185,
+              "path": "agent/phases/01-research.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 184,
+              "path": "agent/phases/02-adapter.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            },
+            {
+              "estimated_tokens": 185,
+              "path": "agent/phases/03-security.md",
+              "reason": "docs/readme",
+              "score": 10,
+              "truncated": false
+            }
+          ],
+          "warnings": []
+        },
+        "stdout_digest": "e2eecb325c48ae7bdf9170f2d2f17779c309c8e751c1dbfeb869777e751af297"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "fa20551e-b450-4e41-a9ff-9b8058285ee7",
+      "receipt_digest": "fc7301054b6ff936b7b7bd9df750ffbc9a673c93c304698b7abee4604f4e3b0a",
+      "ability_id": "kujo.concord.artifacts.scan",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 487,
+        "structured": {
+          "directory": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo",
+          "findings": [
+            {
+              "actual": "No command examples found in bounded documentation discovery.",
+              "category": "cli-docs-alignment",
+              "confidence": "high",
+              "expected": "Documentation should contain usage examples with commands.",
+              "human_review_required": false,
+              "id": "cli-docs-no-commands-documented",
+              "severity": "medium",
+              "source_artifact": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/README.md",
+              "suggested_fix": "Add command usage examples to README or docs.",
+              "summary": "README and recursively discovered docs contain no recognizable command examples in fenced code blocks.",
+              "target_artifact": "(none)",
+              "title": "No commands documented"
+            },
+            {
+              "actual": "No eval files found.",
+              "category": "spec-eval-alignment",
+              "confidence": "high",
+              "expected": "Eval suite files should exist for the project.",
+              "human_review_required": false,
+              "id": "spec-eval-no-eval",
+              "severity": "low",
+              "source_artifact": "(none)",
+              "suggested_fix": "Create eval suites using `eval init`.",
+              "summary": "No eval suite JSON files found in tests/ or eval_results/.",
+              "target_artifact": "(none)",
+              "title": "No Eval suite files found"
+            },
+            {
+              "actual": "Name 'hermes-fixture' not found in README.",
+              "category": "manifest-docs-alignment",
+              "confidence": "medium",
+              "expected": "Package name in manifest should appear in README.",
+              "human_review_required": true,
+              "id": "manifest-docs-name-mismatch-0",
+              "severity": "medium",
+              "source_artifact": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/kennel.toml",
+              "suggested_fix": "Ensure README references the correct package name.",
+              "summary": "Manifest declares name 'hermes-fixture' but README does not mention it.",
+              "target_artifact": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/README.md",
+              "title": "Package name not found in README"
+            }
+          ],
+          "findings_by_category": {
+            "cli-docs-alignment": [
+              {
+                "actual": "No command examples found in bounded documentation discovery.",
+                "category": "cli-docs-alignment",
+                "confidence": "high",
+                "expected": "Documentation should contain usage examples with commands.",
+                "human_review_required": false,
+                "id": "cli-docs-no-commands-documented",
+                "severity": "medium",
+                "source_artifact": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/README.md",
+                "suggested_fix": "Add command usage examples to README or docs.",
+                "summary": "README and recursively discovered docs contain no recognizable command examples in fenced code blocks.",
+                "target_artifact": "(none)",
+                "title": "No commands documented"
+              }
+            ],
+            "manifest-docs-alignment": [
+              {
+                "actual": "Name 'hermes-fixture' not found in README.",
+                "category": "manifest-docs-alignment",
+                "confidence": "medium",
+                "expected": "Package name in manifest should appear in README.",
+                "human_review_required": true,
+                "id": "manifest-docs-name-mismatch-0",
+                "severity": "medium",
+                "source_artifact": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/kennel.toml",
+                "suggested_fix": "Ensure README references the correct package name.",
+                "summary": "Manifest declares name 'hermes-fixture' but README does not mention it.",
+                "target_artifact": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/README.md",
+                "title": "Package name not found in README"
+              }
+            ],
+            "spec-eval-alignment": [
+              {
+                "actual": "No eval files found.",
+                "category": "spec-eval-alignment",
+                "confidence": "high",
+                "expected": "Eval suite files should exist for the project.",
+                "human_review_required": false,
+                "id": "spec-eval-no-eval",
+                "severity": "low",
+                "source_artifact": "(none)",
+                "suggested_fix": "Create eval suites using `eval init`.",
+                "summary": "No eval suite JSON files found in tests/ or eval_results/.",
+                "target_artifact": "(none)",
+                "title": "No Eval suite files found"
+              }
+            ]
+          },
+          "summary": {
+            "highest_severity": "medium",
+            "total_findings": 3
+          },
+          "tool": "concord",
+          "version": "1.1.2"
+        },
+        "stdout_digest": "277ef777bc424282ee33d0e4128a6a9d4bc9ba2633cf465c42ae3ab981bcf9e8"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "68c95095-10b4-43de-a7a9-86b91875a821",
+      "receipt_digest": "340ab6030819ae3c592d1ea1f0ef246f95a6c11263ae96f1fc4710dbb5a9e1c2",
+      "ability_id": "kujo.dispatch.workflow.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 600,
+        "structured": {
+          "command": "validate",
+          "errors": [],
+          "ok": true,
+          "preflight": {
+            "errors": [],
+            "mode": "offline",
+            "ok": true,
+            "providers": [],
+            "warnings": []
+          },
+          "warnings": [],
+          "workflow_id": "plugin-echo"
+        },
+        "stdout_digest": "052900939fe33763a5de22e2a4d2906bab947eee2c996074996f98d1d05db9cc"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "d1ea3702-06b5-4882-a6cb-20c907a39898",
+      "receipt_digest": "acc85f74c4eb31220c8267302ea91a48d4d2ff48f465b4a4939d7049319c9520",
+      "ability_id": "kujo.casefile.failure.capture",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "Type checking warnings:\n  [KUJORUN001] [runtime] Type Error: Function 'replace' parameter 1 expects String but got Float\n  --> 0:0\n\n\n",
+        "duration_ms": 1680,
+        "structured": {
+          "case": {
+            "created_at": 1793850242829,
+            "id": "2026-11-04-224401-hermesfailure",
+            "mode": "log",
+            "name": "hermesfailure",
+            "path": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.casefile/cases/2026-11-04-224401-hermesfailure"
+          },
+          "classification": {
+            "keywords": [
+              "failure"
+            ],
+            "severity": "high",
+            "signals": [
+              "failure-keywords-detected",
+              "source-files-changed",
+              "many-files-changed",
+              "ci-config-changed",
+              "from-log-only",
+              "redaction-triggered"
+            ],
+            "status": "unknown"
+          },
+          "command": {
+            "argv": [],
+            "display": "<from-log> /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/failure.log",
+            "duration_ms": 0,
+            "exit_code": null
+          },
+          "environment": {
+            "arch": "x86_64",
+            "ci": null,
+            "composer": "Composer version 2.6-dev+c7bbd606216d2a5ceea93e6a536c39f6636a1f90 (2.6-dev) 2023-06-21 11:58:42",
+            "cwd": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo",
+            "go": "go version go1.27.3 darwin/amd64",
+            "node": "v26.12.1",
+            "npm": "11.20.0",
+            "os": "Darwin",
+            "package_manager": null,
+            "php": "PHP 8.4.7 (cli) (built: May  6 2025 12:31:58) (NTS)",
+            "pnpm": null,
+            "pytest": null,
+            "python": "Python 3.10.5",
+            "shell": "unknown",
+            "yarn": null
+          },
+          "logs": {
+            "combined": "combined.log",
+            "stderr": "stderr.log",
+            "stdout": "stdout.log",
+            "truncated": false
+          },
+          "recommendations": {
+            "next_checks": [
+              "Review the captured logs in combined.log",
+              "Review changed files listed in git-diff-stat.txt and case.md"
+            ]
+          },
+          "repository": {
+            "branch": "main",
+            "changed_files": [
+              {
+                "path": "README.md",
+                "status": "M"
+              },
+              {
+                "path": ".dossier/",
+                "status": "??"
+              },
+              {
+                "path": ".kujo/",
+                "status": "??"
+              },
+              {
+                "path": ".muzzle/",
+                "status": "??"
+              },
+              {
+                "path": ".versionseal/",
+                "status": "??"
+              },
+              {
+                "path": "decision.md",
+                "status": "??"
+              },
+              {
+                "path": "example.txt",
+                "status": "??"
+              },
+              {
+                "path": "examples/",
+                "status": "??"
+              },
+              {
+                "path": "fence.toml",
+                "status": "??"
+              },
+              {
+                "path": "howl.json",
+                "status": "??"
+              },
+              {
+                "path": "kennel.toml",
+                "status": "??"
+              },
+              {
+                "path": "knowledge/",
+                "status": "??"
+              },
+              {
+                "path": "lens-flow.json",
+                "status": "??"
+              },
+              {
+                "path": "redact-policy.yaml",
+                "status": "??"
+              },
+              {
+                "path": "simple-workflow.json",
+                "status": "??"
+              },
+              {
+                "path": "workcell.json",
+                "status": "??"
+              }
+            ],
+            "head": "90491bb0840c1f6e0c63f5883f77df675ae71f10",
+            "is_git_repo": true,
+            "root": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo"
+          },
+          "security": {
+            "redaction_count": 1,
+            "redaction_enabled": true
+          },
+          "version": "1.0.2"
+        },
+        "stdout_digest": "87715fcfa6dab3a724d1759e36749d6f6ad4a0ca852b69c219af9b960d3f5f3f"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "df784b49-ef9d-4910-89b9-2a450d45987a",
+      "receipt_digest": "c9ac3d5d7cd75fdc09b1e25627b23e640b0a5f4a32f25e2aa7b68d4a62036f54",
+      "ability_id": "kujo.runledger.runs.start",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Started run: 2026-11-05-test-hermes-verification-001\n  storage:      /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.runledger/runs/2026-11-05-test-hermes-verification-001.json\n  repo:         /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo\n  start commit: 90491bb0840c1f6e0c63f5883f77df675ae71f10\n\nNext: runledger finish 2026-11-05-test-hermes-verification-001 --status <pass|partial|fail|abandoned> --verdict \"...\"\n",
+        "stderr": "",
+        "duration_ms": 208
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "567f0329-4d96-4590-b989-06347ecd42fa",
+      "receipt_digest": "76ec91ff7ed2cd17afc2daba200348e45434a2c2d82918186d31a9fbd033b25a",
+      "ability_id": "kujo.runledger.runs.finish",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Finished run: 2026-11-05-test-hermes-verification-001\n  status:       pass\n  end commit:   90491bb0840c1f6e0c63f5883f77df675ae71f10\n  changed files: 44\n",
+        "stderr": "",
+        "duration_ms": 314
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "8eeacc53-f40d-4957-9a22-ab218eb2b877",
+      "receipt_digest": "69f698ad891579a17fe9220f665728e3f12ae301b35e146cb955ac361a6e8502",
+      "ability_id": "kujo.runledger.runs.report",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "# RunLedger Report\n\nGenerated: 2026-11-05T03:44:03Z\n\n## Summary\n\n| Runs | Pass | Partial | Fail | Abandoned |\n| ---: | ---: | ---: | ---: | ---: |\n| 1 | 1 | 0 | 0 | 0 |\n\n## Cost\n\nNo cost data recorded.\n\n## Runs\n\n| ID | Task | Provider | Model | Status | Verdict | Changed files | Follow-ups | Cost |\n| --- | --- | --- | --- | --- | --- | ---: | ---: | ---: |\n| 2026-11-05-test-hermes-verification-001 | Hermes verification | local | test | pass | Verified | 44 | 0 | - |\n\n## Runs by task\n\n### Hermes verification\n\n- 2026-11-05-test-hermes-verification-001 \u2014 pass (test)\n\n## Follow-ups\n\nNone.\n\n## Notes\n\nNone.\n\n",
+        "stderr": "",
+        "duration_ms": 70
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "ec9bf288-cc79-4d89-9200-13cb36d604a9",
+      "receipt_digest": "014f67276202f0fe251c23321abc08b3dcad48379cc8b48ac020b3c56ed8081e",
+      "ability_id": "kujo.workflows.loop.run",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Workflow complete: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo\nVerdict: success\n",
+        "stderr": "",
+        "duration_ms": 328
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "26613aed-0162-423d-9dd9-d8d22f31869d",
+      "receipt_digest": "e0136e1fdff008e98a218631bf476a49324521a328708fa5aab7e27c58420b61",
+      "ability_id": "kujo.runtime.version.inspect",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "kujo 1.8.0\n",
+        "stderr": "",
+        "duration_ms": 25
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "d0d991a7-ea71-417e-b17f-95713f4d9de9",
+      "receipt_digest": "98fe1ea4b08b7ad9005cf921f1edbc74dfe995067b5005412eb8c07c6d33df3b",
+      "ability_id": "kujo.runtime.source.check",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "check passed: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/hello.kujo\n",
+        "stderr": "",
+        "duration_ms": 23
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "f814644e-3846-4c06-b905-2f1b2822a55f",
+      "receipt_digest": "816982c8d50008c48a977806390852b2649061256ce50cf35a13485ded28122a",
+      "ability_id": "kujo.runtime.source.run",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Hello Hermes\n",
+        "stderr": "",
+        "duration_ms": 28
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "c637db3c-626e-4966-8214-2099f98aa5f5",
+      "receipt_digest": "39cfc03df35ee5ed1f9e2e44c36e5ffeee19f67b75d3461a570d294153c73f41",
+      "ability_id": "kujo.ability.receipts.list",
+      "error": null,
+      "result": {
+        "receipts": [
+          "f814644e-3846-4c06-b905-2f1b2822a55f",
+          "d0d991a7-ea71-417e-b17f-95713f4d9de9",
+          "26613aed-0162-423d-9dd9-d8d22f31869d",
+          "ec9bf288-cc79-4d89-9200-13cb36d604a9",
+          "8eeacc53-f40d-4957-9a22-ab218eb2b877",
+          "567f0329-4d96-4590-b989-06347ecd42fa",
+          "df784b49-ef9d-4910-89b9-2a450d45987a",
+          "d1ea3702-06b5-4882-a6cb-20c907a39898",
+          "68c95095-10b4-43de-a7a9-86b91875a821",
+          "fa20551e-b450-4e41-a9ff-9b8058285ee7",
+          "1d05c1a6-3c82-4d17-a342-a86eefcc2ca4",
+          "9f224868-f933-415d-bc55-8f81100c911d",
+          "8c843622-de7a-4dec-92dd-af9f70257ca9",
+          "04f8cc4c-2953-4292-b103-bb99536314d1",
+          "6a676fb6-56c1-4d37-ae6a-80652654783f",
+          "86c26001-e523-4bc4-97d7-618277b86284",
+          "5786bf88-7fc8-4dd1-a94d-438b38176299",
+          "443e98c5-9ea9-413f-9740-640a8fc2bf45",
+          "95f9d127-b009-4149-940a-47a02eee960f",
+          "6d426e82-f26c-4b81-84d9-b5460f132df9"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "404052cb-675e-4198-a014-2d9bd1f2b2f3",
+      "receipt_digest": "0eac1d4383815149945fba32696fa19bbb47b5d73fe85cbddc05f551ba638221",
+      "ability_id": "kujo.hermes.lint.execute",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 28,
+        "structured": [],
+        "stdout_digest": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "9e814c31-ca83-4982-b6ce-7fe751d487c8",
+      "receipt_digest": "ecd22041b84a4afd623496e50b002b311a43eed7bdb0a59d313f307718cdb549",
+      "ability_id": "kujo.hermes.format.execute",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 25,
+        "structured": {
+          "changed": false,
+          "command": "format",
+          "file": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/hello.kujo",
+          "formatted_source": null,
+          "options": {
+            "check": false,
+            "indent": 4,
+            "line_length": 100,
+            "sort_imports": true,
+            "write": true
+          },
+          "status": "written"
+        },
+        "stdout_digest": "7c816940f2608ad6c4016806087cb4f91eeafc61e0d4425feae388a072e3b257"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "2cf00aa0-77e2-401a-9e5e-7c5067dd447b",
+      "receipt_digest": "5b4944c26ca514a1505a78662c88e0b3827b250a0754a4e1b948fea0063eb662",
+      "ability_id": "kujo.hermes.lsp.diagnostics.execute",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 27,
+        "structured": [],
+        "stdout_digest": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "343d431d-44fc-4044-bfdd-ffcd86ec58be",
+      "receipt_digest": "f4d118b2f41e1924bd33ff3a71b2a52a1eb474691ddf5b39a2ec9ba3a9dc9a51",
+      "ability_id": "kujo.hermes.lsp.complete.execute",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 24,
+        "structured": [
+          {
+            "label": "print",
+            "kind": "builtin"
+          },
+          {
+            "label": "println",
+            "kind": "builtin"
+          },
+          {
+            "label": "process_usage",
+            "kind": "builtin"
+          },
+          {
+            "label": "promise_all",
+            "kind": "builtin"
+          },
+          {
+            "label": "promise_wait",
+            "kind": "builtin"
+          }
+        ],
+        "stdout_digest": "73efb5f5a41d30ed8e88a01114a18c068452bd9118c5650899d6e52d41956b31"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "3e47528e-cad7-4524-9fac-7bdb5bcae124",
+      "receipt_digest": "2b71689faea3ccf1644cd3c958730663f06adb0ce71fd6e4521f5f279afc36ab",
+      "ability_id": "kujo.hermes.mcp.make.execute",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Profile generated at /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.mcp/repo-profile.json\n",
+        "stderr": "",
+        "duration_ms": 216
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "5ab7fc3b-4a98-406f-8018-4b8dfdd36b39",
+      "receipt_digest": "4c5d1ae9e74689f2332c9c885783051339d1db8b8eecc5a15b1da77d61cdcac7",
+      "ability_id": "kujo.fence.architecture.check",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 200,
+        "structured": {
+          "config": {
+            "path": "fence.toml"
+          },
+          "ignored_violations": [],
+          "schema_version": 1,
+          "skipped_files": [],
+          "status": "passed",
+          "summary": {
+            "errors": 0,
+            "files_scanned": 0,
+            "ignored_violations": 0,
+            "imports_checked": 0,
+            "skipped_files": 0,
+            "violations": 0,
+            "warnings": 0
+          },
+          "version": "1.1.0",
+          "violations": [],
+          "zones": [
+            {
+              "errors": 0,
+              "files": 0,
+              "name": "database",
+              "warnings": 0
+            },
+            {
+              "errors": 0,
+              "files": 0,
+              "name": "domain",
+              "warnings": 0
+            },
+            {
+              "errors": 0,
+              "files": 0,
+              "name": "http",
+              "warnings": 0
+            },
+            {
+              "errors": 0,
+              "files": 0,
+              "name": "infra",
+              "warnings": 0
+            },
+            {
+              "errors": 0,
+              "files": 0,
+              "name": "shared",
+              "warnings": 0
+            },
+            {
+              "errors": 0,
+              "files": 0,
+              "name": "ui",
+              "warnings": 0
+            }
+          ]
+        },
+        "stdout_digest": "ab3ebb113e801e8eba1e74a12999a6b1116d55ee50455016c65d620a08a203cb"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "84ba6544-1b9e-4a59-9ead-59693ec3c03c",
+      "receipt_digest": "a5811e1db069fa7d2d4a04f3c31350be0cf224f53b78cecb83c86a779c551979",
+      "ability_id": "kujo.rag.knowledge.ingest",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 457,
+        "structured": {
+          "command": "ingest",
+          "errors": [],
+          "index_path": "./data/rag_index.json",
+          "namespace": "default",
+          "ok": true,
+          "path": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/knowledge",
+          "recursive": true,
+          "stats": {
+            "docs_loaded": 1,
+            "errors": 0,
+            "files_seen": 1,
+            "total_bytes_estimate": 81
+          },
+          "summary": {
+            "chunks": 1,
+            "documents": 1,
+            "incremental": {
+              "deleted_docs": 0,
+              "reindexed_docs": 1,
+              "unchanged_docs": 0
+            },
+            "provider": "hash",
+            "schema_version": 2,
+            "updated_at": 1793850244953
+          }
+        },
+        "stdout_digest": "2a7068b6ee49707fca68ac0867adc73b6baff932e24ee6adab86955bc64727e7"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "722505a6-881a-42bd-bd7e-ec34ba2bef9c",
+      "receipt_digest": "a9d8ba6b0f48f69e8df5482ab516abe6058aaf615da644de427e158e2228784a",
+      "ability_id": "kujo.rag.knowledge.query",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 403,
+        "structured": {
+          "answer": "Answer draft based on retrieved sources:\nQuestion: What does Kujo Hermes validate?\n- /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/knowledge/hermes.md (1-1): Kujo Hermes validates repository specifications and preserves execution receipts.",
+          "citations": [
+            {
+              "author": "",
+              "chunk_id": "ddf0b4f816293604cbf3",
+              "confidence": 0.6979852208692305,
+              "confidence_band": "medium",
+              "confidence_components": {
+                "combined": 0.7944301167569845,
+                "dense": 0.649071198499986,
+                "lexical": 0.5302440147037124
+              },
+              "dense_score": 0.29814239699997197,
+              "doc_id": "54868cb60742e7166b885fcf",
+              "lexical_score": 1.1287647870399635,
+              "line_end": 1,
+              "line_start": 1,
+              "path": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/knowledge/hermes.md",
+              "provenance_score": 0.6979852208692305,
+              "score": 0.588860233513969,
+              "sensitivity_tags": [],
+              "snippet": "Kujo Hermes validates repository specifications and preserves execution receipts.",
+              "source_system": "document_file",
+              "structured_fields": [],
+              "structured_schema": "",
+              "text": "Kujo Hermes validates repository specifications and preserves execution receipts.",
+              "timestamp": ""
+            }
+          ],
+          "confidence": 0.6979852208692305,
+          "confidence_band": "medium",
+          "confidence_summary": {
+            "avg": 0.6979852208692305,
+            "band": "medium",
+            "count": 1,
+            "max": 0.6979852208692305
+          },
+          "count": 1,
+          "filters": {},
+          "namespace": "default",
+          "query": "What does Kujo Hermes validate?",
+          "query_intent": {
+            "intent": "fact",
+            "original_query": "What does Kujo Hermes validate?",
+            "rewrite_applied": false,
+            "rewrite_enabled": true,
+            "rewritten_query": "What does Kujo Hermes validate?"
+          },
+          "response_policy": {
+            "min_citations": 2,
+            "min_confidence": 0.45,
+            "safety_mode": "balanced",
+            "style": "expanded"
+          },
+          "safe_response_policy": {
+            "overlap_ratio": 1.0,
+            "reason": "",
+            "safety_mode": "balanced",
+            "triggered": false
+          },
+          "search_query": "What does Kujo Hermes validate?",
+          "session_history_used": 0,
+          "stage_timings_ms": {
+            "embed": 19,
+            "rerank": 0,
+            "retrieve": 2,
+            "synthesize": 1,
+            "tokenize": 1
+          }
+        },
+        "stdout_digest": "0f5567d6e68c2c59d2a4117b8e5814631eb83f9f5765e1bd6cbba7528b3544bd"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "878ea8fd-3a33-4eeb-b392-c32d0d81098d",
+      "receipt_digest": "176950d67796da2b48e6feb19d152e2c53c37c4f1d9a01bb90dfe53724e48de4",
+      "ability_id": "kujo.dispatch.workflow.run",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Run ID: run-1793850245930-4421\nStatus: completed\nRun Directory: .kujo/dispatch/run-1793850245930-4421\nReport: .kujo/dispatch/run-1793850245930-4421/report.md\nState: .kujo/dispatch/run-1793850245930-4421/state.json\nTrace: .kujo/dispatch/run-1793850245930-4421/trace.json\n",
+        "stderr": "",
+        "duration_ms": 1616
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "a9b44e83-7973-4eaa-8fcc-72cf0540431c",
+      "receipt_digest": "c1f4390163f4453e1f0c2def1034c6abbfdcc15d6cf1f4205194b4c49f9a473e",
+      "ability_id": "kujo.kennel.project.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "kennel.toml is valid\n",
+        "stderr": "",
+        "duration_ms": 230
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "ceac7983-6b57-4ecd-8d4a-a4fed2dbd755",
+      "receipt_digest": "7a93b8f761fde6c6de00b3b04186b2c51f7e32a442d3e9657283b23142ad4e05",
+      "ability_id": "kujo.kennel.dependencies.install",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Updated kennel.lock\n",
+        "stderr": "",
+        "duration_ms": 248
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "07fe70fc-a9e4-4c6f-b316-715d91ffad9b",
+      "receipt_digest": "84cec4a69db4dc5245d1ca0ea92ffaf93b84052adddc38e0b1b26edbb0ff0a94",
+      "ability_id": "kujo.redact.document.scan",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 222,
+        "structured": {
+          "audit_dir": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.redact/runs/2026-11-05-03-44-07Z-8e6eaab45ff2",
+          "categories": {},
+          "command": "scan",
+          "detections": 0,
+          "input": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/example.txt",
+          "policy": "hermes-test",
+          "productVersion": "1.1.0",
+          "schemaVersion": "redact-cli-output/v1",
+          "unsafeOriginalsStored": false
+        },
+        "stdout_digest": "90890c3116fce664df402b326fa92805e33424b07f9d1ba0f35000258e2b6b17"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "1fc089bc-f207-41ff-8cf0-c3ff8e46d256",
+      "receipt_digest": "f302552767cf9df1e264bc0807c0f6ddde17a64c6d728a0f73782a51d06fbb8d",
+      "ability_id": "kujo.redact.document.sanitize",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 317,
+        "structured": {
+          "audit_dir": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.redact/runs/2026-11-05-03-44-07Z-df0a77208798",
+          "command": "sanitize",
+          "detections": 0,
+          "input": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/example.txt",
+          "output": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/sanitized.txt",
+          "policy": "hermes-test",
+          "productVersion": "1.1.0",
+          "risk_score": "low",
+          "schemaVersion": "redact-cli-output/v1",
+          "unsafeOriginalsStored": false
+        },
+        "stdout_digest": "ece467ad3fae523b91a672d50cf5c6dddc112a599fd7f63bc84e2d9f7bb5b6a3"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "05f57547-3335-419b-acce-5ef0d2189a38",
+      "receipt_digest": "a4beaf52bf1578dfc220a40aeb22e18e04f18be5af69b7ee294dc8c1891e3b1e",
+      "ability_id": "kujo.versionseal.records.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 58,
+        "structured": {
+          "contract_version": "1.0.0",
+          "data": {
+            "checked": 0,
+            "invalid": [],
+            "pending_writes": {
+              "completed": 0,
+              "issues": [],
+              "truncated": false
+            },
+            "storage_warnings": [],
+            "truncated": false,
+            "valid": true
+          },
+          "error": null,
+          "error_code": null,
+          "ok": true,
+          "tool_version": "0.3.0"
+        },
+        "stdout_digest": "7d5bfbb70f7b5923718e2352ad525be67ced441775105b308e068bf542e4c5a0"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "9772c678-c6ad-463e-a295-d226cde9dc9c",
+      "receipt_digest": "746b3dac6036ca9c2724d0fa29de3df3a7cb51751d38eefbd5ff6107341e8fa6",
+      "ability_id": "kujo.tribunal.proposal.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 305,
+        "structured": {
+          "docket": {
+            "content": "# Add deterministic release evidence to the agent workflow\n\n## Scope\n\nRequire each completed implementation task to attach the exact validation commands, exit status, and artifact paths used to establish completion.\n\n## Non-goals\n\n- Building a hosted dashboard\n- Replacing existing CI\n- Requiring live model credentials\n\n## Proposal\n\nAdd a small local receipt contract that agents can produce and downstream tools can index. Begin with offline fixtures and one repository before broader adoption.\n\n## Decision requested\n\nShould the team implement the bounded receipt contract now, redesign it, pause for evidence, or reject it?\n",
+            "contentSha256": "7636c40762bdf0beedcf38557652e2d1619f4f3e8128edb887bc9b4832ba8f44",
+            "id": "7636c40762bdf0be",
+            "nonGoals": [
+              "Building a hosted dashboard",
+              "Replacing existing CI",
+              "Requiring live model credentials"
+            ],
+            "openedAt": "2026-11-05T03:44:08Z",
+            "scope": "Require each completed implementation task to attach the exact validation commands, exit status, and artifact paths used to establish completion.",
+            "sourcePath": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/decision.md",
+            "title": "Add deterministic release evidence to the agent workflow"
+          },
+          "ok": true
+        },
+        "stdout_digest": "1dc5cdd39d8ca10d19102b4ee0970004a6efe3ffed08548166a85192c2107ad8"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "3721d900-2c34-46bd-88c1-d1fdb8152469",
+      "receipt_digest": "46295c8fe159843cd43d3f3100608b9941ca7d13af1a19cd8f21b67af86ba59f",
+      "ability_id": "kujo.tribunal.review.mock",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "2026-11-05-decision-md-9547\nproceed: The proposal survives the focused Executioner review with required conditions.\n/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/.tribunal/runs/2026-11-05-decision-md-9547\n",
+        "stderr": "",
+        "duration_ms": 1341
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "d6932597-a498-45cb-9203-0db0754e5bbe",
+      "receipt_digest": "bdff387c91f21b593f6908df06562e19d0ce75eeb1b9eeeed17fd9cee69d87ea",
+      "ability_id": "kujo.dossier.records.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 70,
+        "structured": {
+          "contract_version": "1.0.0",
+          "data": {
+            "checked": 0,
+            "invalid": [],
+            "storage_warnings": [],
+            "truncated": false,
+            "valid": true
+          },
+          "error": null,
+          "error_code": null,
+          "ok": true,
+          "tool_version": "0.2.0"
+        },
+        "stdout_digest": "8586e6313c70f863b8556da1c2ff442b232abb675c254f365d1453f342596caa"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "8bab5a55-dd0e-49bf-8d58-5c83a0ba0cf7",
+      "receipt_digest": "7722e3ff61cf4f1f92cbb5602702249952a647abb0f0d725d8dca65a912100d2",
+      "ability_id": "kujo.dossier.records.report",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 93,
+        "structured": {
+          "contract_version": "1.0.0",
+          "data": {
+            "next_after": "",
+            "records": [],
+            "truncated": false,
+            "warnings": []
+          },
+          "error": null,
+          "error_code": null,
+          "ok": true,
+          "tool_version": "0.2.0"
+        },
+        "stdout_digest": "1648e3327ae8c922f45cc5cb4dec55de18010b13f36ef83fe4017375f4cd8136"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "81577d2d-3877-47d3-a7d9-9e1e6fc0bbeb",
+      "receipt_digest": "a579980444151d4e971111f54360b6e54860fea5b066178dae98d2bd75fdcaca",
+      "ability_id": "kujo.howl.showcase.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "ok: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/howl.json is valid (1 card(s))\n",
+        "stderr": "",
+        "duration_ms": 80
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "84b91743-2d82-4ff5-8d43-bb48b4a9ba26",
+      "receipt_digest": "23ef2218cff39b7bf744db5633b279c5b970647c72b7cf2283e1caef5ccabcab",
+      "ability_id": "kujo.howl.showcase.render",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "rendered 1 card(s) -> /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/dist/howl/ (2 files)\n",
+        "stderr": "",
+        "duration_ms": 136
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "a4de4d7f-1088-400c-bda8-6ece783313b0",
+      "receipt_digest": "28af303d8819117adc837342dd460cf87f17b5f3a2c0b9cd941f689ba415b698",
+      "ability_id": "kujo.lens.flow.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 531,
+        "structured": {
+          "command": "flow-validate",
+          "name": "Login walkthrough",
+          "problem_count": 0,
+          "step_count": 9,
+          "steps": [
+            {
+              "detail": "",
+              "index": 1,
+              "status": "ok",
+              "type": "visit"
+            },
+            {
+              "detail": "",
+              "index": 2,
+              "status": "ok",
+              "type": "assert_selector"
+            },
+            {
+              "detail": "",
+              "index": 3,
+              "status": "ok",
+              "type": "type"
+            },
+            {
+              "detail": "",
+              "index": 4,
+              "status": "ok",
+              "type": "type"
+            },
+            {
+              "detail": "",
+              "index": 5,
+              "status": "ok",
+              "type": "click"
+            },
+            {
+              "detail": "",
+              "index": 6,
+              "status": "ok",
+              "type": "wait_for_selector"
+            },
+            {
+              "detail": "",
+              "index": 7,
+              "status": "ok",
+              "type": "assert_text"
+            },
+            {
+              "detail": "",
+              "index": 8,
+              "status": "ok",
+              "type": "screenshot"
+            },
+            {
+              "detail": "",
+              "index": 9,
+              "status": "ok",
+              "type": "assert_no_console_errors"
+            }
+          ],
+          "tool": "lens",
+          "valid": true
+        },
+        "stdout_digest": "37529af51301c92a3e358fcfa872852d99ad8aec07f81b4d621258f07dedc57f"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "d0cdca07-af4b-4d4c-9362-903eee478ead",
+      "receipt_digest": "8bddd6fa3c03ce840011fff08c4ab05cfa7ab0684f2404c84726440c6a5c16b1",
+      "ability_id": "kujo.workcell.definition.validate",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stdout": "Valid Workcell definition: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hermes-real-q81ldu3n/repo/workcell.json\nName: hello-workcell  Backend: docker  Network: none\n",
+        "stderr": "",
+        "duration_ms": 725
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "79bbe20d-bdea-4184-b160-9a0cf4a45e4d",
+      "receipt_digest": "480b414fd569bc9ee054cb403cac1220a127da95b0874ef095ae6a81f9a33174",
+      "ability_id": "kujo.workcell.definition.inspect",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 1254,
+        "structured": {
+          "backend": {
+            "adapter_id": "docker",
+            "provider_id": "docker",
+            "substrate": "oci"
+          },
+          "definition": {
+            "name": "hello-workcell",
+            "schema": "workcell-definition/v1"
+          },
+          "error": "",
+          "ok": true,
+          "policy": {
+            "cpus": 1,
+            "memory": "256m",
+            "network": "none",
+            "pids": 64,
+            "read_only_root": true,
+            "timeout_ms": 60000
+          },
+          "schema_version": "workcell-inspect-summary/v1"
+        },
+        "stdout_digest": "b78809e991c1d7c803da6ce7097e4e6d8543248d3f958fddb677df970368e9e5"
+      }
+    },
+    {
+      "ok": true,
+      "status": "completed",
+      "receipt_id": "f71c62c4-7494-4878-a3ff-49f5c0c0652d",
+      "receipt_digest": "c3cb0c30286c5da95ba7c0014110d7013e143c5ca4589cd16b766f3ce29e7a7e",
+      "ability_id": "kujo.muzzle.workflow.run",
+      "error": null,
+      "result": {
+        "status": "completed",
+        "exit_code": 0,
+        "stderr": "",
+        "duration_ms": 865,
+        "structured": {
+          "cancelled": false,
+          "command": "run",
+          "display_truncated": false,
+          "duration_ms": 489,
+          "error_excerpt": null,
+          "exit_code": 0,
+          "finished_at": "2026-11-05T03:44:13Z",
+          "log_path": ".muzzle/logs/build-check-1793850253091-b2945249daa84d1dbca12c9c6e5929d3.log",
+          "report_path": ".muzzle/reports/build-check-1793850253091-b2945249daa84d1dbca12c9c6e5929d3.md",
+          "schema_version": "muzzle.run/v1",
+          "started_at": "2026-11-05T03:44:13Z",
+          "status": "success",
+          "summary": "The workflow completed successfully.",
+          "timed_out": false,
+          "workflow": "build-check"
+        },
+        "stdout_digest": "0481224210f08c834c7501dcb6d0ea34a746c9378df84f600cd30677e4c53ecd"
+      }
+    }
+  ],
+  "all_receipts_verified": true
+}

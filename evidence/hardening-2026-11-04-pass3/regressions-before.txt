@@ -1,0 +1,81 @@
+test_boolean_property_schemas_are_supported (test_normalization.NormalizationTests.test_boolean_property_schemas_are_supported) ... ERROR
+test_default_expansion_is_size_bounded (test_normalization.NormalizationTests.test_default_expansion_is_size_bounded) ... FAIL
+test_defaults_cannot_break_object_constraints (test_normalization.NormalizationTests.test_defaults_cannot_break_object_constraints) ... FAIL
+test_grants_and_pending_share_capacity (test_normalization.NormalizationTests.test_grants_and_pending_share_capacity) ... FAIL
+test_invalid_default_is_rejected (test_normalization.NormalizationTests.test_invalid_default_is_rejected) ... FAIL
+test_preflight_error_is_bounded_and_redacted (test_normalization.NormalizationTests.test_preflight_error_is_bounded_and_redacted) ... FAIL
+test_preflight_rejects_oversize_input_without_prompt (test_normalization.NormalizationTests.test_preflight_rejects_oversize_input_without_prompt) ... FAIL
+
+======================================================================
+ERROR: test_boolean_property_schemas_are_supported (test_normalization.NormalizationTests.test_boolean_property_schemas_are_supported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 32, in test_boolean_property_schemas_are_supported
+    self.assertEqual(self.inputs({'type':'object', 'properties':{'allowed':True,'forbidden':False}}, {}), {})
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 29, in inputs
+    return self.service.catalog.inputs(self.item, supplied)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/kujo_hermes/catalog.py", line 81, in inputs
+    if key not in data and 'default' in value: data[key]=copy.deepcopy(value['default'])
+                           ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'bool' is not iterable
+
+======================================================================
+FAIL: test_default_expansion_is_size_bounded (test_normalization.NormalizationTests.test_default_expansion_is_size_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 44, in test_default_expansion_is_size_bounded
+    with self.assertRaisesRegex(ValueError, '64 KiB'):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_defaults_cannot_break_object_constraints (test_normalization.NormalizationTests.test_defaults_cannot_break_object_constraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 39, in test_defaults_cannot_break_object_constraints
+    with self.assertRaises(Exception):
+AssertionError: Exception not raised
+
+======================================================================
+FAIL: test_grants_and_pending_share_capacity (test_normalization.NormalizationTests.test_grants_and_pending_share_capacity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 68, in test_grants_and_pending_share_capacity
+    self.assertEqual(blocked['action'], 'block')
+AssertionError: 'approve' != 'block'
+- approve
++ block
+
+
+======================================================================
+FAIL: test_invalid_default_is_rejected (test_normalization.NormalizationTests.test_invalid_default_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 35, in test_invalid_default_is_rejected
+    with self.assertRaises(Exception):
+AssertionError: Exception not raised
+
+======================================================================
+FAIL: test_preflight_error_is_bounded_and_redacted (test_normalization.NormalizationTests.test_preflight_error_is_bounded_and_redacted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 59, in test_preflight_error_is_bounded_and_redacted
+    self.assertLessEqual(len(result['message']), 8192)
+AssertionError: 20032 not less than or equal to 8192
+
+======================================================================
+FAIL: test_preflight_rejects_oversize_input_without_prompt (test_normalization.NormalizationTests.test_preflight_rejects_oversize_input_without_prompt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp3zbf499i/tests/test_normalization.py", line 51, in test_preflight_rejects_oversize_input_without_prompt
+    self.assertEqual(result['action'], 'block')
+AssertionError: 'approve' != 'block'
+- approve
++ block
+
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.388s
+
+FAILED (failures=6, errors=1)

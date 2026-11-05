@@ -1,0 +1,50 @@
+test_exact_human_one_time_grant (test_approval.ApprovalTests.test_exact_human_one_time_grant) ... ok
+test_untrusted_preflight (test_approval.ApprovalTests.test_untrusted_preflight) ... ok
+test_approval_grain_unique (test_core.CoreTests.test_approval_grain_unique) ... ok
+test_cancel_background (test_core.CoreTests.test_cancel_background) ... ok
+test_config_rejects_unknown (test_core.CoreTests.test_config_rejects_unknown) ... ok
+test_crash (test_core.CoreTests.test_crash) ... ok
+test_denied_no_execution (test_core.CoreTests.test_denied_no_execution) ... ok
+test_duplicate_catalog (test_core.CoreTests.test_duplicate_catalog) ... ok
+test_dynamic_discovery (test_core.CoreTests.test_dynamic_discovery) ... ok
+test_execute_and_receipt (test_core.CoreTests.test_execute_and_receipt) ... ok
+test_large_output (test_core.CoreTests.test_large_output) ... ok
+test_lazy_catalog (test_core.CoreTests.test_lazy_catalog) ... ok
+test_missing_approval_api (test_core.CoreTests.test_missing_approval_api) ... ok
+test_missing_binary (test_core.CoreTests.test_missing_binary) ... ok
+test_missing_receipt (test_core.CoreTests.test_missing_receipt) ... ok
+test_no_environment_leak (test_core.CoreTests.test_no_environment_leak) ... ok
+test_output_schema_failure (test_core.CoreTests.test_output_schema_failure) ... ok
+test_profile_counts (test_core.CoreTests.test_profile_counts) ... ok
+test_receipt_tamper (test_core.CoreTests.test_receipt_tamper) ... ok
+test_redaction (test_core.CoreTests.test_redaction) ... ok
+test_remote_schema_rejected (test_core.CoreTests.test_remote_schema_rejected) ... ok
+test_schema_validation (test_core.CoreTests.test_schema_validation) ... ok
+test_shutdown_prevents_new_work (test_core.CoreTests.test_shutdown_prevents_new_work) ... ok
+test_symlink_escape (test_core.CoreTests.test_symlink_escape) ... ok
+test_timeout (test_core.CoreTests.test_timeout) ... ok
+test_trust_exact (test_core.CoreTests.test_trust_exact) ... ok
+test_artifact_hashes_and_escape (test_core.MoreBoundaryTests.test_artifact_hashes_and_escape) ... ok
+test_child_cleanup_after_leader_exits (test_core.MoreBoundaryTests.test_child_cleanup_after_leader_exits) ... ok
+test_environment_controls_cannot_be_secret_overrides (test_core.MoreBoundaryTests.test_environment_controls_cannot_be_secret_overrides) ... ok
+test_malformed_json_remains_labeled_text (test_core.MoreBoundaryTests.test_malformed_json_remains_labeled_text) ... ok
+test_redaction_preserves_token_metrics (test_core.MoreBoundaryTests.test_redaction_preserves_token_metrics) ... ok
+test_unsupported_runtime (test_core.MoreBoundaryTests.test_unsupported_runtime) ... ok
+test_artifacts_follow_selected_subdirectory (test_hardening.HardeningTests.test_artifacts_follow_selected_subdirectory) ... ok
+test_control_character_output_receipt_is_readable (test_hardening.HardeningTests.test_control_character_output_receipt_is_readable) ... ok
+test_doctor_rejects_failed_version_command (test_hardening.HardeningTests.test_doctor_rejects_failed_version_command) ... ok
+test_large_invalid_output_has_bounded_error_and_retained_evidence (test_hardening.HardeningTests.test_large_invalid_output_has_bounded_error_and_retained_evidence) ... ok
+test_output_contract_failure_preserves_evidence (test_hardening.HardeningTests.test_output_contract_failure_preserves_evidence) ... ok
+test_receipt_remains_readable_after_output_limit_reduction (test_hardening.HardeningTests.test_receipt_remains_readable_after_output_limit_reduction) ... ok
+test_watchdog_ignores_host_proxy_settings (test_hardening.HardeningTests.test_watchdog_ignores_host_proxy_settings) ... ok
+test_background_receipt_failure_remains_inspectable (test_lifecycle.LifecycleTests.test_background_receipt_failure_remains_inspectable) ... ok
+test_cancelled_before_start_does_not_spawn (test_lifecycle.LifecycleTests.test_cancelled_before_start_does_not_spawn) ... ok
+test_extension_cannot_be_misrouted_by_internal_operation (test_lifecycle.LifecycleTests.test_extension_cannot_be_misrouted_by_internal_operation) ... ok
+test_receipt_not_visible_until_sync_completes (test_lifecycle.LifecycleTests.test_receipt_not_visible_until_sync_completes) ... ok
+test_receipt_sync_failure_leaves_no_partial_files (test_lifecycle.LifecycleTests.test_receipt_sync_failure_leaves_no_partial_files) ... ok
+test_thread_start_failure_releases_execution_slots (test_lifecycle.LifecycleTests.test_thread_start_failure_releases_execution_slots) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 12.026s
+
+OK
