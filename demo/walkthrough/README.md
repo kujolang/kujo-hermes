@@ -4,8 +4,9 @@
 
 An 85-second film about accountability inside Hermes: keep task context, approve execution, inspect checks, and retain a verifiable receipt. The original Kujo/Hermes bumpers surround a revised Siren V4 narration and nine glitch transitions adapted from the actual Kujo CMD film. The local Qwen3.5 4B model runs through Ollama without an inference API fee. Narration uses an existing paid ElevenLabs account.
 
-The video explains discovery and on-demand schemas, then uses recorded Spec, PackWrite, Eval, and receipt results. The native approval shot is real Hermes footage. The desktop shots browse the real saved conversation and installed toolset in Hermes’ official browser-hosted desktop workspace. Spec and PackWrite retain a simple editorial evidence panel. No product UI is recreated. The tool overview describes the bundled catalog; it does not claim every binding ran in this recording. See the main repository's compatibility and readiness documents for prerequisites and coverage.
+Revision 5 gives each narrated subject its own screen. Fresh, operator-driven Hermes registry calls execute Spec, PackWrite, ShipCheck, Scout, Eval, and Dispatch validation. Their canonical JSON results and verified receipts are committed under `evidence/v5-workflows/`. The desktop footage opens source-linked summaries of those results in the official Hermes Markdown viewer. These files are editorial evidence summaries, not model-generated chat messages or a replacement product UI.
 
+The approval scene retains the original free local Qwen3.5 4B run. The fresh registry runs are not presented as a new autonomous model run. Dispatch validates a workflow; it does not execute that workflow. PackWrite checks an existing seeded pack. ShipCheck reports seven review warnings, so passing Eval does not imply release readiness.
 ## Edit and render
 
 ```sh
@@ -65,7 +66,7 @@ The CMD reference is `kujolang/mcp@01a4f51`, `demos/command-code-ollama-live-pro
 
 PackWrite summarizes the seeded pack copied by `demo/prepare.py`; no new calculator-specific pack is generated in the recording.
 
-The source evidence is the same verified November 4 recording. This edit does not claim a new model run, a repository change, or additional tool certification. `evidence/v2-check.json` and `REVIEW.md` describe the revised visual checks.
+The original November 4 model recording remains the approval source. Revision 5 adds November 5 native tool executions and distinct desktop evidence views; it does not expand the plugin’s separate certification scope.
 
 ## Revision 3: desktop workspace
 
@@ -78,3 +79,11 @@ To capture the desktop view again, use the isolated demo profile with the record
 ## Revision 4: complete interface framing
 
 All seven recording scenes now fit the complete source width with `object-fit: contain`. No horizontal crop, pan, or zoom cuts off words. Only the desktop recorder’s blank bottom padding is removed before fitting the picture. The original approval recording also fits inside the frame. Narration, timing, nine glitches, and logo bumpers are unchanged. Smaller interface text is the tradeoff for showing the whole view.
+
+## Revision 5: match the spoken subject
+
+Eleven distinct recordings replace repeated Eval screens. The Spec → PackWrite, discovery → inspection, and ShipCheck → Scout → Dispatch switches follow ElevenLabs character timestamps, 80 ms before the named subject. `evidence/v5-shot-map.json` binds each shot to its voice cue, source document, and clip. All new recordings retain the complete source width; the composition contains the content frame without side cropping or zoom; only the recorder’s blank bottom pad is removed. Bumper source files and the nine main glitch gates remain unchanged.
+
+To reproduce the added evidence, prepare the sample repository and isolated Hermes installation as above, then run `scripts/run_native_workflows.py` with the Hermes Python environment and source on `PYTHONPATH`. Review the actual native approval prompts for Scout and Eval. `build_workflow_views.py` derives the viewer files from saved results. `capture_workflow_views.cjs` records them using native desktop controls; adapt its local interpreter, host, Chrome, and Playwright paths. It never injects session messages. `build_workflow_clips.py` trims the recording without side cropping. The capture manifest preserves the raw source, time windows, screen text, and hashes.
+
+The narration timing API is documented in [ElevenLabs speech with timestamps](https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps/). Audio was measured, not listened to by the automated reviewer.

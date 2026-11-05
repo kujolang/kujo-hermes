@@ -1,0 +1,19 @@
+{
+  "name": "hermes-demo",
+  "tests": [
+    {
+      "name": "unit suite",
+      "check": "command_succeeds",
+      "params": {
+        "command": "python3 -m unittest discover -s tests"
+      }
+    },
+    {
+      "name": "implementation exists",
+      "check": "file_exists",
+      "params": {
+        "path": "calculator.py"
+      }
+    }
+  ]
+}

@@ -7,3 +7,7 @@ MOTION: Nine 0.58-second CMD slice gates cross all scene boundaries, including i
 SOUND: Siren V4 at original speed, unchanged bumper takes, existing music, nine synchronized CMD effects. The revised approval narration identifies the recorded run. Measure audio; do not claim listening unless auditioned.
 BANNED: Fake product UI, fabricated execution, dense footer rails, tiny editorial labels, screenshot grids, claims every tool ran, contest mentions, more than 90 seconds.
 QA: Source evidence, bumper source hashes, nine seam windows, phone and transition sheets, full decode, frame counts, audio levels, downloadable bytes. Record desktop capture provenance and distinguish saved history from new execution.
+
+## Revision 5
+
+Eleven distinct native viewer recordings replace recycled Eval footage. Source frames are 1280 × 800; the full 1280 × 712 content area fits inside the 1660 × 840 presentation area. Each screen shows only the relevant evidence file. Cut to PackWrite, inspection, Scout, and Dispatch 80 ms before the spoken subject. Keep eight body scenes, 85 seconds, nine main glitch gates, and unchanged bumpers. Ban unrelated result reuse and implied workflow execution when only validation ran.

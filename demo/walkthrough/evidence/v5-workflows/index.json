@@ -1,0 +1,21 @@
+{
+  "records": [
+    "discovery",
+    "inspection",
+    "spec",
+    "spec-receipt",
+    "packwrite",
+    "packwrite-receipt",
+    "shipcheck",
+    "shipcheck-receipt",
+    "dispatch",
+    "dispatch-receipt",
+    "scout",
+    "scout-receipt",
+    "eval",
+    "eval-receipt"
+  ],
+  "workspace": "/private/tmp/kujo-hermes-video-20261104",
+  "host": "Hermes v0.22.7",
+  "unload_completed": true
+}

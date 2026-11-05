@@ -1,0 +1,15 @@
+{
+  "cue": "v5-control",
+  "text": "In the original free-model run, Hermes paused before Eval executed. The developer approved that specific operation.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "a94c7704d99512d645903bbd7f06f65317ba69e92aa0213fb403e8665068b32a",
+  "audio_sha256": "bda5d1596d02a9c87173a870a87825a5351a02c254287ad1cf997949f2e97918",
+  "duration": 8.0,
+  "request_id": "lA3x9PNrywRWJlv6GRQf",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T14:59:47Z"
+}

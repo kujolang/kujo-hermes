@@ -1,0 +1,15 @@
+{
+  "cue": "v5-payoff",
+  "text": "The handoff links the contract, context, checks, and receipts. The next developer can inspect the evidence instead of reconstructing the run.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "978f78864035e4329cdce039a3794a73f1dc880be046e25602fb9d1c12ea9e10",
+  "audio_sha256": "5c45288f2ca6c2b31fa16f0f6f0e15c3b0acf51fc88711e77b3f1299bcd1ae34",
+  "duration": 8.72,
+  "request_id": "CkCdv33nON8TNjQSMW1D",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T14:59:53Z"
+}

@@ -77,16 +77,29 @@ for s in scenes:
   css='#handoff{position:absolute;left:130px;top:325px;width:1660px}#handoff>p{font-size:30px;color:#bdbdbd;margin-bottom:40px}#handoff>div{display:flex;gap:80px;border-bottom:1px solid #555;padding:17px 0}#handoff span{font-size:36px;width:220px;color:#bbb}#handoff strong{font-size:46px;font-weight:500}#payoff-end{position:absolute;left:130px;top:805px;font-size:50px}'
   js=reveal('#handoff',.1)+reveal('#handoff-line-one',.5,-20)+reveal('#handoff-line-two',2.2,-20)+reveal('#handoff-line-three',4.1,-20)+reveal('#payoff-end',6.7)
   panel(s,b,css,js,4,'Install Kujo Hermes · configure trusted roots · bring your repository')
-# Desktop workspace recordings browse the original saved run; no new inference is implied.
+# Distinct native evidence views; cut at provider-aligned spoken phrases.
+shots={'question':[('00-task',None)],'context':[('01-spec',None),('02-packwrite','PackWrite')],'routing':[('03-discovery',None),('04-inspection','Inspect')],'checks':[('05-eval',None)],'evidence':[('06-receipt',None)],'tools':[('07-shipcheck',None),('08-scout','Scout'),('09-dispatch','Dispatch')],'payoff':[('10-handoff',None)]}
+titles={'question':'Define success.','context':'Give the work a clear contract.','routing':'Discover. Inspect. Then execute.','checks':'See exactly what passed.','evidence':'Trace the result to its receipt.','tools':'More tools. Reviewable evidence.','payoff':'Make the next handoff easier.'}
+manifest=[]
 for s in scenes:
- mapping={'question':('tools','Your agent. Your workspace.'),'routing':('inspect','Know what the tool will do.'),'checks':('result','See what passed.'),'evidence':('receipt','Trace the result to its receipt.'),'tools':('tools','Kujo tools. Inside Hermes.'),'payoff':('result','Keep the speed. Keep the evidence.')}
- if s['id'] not in mapping: continue
- shot,title=mapping[s['id']]
- body=head('',title)+f'<div class="desktop-frame"><video muted class="clip" id="desktop-{s["id"]}" data-start="0" data-duration="{s["duration"]}" src="assets/desktop-{shot}.mp4"></video></div>'
+ if s['id'] not in shots: continue
+ parts=shots[s['id']];starts=[0.0]
+ if len(parts)>1:
+  alignment=json.loads((r/'evidence'/('alignment-'+s['cue']+'.json')).read_text())
+  spoken=''.join(alignment['characters'])
+  for shot,phrase in parts[1:]:
+   position=spoken.index(phrase)
+   starts.append(round(.3+alignment['character_start_times_seconds'][position]-.08,4))
+ body=head('',titles[s['id']])+'<div class="desktop-frame">'
+ for i,((shot,phrase),at) in enumerate(zip(parts,starts)):
+  duration=(starts[i+1] if i+1<len(starts) else s['duration'])-at
+  body+=f'<video muted class="clip" id="view-{shot}" data-start="{at}" data-duration="{duration:.4f}" src="assets/workflow-{shot}.mp4"></video>'
+  manifest.append({'scene':s['id'],'shot':shot,'start':round(s['start']+at,4),'duration':round(duration,4),'spoken_trigger':phrase,'cue':s['cue'],'view':f'evidence/v5-workflows/views/{shot}.md','clip':f'assets/workflow-{shot}.mp4'})
+ body+='</div>'
  css='.desktop-frame{position:absolute;left:130px;top:180px;width:1660px;height:840px;background:#060606}.desktop-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}'
  js="tl.fromTo('.desktop-frame',{opacity:0},{opacity:1,duration:.3,ease:'power2.out'},.05);"
-
  panel(s,body,css,js)
+(r/'evidence/v5-shot-map.json').write_text(json.dumps(manifest,indent=2)+'\n')
 # Original bumper compositions are intentionally untouched.
 hosts=[('intro',0,3.8)]+[(s['id'],s['start'],s['duration']) for s in scenes]+[('outro',80.33,4.67)]
 # Five stepped slice gates from the actual CMD film. A subdued chromatic accent

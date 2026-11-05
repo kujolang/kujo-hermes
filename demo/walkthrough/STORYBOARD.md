@@ -1,20 +1,17 @@
-# Accountability inside Hermes — revision 4
+# Narration-matched walkthrough
 
-An 85-second film for developers who work in Hermes. Actual recordings of the official desktop workspace show the installed Kujo tools and the saved Eval conversation. The desktop workspace runs in a browser on this Intel Mac. No new model execution is implied: the narration calls this a recorded run. The original CLI approval remains the evidence of the human decision.
+85 seconds. Real Hermes Desktop evidence files, derived from actual native registry runs. The approval clip alone retains the original free-model CLI run. No synthetic chat. All footage uses contain, no side cropping. Original logo bumpers and nine glitch seams remain.
 
-One headline per shot replaces the five-step rail, eyebrows, and footnotes. The Kujo/Hermes bumper sources remain unchanged. Nine CMD slice glitches bridge every scene, including both bumper boundaries.
+- 3.80–12.97s: 00-task; narration cue v5-question. Source: evidence/v5-workflows/views/00-task.md.
+- 12.97–15.51s: 01-spec; narration cue v5-context. Source: evidence/v5-workflows/views/01-spec.md.
+- 15.51–24.13s: 02-packwrite; narration cue v5-context. Source: evidence/v5-workflows/views/02-packwrite.md.
+- 24.13–27.15s: 03-discovery; narration cue v5-routing. Source: evidence/v5-workflows/views/03-discovery.md.
+- 27.15–32.34s: 04-inspection; narration cue v5-routing. Source: evidence/v5-workflows/views/04-inspection.md.
+- 41.59–50.35s: 05-eval; narration cue v2-checks. Source: evidence/v5-workflows/views/05-eval.md.
+- 50.35–61.04s: 06-receipt; narration cue v2-evidence. Source: evidence/v5-workflows/views/06-receipt.md.
+- 61.04–64.06s: 07-shipcheck; narration cue v5-tools. Source: evidence/v5-workflows/views/07-shipcheck.md.
+- 64.06–66.22s: 08-scout; narration cue v5-tools. Source: evidence/v5-workflows/views/08-scout.md.
+- 66.22–70.36s: 09-dispatch; narration cue v5-tools. Source: evidence/v5-workflows/views/09-dispatch.md.
+- 70.36–80.33s: 10-handoff; narration cue v5-payoff. Source: evidence/v5-workflows/views/10-handoff.md.
 
-| Approximate seconds | Picture | Benefit |
-|---|---|---|
-| 4–13 | Installed Kujo toolset in Hermes | Stay in the agent environment |
-| 13–23 | Spec contract and PackWrite result | Preserve task intent and context |
-| 23–32 | Native Kujo Inspect card | See the operation and approval requirement |
-| 32–41 | Original recorded CLI approval | Control execution |
-| 41–49 | Actual saved Hermes answer | Read the two-check result |
-| 49–59 | Native receipt card | Trace the execution |
-| 59–70 | Installed Kujo toolset in Capabilities | Find tools without leaving Hermes |
-| 70–80 | Saved result and receipt | Leave evidence for the next developer |
-
-Spec and PackWrite use a simple editorial view of verified evidence. The wider tool names in narration describe supported catalog bindings, not additional runs. Receipt integrity does not establish release readiness. The free local Qwen3.5 4B session used guided prompts; this is not a model reliability benchmark.
-
-Revision 4 preserves the complete recorded interface width in every shot. Only blank recorder padding is trimmed; text may be smaller, but the edit does not cut it at either edge.
+Dispatch validation only; PackWrite checks a seeded pack; ShipCheck has seven warnings. Provider word timestamps determine the multi-tool cuts.

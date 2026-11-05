@@ -1,0 +1,33 @@
+{
+  "label": "spec",
+  "tool": "kujo_execute",
+  "arguments": {
+    "ability": "kujo.spec.contract.validate",
+    "input": {
+      "file": "task.spec.json"
+    },
+    "workspace": "/private/tmp/kujo-hermes-video-20261104"
+  },
+  "result": {
+    "ok": true,
+    "status": "completed",
+    "receipt_id": "a77feba6-db66-40ae-8d21-deeacf1bf296",
+    "receipt_digest": "e0a6e47062b78414b699d5d6d143ab10ced89d5d89a47a04676b52392924595d",
+    "ability_id": "kujo.spec.contract.validate",
+    "error": null,
+    "result": {
+      "status": "completed",
+      "exit_code": 0,
+      "stderr": "",
+      "duration_ms": 1104,
+      "structured": {
+        "errors": [],
+        "valid": true,
+        "warnings": []
+      },
+      "stdout_digest": "09c21b5aac2557bbf649848b4b1ac8ab6f7b445171af51890f6658a0a1a722f5"
+    }
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:44:51Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cue": "v5-context",
+  "text": "Spec validates that contract. PackWrite checks the execution pack: seven phases, with no missing files. Hermes can carry that context into the work.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "ad57d853a9c83daab5bb0f7a3e07fe4059525b39aaa1313c0f7ab7ccf877b7a6",
+  "audio_sha256": "7b5dd8c660515f3c9fbaa82f0cab381110adab86bdf3cd7224eeb9bc238f3265",
+  "duration": 9.92,
+  "request_id": "7uMOhsp90fEhYvggC7qu",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T14:59:41Z"
+}

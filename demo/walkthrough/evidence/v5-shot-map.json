@@ -1,0 +1,112 @@
+[
+  {
+    "scene": "question",
+    "shot": "00-task",
+    "start": 3.8,
+    "duration": 9.1663,
+    "spoken_trigger": null,
+    "cue": "v5-question",
+    "view": "evidence/v5-workflows/views/00-task.md",
+    "clip": "assets/workflow-00-task.mp4"
+  },
+  {
+    "scene": "context",
+    "shot": "01-spec",
+    "start": 12.9663,
+    "duration": 2.54,
+    "spoken_trigger": null,
+    "cue": "v5-context",
+    "view": "evidence/v5-workflows/views/01-spec.md",
+    "clip": "assets/workflow-01-spec.mp4"
+  },
+  {
+    "scene": "context",
+    "shot": "02-packwrite",
+    "start": 15.5063,
+    "duration": 8.6263,
+    "spoken_trigger": "PackWrite",
+    "cue": "v5-context",
+    "view": "evidence/v5-workflows/views/02-packwrite.md",
+    "clip": "assets/workflow-02-packwrite.mp4"
+  },
+  {
+    "scene": "routing",
+    "shot": "03-discovery",
+    "start": 24.1325,
+    "duration": 3.02,
+    "spoken_trigger": null,
+    "cue": "v5-routing",
+    "view": "evidence/v5-workflows/views/03-discovery.md",
+    "clip": "assets/workflow-03-discovery.mp4"
+  },
+  {
+    "scene": "routing",
+    "shot": "04-inspection",
+    "start": 27.1525,
+    "duration": 5.1863,
+    "spoken_trigger": "Inspect",
+    "cue": "v5-routing",
+    "view": "evidence/v5-workflows/views/04-inspection.md",
+    "clip": "assets/workflow-04-inspection.mp4"
+  },
+  {
+    "scene": "checks",
+    "shot": "05-eval",
+    "start": 41.585,
+    "duration": 8.7663,
+    "spoken_trigger": null,
+    "cue": "v2-checks",
+    "view": "evidence/v5-workflows/views/05-eval.md",
+    "clip": "assets/workflow-05-eval.mp4"
+  },
+  {
+    "scene": "evidence",
+    "shot": "06-receipt",
+    "start": 50.3513,
+    "duration": 10.6863,
+    "spoken_trigger": null,
+    "cue": "v2-evidence",
+    "view": "evidence/v5-workflows/views/06-receipt.md",
+    "clip": "assets/workflow-06-receipt.mp4"
+  },
+  {
+    "scene": "tools",
+    "shot": "07-shipcheck",
+    "start": 61.0375,
+    "duration": 3.02,
+    "spoken_trigger": null,
+    "cue": "v5-tools",
+    "view": "evidence/v5-workflows/views/07-shipcheck.md",
+    "clip": "assets/workflow-07-shipcheck.mp4"
+  },
+  {
+    "scene": "tools",
+    "shot": "08-scout",
+    "start": 64.0575,
+    "duration": 2.16,
+    "spoken_trigger": "Scout",
+    "cue": "v5-tools",
+    "view": "evidence/v5-workflows/views/08-scout.md",
+    "clip": "assets/workflow-08-scout.mp4"
+  },
+  {
+    "scene": "tools",
+    "shot": "09-dispatch",
+    "start": 66.2175,
+    "duration": 4.1463,
+    "spoken_trigger": "Dispatch",
+    "cue": "v5-tools",
+    "view": "evidence/v5-workflows/views/09-dispatch.md",
+    "clip": "assets/workflow-09-dispatch.mp4"
+  },
+  {
+    "scene": "payoff",
+    "shot": "10-handoff",
+    "start": 70.3638,
+    "duration": 9.9663,
+    "spoken_trigger": null,
+    "cue": "v5-payoff",
+    "view": "evidence/v5-workflows/views/10-handoff.md",
+    "clip": "assets/workflow-10-handoff.mp4"
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "host": "Official Hermes Desktop webapp v0.22.7",
+  "mode": "Operator-driven native results, opened as source-linked Markdown files; not model-generated chat",
+  "width": 1280,
+  "height": 800,
+  "source_file": "assets/workflows-source.webm",
+  "timing_method": "Recorder duration minus wall-clock distance from shot start to context close; trim begins 0.5 seconds inside stable hold",
+  "source_duration": 513.2,
+  "shots": [
+    {
+      "id": "00-task",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/00-task.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n00-TASK.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nThe task: verify a Python calculator\nSuccess means\n2 + 3 returns 5\nAll unit tests pass\nEvidence we need\n\nTask contract \u2192 context pack \u2192 approved checks \u2192 receipt\n\nRecorded native-tool evidence \u00b7 task.spec.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 254.24900000000002,
+      "file": "assets/workflow-00-task.mp4",
+      "sha256": "51936d1b1ab5dcd4d4bffc61edd69555c413820e4bd114b3ff3d1e27d2dda889"
+    },
+    {
+      "id": "01-spec",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/01-spec.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n01-SPEC.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nSpec \u00b7 validate the contract\nValid \u00b7 0 errors\n\nAcceptance criterion: 2 + 3 returns 5\n\nThe task contract is well formed. Implementation is checked separately by Eval.\n\nRecorded native-tool evidence \u00b7 kujo.spec.contract.validate \u00b7 spec.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 277.66600000000005,
+      "file": "assets/workflow-01-spec.mp4",
+      "sha256": "665f459823d85ee74fdf7548ae77f0a5f6615aa97cbce0d8a8241b734c0d0c53"
+    },
+    {
+      "id": "02-packwrite",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/02-packwrite.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n02-PACKWRITE.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nPackWrite \u00b7 check the execution pack\n7 phases \u00b7 0 missing files\n\nThe existing pack is ready for handoff.\n\nNext command: packwrite prompt deepseek\n\nThis run checks the seeded pack; it does not generate a new pack.\n\nRecorded native-tool evidence \u00b7 kujo.packwrite.pack.summary \u00b7 packwrite.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 300.30100000000004,
+      "file": "assets/workflow-02-packwrite.mp4",
+      "sha256": "1024a8b8e7c9a0fc6328b7e066ab1c0113e70afaad9632b501f166cb862f5827"
+    },
+    {
+      "id": "03-discovery",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/03-discovery.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n03-DISCOVERY.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nDiscover Kujo Abilities\n51 catalog bindings\nShipCheck \u00b7 release review\nPackWrite \u00b7 execution packs\nSpec \u00b7 task contracts\nEval \u00b7 deterministic checks\nScout \u00b7 repository context\nDispatch \u00b7 workflows\n\nSchemas are requested when an Ability is inspected.\n\nRecorded native-tool evidence \u00b7 kujo_discover \u00b7 discovery.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 323.09800000000007,
+      "file": "assets/workflow-03-discovery.mp4",
+      "sha256": "f21a02f1e53a43342d17f125e04cbbe4b0d3a318dabafa7920205a7217bfa9a9"
+    },
+    {
+      "id": "04-inspection",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/04-inspection.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n04-INSPECTION.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nInspect before execution\nRun Eval suite\n\nRequired input: config \u2014 the evaluation suite file\n\nWorkspace: an operator-trusted repository\n\nApproval required: true\n\nEffects: executes commands and writes evidence.\n\nRecorded native-tool evidence \u00b7 kujo_inspect \u00b7 inspection.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 346.043,
+      "file": "assets/workflow-04-inspection.mp4",
+      "sha256": "361dbcdffe4b10ce70185a66d48dddaf0ede3eb2afecca14e910e921c74b0ace"
+    },
+    {
+      "id": "05-eval",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/05-eval.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n05-EVAL.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nEval \u00b7 inspect the checks\n2 passed \u00b7 0 failed\nCheck\tResult\nunit suite\tPASS\nimplementation exists\tPASS\n\nExecuted: python3 -m unittest discover -s tests\n\nConfirmed: calculator.py exists.\n\nRecorded native-tool evidence \u00b7 kujo.eval.suite.run \u00b7 eval.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 367.668,
+      "file": "assets/workflow-05-eval.mp4",
+      "sha256": "a43f62b295da1b1a6f384c9bdcc1beb77ac24e11a96d28a0cf5043969a450931"
+    },
+    {
+      "id": "06-receipt",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/06-receipt.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n06-RECEIPT.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nReceipt \u00b7 trace the execution\nIntegrity verified\n\nTool: kujo.eval.suite.run\n\nCommand: Kujo \u2192 Eval \u2192 eval.json\n\nApproval: required and approved\n\nEvidence: 19 artifact hashes\n\nReceipt: 36a5d2e2-09ea-4aa9-929d-03e1202835e2\n\nRecorded native-tool evidence \u00b7 kujo_receipts \u00b7 eval-receipt.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 389.9680000000001,
+      "file": "assets/workflow-06-receipt.mp4",
+      "sha256": "d977a3f061bd2d41fea2d3b556423d8c6be9c8fa018e07d4cbc2e6ad29f9073c"
+    },
+    {
+      "id": "07-shipcheck",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/07-shipcheck.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n07-SHIPCHECK.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nShipCheck \u00b7 release review\n7 review warnings \u00b7 0 blocking errors\nNo lint command detected\nNo format command detected\nNo CI configuration detected\n\nScan is informational. These findings do not establish release readiness.\n\nRecorded native-tool evidence \u00b7 kujo.shipcheck.repository.scan \u00b7 shipcheck.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 412.946,
+      "file": "assets/workflow-07-shipcheck.mp4",
+      "sha256": "e401aadcd61529069b314cf80f80c0f183eadd9e60f459c7b398e30bfcd72e04"
+    },
+    {
+      "id": "08-scout",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/08-scout.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n08-SCOUT.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nScout \u00b7 repository context\nRepository inspected\n\nCode files analyzed: 31\n\nDependencies: 2\n\nRoutes: 0\n\nOutput profile: minimal\n\nOutput includes a scan manifest and repository context.\n\nRecorded native-tool evidence \u00b7 kujo.scout.repository.inspect \u00b7 scout.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 437.76800000000003,
+      "file": "assets/workflow-08-scout.mp4",
+      "sha256": "f87eff8cece9356f4d354e48b55b34ab227f0f0c253b92272a47a0a5fed6c876"
+    },
+    {
+      "id": "09-dispatch",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/09-dispatch.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n09-DISPATCH.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nDispatch \u00b7 validate the workflow\nValid \u00b7 0 errors\n\nWorkflow: custom_review_workflow\n\nPlan \u2192 gather sources \u2192 verify \u2192 approval \u2192 report\n\nValidation only. This workflow was not executed.\n\nRecorded native-tool evidence \u00b7 kujo.dispatch.workflow.validate \u00b7 dispatch.json\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 462.208,
+      "file": "assets/workflow-09-dispatch.mp4",
+      "sha256": "1ed21f62f674ec20937a04ab3230bb07d673152ca17a427a416c988a2ee3128d"
+    },
+    {
+      "id": "10-handoff",
+      "duration": 12,
+      "view": "evidence/v5-workflows/views/10-handoff.md",
+      "visible_text": "SESSIONS\nBOTS\nRUN EVAL SUITE AND REPORT RECEIPT RESULTS\n10-HANDOFF.MD\nPREVIEW\nSOURCE\nDIFF\nEdit\nHandoff \u00b7 evidence the next developer can inspect\nEvidence retained\nTask contract and PackWrite pack\nTwo passing Eval checks\nVerified execution receipts\nScout context and ShipCheck review findings\nValidated Dispatch workflow\n\nNext: review the missing lint, formatting, and CI setup.\n\nRecorded native-tool evidence \u00b7 v5-workflows/index.json and per-tool receipts\n\nBackend\nready\nkujo-hermes-video-20261104\nManual\nclient v0.22.7\nbackend v0.22.7",
+      "source_start": 485.975,
+      "file": "assets/workflow-10-handoff.mp4",
+      "sha256": "1e860509e3a63b2fef4bd1ce1a9d1018b425cdf22c1c4e9d93db9d2cfa300d50"
+    }
+  ],
+  "source_sha256": "9d280d535aa8956635e1c5a1048b61602dd534bc65fba1e0cd50da494624dacf",
+  "presentation_crop": {
+    "x": 0,
+    "y": 0,
+    "width": 1280,
+    "height": 712,
+    "reason": "Remove only 88 pixels of blank gray recorder padding, as in revision 4"
+  }
+}

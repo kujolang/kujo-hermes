@@ -27,3 +27,7 @@ The current video uses real recordings of Hermes’ official browser-hosted desk
 ## Walkthrough framing correction — 2026-11-05
 
 Revision 4 supersedes the cropped revision 3 presentation. Keep every Hermes recording at full source width using contain sizing. Do not restore per-shot zooms or side crops: the user explicitly rejected chopped-off words. Both delivery sizes, source framing checks, and evidence are under demo/walkthrough.
+
+## Narration matching correction — 2026-11-05
+
+Revision 5 replaces unrelated repeated Eval views with eleven distinct Hermes evidence screens. Keep the source-linked native results, provider word timing, and shot map under `demo/walkthrough/evidence/v5-*`. Fresh operator-driven registry runs cover Spec, PackWrite summary, ShipCheck scan, Scout inspection, Eval, and Dispatch validation; every execution has a verified receipt. The original free-model approval recording remains separate. Dispatch was validated, not executed. Preserve the full source width; remove only the recorder’s blank gray bottom pad, existing bumpers, and nine glitch gates. Do not substitute one tool's result while narrating another.

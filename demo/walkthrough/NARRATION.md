@@ -1,43 +1,35 @@
-# Narration — Siren V4
+# Narration — revision 5
 
-Revision 3 reuses the original bumper takes and identifies the saved run.
+Siren V4. Original-speed takes; original logo cues retained.
 
-## intro · 0.70s
+## question
 
-Kujo Hermes.
+Before you trust an agent’s work, define success. This Python calculator needs a clear contract and repeatable checks.
 
-## v2-question · 4.10s
+## context
 
-Hermes can build the change. Before you trust the result, you need to know what ran, what passed, and what needs your approval.
+Spec validates that contract. PackWrite checks the execution pack: seven phases, with no missing files. Hermes can carry that context into the work.
 
-## v2-context · 12.83s
+## routing
 
-Kujo brings that evidence into Hermes. Spec checks the task contract. PackWrite keeps the work organized, so the next step starts with context.
+Discover the available Kujo Abilities. Inspect an operation’s inputs and approval requirements before running it.
 
-## v2-routing · 22.91s
+## control
 
-Ask for the outcome. Hermes discovers Kujo Abilities and loads their schemas on demand. You stay in the conversation.
+In the original free-model run, Hermes paused before Eval executed. The developer approved that specific operation.
 
-## v3-control · 31.88s
-
-This recorded run used a free local model. Hermes asked before Eval executed. The developer approved this run.
-
-## v2-checks · 40.84s
+## checks
 
 Eval confirms the unit test passed and the implementation exists. Two specific checks, with results you can inspect.
 
-## v2-evidence · 49.25s
+## evidence
 
 Open the receipt. It records the tool, command, approval, and evidence hashes. Kujo Hermes verifies its integrity. You can trace the run.
 
-## v2-tools · 59.58s
+## tools
 
-Go further with ShipCheck for release checks, Scout for repository context, and Dispatch for workflows. Installed tools share one Hermes integration.
+ShipCheck flags release-review gaps. Scout maps the repository. Dispatch validates the workflow before execution.
 
-## v2-payoff · 70.54s
+## payoff
 
-Keep your agent workflow. Add repeatable checks, clear permissions, and evidence for the next developer. That is accountability inside Hermes.
-
-## outro · 80.33s
-
-Kujo. Trust at the speed of AI.
+The handoff links the contract, context, checks, and receipts. The next developer can inspect the evidence instead of reconstructing the run.

@@ -1,0 +1,18 @@
+{
+  "label": "scout-receipt",
+  "tool": "kujo_receipts",
+  "arguments": {
+    "receipt_id": "7b5ac78d-a9b0-4d88-9fde-9cd5f997a190",
+    "limit": 12000
+  },
+  "result": {
+    "receipt_id": "7b5ac78d-a9b0-4d88-9fde-9cd5f997a190",
+    "verified": true,
+    "total_chars": 2718,
+    "offset": 0,
+    "text": "{\"ability_id\": \"kujo.scout.repository.inspect\", \"ability_version\": \"1.0.0\", \"approval\": {\"approved\": true, \"id\": \"7b5ac78d-a9b0-4d88-9fde-9cd5f997a190\", \"required\": true}, \"artifacts\": {\"bytes_hashed\": 3835, \"files\": [{\"bytes\": 965, \"path\": \".kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7/README.md\", \"sha256\": \"4292d5f98b378fa4529356647538636a99538283db2c13fb3f72fbc5e3f5dba6\"}, {\"bytes\": 2217, \"path\": \".kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7/intelligence.json\", \"sha256\": \"f7bb97202475738d214b3ed793e3acb2a52e608db2074d7fc0357e05fb101b28\"}, {\"bytes\": 285, \"path\": \".kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7/llms.txt\", \"sha256\": \"684cc7c3c124d2bc70af6ac627f3a2c27689dfe2df18b6e67645380a904e5cb8\"}, {\"bytes\": 368, \"path\": \".kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7/scan_manifest.json\", \"sha256\": \"491db099ab1037945614c7066bf72181d71bcbc879c57a623232c010a3a1d0f1\"}], \"truncated\": false}, \"command\": [\"/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/runtime/kujo\", \"run\", \"/Users/robertdevore/2026/Kujolang/kujo-repos/scout/scout.kujo\", \"--interpreter\", \"--\", \"/private/tmp/kujo-hermes-video-20261104\", \"-o\", \"/private/tmp/kujo-hermes-video-20261104/.kujo/scout\", \"--quick\"], \"completed_at_ms\": 1793889942043, \"cwd\": \"/private/tmp/kujo-hermes-video-20261104\", \"definition_digest\": \"fae1d7ca6665fe2b7c2358fe8f944444fe36ea9cea86bc7774b117722f2e6aea\", \"duration_ms\": 1384, \"effects\": [{\"kind\": \"read\", \"resource\": \"kujo.repository.files\"}, {\"kind\": \"write\", \"resource\": \"kujo.scout.artifacts\"}], \"host\": \"hermes\", \"input_digest\": \"44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a\", \"invocation_id\": \"7b5ac78d-a9b0-4d88-9fde-9cd5f997a190\", \"receipt_id\": \"7b5ac78d-a9b0-4d88-9fde-9cd5f997a190\", \"request_digest\": \"4c1557f16a9e7408fea3231c98e5be97c96d933ba821be03bfe16e367a727c3d\", \"result\": {\"duration_ms\": 1363, \"exit_code\": 0, \"status\": \"completed\", \"stderr\": \"\", \"stdout\": \"Scanning: /private/tmp/kujo-hermes-video-20261104\\nOutput: /private/tmp/kujo-hermes-video-20261104/.kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7\\nCode files analyzed: 31\\nDependencies: 2\\nRoutes: 0\\nSecurity findings: 0\\nOutput profile: minimal\\nScan manifest: /private/tmp/kujo-hermes-video-20261104/.kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7/scan_manifest.json\\nDone.\\n\"}, \"schema\": \"kujo.hermes.receipt/v1\", \"started_at_ms\": 1793889940659, \"status\": \"completed\", \"workspace\": \"/private/tmp/kujo-hermes-video-20261104\", \"receipt_digest\": \"eb7e23243514b739e46f407f10599c3fa975261056277d8e256f7711cdc76fb0\"}",
+    "next_offset": null
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:45:42Z"
+}

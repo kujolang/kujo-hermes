@@ -1,0 +1,1 @@
+{"artifacts":{"intelligence":"intelligence.json","llms":"llms.txt","report":"README.md"},"generated_at":"2026-11-05T14:45:41Z","output":"/private/tmp/kujo-hermes-video-20261104/.kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7","schema_version":1,"target":"/private/tmp/kujo-hermes-video-20261104","tool":{"name":"scout","version":"1.1.0"}}

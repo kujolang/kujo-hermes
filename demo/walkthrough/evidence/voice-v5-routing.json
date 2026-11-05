@@ -1,0 +1,15 @@
+{
+  "cue": "v5-routing",
+  "text": "Discover the available Kujo Abilities. Inspect an operation\u2019s inputs and approval requirements before running it.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "004d63bf5a6460fdf7136ba7706280eccaa8f8f5e01bbfd921fd5d312c8e2519",
+  "audio_sha256": "317837ba3c9f8c35296b151dea62a535c0ec9d73d9a13257ff6c7150bf6f383d",
+  "duration": 6.96,
+  "request_id": "W8aLFcHyZKTd2bxg01Cf",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T14:59:44Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cue": "v5-question",
+  "text": "Before you trust an agent\u2019s work, define success. This Python calculator needs a clear contract and repeatable checks.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "7adee300f6015ca40c56727f5cf455563e05b98638c9bc2f3c3cef3412a9d567",
+  "audio_sha256": "4a22815b89330ae6f803e8b0cc8c3fd9327745fb5e45ee7f0879564adad6c063",
+  "duration": 7.92,
+  "request_id": "IfH0IdLGsZMozzOg5wHu",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T14:59:38Z"
+}

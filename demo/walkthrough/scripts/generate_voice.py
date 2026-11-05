@@ -20,8 +20,10 @@ for name,text in cues:
   old=json.loads(receipt.read_text());assert old['request_sha256']==signature;records.append(old);continue
  assert not pending.exists(),'Uncertain request; reconcile provider history before retrying'
  pending.write_text(signature)
- with request('text-to-speech/'+voice+'?output_format=mp3_44100_128',payload) as response:
-  audio=response.read();request_id=response.headers.get('request-id')
+ with request('text-to-speech/'+voice+'/with-timestamps?output_format=mp3_44100_128',payload) as response:
+  result=json.load(response);audio=base64.b64decode(result['audio_base64']);request_id=response.headers.get('request-id')
+  alignment=result.get('alignment') or result['normalized_alignment']
+  (evidence/('alignment-'+name+'.json')).write_text(json.dumps(alignment,indent=2)+'\n')
  assert len(audio)>1000;file.write_bytes(audio)
  duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(file)],text=True))
  record={'cue':name,'text':text,'provider':'ElevenLabs','model':model,'voice_name':'Siren','voice_id':voice,'generation_tier':tier,'request_sha256':signature,'audio_sha256':hashlib.sha256(audio).hexdigest(),'duration':duration,'request_id':request_id,'authorized_by':'User requested Siren V4 narration for this walkthrough','generated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}

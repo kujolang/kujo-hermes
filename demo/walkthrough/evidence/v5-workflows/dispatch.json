@@ -1,0 +1,42 @@
+{
+  "label": "dispatch",
+  "tool": "kujo_execute",
+  "arguments": {
+    "ability": "kujo.dispatch.workflow.validate",
+    "input": {
+      "workflow_file": "review-workflow.json"
+    },
+    "workspace": "/private/tmp/kujo-hermes-video-20261104"
+  },
+  "result": {
+    "ok": true,
+    "status": "completed",
+    "receipt_id": "1c03b620-c0b4-4590-9f54-69bd9f177c6b",
+    "receipt_digest": "4812b2889406b1493025c140bc36911fa6ec1d4d371436b600198d6ed8c7f6fb",
+    "ability_id": "kujo.dispatch.workflow.validate",
+    "error": null,
+    "result": {
+      "status": "completed",
+      "exit_code": 0,
+      "stderr": "",
+      "duration_ms": 801,
+      "structured": {
+        "command": "validate",
+        "errors": [],
+        "ok": true,
+        "preflight": {
+          "errors": [],
+          "mode": "offline",
+          "ok": true,
+          "providers": [],
+          "warnings": []
+        },
+        "warnings": [],
+        "workflow_id": "custom_review_workflow"
+      },
+      "stdout_digest": "820fd402f0f8b322cd8ccfa3a345ebdd361f41d489c0aafb770c4f9418b74de9"
+    }
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:44:53Z"
+}

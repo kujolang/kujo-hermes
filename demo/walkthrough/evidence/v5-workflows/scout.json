@@ -1,0 +1,26 @@
+{
+  "label": "scout",
+  "tool": "kujo_execute",
+  "arguments": {
+    "ability": "kujo.scout.repository.inspect",
+    "input": {},
+    "workspace": "/private/tmp/kujo-hermes-video-20261104"
+  },
+  "result": {
+    "ok": true,
+    "status": "completed",
+    "receipt_id": "7b5ac78d-a9b0-4d88-9fde-9cd5f997a190",
+    "receipt_digest": "eb7e23243514b739e46f407f10599c3fa975261056277d8e256f7711cdc76fb0",
+    "ability_id": "kujo.scout.repository.inspect",
+    "error": null,
+    "result": {
+      "status": "completed",
+      "exit_code": 0,
+      "stdout": "Scanning: /private/tmp/kujo-hermes-video-20261104\nOutput: /private/tmp/kujo-hermes-video-20261104/.kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7\nCode files analyzed: 31\nDependencies: 2\nRoutes: 0\nSecurity findings: 0\nOutput profile: minimal\nScan manifest: /private/tmp/kujo-hermes-video-20261104/.kujo/scout/kujo-hermes-video-20261104-20261105-144541-1793889941566-05bf5cc7/scan_manifest.json\nDone.\n",
+      "stderr": "",
+      "duration_ms": 1363
+    }
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:45:42Z"
+}

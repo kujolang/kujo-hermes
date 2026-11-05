@@ -1,28 +1,28 @@
 {
-  "revision": 4,
+  "revision": 5,
   "duration": 85,
   "intro_duration": 3.8,
   "outro_start": 80.33,
   "scenes": [
     {
       "id": "question",
-      "cue": "v2-question",
-      "text": "Hermes can build the change. Before you trust the result, you need to know what ran, what passed, and what needs your approval."
+      "cue": "v5-question",
+      "text": "Before you trust an agent\u2019s work, define success. This Python calculator needs a clear contract and repeatable checks."
     },
     {
       "id": "context",
-      "cue": "v2-context",
-      "text": "Kujo brings that evidence into Hermes. Spec checks the task contract. PackWrite keeps the work organized, so the next step starts with context."
+      "cue": "v5-context",
+      "text": "Spec validates that contract. PackWrite checks the execution pack: seven phases, with no missing files. Hermes can carry that context into the work."
     },
     {
       "id": "routing",
-      "cue": "v2-routing",
-      "text": "Ask for the outcome. Hermes discovers Kujo Abilities and loads their schemas on demand. You stay in the conversation."
+      "cue": "v5-routing",
+      "text": "Discover the available Kujo Abilities. Inspect an operation\u2019s inputs and approval requirements before running it."
     },
     {
       "id": "control",
-      "cue": "v3-control",
-      "text": "This recorded run used a free local model. Hermes asked before Eval executed. The developer approved this run."
+      "cue": "v5-control",
+      "text": "In the original free-model run, Hermes paused before Eval executed. The developer approved that specific operation."
     },
     {
       "id": "checks",
@@ -36,13 +36,13 @@
     },
     {
       "id": "tools",
-      "cue": "v2-tools",
-      "text": "Go further with ShipCheck for release checks, Scout for repository context, and Dispatch for workflows. Installed tools share one Hermes integration."
+      "cue": "v5-tools",
+      "text": "ShipCheck flags release-review gaps. Scout maps the repository. Dispatch validates the workflow before execution."
     },
     {
       "id": "payoff",
-      "cue": "v2-payoff",
-      "text": "Keep your agent workflow. Add repeatable checks, clear permissions, and evidence for the next developer. That is accountability inside Hermes."
+      "cue": "v5-payoff",
+      "text": "The handoff links the contract, context, checks, and receipts. The next developer can inspect the evidence instead of reconstructing the run."
     }
   ]
 }

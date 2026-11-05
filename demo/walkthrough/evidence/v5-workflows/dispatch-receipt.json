@@ -1,0 +1,18 @@
+{
+  "label": "dispatch-receipt",
+  "tool": "kujo_receipts",
+  "arguments": {
+    "receipt_id": "1c03b620-c0b4-4590-9f54-69bd9f177c6b",
+    "limit": 12000
+  },
+  "result": {
+    "receipt_id": "1c03b620-c0b4-4590-9f54-69bd9f177c6b",
+    "verified": true,
+    "total_chars": 1634,
+    "offset": 0,
+    "text": "{\"ability_id\": \"kujo.dispatch.workflow.validate\", \"ability_version\": \"1.0.0\", \"approval\": {\"approved\": false, \"required\": false}, \"artifacts\": {\"bytes_hashed\": 0, \"files\": [], \"truncated\": false}, \"command\": [\"/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/runtime/kujo\", \"run\", \"/Users/robertdevore/2026/Kujolang/kujo-repos/dispatch/dispatch.kujo\", \"--interpreter\", \"--\", \"validate\", \"--workflow-file\", \"review-workflow.json\", \"--json\"], \"completed_at_ms\": 1793889893077, \"cwd\": \"/private/tmp/kujo-hermes-video-20261104\", \"definition_digest\": \"1d6006fc52397834e29a5e46cc1439ffcca15d09cada2fa98386db7783444aa8\", \"duration_ms\": 804, \"effects\": [{\"kind\": \"read\", \"resource\": \"kujo.dispatch.workflow\"}], \"host\": \"hermes\", \"input_digest\": \"a79b0ac071b50d5736c4b3c547b60ac54301d2bbf1f81ea7951a8ee6c5f07ec0\", \"invocation_id\": \"1c03b620-c0b4-4590-9f54-69bd9f177c6b\", \"receipt_id\": \"1c03b620-c0b4-4590-9f54-69bd9f177c6b\", \"request_digest\": \"6defaef2a153a8d77c5960938642393cd87f37a651b188a8ec1223a1c332a2c3\", \"result\": {\"duration_ms\": 801, \"exit_code\": 0, \"status\": \"completed\", \"stderr\": \"\", \"stdout_digest\": \"820fd402f0f8b322cd8ccfa3a345ebdd361f41d489c0aafb770c4f9418b74de9\", \"structured\": {\"command\": \"validate\", \"errors\": [], \"ok\": true, \"preflight\": {\"errors\": [], \"mode\": \"offline\", \"ok\": true, \"providers\": [], \"warnings\": []}, \"warnings\": [], \"workflow_id\": \"custom_review_workflow\"}}, \"schema\": \"kujo.hermes.receipt/v1\", \"started_at_ms\": 1793889892273, \"status\": \"completed\", \"workspace\": \"/private/tmp/kujo-hermes-video-20261104\", \"receipt_digest\": \"4812b2889406b1493025c140bc36911fa6ec1d4d371436b600198d6ed8c7f6fb\"}",
+    "next_offset": null
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:44:53Z"
+}

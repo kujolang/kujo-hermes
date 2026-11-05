@@ -1,0 +1,15 @@
+{
+  "cue": "v5-tools",
+  "text": "ShipCheck flags release-review gaps. Scout maps the repository. Dispatch validates the workflow before execution.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "d48ca2cea0ad260895af437e5b16f99b7c187f8a3c336092da39e931b001e6d1",
+  "audio_sha256": "26ae3f4ce7fe7b7f6fe87393e4ea072389ece44e22fc787ccffcc921d2542fb9",
+  "duration": 8.08,
+  "request_id": "K7wMK5LLpHM3ViCxKyQJ",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T14:59:50Z"
+}

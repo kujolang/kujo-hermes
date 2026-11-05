@@ -1,0 +1,68 @@
+{
+  "label": "inspection",
+  "tool": "kujo_inspect",
+  "arguments": {
+    "ability": "kujo.eval.suite.run"
+  },
+  "result": {
+    "definition": {
+      "schema": "kujo.ability/v1",
+      "id": "kujo.eval.suite.run",
+      "version": "1.0.0",
+      "title": "Run Eval suite",
+      "description": "Execute a deterministic Kujo Eval suite and return structured verification evidence.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "config"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": "."
+          },
+          "config": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "output_dir": {
+            "type": "string",
+            "maxLength": 4096,
+            "default": ".kujo/eval"
+          }
+        },
+        "additionalProperties": false
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "effects": [
+        {
+          "kind": "external",
+          "resource": "kujo.eval.commands"
+        },
+        {
+          "kind": "write",
+          "resource": "kujo.eval.artifacts"
+        }
+      ],
+      "idempotency": {
+        "mode": "keyed"
+      }
+    },
+    "definition_digest": "49d21daa6eec56d440bbe63376870bb76a81c78ba5b558e8a6c943196e4722d3",
+    "binding": {
+      "source": "eval",
+      "operation": "eval"
+    },
+    "approval_required": true,
+    "installed": true,
+    "dependency": "eval",
+    "note": null
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:44:50Z"
+}

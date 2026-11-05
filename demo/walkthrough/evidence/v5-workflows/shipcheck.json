@@ -1,0 +1,153 @@
+{
+  "label": "shipcheck",
+  "tool": "kujo_execute",
+  "arguments": {
+    "ability": "kujo.shipcheck.repository.scan",
+    "input": {},
+    "workspace": "/private/tmp/kujo-hermes-video-20261104"
+  },
+  "result": {
+    "ok": true,
+    "status": "completed",
+    "receipt_id": "516d360f-aef7-42d3-acdb-9860d841df14",
+    "receipt_digest": "64595f7d41d74eac5741fdce7b4815554de5884cc3932966b70549cf98967b52",
+    "ability_id": "kujo.shipcheck.repository.scan",
+    "error": null,
+    "result": {
+      "status": "completed",
+      "exit_code": 0,
+      "stderr": "",
+      "duration_ms": 118,
+      "structured": {
+        "checks": [
+          {
+            "detail": "",
+            "message": "Git repository detected",
+            "name": "git-repo",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "",
+            "message": "README found: README.md",
+            "name": "readme",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "",
+            "message": "LICENSE found: LICENSE",
+            "name": "license",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "",
+            "message": "Ignore files found: .gitignore",
+            "name": "ignore-files",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "",
+            "message": "Test directory found: tests/",
+            "name": "tests-exist",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "Add a lint script or Makefile target",
+            "message": "No lint command detected",
+            "name": "lint-command",
+            "passed": 0,
+            "severity": "warning"
+          },
+          {
+            "detail": "Add a format script or Makefile target",
+            "message": "No format command detected",
+            "name": "format-command",
+            "passed": 0,
+            "severity": "warning"
+          },
+          {
+            "detail": "Consider adding CI (e.g., .github/workflows/ci.yml)",
+            "message": "No CI configuration detected",
+            "name": "ci-config",
+            "passed": 0,
+            "severity": "warning"
+          },
+          {
+            "detail": "",
+            "message": "README has install/quickstart instructions",
+            "name": "readme-install",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "",
+            "message": "README has usage/examples",
+            "name": "readme-usage",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "Add examples to help users get started",
+            "message": "No examples/ or demo/ directory found",
+            "name": "examples",
+            "passed": 0,
+            "severity": "warning"
+          },
+          {
+            "detail": "Consider adding a docs/ directory",
+            "message": "No docs/ directory found",
+            "name": "docs",
+            "passed": 0,
+            "severity": "warning"
+          },
+          {
+            "detail": "",
+            "message": "VERSION file found: 0.1.0",
+            "name": "version-metadata",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "",
+            "message": "Changelog found: CHANGELOG.md",
+            "name": "changelog",
+            "passed": 1,
+            "severity": "info"
+          },
+          {
+            "detail": "Add kennel.toml for Kujo package metadata (if this is a Kujo project)",
+            "message": "No kennel.toml found",
+            "name": "kennel-manifest",
+            "passed": 0,
+            "severity": "warning"
+          },
+          {
+            "detail": "Define 'entry' in kennel.toml [kujo] section or add a main .kujo script",
+            "message": "No clear entry point detected",
+            "name": "entry-point",
+            "passed": 0,
+            "severity": "warning"
+          }
+        ],
+        "dir": "/private/tmp/kujo-hermes-video-20261104",
+        "project_type": "unknown",
+        "summary": {
+          "failed_errors": 0,
+          "gate_passed": 1,
+          "passed": 9,
+          "total_checks": 16,
+          "warnings": 7
+        },
+        "tool": "shipcheck",
+        "version": "1.0.2"
+      },
+      "stdout_digest": "5ee2d4b00cb9561073829a240f869e5287312d13c73233b2db0c6c894324ae9b"
+    }
+  },
+  "capture_mode": "operator-driven actual Hermes native registry; no model simulation",
+  "captured_at": "2026-11-05T14:44:52Z"
+}

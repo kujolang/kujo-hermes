@@ -21,7 +21,7 @@ receipt=json.loads(json.loads((r/'evidence/receipt-verification.json').read_text
 assert len(receipt['artifacts']['files'])==10
 contract=json.loads((r/'evidence/demo-contract.json').read_text())
 assert contract['acceptance_criteria'][0]=='2 + 3 returns 5'
-assert contract['acceptance_criteria'][0] in (r/'compositions/context.html').read_text()
+assert contract['acceptance_criteria'][0] in (r/'evidence/v5-workflows/views/01-spec.md').read_text()
 assert receipt['result']['structured']['data']['test_results'][0]['details']['command']=='python3 -m unittest discover -s tests'
 assert receipt['result']['structured']['data']['test_results'][1]['details']['path']=='calculator.py'
 text=' '.join(c['text'] for c in t['cues']).lower()
@@ -42,14 +42,38 @@ assert hashlib.sha256((r/desktop['source_file']).read_bytes()).hexdigest()==desk
 
 # Preserve every horizontal source pixel: no per-shot zoom/pan or cover crop.
 for sc in t['scenes']:
- if sc['id']=='context': continue
  body=(r/'compositions'/(sc['id']+'.html')).read_text()
  assert 'inset:0;width:100%;height:100%;object-fit:contain' in body
  assert 'object-fit:fill' not in body and 'scale:' not in body
  assert "tl.fromTo('.desktop-frame video'" not in body
 assert desktop['presentation_crop']['x']==0 and desktop['presentation_crop']['width']==1280
-print('PASS: all seven recording scenes fit their complete source width without zoom or side cropping.')
+print('PASS: all eight recording scenes fit their complete source width without zoom or side cropping.')
 
 for clip in desktop['clips']:
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','json',str(r/clip['file'])]))
  assert probe['streams'][0]['width']==1280 and probe['streams'][0]['height']==712
+
+# Every spoken subject gets its own full-width recording and canonical proof.
+capture=json.loads((r/'evidence/v5-workflows/capture.json').read_text())
+shots=json.loads((r/'evidence/v5-shot-map.json').read_text())
+assert len(shots)==11 and len({x['clip'] for x in shots})==11
+assert hashlib.sha256((r/capture['source_file']).read_bytes()).hexdigest()==capture['source_sha256']
+for clip in capture['shots']:
+ assert hashlib.sha256((r/clip['file']).read_bytes()).hexdigest()==clip['sha256']
+ view=(r/clip['view']).read_text();assert view.splitlines()[0][2:] in clip['visible_text']
+ probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','json',str(r/clip['file'])]))
+ assert probe['streams'][0]['width']==1280 and probe['streams'][0]['height']==712
+for shot in shots:
+ assert shot['clip'] in (r/'compositions'/(shot['scene']+'.html')).read_text()
+ if shot['spoken_trigger']:
+  alignment=json.loads((r/'evidence'/('alignment-'+shot['cue']+'.json')).read_text())
+  index=''.join(alignment['characters']).index(shot['spoken_trigger'])
+  cue=next(c for c in t['cues'] if c['cue']==shot['cue'])
+  assert abs(shot['start']-(cue['start']+alignment['character_start_times_seconds'][index]-.08))<.002
+for name in ['spec','packwrite','eval','shipcheck','scout','dispatch']:
+ record=json.loads((r/'evidence/v5-workflows'/(name+'.json')).read_text())
+ assert record['result']['ok'] and record['tool']=='kujo_execute'
+ receipt=json.loads((r/'evidence/v5-workflows'/(name+'-receipt.json')).read_text())['result']
+ assert receipt['verified'] and receipt['receipt_id']==record['result']['receipt_id']
+assert 'This workflow was not executed' in (r/'evidence/v5-workflows/views/09-dispatch.md').read_text()
+print('PASS: eleven unique full-screen views, six actual canonical runs and verified receipts, phrase-aligned cuts, truthful Dispatch validation.')
