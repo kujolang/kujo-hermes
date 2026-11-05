@@ -1,0 +1,36 @@
+{
+  "entry": {
+    "id": "d1a1ee5e-1db8-4d30-ab51-fef4ddf517ae",
+    "who": {
+      "kind": "agent",
+      "name": "codex"
+    },
+    "label": "Show full Hermes recordings without edge cropping",
+    "startedAt": 1793886312376,
+    "endedAt": 1793886682463.205,
+    "files": [
+      "delivery/kujo-hermes-walkthrough-480p.mp4",
+      "evidence/delivery-verification.json",
+      "evidence/v4-delivery-sheet.jpg",
+      "evidence/v4-history.json",
+      "evidence/v4-render.log",
+      "scripts/verify_edit.py"
+    ],
+    "undone": false,
+    "pinned": false
+  },
+  "parts": [
+    "91672d3f-980c-482a-bcdb-b03105f47268",
+    "788394df-5e7c-4dff-9dc9-3055655ffa67",
+    "4d1694eb-b46f-48aa-9565-ec462809f142",
+    "d1a1ee5e-1db8-4d30-ab51-fef4ddf517ae"
+  ],
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.16",
+    "updateAvailable": true,
+    "checkedAt": "2026-11-05T13:45:01.342Z",
+    "skillsOutdated": 4,
+    "skillsMissing": 0
+  }
+}
