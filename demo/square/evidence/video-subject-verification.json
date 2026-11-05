@@ -1,0 +1,195 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "time": 4.2,
+      "subject": "hook",
+      "mean_pixel_difference": 1.7399,
+      "nearest_source": "hook",
+      "passed": true
+    },
+    {
+      "time": 6.4622,
+      "subject": "hook",
+      "mean_pixel_difference": 1.7399,
+      "nearest_source": "hook",
+      "passed": true
+    },
+    {
+      "time": 9.1244,
+      "subject": "hook",
+      "mean_pixel_difference": 1.7384,
+      "nearest_source": "hook",
+      "passed": true
+    },
+    {
+      "time": 10.7244,
+      "subject": "install",
+      "mean_pixel_difference": 0.4317,
+      "nearest_source": null,
+      "passed": true
+    },
+    {
+      "time": 14.6666,
+      "subject": "install",
+      "mean_pixel_difference": 6.0071,
+      "nearest_source": null,
+      "passed": true
+    },
+    {
+      "time": 19.0088,
+      "subject": "install",
+      "mean_pixel_difference": 9.4026,
+      "nearest_source": null,
+      "passed": true
+    },
+    {
+      "time": 20.6089,
+      "subject": "pack",
+      "mean_pixel_difference": 2.0036,
+      "nearest_source": "pack",
+      "passed": true
+    },
+    {
+      "time": 24.3511,
+      "subject": "pack",
+      "mean_pixel_difference": 2.0004,
+      "nearest_source": "pack",
+      "passed": true
+    },
+    {
+      "time": 28.4933,
+      "subject": "pack",
+      "mean_pixel_difference": 1.9945,
+      "nearest_source": "pack",
+      "passed": true
+    },
+    {
+      "time": 30.0933,
+      "subject": "spec",
+      "mean_pixel_difference": 1.5777,
+      "nearest_source": "spec",
+      "passed": true
+    },
+    {
+      "time": 32.4755,
+      "subject": "spec",
+      "mean_pixel_difference": 1.5718,
+      "nearest_source": "spec",
+      "passed": true
+    },
+    {
+      "time": 35.2577,
+      "subject": "spec",
+      "mean_pixel_difference": 1.5832,
+      "nearest_source": "spec",
+      "passed": true
+    },
+    {
+      "time": 36.8578,
+      "subject": "control",
+      "mean_pixel_difference": 2.388,
+      "nearest_source": "control",
+      "passed": true
+    },
+    {
+      "time": 39.96,
+      "subject": "control",
+      "mean_pixel_difference": 2.3877,
+      "nearest_source": "control",
+      "passed": true
+    },
+    {
+      "time": 43.4622,
+      "subject": "control",
+      "mean_pixel_difference": 2.3888,
+      "nearest_source": "control",
+      "passed": true
+    },
+    {
+      "time": 45.0622,
+      "subject": "eval",
+      "mean_pixel_difference": 1.6213,
+      "nearest_source": "eval",
+      "passed": true
+    },
+    {
+      "time": 48.8444,
+      "subject": "eval",
+      "mean_pixel_difference": 1.6213,
+      "nearest_source": "eval",
+      "passed": true
+    },
+    {
+      "time": 53.0266,
+      "subject": "eval",
+      "mean_pixel_difference": 1.6172,
+      "nearest_source": "eval",
+      "passed": true
+    },
+    {
+      "time": 54.6267,
+      "subject": "ship",
+      "mean_pixel_difference": 1.9707,
+      "nearest_source": "ship",
+      "passed": true
+    },
+    {
+      "time": 58.0089,
+      "subject": "ship",
+      "mean_pixel_difference": 1.9699,
+      "nearest_source": "ship",
+      "passed": true
+    },
+    {
+      "time": 61.7911,
+      "subject": "ship",
+      "mean_pixel_difference": 1.9734,
+      "nearest_source": "ship",
+      "passed": true
+    },
+    {
+      "time": 63.3911,
+      "subject": "scout",
+      "mean_pixel_difference": 1.5827,
+      "nearest_source": "scout",
+      "passed": true
+    },
+    {
+      "time": 67.0933,
+      "subject": "scout",
+      "mean_pixel_difference": 1.5806,
+      "nearest_source": "scout",
+      "passed": true
+    },
+    {
+      "time": 71.1955,
+      "subject": "scout",
+      "mean_pixel_difference": 1.5799,
+      "nearest_source": "scout",
+      "passed": true
+    },
+    {
+      "time": 72.7956,
+      "subject": "receipt",
+      "mean_pixel_difference": 1.6842,
+      "nearest_source": "receipt",
+      "passed": true
+    },
+    {
+      "time": 76.2978,
+      "subject": "receipt",
+      "mean_pixel_difference": 1.6908,
+      "nearest_source": "receipt",
+      "passed": true
+    },
+    {
+      "time": 80.2,
+      "subject": "receipt",
+      "mean_pixel_difference": 1.6915,
+      "nearest_source": "receipt",
+      "passed": true
+    }
+  ],
+  "method": "27 actual decoded frames compared with contained source images; mean RGB difference <12/255 and correct nearest distinct source for native views."
+}

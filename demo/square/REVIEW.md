@@ -11,3 +11,5 @@ Actual installation prompts and setup were recorded. The recorder was corrected 
 Each named tool is paired with its own native evidence view. PackWrite shows an existing pack; Spec validation is not an implementation test; Eval's two checks are limited; ShipCheck has warnings; the receipt verifies integrity rather than correctness. These distinctions remain in the source screens and documentation.
 
 The final delivery report records duration, dimensions, full decode, frame counts, hashes and audio levels. The decoded subject report compares the finished movie with the source screens at the beginning, middle and end of each body scene. Audio is measured, not listened to by the automated reviewer. Static-sheet approval is not a claim that someone watched or heard the complete movie.
+
+The first encoded mix measured −14.15 LUFS / −1.27 dBTP. The mix was rebuilt with two-pass EBU R128 mastering at −16 LUFS and −2 dBTP, then remuxed without changing any video frames. Both sizes were measured again. Delivery gates require −17.5 to −14.5 LUFS and true peak at or below −1.5 dBTP. The final reports contain the resulting measurements.

@@ -11,8 +11,8 @@ decode=subprocess.run(['ffmpeg','-nostdin','-v','error','-i',str(video),'-f','nu
 assert not decode.stderr.strip(),decode.stderr
 meter=subprocess.run(['ffmpeg','-nostdin','-hide_banner','-i',str(video),'-af','loudnorm=I=-16:TP=-1.5:LRA=7:print_format=json','-f','null','-'],capture_output=True,text=True,check=True)
 levels=json.loads(re.findall(r'\{\s*"input_i".*?\}',meter.stderr,re.S)[-1])
-assert -20<float(levels['input_i'])<-12
-assert float(levels['input_tp'])<0
+assert -17.5<float(levels['input_i'])<-14.5
+assert float(levels['input_tp'])<=-1.5
 result={'ok':True,'file':str(video.relative_to(r)),'sha256':hashlib.sha256(video.read_bytes()).hexdigest(),'bytes':video.stat().st_size,'duration_seconds':float(probe['format']['duration']),'width':v['width'],'height':v['height'],'fps':v['r_frame_rate'],'frames':int(v['nb_frames']),'video_codec':v['codec_name'],'audio_codec':a['codec_name'],'sample_rate':int(a['sample_rate']),'full_decode':'passed','integrated_lufs':float(levels['input_i']),'true_peak_dbtp':float(levels['input_tp']),'listening_review':False}
 mobile=r/'delivery/kujo-hermes-square-480p.mp4'
 mp=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(mobile)],text=True))
@@ -24,6 +24,10 @@ assert abs(float(mp['format']['duration'])-88)<0.05
 md=subprocess.run(['ffmpeg','-nostdin','-v','error','-i',str(mobile),'-f','null','-'],capture_output=True,text=True,check=True)
 assert not md.stderr.strip(),md.stderr
 result['mobile']={'file':str(mobile.relative_to(r)),'sha256':hashlib.sha256(mobile.read_bytes()).hexdigest(),'bytes':mobile.stat().st_size,'width':480,'height':480,'duration_seconds':float(mp['format']['duration']),'full_decode':'passed'}
+mobile_meter=subprocess.run(['ffmpeg','-nostdin','-hide_banner','-i',str(mobile),'-af','loudnorm=I=-16:TP=-1.5:LRA=7:print_format=json','-f','null','-'],capture_output=True,text=True,check=True)
+mobile_levels=json.loads(re.findall(r'\{\s*"input_i".*?\}',mobile_meter.stderr,re.S)[-1])
+assert -17.5<float(mobile_levels['input_i'])<-14.5 and float(mobile_levels['input_tp'])<=-1.5
+result['mobile'].update(integrated_lufs=float(mobile_levels['input_i']),true_peak_dbtp=float(mobile_levels['input_tp']))
 (r/'evidence/delivery-verification.json').write_text(json.dumps(result,indent=2)+'\n')
 (r/'evidence/delivery-loudness.json').write_text(json.dumps(levels,indent=2)+'\n')
 print(json.dumps(result,indent=2))

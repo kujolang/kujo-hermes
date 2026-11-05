@@ -19,7 +19,7 @@ The tool views reuse distinct, unchanged recordings from [the verified landscape
 
 PackWrite shows a seeded pack summary with seven phases, not new pack generation. Spec validates a task contract. Eval reports two actual passing checks. ShipCheck still reports warnings. Scout records a repository scan. The receipt verifies stored hashes; it does not prove the code is correct. The source results, inputs, approvals and receipts remain in `../walkthrough/evidence/v5-workflows/`.
 
-The installation scene replays the new actual public GitHub install and setup capture in `evidence/install.cast`, with network waiting condensed. Screen commands are literal, runnable instructions. The installer uses official Hermes v0.22.7. It prepares a supported Python 3.14.9 environment. The first recorder kept its older Python 3.11 entry point after that preparation and could not load the new binary dependency; setup was recaptured using Hermes's selected 3.14 interpreter and an official Kujo 1.8 runtime on PATH. Both raw captures preserve the chronology. This is a corrected recording launcher, not a plugin permission bypass. The earlier native-tool desktop recordings use the documented Python 3.11 compatibility environment; the project's separate Linux certification remains distinct.
+The installation scene replays the new actual public GitHub install and setup captures in `evidence/install.cast` and `evidence/setup.cast`, with network waiting condensed. Screen commands are literal, runnable instructions. The installer uses official Hermes v0.22.7. It prepares a supported Python 3.14.9 environment. The first recorder kept its older Python 3.11 entry point after that preparation and could not load the new binary dependency; setup was recaptured using Hermes's selected 3.14 interpreter and an official Kujo 1.8 runtime on PATH. Both raw captures preserve the chronology. This is a corrected recording launcher, not a plugin permission bypass. The earlier native-tool desktop recordings use the documented Python 3.11 compatibility environment; the project's separate Linux certification remains distinct.
 
 `story.json` owns the benefit-led narration. `timeline.json` and `evidence/shot-map.json` bind every spoken subject to its own screen. All source widths remain visible, with no zoom or side crop. Detailed interface text is smaller in the square/mobile export; the large headline carries each benefit.
 
@@ -34,6 +34,7 @@ npx --yes hyperframes@0.9.13 snapshot --review
 npx --yes hyperframes@0.9.13 preview
 npx --yes hyperframes@0.9.13 render --fps 30 --quality delivery \
   --output delivery/kujo-hermes-square.mp4
+python3 scripts/master_delivery.py
 ffmpeg -i delivery/kujo-hermes-square.mp4 -vf scale=480:480 \
   -c:v libx264 -crf 21 -pix_fmt yuv420p -c:a aac -b:a 128k \
   -movflags +faststart delivery/kujo-hermes-square-480p.mp4

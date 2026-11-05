@@ -1,0 +1,16 @@
+{
+  "method": "Two-pass EBU R128; -16 LUFS, -2 dBTP pre-encode target; exact master remuxed into delivery",
+  "first_pass": {
+    "input_i": "-24.99",
+    "input_tp": "-3.66",
+    "input_lra": "5.00",
+    "input_thresh": "-35.93",
+    "output_i": "-17.31",
+    "output_tp": "-2.00",
+    "output_lra": "3.50",
+    "output_thresh": "-28.15",
+    "normalization_type": "dynamic",
+    "target_offset": "1.31"
+  },
+  "second_pass_filter": "loudnorm=I=-16:TP=-2:LRA=7:measured_I=-24.99:measured_TP=-3.66:measured_LRA=5.00:measured_thresh=-35.93:offset=1.31:linear=true"
+}
