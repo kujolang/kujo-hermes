@@ -61,3 +61,9 @@ The bundled catalog shows Abilities even when their dependencies are missing. In
 - **Lens browser missing:** install Lens's pinned dependencies/browser using its canonical instructions; no browser download happens on plugin load.
 - **Workcell cannot start:** run its doctor; install Git, jq, Docker/Podman and the approved local image. The plugin does not pull images automatically.
 - **Catalog validation dependency download timeout:** retry with network access to PyPI. Source/manifest validation passing alone does not prove clean dependency installation.
+
+## Native setup
+
+On Hermes's default in-process plugin mode, `hermes kujo setup --trust-workspace .` checks the installed Kujo version, fetches the pinned source catalog, and saves settings through Hermes's configuration writer. Run it from the exact Git repository root you want to trust. The command preserves unrelated settings, denied Abilities, secrets configuration and existing trust grants. It refuses malformed or managed configuration, changed source checkouts, and concurrent changes to Kujo settings. Failed new fetches leave no partial target checkout.
+
+A new configuration selects `full`; existing profiles keep their chosen exposure. Trust and approvals remain separate. `--dry-run` checks prerequisites without fetching sources or saving settings. `hermes kujo doctor` reports optional dependencies. Hermes's isolated plugin host omits plugin CLI registration; use the manual configuration in the README for that mode. Setup is an operator CLI command, not a model-callable tool.

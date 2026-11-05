@@ -22,9 +22,22 @@ Requirements:
 
 Some tools need additional dependencies. Hermes installs `jsonschema>=4.23,<5` when it installs the plugin.
 
+With Hermes, Kujo and Git installed, run these commands from your repository:
+
 ```sh
-hermes plugins install https://github.com/kujolang/kujo-hermes --no-enable
+hermes plugins install kujolang/kujo-hermes
+hermes kujo setup --trust-workspace .
 ```
+
+Accept Hermes's dependency-install and enable prompts. Setup fetches 26 official source repositories at verified commits, saves this Hermes profile's settings, and grants trust only to the repository you name. It selects the full catalog for a new configuration and preserves existing restrictions. No npm package is needed.
+
+Start a new conversation, or restart a running gateway. Ask: “Run ShipCheck and show me the release-review findings.” Use `hermes kujo doctor` to inspect dependencies. Setup does not install the Kujo runtime, browser binaries, containers or service credentials; some Abilities still need those prerequisites.
+
+Preview setup with `--dry-run`. Use `--kujo-bin /absolute/path/to/kujo`, `--sources /absolute/path/to/sources`, or `--profile review` to customize it. Omitting `--trust-workspace` adds no trust grant. Existing changed source checkouts are never overwritten.
+
+The native CLI commands use Hermes's default `in_process` plugin mode. Profiles using `plugins.isolation: host` do not expose plugin CLI commands; use the manual configuration below without changing the isolation policy. Managed profiles require operator configuration.
+
+### Manual installation
 
 To install a local checkout:
 
@@ -85,7 +98,7 @@ Profiles offer the same reference tool groups as Kujo CMD:
 
 | Profile | Abilities | Coverage |
 |---|---:|---|
-| essentials (default) | 5 | Catalog, receipts, Scout, PatchBrief, ShipCheck |
+| essentials (adapter default) | 5 | Catalog, receipts, Scout, PatchBrief, ShipCheck |
 | review | 18 | Context, architecture, Spec, drift and artifact validation |
 | ship | 29 | Eval, evidence capture, rendering and browser checks |
 | full | 51 | All 38 reference capabilities plus Workcell, Loop, MCP and language tooling |

@@ -14,3 +14,7 @@ Run tests in a Python environment with `jsonschema` and, for host checks, Hermes
 Development used the installed Loop harness and actual PackWrite manifest compiler. The first Loop iteration caught a quoting error in the gate command. Simplifying that command fixed the gate. PackWrite compiled a hand-written offline manifest through its documented fake-response interface and validated all seven phase files. `evidence/packwrite.log` identifies the provider as fake; it is not presented as model-generated work. A separate live PackWrite init using Ollama `gemma4:31b-cloud` generated 20 files across 13 phases and passed canonical validation (`evidence/live-packwrite.json`).
 
 The repository stores selected execution evidence. Temporary service databases, source checkouts, runtime binaries and Hermes homes are not shipped. Local receipts record product artifact hashes; the repository retains selected summaries. The readiness document states which operations are verified, blocked or untested.
+
+## Native onboarding
+
+`tests/test_setup.py` checks trust, policy preservation, missing runtime guidance and exposure defaults. `tests/test_source_installer.py` exercises actual local Git fetches, pinned/idempotent installs, changed-checkout refusal, symlink refusal and failed-fetch cleanup. The square video's evidence directory records a fresh 26-source setup, native Doctor output, and real Hermes end-to-end runs in both in-process and isolated-host modes. CLI setup is unavailable in isolated-host mode; the six native tools still pass there.

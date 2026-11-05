@@ -37,6 +37,8 @@ def register(ctx):
             except Exception as error:
                 return json.dumps({'ok':False,'error':{'type':type(error).__name__,'message':redact(str(error))[:8192]}})
         ctx.register_tool(name=name,toolset='kujo',schema={'name':name,'description':description,'parameters':params},handler=handler)
+    from .setup import parser_setup, handler as cli_handler
+    ctx.register_cli_command('kujo', help='Set up Kujo sources, workspace trust and diagnostics', setup_fn=parser_setup, handler_fn=cli_handler)
     ctx.register_command('kujo',lambda raw: json.dumps(service.doctor() if raw.strip()=='doctor' else service.discover()),description='Kujo catalog or doctor')
     ctx.register_skill('kujo-engineering', Path(__file__).resolve().parent.parent / 'skills/kujo-engineering/SKILL.md', description='Kujo engineering tools and verified workflows')
     ctx.on_unload(service.close)
