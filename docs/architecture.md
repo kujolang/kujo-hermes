@@ -9,7 +9,7 @@ flowchart TD
   CLI --> Evidence[Bounded structured results and local receipts]
 ```
 
-`plugin.py` handles Hermes integration through the public `ctx.register_tool`, `register_hook`, `register_command`, `register_skill`, `on_unload`, plugin storage and secret-scope APIs. It uses no private host imports, core overrides or other host plugins. A matching `post_approval_response` event authorizes one normalized request. Stale, automatic, denied and unmatched events grant no permission.
+`plugin.py` handles Hermes integration through the public `ctx.register_tool`, `register_hook`, `register_command`, `register_skill`, `on_unload`, plugin storage and secret-scope APIs. It uses no private host imports, core overrides or other host plugins. A matching `post_approval_response` event authorizes one normalized request. Stale, automatic, denied and unmatched events grant no permission. Pending requests and unused grants share a 100-entry bound; expired entries are pruned before admitting another request. Preflight uses the same raw/normalized input bounds as execution and emits redacted errors capped at 8192 characters.
 
 `Catalog` loads portable Ability definitions on demand and validates them with the upstream Python SDK preview. The vendored SDK includes its commit, checksum and license. It checks contracts and digests; the underlying Kujo tools own execution and policy. JSON schemas are validated locally without fetching remote references. CLI bindings use `kujo.hermes.receipt/v1`, a separate schema from canonical runtime receipts.
 

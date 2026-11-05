@@ -38,6 +38,8 @@ The `definition` follows the canonical `kujo.ability/v1` contract. The `binding`
 ]
 ```
 
+Supplied and default-expanded inputs must each fit within 64 KiB of compact UTF-8 JSON. Supplied input is validated first; optional top-level defaults are then applied and the resulting object is validated again. Defaults cannot bypass property types or object-wide constraints. Required properties must still be supplied. Boolean property schemas are supported.
+
 Each argument is a literal token or whole-field placeholder. Objects and lists become a single JSON argument. The adapter does not interpolate shell strings. Every extension requires human approval, regardless of its declared effects; adding a file grants no permission to execute it. Duplicate IDs, invalid definitions/schemas, remote schema references and relative executables reject the whole refresh. A failed refresh leaves the prior validated snapshot intact.
 
 The bundled catalog shows Abilities even when their dependencies are missing. Installing a canonical tool at its configured source path makes its existing operation available immediately. New definitions need an extension binding reviewed by the operator. Kujo has no universal production catalog or CLI protocol across all tools.

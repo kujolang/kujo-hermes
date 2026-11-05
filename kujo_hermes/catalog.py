@@ -6,6 +6,11 @@ from jsonschema import Draft202012Validator
 from .vendor.ability import ability_definition_digest_v2
 
 ROOT = Path(__file__).resolve().parent.parent
+MAX_INPUT_BYTES = 65536
+
+def validate_input_size(value):
+    if len(json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode())>MAX_INPUT_BYTES:
+        raise ValueError('Ability input exceeds 64 KiB')
 
 def read_json(path):
     with open(path, 'rb') as f: raw = f.read(2_097_153)
@@ -73,10 +78,17 @@ class Catalog:
         return copy.deepcopy(entries[ability])
 
     def inputs(self, item, supplied):
+        validate_input_size(supplied)
         data=copy.deepcopy(supplied)
         if not isinstance(data,dict): raise ValueError('input must be an object')
         schema=item['definition']['input_schema']
-        Draft202012Validator(schema).validate(data)
+        validator=Draft202012Validator(schema)
+        validator.validate(data)
+        defaulted=False
         for key, value in schema.get('properties',{}).items():
-            if key not in data and 'default' in value: data[key]=copy.deepcopy(value['default'])
+            if key not in data and isinstance(value,dict) and 'default' in value:
+                data[key]=copy.deepcopy(value['default']); defaulted=True
+        if defaulted:
+            validate_input_size(data)
+            validator.validate(data)
         return data

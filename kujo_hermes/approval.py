@@ -4,7 +4,7 @@ import threading
 import time
 import uuid
 from .commands import plan
-from .service import digest
+from .service import digest, redact
 
 class ApprovalGate:
     def __init__(self,service):
@@ -24,11 +24,11 @@ class ApprovalGate:
                 now=time.monotonic()
                 self.pending={k:v for k,v in self.pending.items() if now-v[1]<300}
                 self.grants={k:v for k,v in self.grants.items() if now-v<300}
-                if len(self.pending)>=100: raise RuntimeError('Too many pending approvals')
+                if len(self.pending)+len(self.grants)>=100: raise RuntimeError('Too many outstanding approvals')
                 self.pending['plugin_rule:'+key]=(request,now)
             return {'action':'approve','rule_key':key,'message':json.dumps({'ability':args['ability'],'workspace':str(root),'effects':item['definition']['effects'],'command':argv,'request_digest':request})}
         except Exception as error:
-            return {'action':'block','message':'Kujo preflight: '+str(error)}
+            return {'action':'block','message':('Kujo preflight: '+redact(str(error)))[:8192]}
 
     def response(self,pattern_key='',choice='',decided_by='',**kwargs):
         with self.lock:

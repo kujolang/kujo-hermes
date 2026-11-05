@@ -11,7 +11,7 @@ import threading
 import time
 import uuid
 from jsonschema import Draft202012Validator
-from .catalog import Catalog
+from .catalog import Catalog, validate_input_size
 from .commands import plan, ENTRYPOINTS
 from .process import run
 from .network import watchdog
@@ -85,7 +85,7 @@ class Service:
         return env
 
     def execute(self,ability,input,workspace,background=False):
-        if len(encoded(input))>65536: raise ValueError('Ability input exceeds 64 KiB')
+        validate_input_size(input)
         invocation=str(uuid.uuid4()); start=int(time.time()*1000)
         item=None; record={'schema':'kujo.hermes.receipt/v1','receipt_id':invocation,'invocation_id':invocation,
             'ability_id':ability,'workspace':str(workspace),'started_at_ms':start,'host':'hermes','status':'preflight',
