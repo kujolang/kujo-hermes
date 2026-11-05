@@ -1,0 +1,48 @@
+
+## gate: edit_and_recorded_evidence
+$ python3 demo/walkthrough/scripts/verify_edit.py
+Catalog and actual execution envelopes verified.
+PASS: 51 bindings; Spec valid; PackWrite 7 phases; approved Eval 2/2; native receipt retrieval and all receipt hashes verified.
+PASS: unchanged bumper sources, non-overlapping natural-speed narration, real check details, ten artifact hashes, nine CMD gates including both bumper boundaries, no contest copy.
+PASS: all seven recording scenes fit their complete source width without zoom or side cropping.
+gate edit_and_recorded_evidence: pass
+
+## gate: delivery_decode_audio
+$ python3 demo/walkthrough/scripts/verify_delivery.py
+{
+  "ok": true,
+  "file": "delivery/kujo-hermes-walkthrough.mp4",
+  "sha256": "301a59c8b64496c22890a5ab3c12a1c00b79874e95aff736e509510b509d4095",
+  "bytes": 9632500,
+  "duration_seconds": 85.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": 2550,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "sample_rate": 48000,
+  "full_decode": "passed",
+  "integrated_lufs": -14.15,
+  "true_peak_dbtp": -1.12,
+  "listening_review": false,
+  "mobile": {
+    "file": "delivery/kujo-hermes-walkthrough-480p.mp4",
+    "sha256": "2150231d77421e4498b6ecb094ae9d885a32d683485de8643e7fa704d7641dd3",
+    "bytes": 1927142,
+    "width": 854,
+    "height": 480,
+    "duration_seconds": 85.013,
+    "full_decode": "passed"
+  }
+}
+gate delivery_decode_audio: pass
+
+## gate: packwrite_context
+$ KUJO=$PWD/.local/runtime/kujo ../packwrite/bin/packwrite validate
+Validation passed (0 warnings) for agent/
+gate packwrite_context: pass
+
+## gate: diff_check
+$ git diff --check
+gate diff_check: pass

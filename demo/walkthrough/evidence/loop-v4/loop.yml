@@ -1,0 +1,24 @@
+objective: "Deliver the revised 85-second Hermes accountability film with complete uncropped Hermes recordings, preserved bumpers and glitches, verified evidence and a mobile copy"
+max_iterations: 1
+max_no_progress: 1
+max_consecutive_failures: 1
+allowed_actions: [read_files, edit_files, run_tests]
+blocked_actions: [deploy, production_config_change]
+eval_gates:
+  - id: edit_and_recorded_evidence
+    command: "python3 demo/walkthrough/scripts/verify_edit.py"
+    required: true
+  - id: delivery_decode_audio
+    command: "python3 demo/walkthrough/scripts/verify_delivery.py"
+    required: true
+  - id: packwrite_context
+    command: "KUJO=$PWD/.local/runtime/kujo ../packwrite/bin/packwrite validate"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false
+  push: false
+memory:
+  enabled: false
