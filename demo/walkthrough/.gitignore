@@ -19,3 +19,9 @@ evidence/v2-details/*.png
 evidence/v2-contract-review/*.png
 !assets/cmd-sfx-*.mp3
 .thumbnails/
+
+evidence/v3-review/*.png
+evidence/v3-details/*.png
+
+evidence/v3-details-final/*.png
+evidence/v3-tools-final/*.png

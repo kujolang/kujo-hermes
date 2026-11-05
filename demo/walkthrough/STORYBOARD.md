@@ -1,18 +1,18 @@
-# Accountability inside Hermes
+# Accountability inside Hermes — revision 3
 
-An 85-second film for developers who already work in Hermes. One Python repository moves from a task contract and context to human approval, two checks, and a verifiable receipt. The native approval is actual recorded Hermes output; the surrounding panels are labeled editorial views of recorded evidence. Waiting time is shortened. No new tool execution is implied by this edit.
+An 85-second film for developers who work in Hermes. Actual recordings of the official desktop workspace show the installed Kujo tools and the saved Eval conversation. The desktop workspace runs in a browser on this Intel Mac. No new model execution is implied: the narration calls this a recorded run. The original CLI approval remains the evidence of the human decision.
 
-The Kujo and Hermes logo bumpers at 0–3.8 and 80.33–85 remain unchanged. Seven body transitions use the stepped slice motion and bundled sounds from the original CMD film. Stable reading frames remain monochrome; cyan and red appear only in brief transition strips.
+One headline per shot replaces the five-step rail, eyebrows, and footnotes. The Kujo/Hermes bumper sources remain unchanged. Nine CMD slice glitches bridge every scene, including both bumper boundaries.
 
-| Seconds | Picture | Developer benefit |
+| Approximate seconds | Picture | Benefit |
 |---|---|---|
-| 3.80–12.52 | A task request opens into three questions | Know what to verify |
-| 12.52–22.59 | Spec’s “2 + 3 returns 5” contract connects to seven PackWrite phases | Preserve task intent and context |
-| 22.59–31.55 | Hermes routes to an Eval Ability and its schema | Stay in the conversation |
-| 31.55–40.59 | Actual native approval dialog, enlarged | Decide what may execute |
-| 40.59–48.98 | Two recorded checks build into the 2/2 result | Understand the scope of a pass |
-| 48.98–59.30 | The receipt reveals command, permission, hashes, and verified status | Trace the result to execution |
-| 59.30–70.25 | ShipCheck, Scout, and Dispatch anchor three tool families | Extend the same workflow |
-| 70.25–80.33 | Task, run, and evidence assemble into a handoff | Leave inspectable evidence for the next developer |
+| 4–13 | Installed Kujo toolset in Hermes | Stay in the agent environment |
+| 13–23 | Spec contract and PackWrite result | Preserve task intent and context |
+| 23–32 | Native Kujo Inspect card | See the operation and approval requirement |
+| 32–41 | Original recorded CLI approval | Control execution |
+| 41–49 | Actual saved Hermes answer | Read the two-check result |
+| 49–59 | Native receipt card | Trace the execution |
+| 59–70 | Installed Kujo toolset in Capabilities | Find tools without leaving Hermes |
+| 70–80 | Saved result and receipt | Leave evidence for the next developer |
 
-The free local Qwen3.5 4B model needed guided prompts in the captured session. The sample request is labeled as an example, not shown as a captured model interaction. Tool families describe included bindings and retain their own prerequisites. Receipt integrity does not establish code correctness or release readiness.
+Spec and PackWrite use a simple editorial view of verified evidence. The wider tool names in narration describe supported catalog bindings, not additional runs. Receipt integrity does not establish release readiness. The free local Qwen3.5 4B session used guided prompts; this is not a model reliability benchmark.

@@ -19,3 +19,7 @@ The 85-second walkthrough is recorded and rendered at `demo/walkthrough/delivery
 ## Walkthrough revision — 2026-11-04
 
 The user requested a benefits-led film for developers who live in Hermes, preserving both logo bumpers and matching the actual CMD glitch transitions. Revision 2 follows task/context → permission → checks → receipt → developer handoff. It reuses verified recording evidence and generates new Siren V4 body narration. The source of truth is `demo/walkthrough/story.json`; artifact and QA links remain in that directory. Contest context must not enter the narration. Keep both 1080p and mobile 480p delivery files.
+
+## Desktop video revision 3
+
+The current video uses real recordings of Hermes’ official browser-hosted desktop workspace on Intel macOS, browsing the saved original Eval session. It does not claim a new GUI inference run. Keep the original CLI approval evidence. Remove the five-step footer, eyebrows, and fine print; preserve one headline per scene and glitch across both bumper joins. The original bumper sources remain unchanged. See walkthrough capture provenance and REVIEW before further edits.

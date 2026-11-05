@@ -1,5 +1,5 @@
 {
-  "revision": 2,
+  "revision": 3,
   "duration": 85,
   "intro_duration": 3.8,
   "outro_start": 80.33,
@@ -21,8 +21,8 @@
     },
     {
       "id": "control",
-      "cue": "v2-control",
-      "text": "Here, a free local model runs checks on a Python project. Hermes asks before Eval executes. You approve this run."
+      "cue": "v3-control",
+      "text": "This recorded run used a free local model. Hermes asked before Eval executed. The developer approved this run."
     },
     {
       "id": "checks",

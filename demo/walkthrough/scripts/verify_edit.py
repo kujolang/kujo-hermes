@@ -26,6 +26,16 @@ assert receipt['result']['structured']['data']['test_results'][0]['details']['co
 assert receipt['result']['structured']['data']['test_results'][1]['details']['path']=='calculator.py'
 text=' '.join(c['text'] for c in t['cues']).lower()
 assert not any(w in text for w in ('hackathon','contest','competition'))
-root=(r/'index.html').read_text();assert root.count('class="clip glitch-cut"')==7
+root=(r/'index.html').read_text();assert root.count('class="clip glitch-cut"')==9
 subprocess.run(['python3',str(r/'scripts/verify_evidence.py')],check=True)
-print('PASS: unchanged bumper sources, non-overlapping natural-speed narration, real check details, ten artifact hashes, seven body-only CMD gates, no contest copy.')
+print('PASS: unchanged bumper sources, non-overlapping natural-speed narration, real check details, ten artifact hashes, nine CMD gates including both bumper boundaries, no contest copy.')
+
+for cut in (3.8,80.33): assert f'data-start="{round(cut-.25,4)}"' in root
+for sc in t['scenes']:
+ body=(r/'compositions'/(sc['id']+'.html')).read_text()
+ assert '<div class="rail">' not in body and '<p class="foot">' not in body and '<p class="eyebrow">' not in body
+
+desktop=json.loads((r/'evidence/desktop-capture.json').read_text())
+for clip in desktop['clips']:
+ assert hashlib.sha256((r/clip['file']).read_bytes()).hexdigest()==clip['sha256']
+assert hashlib.sha256((r/desktop['source_file']).read_bytes()).hexdigest()==desktop['source_sha256']

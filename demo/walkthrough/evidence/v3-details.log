@@ -1,0 +1,40 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing 10 frames at [6s, 17s, 27s, 36s, 45s, 54s, 65s, 75s, 3.75s, 80.3s] from walkthrough
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+   Note: added an end-of-timeline frame at 84.75s. Short beats between your --at times may still be skipped — pass them explicitly.
+[hyperframes] snapshot: frame 1/11 at 6s
+[hyperframes] snapshot: frame 2/11 at 17s
+[hyperframes] snapshot: frame 3/11 at 27s
+[hyperframes] snapshot: frame 4/11 at 36s
+[hyperframes] snapshot: frame 5/11 at 45s
+[hyperframes] snapshot: frame 6/11 at 54s
+[hyperframes] snapshot: frame 7/11 at 65s
+[hyperframes] snapshot: frame 8/11 at 75s
+[hyperframes] snapshot: frame 9/11 at 3.75s
+[hyperframes] snapshot: frame 10/11 at 80.3s
+[hyperframes] snapshot: frame 11/11 at 84.75s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/.hyperframes/video-state.json
+
+◇  11 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-00-at-6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-01-at-17s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-02-at-27s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-03-at-36s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-04-at-45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-05-at-54s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-06-at-65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-07-at-75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-08-at-3.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-09-at-80.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/frame-10-at-84.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/contact-sheet-1.jpg (grid view for AI review)
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-details/contact-sheet-2.jpg (grid view for AI review)
+
+  This project pins hyperframes@0.9.13 (latest 0.9.15).
+  Bump it: npx hyperframes@latest upgrade --project
+

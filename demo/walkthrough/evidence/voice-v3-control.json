@@ -1,0 +1,15 @@
+{
+  "cue": "v3-control",
+  "text": "This recorded run used a free local model. Hermes asked before Eval executed. The developer approved this run.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "9a6558243e3293e7df0414400163bb29472bef07714559b692cf2c34d7e2a9c1",
+  "audio_sha256": "43deffabdb8651ed1fae589a86999d03d485088d774f71beca6f6a366aa66a6b",
+  "duration": 8.08,
+  "request_id": "PSjQohaAKEmA3JVb9j3O",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T03:35:26Z"
+}

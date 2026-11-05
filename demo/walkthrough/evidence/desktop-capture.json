@@ -1,0 +1,33 @@
+{
+  "source": "Official Hermes desktop webapp, v0.22.7 b200f5bc60e31588ba2cb60e288029c4a54ba5fa",
+  "capture": "Playwright recording of actual UI actions in isolated demo profile; no DOM content substitution",
+  "execution": "Browsing saved original Eval run, no new inference",
+  "source_sha256": "fb5f1b91250a4b0389c14a362bd583f4f8a4c08705fbbbfd0d51e21835a549dc",
+  "clips": [
+    {
+      "file": "assets/desktop-result.mp4",
+      "source_start": 27.601999999999993,
+      "duration": 11.5,
+      "sha256": "245762d7abce3842d73ab629846ff271addd72e98757e55f06f2da8cd55aa0fb"
+    },
+    {
+      "file": "assets/desktop-receipt.mp4",
+      "source_start": 39.419999999999995,
+      "duration": 11.5,
+      "sha256": "44f4b66171042364f2b3cbb4a069cfd0d1288404a87a4376828163682813f047"
+    },
+    {
+      "file": "assets/desktop-inspect.mp4",
+      "source_start": 52.55599999999999,
+      "duration": 11.5,
+      "sha256": "64d81ef5e1cecd72007004f7c0e1e3ea304e3bbbefa65ce7dde0e874e54433ff"
+    },
+    {
+      "file": "assets/desktop-tools.mp4",
+      "source_start": 70.0,
+      "duration": 11.5,
+      "sha256": "5bec60e0a98d1e93c6ab332582fdc9835240cd3cabd08df21bb8c496e3216388"
+    }
+  ],
+  "source_file": "assets/desktop-source.webm"
+}

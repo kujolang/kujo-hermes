@@ -1,0 +1,23 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing 4 frames at [7s, 10s, 65s, 68s] from walkthrough
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+   Note: added an end-of-timeline frame at 84.75s. Short beats between your --at times may still be skipped — pass them explicitly.
+[hyperframes] snapshot: frame 1/5 at 7s
+[hyperframes] snapshot: frame 2/5 at 10s
+[hyperframes] snapshot: frame 3/5 at 65s
+[hyperframes] snapshot: frame 4/5 at 68s
+[hyperframes] snapshot: frame 5/5 at 84.75s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/.hyperframes/video-state.json
+
+◇  5 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final/frame-00-at-7s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final/frame-01-at-10s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final/frame-02-at-65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final/frame-03-at-68s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final/frame-04-at-84.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/evidence/v3-tools-final/contact-sheet.jpg (grid view for AI review)

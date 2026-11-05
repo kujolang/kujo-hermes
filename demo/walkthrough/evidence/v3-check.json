@@ -1,0 +1,699 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 10,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 3 has 9 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-0\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-0",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-0\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-3",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-4",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-5\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-5",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-6\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-6",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-6\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-7\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-7",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-7\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-8\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-8",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-8\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 11
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 8,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 4.722,
+        "selector": "#desktop-question",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 131,
+          "top": 121,
+          "right": 1791,
+          "bottom": 1159,
+          "width": 1660,
+          "height": 1038
+        },
+        "containerSelector": "#question-stage > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 190,
+          "right": 1790,
+          "bottom": 1010,
+          "width": 1660,
+          "height": 820
+        },
+        "overflow": {
+          "top": 69,
+          "bottom": 149
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-question",
+          "data-start": "0",
+          "data-duration": "8.7263",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/question.html",
+        "bbox": {
+          "x": 131,
+          "y": 121,
+          "width": 1660,
+          "height": 1038
+        },
+        "firstSeen": 4.722,
+        "lastSeen": 4.722,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.722
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 23.611,
+        "selector": "#desktop-routing",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -19,
+          "top": -189,
+          "right": 2637,
+          "bottom": 1471,
+          "width": 2656,
+          "height": 1660
+        },
+        "containerSelector": "#routing-stage > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 330,
+          "right": 1790,
+          "bottom": 830,
+          "width": 1660,
+          "height": 500
+        },
+        "overflow": {
+          "left": 149,
+          "right": 847,
+          "top": 519,
+          "bottom": 641
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-routing",
+          "data-start": "0",
+          "data-duration": "8.9663",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/routing.html",
+        "bbox": {
+          "x": -19,
+          "y": -189,
+          "width": 2656,
+          "height": 1660
+        },
+        "firstSeen": 23.611,
+        "lastSeen": 23.611,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.611
+        ]
+      },
+      {
+        "code": "escaped_container",
+        "severity": "info",
+        "time": 23.611,
+        "selector": "#desktop-routing",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": -19,
+          "top": -189,
+          "right": 2637,
+          "bottom": 1471,
+          "width": 2656,
+          "height": 1660
+        },
+        "containerSelector": "#routing-stage > div:nth-of-type(1)",
+        "text": "",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 330,
+          "right": 1790,
+          "bottom": 830,
+          "width": 1660,
+          "height": 500
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-routing",
+          "data-start": "0",
+          "data-duration": "8.9663",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/routing.html",
+        "bbox": {
+          "x": -19,
+          "y": -189,
+          "width": 2656,
+          "height": 1660
+        },
+        "firstSeen": 23.611,
+        "lastSeen": 23.611,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.611
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 33.056,
+        "selector": "#approval-recording",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 106,
+          "top": 280,
+          "right": 2206,
+          "bottom": 1260,
+          "width": 2100,
+          "height": 980
+        },
+        "containerSelector": "#approval-crop",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 295,
+          "right": 1790,
+          "bottom": 795,
+          "width": 1660,
+          "height": 500
+        },
+        "overflow": {
+          "left": 24,
+          "right": 416,
+          "top": 15,
+          "bottom": 465
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "approval-recording",
+          "data-start": "0",
+          "data-duration": "8.9663",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/control.html",
+        "bbox": {
+          "x": 106,
+          "y": 280,
+          "width": 2100,
+          "height": 980
+        },
+        "firstSeen": 33.056,
+        "lastSeen": 33.056,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          33.056
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 42.5,
+        "selector": "#desktop-checks",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -9,
+          "top": -254,
+          "right": 2315,
+          "bottom": 1198,
+          "width": 2324,
+          "height": 1452
+        },
+        "containerSelector": "#checks-stage > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 280,
+          "right": 1790,
+          "bottom": 940,
+          "width": 1660,
+          "height": 660
+        },
+        "overflow": {
+          "left": 139,
+          "right": 525,
+          "top": 534,
+          "bottom": 258
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-checks",
+          "data-start": "0",
+          "data-duration": "8.4062",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/checks.html",
+        "bbox": {
+          "x": -9,
+          "y": -254,
+          "width": 2324,
+          "height": 1452
+        },
+        "firstSeen": 42.5,
+        "lastSeen": 42.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          42.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 51.944,
+        "selector": "#desktop-evidence",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -9,
+          "top": -254,
+          "right": 2315,
+          "bottom": 1198,
+          "width": 2324,
+          "height": 1452
+        },
+        "containerSelector": "#evidence-stage > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 280,
+          "right": 1790,
+          "bottom": 940,
+          "width": 1660,
+          "height": 660
+        },
+        "overflow": {
+          "left": 139,
+          "right": 525,
+          "top": 534,
+          "bottom": 258
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-evidence",
+          "data-start": "0",
+          "data-duration": "10.3262",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/evidence.html",
+        "bbox": {
+          "x": -9,
+          "y": -254,
+          "width": 2324,
+          "height": 1452
+        },
+        "firstSeen": 51.944,
+        "lastSeen": 51.944,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          51.944
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 61.389,
+        "selector": "#desktop-tools",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 131,
+          "top": 101,
+          "right": 1791,
+          "bottom": 1139,
+          "width": 1660,
+          "height": 1038
+        },
+        "containerSelector": "#tools-stage > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 190,
+          "right": 1790,
+          "bottom": 1010,
+          "width": 1660,
+          "height": 820
+        },
+        "overflow": {
+          "top": 89,
+          "bottom": 129
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-tools",
+          "data-start": "0",
+          "data-duration": "10.9663",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/tools.html",
+        "bbox": {
+          "x": 131,
+          "y": 101,
+          "width": 1660,
+          "height": 1038
+        },
+        "firstSeen": 61.389,
+        "lastSeen": 61.389,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          61.389
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 70.833,
+        "selector": "#desktop-payoff",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -9,
+          "top": -254,
+          "right": 2315,
+          "bottom": 1198,
+          "width": 2324,
+          "height": 1452
+        },
+        "containerSelector": "#payoff-stage > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 130,
+          "top": 280,
+          "right": 1790,
+          "bottom": 940,
+          "width": 1660,
+          "height": 660
+        },
+        "overflow": {
+          "left": 139,
+          "right": 525,
+          "top": 534,
+          "bottom": 258
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "desktop-payoff",
+          "data-start": "0",
+          "data-duration": "10.0862",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/payoff.html",
+        "bbox": {
+          "x": -9,
+          "y": -254,
+          "width": 2324,
+          "height": 1452
+        },
+        "firstSeen": 70.833,
+        "lastSeen": 80.278,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          70.833,
+          80.278
+        ]
+      }
+    ],
+    "duration": 85,
+    "samples": [
+      4.722,
+      14.167,
+      23.611,
+      33.056,
+      42.5,
+      51.944,
+      61.389,
+      70.833,
+      80.278
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 8,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.01:1; WCAG AA requires 3:1.",
+        "text": "Keep the speed. Keep the evidence.",
+        "fg": "rgb(249,249,249)",
+        "bg": "rgb(178,178,178)",
+        "ratio": 2.01,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(95,95,95)",
+        "large": true,
+        "selector": "div > div:nth-of-type(9) > div > div > h1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/payoff.html",
+        "bbox": {
+          "x": 130,
+          "y": 72,
+          "width": 1034.4375,
+          "height": 71.671875
+        },
+        "time": 80.278,
+        "times": [
+          80.278
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      4.722,
+      23.611,
+      42.5,
+      61.389,
+      80.278
+    ],
+    "checked": 5,
+    "passed": 4
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "step": 0.14199999999999946,
+    "samples": 599
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "4cf1f751-45c7-4401-8cf5-a43baabf7f08",
+    "revision": null,
+    "report": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/.hyperframes/artifacts/checks/4cf1f751-45c7-4401-8cf5-a43baabf7f08.json",
+    "attribution": "inputs-changed"
+  },
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.15",
+    "updateAvailable": true,
+    "checkedAt": "2026-11-05T03:42:17.540Z",
+    "skillsOutdated": 4,
+    "skillsMissing": 0
+  }
+}
