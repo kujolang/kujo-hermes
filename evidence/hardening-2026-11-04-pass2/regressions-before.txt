@@ -1,0 +1,130 @@
+test_background_receipt_failure_remains_inspectable (test_lifecycle.LifecycleTests.test_background_receipt_failure_remains_inspectable) ... Exception in thread Thread-1 (_perform):
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+ERROR
+    self.run()
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 159, in _perform
+    return self.finish(redact(record,secrets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+test_cancelled_before_start_does_not_spawn (test_lifecycle.LifecycleTests.test_cancelled_before_start_does_not_spawn) ...     raise effect
+OSError: receipt storage unavailable
+ERROR
+test_extension_cannot_be_misrouted_by_internal_operation (test_lifecycle.LifecycleTests.test_extension_cannot_be_misrouted_by_internal_operation) ... ERROR
+test_receipt_not_visible_until_sync_completes (test_lifecycle.LifecycleTests.test_receipt_not_visible_until_sync_completes) ... FAIL
+test_receipt_sync_failure_leaves_no_partial_files (test_lifecycle.LifecycleTests.test_receipt_sync_failure_leaves_no_partial_files) ... ERROR
+test_thread_start_failure_releases_execution_slots (test_lifecycle.LifecycleTests.test_thread_start_failure_releases_execution_slots) ... FAIL
+
+======================================================================
+ERROR: test_background_receipt_failure_remains_inspectable (test_lifecycle.LifecycleTests.test_background_receipt_failure_remains_inspectable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/tests/test_lifecycle.py", line 72, in test_background_receipt_failure_remains_inspectable
+    status = self.service.status(result['invocation_id'])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 208, in status
+    return self.receipts(invocation_id,12000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 192, in receipts
+    with open(path,'rb') as f: raw=f.read(MAX_RECEIPT_BYTES+1)
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpqk4jacx7/state/receipts/eef19cca-6241-4617-9e00-56f05108a49f.json'
+
+======================================================================
+ERROR: test_cancelled_before_start_does_not_spawn (test_lifecycle.LifecycleTests.test_cancelled_before_start_does_not_spawn)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/tests/test_lifecycle.py", line 37, in test_cancelled_before_start_does_not_spawn
+    result = run(['/bin/echo', 'must not run'], self.root, {}, 1, 1024, cancel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/process.py", line 21, in run
+    os.set_blocking(pipe.fileno(),False); selector.register(pipe,selectors.EVENT_READ,key)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/selectors.py", line 518, in register
+    key = super().register(fileobj, events, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/selectors.py", line 241, in register
+    raise KeyError("{!r} (FD {}) is already registered"
+KeyError: "<MagicMock name='Popen().stderr' id='4371532496'> (FD 1) is already registered"
+
+======================================================================
+ERROR: test_extension_cannot_be_misrouted_by_internal_operation (test_lifecycle.LifecycleTests.test_extension_cannot_be_misrouted_by_internal_operation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/tests/test_lifecycle.py", line 55, in test_extension_cannot_be_misrouted_by_internal_operation
+    self.assertEqual(result['result']['stdout'], 'actual extension output\n')
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'stdout'
+
+======================================================================
+ERROR: test_receipt_sync_failure_leaves_no_partial_files (test_lifecycle.LifecycleTests.test_receipt_sync_failure_leaves_no_partial_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 127, in execute
+    return self._perform(item,data,argv,cwd,extra,cancel,record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 159, in _perform
+    return self.finish(redact(record,secrets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 176, in finish
+    with os.fdopen(fd,'wb') as f: f.write(raw); f.flush(); os.fsync(f.fileno())
+                                                           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+OSError: disk failure
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/tests/test_lifecycle.py", line 60, in test_receipt_sync_failure_leaves_no_partial_files
+    result = self.service.execute(ability, {}, str(self.root))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 130, in execute
+    return self.finish(record)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/kujo_hermes/service.py", line 175, in finish
+    fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpq6kk52d5/state/receipts/e163d150-6dcc-4a1d-b18f-0c0be4c7afbb.json'
+
+======================================================================
+FAIL: test_receipt_not_visible_until_sync_completes (test_lifecycle.LifecycleTests.test_receipt_not_visible_until_sync_completes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/tests/test_lifecycle.py", line 84, in test_receipt_not_visible_until_sync_completes
+    self.assertEqual(observed, [])
+AssertionError: Lists differ: [PosixPath('/var/folders/wb/0cck3lgd08n55g[85 chars]on')] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+PosixPath('/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp8a0n00ke/state/receipts/220f1143-a7b8-436c-95fd-4c492f7ad8a1.json')
+
+- [PosixPath('/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmp8a0n00ke/state/receipts/220f1143-a7b8-436c-95fd-4c492f7ad8a1.json')]
++ []
+
+======================================================================
+FAIL: test_thread_start_failure_releases_execution_slots (test_lifecycle.LifecycleTests.test_thread_start_failure_releases_execution_slots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/tmpy0gletbe/tests/test_lifecycle.py", line 48, in test_thread_start_failure_releases_execution_slots
+    self.assertFalse(any(j['status']=='running' for j in self.service.jobs.values()))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.577s
+
+FAILED (failures=2, errors=4)
