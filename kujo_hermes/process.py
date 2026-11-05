@@ -18,11 +18,12 @@ def run(argv, cwd, env, timeout, limit, cancel):
         return {'status':'cancelled','exit_code':None,'stdout':'','stderr':'','duration_ms':0}
     proc=subprocess.Popen(argv,cwd=cwd,env=env,stdin=subprocess.DEVNULL,
         stdout=subprocess.PIPE,stderr=subprocess.PIPE,start_new_session=True)
-    selector=selectors.DefaultSelector(); streams={'stdout':bytearray(),'stderr':bytearray()}
-    for key,pipe in [('stdout',proc.stdout),('stderr',proc.stderr)]:
-        os.set_blocking(pipe.fileno(),False); selector.register(pipe,selectors.EVENT_READ,key)
+    selector=None; streams={'stdout':bytearray(),'stderr':bytearray()}
     status='completed'; total=0
     try:
+        selector=selectors.DefaultSelector()
+        for key,pipe in [('stdout',proc.stdout),('stderr',proc.stderr)]:
+            os.set_blocking(pipe.fileno(),False); selector.register(pipe,selectors.EVENT_READ,key)
         while selector.get_map():
             if cancel.is_set(): status='cancelled'; break
             if time.monotonic()-started>timeout: status='timeout'; break
@@ -40,7 +41,11 @@ def run(argv, cwd, env, timeout, limit, cancel):
                 if time.monotonic()-started>timeout: status='timeout'; break
                 cancel.wait(0.02)
     finally:
-        terminate(proc); selector.close(); proc.stdout.close(); proc.stderr.close()
+        try:
+            terminate(proc)
+        finally:
+            if selector is not None: selector.close()
+            proc.stdout.close(); proc.stderr.close()
     return {'status':status,'exit_code':proc.returncode,
         **{k:v.decode('utf-8','replace') for k,v in streams.items()},
         'duration_ms':int((time.monotonic()-started)*1000)}

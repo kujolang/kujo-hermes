@@ -18,6 +18,19 @@ from .network import watchdog
 
 # Independent of current subprocess settings; JSON escaping can expand output sixfold.
 MAX_RECEIPT_BYTES = 32 * 1024 * 1024
+MAX_OUTPUT_DEPTH = 128
+
+def check_output_depth(value):
+    # Bound nesting before recursive schema validation, redaction and encoding.
+    stack=[iter((value,))]
+    while stack:
+        try: node=next(stack[-1])
+        except StopIteration:
+            stack.pop(); continue
+        if isinstance(node,(dict,list)):
+            if len(stack)>MAX_OUTPUT_DEPTH:
+                raise RecursionError('Structured output exceeds 128 container levels')
+            stack.append(iter(node.values() if isinstance(node,dict) else node))
 
 
 def encoded(value): return json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()
@@ -148,8 +161,11 @@ class Service:
             else:
                 outcome=run(argv,cwd,env,self.config.timeout_seconds,self.config.max_output_bytes,cancel)
                 result=dict(outcome)
+                record['result']=result
                 try:
-                    result['structured']=json.loads(outcome['stdout'])
+                    structured=json.loads(outcome['stdout'])
+                    check_output_depth(structured)
+                    result['structured']=structured
                     result['stdout_digest']=hashlib.sha256(outcome['stdout'].encode()).hexdigest()
                     result.pop('stdout',None)
                 except ValueError: pass
