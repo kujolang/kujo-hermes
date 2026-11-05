@@ -1,0 +1,36 @@
+{
+  "reviewer": "fresh HyperFrames review agent",
+  "inputs": [
+    "STORYBOARD.md",
+    "v2-review/review-beats-1.jpg",
+    "v2-review/review-beats-2.jpg",
+    "v2-review/review-phone-1.jpg",
+    "v2-review/review-phone-2.jpg",
+    "v2-review/review-seam-03.jpg",
+    "v2-review/review-seam-09.jpg",
+    "v2-review/review-seam-15.jpg",
+    "v2-review/review-seam-21.jpg",
+    "v2-review/review-seam-23.jpg",
+    "v2-details/contact-sheet.jpg"
+  ],
+  "p0": [],
+  "p1": [
+    {
+      "time": "12.52\u201322.59",
+      "finding": "Task contract is abstract; show a real requirement.",
+      "resolution": "Copied 2 + 3 returns 5 from the actual demo task.spec.json; checked affected scene and inspected final frame at21 seconds.",
+      "evidence": [
+        "demo-contract.json",
+        "v2-contract-check.json",
+        "v2-contract-review/contact-sheet.jpg"
+      ],
+      "status": "corrected"
+    }
+  ],
+  "verified_payoffs": [
+    "Native allowed once confirmation",
+    "Eval 2/2 checks",
+    "Receipt integrity verified"
+  ],
+  "sound_listening": false
+}

@@ -1,29 +1,27 @@
-# Walkthrough review
+# Accountability film review — revision 2
 
-The film follows a guided repository workflow: discover tools, validate a specification, inspect task context, approve checks, and read the execution evidence. It lasts 85 seconds, including paired Kujo and Hermes logo bumpers. A receipt-first story and a catalog-only tour were considered but not built; the workflow gives developers a concrete use case.
+The user asked for a stronger explanation of the value Kujo brings to developers who work inside Hermes. The revised film follows one repository task through contract, context, permission, checks, and execution evidence. A persistent progress line connects the scenes. The catalog appears as three jobs developers can extend, rather than a long spoken list of tools. The earlier installation-led cut and a receipt-first reverse chronology were not retained.
 
-The official Kujo mark and Hermes website logo remain unmodified. The black body, white bumpers, Departure Mono lettering, and short logo offsets follow the existing Kujo integration-video style. This is a new composition, not a claim that the old CMD bumper was recovered.
+Both original logo compositions and their Siren takes remain unchanged. The actual CMD source was recovered from `kujolang/mcp@01a4f51`, `demos/command-code-ollama-live-proof/index.html`. Seven body seams adapt its five staggered slices, stepped reversals, and scan grid. Cyan/red accents appear only in short strips; there are no new full-frame flash effects. Three original bundled CMD sounds alternate under the cuts. Provenance is in `evidence/cmd-reference.json`.
 
-## Evidence and checks
+## What was verified
 
-- Real Hermes v0.22.7 CLI, local Qwen3.5 4B through Ollama, canonical Kujo 1.8.0 runtime.
-- Native discovery returned 51 bindings. Spec returned `valid: true` with no errors or warnings. PackWrite reported seven phases and no missing files.
-- Eval ran after the actual interactive “Allow once” choice. Both checks passed. A follow-up Hermes tool call retrieved the same receipt with `verified: true`.
-- `scripts/verify_evidence.py` checks recorded tool responses, capture hashes, canonical command identity, approval evidence, result counts, and all copied receipt hashes.
-- HyperFrames check passed with zero lint, runtime, layout, contrast, or audio errors. All 22 sampled contrast checks passed. Its 599 craft samples produced ten stillness warnings, retained deliberately so viewers can read the catalog, results, and tool lists during narration.
-- Beat, transition, and phone sheets were inspected. A fresh reviewer found no actionable P0/P1 visual or story issues. Extra samples cover the bumper offsets, short terminal cuts, later tool families, and final benefits.
-- The local preview returned HTTP 200. Delivery metadata, full decode, and audio measurements are recorded in `evidence/delivery-verification.json` and `evidence/delivery-audio.json`.
+The edit reuses the real Hermes/Qwen3.5 4B recording from November 4. It does not claim a new run. Source recordings and receipts still pass `verify_evidence.py`: 51 discovered bindings; a valid Spec with no errors; seven PackWrite phases with no missing files; an actual “Allow once” approval; Eval’s two passing checks; and native receipt retrieval with verified integrity.
 
-The source soundtrack measured −17.22 LUFS integrated and −1.41 dBTP. The final MP4 measured −14.24 LUFS and −1.24 dBTP after renderer audio processing. Its 2,550 frames decoded without errors at 1920 × 1080, 30 fps; duration is exactly 85.0 seconds. Audio was measured, not auditioned by a listener. No claim of a listening review is made.
+The task is now visible: **2 + 3 returns 5**, copied from the actual sample contract. Spec validates that contract’s structure; the later unit test checks the implementation. The film does not imply that Spec validation proves implementation correctness. The two Eval checks are a unit-suite command and the existence of `calculator.py`.
 
-## Editorial limits
+`verify_edit.py` checks unchanged bumper sources against the prior delivery commit, cached voice hashes, narration spacing, exact result details, the ten recorded artifact hashes, and all seven body transitions. Body voice is not sped up. The film remains 85 seconds.
 
-The terminal clips replay actual captured bytes. Waiting time is shortened. Catalog, Spec, PackWrite, and receipt excerpts are labeled as recorded tool results, not presented as a recreated Hermes interface. The demo is guided: the small model required explicit tool names and a separate receipt follow-up. Earlier attempts and the model's contradictory discovery paraphrase remain in the evidence. The film uses verified tool data for its claims.
+The full HyperFrames check passed with no lint, runtime, layout, motion, contrast, craft, or audio errors. Eight lint warnings remain: seven explicit, editable transition overlays and one density warning for their lane. They are intentional seam effects, not hidden duplicate scenes. The initial 25 px command text was enlarged to 28 px; the final full check has no craft warnings. After the task requirement was made concrete, the affected scene passed another scoped check.
 
-The approval dialog is the strongest native-interface shot. The setup shot is the weakest: its doctor output contains long local paths and is useful mainly when paused at 1080p. A future vertical cut should crop that evidence and enlarge each result separately. The current film is intended for landscape viewing; headers and outcome text remain readable on the phone sheets, while hashes and terminal details are pause-to-inspect evidence.
+Beat, phone, transition, and late-payoff sheets were inspected. The fresh reviewer found no P0 issues and one P1: the task needed a concrete requirement. That was corrected from the actual spec and checked at 21 seconds. The native “allowed once” confirmation, 2/2 result, and integrity status are readable in the late-payoff sheet. The weakest shot remains the native approval: its diagnostic details require landscape playback or a pause, while the headline and selected approval carry the main point.
 
-The broader tool list describes included bindings. Workcell, Lens, and other tools retain their documented prerequisites. No claim is made that every binding ran here or that successful execution establishes release readiness. Nothing was posted or submitted externally.
+## Limits
 
-The scoped Loop gates passed for recorded execution evidence, full delivery decode and audio, PackWrite context validation, and whitespace checks. The first delivery gate exposed FFmpeg reading the harness input stream; adding `-nostdin` fixed the verifier, and the full gate set then passed. The earlier low-disk render attempt was resolved by removing the task-specific model downloads.
+Editorial panels are labeled and do not imitate a native Hermes screen. The initial request is labeled as an example. Waiting time is shortened; the small local model required guided prompts. Tool-family names describe included bindings, not additional executions. PackWrite summarizes the seeded execution pack copied by `demo/prepare.py`; this recording does not generate a new calculator-specific pack. Tools retain their prerequisites and approvals. A verified receipt establishes integrity of recorded evidence, not code correctness or release readiness.
 
-Original vendor bytes and recorded evidence are exempt from whitespace normalization through the local `.gitattributes`; authored scripts and documentation remain checked. This preserves terminal recordings, FFmpeg logs, and patch context lines.
+Audio is measured, not auditioned by a listener. Delivery metadata, decode results, and measured levels are saved in `evidence/delivery-verification.json`. The finished 1080p file is 6,187,502 bytes with all 2,550 frames decoded successfully; audio measures -14.13 LUFS and -1.29 dBTP. The 480p copy is 1,806,624 bytes and also passed a full decode. No contest mention, external submission, social post, or release publication is included.
+
+The editable preview remains available locally. For further edits, the [HyperFrames desktop app](https://hyperframes.studio/studio/download?src=cli) can open the same composition.
+
+The scoped Loop run passed all four gates: edit and recorded-evidence integrity, both delivery decodes and audio measurement, canonical PackWrite pack validation, and whitespace checks. Final MP4 frames were inspected separately from the composition snapshots.

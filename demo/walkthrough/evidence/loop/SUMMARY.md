@@ -10,7 +10,7 @@ success
 
 ## Verification
 
-- passed: recorded_tool_evidence, delivery_decode_audio, packwrite_context, diff_check
+- passed: edit_and_recorded_evidence, delivery_decode_audio, packwrite_context, diff_check
 - blocked: none
 - failed: none
 

@@ -41,4 +41,3 @@ Keep your agent workflow. Add repeatable checks, clear permissions, and evidence
 ## outro · 80.33s
 
 Kujo. Trust at the speed of AI.
-

@@ -1,0 +1,251 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 8,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 3 has 7 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-0\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-0",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-0\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-3",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-4",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-5\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-5",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-6\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-6",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-6\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 18
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 85,
+    "samples": [
+      13.061,
+      14.183,
+      15.306,
+      16.428,
+      17.55,
+      18.672,
+      19.794,
+      20.917,
+      22.039
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      13.061,
+      15.306,
+      17.55,
+      19.794,
+      22.039
+    ],
+    "checked": 83,
+    "passed": 83
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "step": 0,
+    "samples": 0
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "scope": {
+    "range": [
+      12.5,
+      22.6
+    ],
+    "hiddenFindings": 0,
+    "notes": [
+      "Static lint, audio and unscoped runtime failures remain project-wide.",
+      "Whole-timeline motion assertions, frozen-sweep detection and craft warnings are skipped for range checks."
+    ]
+  },
+  "saved": {
+    "id": "4fcdd3e4-ec7f-4dd6-83a9-3c3b278cf2f3",
+    "revision": null,
+    "report": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/.hyperframes/artifacts/checks/4fcdd3e4-ec7f-4dd6-83a9-3c3b278cf2f3.json",
+    "attribution": "inputs-changed"
+  },
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.13",
+    "updateAvailable": false,
+    "checkedAt": "2026-11-05T01:21:03.949Z",
+    "skillsOutdated": 4,
+    "skillsMissing": 0
+  }
+}

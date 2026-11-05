@@ -1,8 +1,8 @@
 {
   "ok": true,
   "file": "delivery/kujo-hermes-walkthrough.mp4",
-  "sha256": "a1cc698e2b848340ffebb2a7e485de850653934ff1bc66fd2286dfcbda717bca",
-  "bytes": 4863120,
+  "sha256": "4844fc5d89186ed7b730c52247453d95c333a188d465cf51d3575ffc5c974302",
+  "bytes": 6187502,
   "duration_seconds": 85.0,
   "width": 1920,
   "height": 1080,
@@ -12,7 +12,16 @@
   "audio_codec": "aac",
   "sample_rate": 48000,
   "full_decode": "passed",
-  "integrated_lufs": -14.24,
-  "true_peak_dbtp": -1.24,
-  "listening_review": false
+  "integrated_lufs": -14.13,
+  "true_peak_dbtp": -1.29,
+  "listening_review": false,
+  "mobile": {
+    "file": "delivery/kujo-hermes-walkthrough-480p.mp4",
+    "sha256": "7f1d0762eb056511f78e14d4f66c8b13f3cb81b7e05da86094ca87195226aef4",
+    "bytes": 1806624,
+    "width": 854,
+    "height": 480,
+    "duration_seconds": 85.013,
+    "full_decode": "passed"
+  }
 }

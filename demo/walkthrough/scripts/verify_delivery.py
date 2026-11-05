@@ -14,6 +14,16 @@ levels=json.loads(re.findall(r'\{\s*"input_i".*?\}',meter.stderr,re.S)[-1])
 assert -20<float(levels['input_i'])<-12
 assert float(levels['input_tp'])<0
 result={'ok':True,'file':str(video.relative_to(r)),'sha256':hashlib.sha256(video.read_bytes()).hexdigest(),'bytes':video.stat().st_size,'duration_seconds':float(probe['format']['duration']),'width':v['width'],'height':v['height'],'fps':v['r_frame_rate'],'frames':int(v['nb_frames']),'video_codec':v['codec_name'],'audio_codec':a['codec_name'],'sample_rate':int(a['sample_rate']),'full_decode':'passed','integrated_lufs':float(levels['input_i']),'true_peak_dbtp':float(levels['input_tp']),'listening_review':False}
+mobile=r/'delivery/kujo-hermes-walkthrough-480p.mp4'
+mp=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(mobile)],text=True))
+mv=next(x for x in mp['streams'] if x['codec_type']=='video')
+ma=next(x for x in mp['streams'] if x['codec_type']=='audio')
+assert (mv['width'],mv['height'],mv['codec_name'],mv['pix_fmt'])==(854,480,'h264','yuv420p')
+assert int(mv['nb_frames'])==2550 and ma['codec_name']=='aac'
+assert abs(float(mp['format']['duration'])-85)<0.05
+md=subprocess.run(['ffmpeg','-nostdin','-v','error','-i',str(mobile),'-f','null','-'],capture_output=True,text=True,check=True)
+assert not md.stderr.strip(),md.stderr
+result['mobile']={'file':str(mobile.relative_to(r)),'sha256':hashlib.sha256(mobile.read_bytes()).hexdigest(),'bytes':mobile.stat().st_size,'width':854,'height':480,'duration_seconds':float(mp['format']['duration']),'full_decode':'passed'}
 (r/'evidence/delivery-verification.json').write_text(json.dumps(result,indent=2)+'\n')
 (r/'evidence/delivery-loudness.json').write_text(json.dumps(levels,indent=2)+'\n')
 print(json.dumps(result,indent=2))

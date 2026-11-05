@@ -3,50 +3,83 @@ Input #0, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/de
     encoder         : Lavf63.1.102
   Duration: 00:00:01.36, start: 0.025057, bitrate: 135 kb/s
   Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #1, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/setup.mp3':
+Input #1, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-question.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:07.92, start: 0.025057, bitrate: 129 kb/s
+  Duration: 00:00:07.84, start: 0.025057, bitrate: 129 kb/s
   Stream #1:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #2, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/discover.mp3':
+Input #2, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-context.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:11.44, start: 0.025057, bitrate: 128 kb/s
+  Duration: 00:00:09.20, start: 0.025057, bitrate: 129 kb/s
   Stream #2:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #3, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/request.mp3':
+Input #3, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-routing.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:08.72, start: 0.025057, bitrate: 128 kb/s
+  Duration: 00:00:08.08, start: 0.025057, bitrate: 129 kb/s
   Stream #3:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #4, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/approval.mp3':
+Input #4, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-control.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:09.36, start: 0.025057, bitrate: 128 kb/s
+  Duration: 00:00:08.16, start: 0.025057, bitrate: 129 kb/s
   Stream #4:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #5, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/proof.mp3':
+Input #5, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-checks.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:10.80, start: 0.025057, bitrate: 128 kb/s
+  Duration: 00:00:07.52, start: 0.025057, bitrate: 128 kb/s
   Stream #5:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #6, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/breadth.mp3':
+Input #6, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-evidence.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:14.88, start: 0.025057, bitrate: 128 kb/s
+  Duration: 00:00:09.44, start: 0.025057, bitrate: 128 kb/s
   Stream #6:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #7, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/benefit.mp3':
+Input #7, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-tools.mp3':
   Metadata:
     encoder         : Lavf63.1.102
-  Duration: 00:00:10.96, start: 0.025057, bitrate: 128 kb/s
+  Duration: 00:00:10.08, start: 0.025057, bitrate: 128 kb/s
   Stream #7:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-Input #8, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/outro.mp3':
+Input #8, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/v2-payoff.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:09.20, start: 0.025057, bitrate: 129 kb/s
+  Stream #8:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
+Input #9, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/outro.mp3':
   Metadata:
     encoder         : Lavf63.1.102
   Duration: 00:00:03.44, start: 0.025057, bitrate: 130 kb/s
-  Stream #8:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
-[aist#9:0/pcm_s16le @ 0x7f7f89f39b00] Guessed Channel Layout: stereo
-Input #9, wav, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/music-original.wav':
+  Stream #9:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s, start 0.025057
+[aist#10:0/pcm_s16le @ 0x7fd7a2706d40] Guessed Channel Layout: stereo
+Input #10, wav, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/music-original.wav':
   Duration: 00:00:15.00, bitrate: 1536 kb/s
-  Stream #9:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+  Stream #10:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+[mp3 @ 0x7fd7a2704540] Estimating duration from bitrate, this may be inaccurate
+Input #11, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-001.mp3':
+  Duration: 00:00:03.10, start: 0.000000, bitrate: 256 kb/s
+  Stream #11:0: Audio: mp3 (mp3float), 48000 Hz, stereo, fltp, 256 kb/s
+[mp3 @ 0x7fd7a27077c0] Estimating duration from bitrate, this may be inaccurate
+Input #12, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-002.mp3':
+  Duration: 00:00:00.57, start: 0.000000, bitrate: 255 kb/s
+  Stream #12:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 256 kb/s
+[mp3 @ 0x7fd7a271c400] Estimating duration from bitrate, this may be inaccurate
+Input #13, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-005.mp3':
+  Duration: 00:00:02.64, start: 0.000000, bitrate: 255 kb/s
+  Stream #13:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 256 kb/s
+[mp3 @ 0x7fd7a271c900] Estimating duration from bitrate, this may be inaccurate
+Input #14, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-001.mp3':
+  Duration: 00:00:03.10, start: 0.000000, bitrate: 256 kb/s
+  Stream #14:0: Audio: mp3 (mp3float), 48000 Hz, stereo, fltp, 256 kb/s
+[mp3 @ 0x7fd7a272cb80] Estimating duration from bitrate, this may be inaccurate
+Input #15, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-002.mp3':
+  Duration: 00:00:00.57, start: 0.000000, bitrate: 255 kb/s
+  Stream #15:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 256 kb/s
+[mp3 @ 0x7fd7a2505140] Estimating duration from bitrate, this may be inaccurate
+Input #16, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-005.mp3':
+  Duration: 00:00:02.64, start: 0.000000, bitrate: 255 kb/s
+  Stream #16:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 256 kb/s
+[mp3 @ 0x7fd7a2104380] Estimating duration from bitrate, this may be inaccurate
+Input #17, mp3, from '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/cmd-sfx-001.mp3':
+  Duration: 00:00:03.10, start: 0.000000, bitrate: 256 kb/s
+  Stream #17:0: Audio: mp3 (mp3float), 48000 Hz, stereo, fltp, 256 kb/s
 Stream mapping:
   Stream #0:0 (mp3float) -> aresample:default
   Stream #1:0 (mp3float) -> aresample:default
@@ -57,15 +90,22 @@ Stream mapping:
   Stream #6:0 (mp3float) -> aresample:default
   Stream #7:0 (mp3float) -> aresample:default
   Stream #8:0 (mp3float) -> aresample:default
-  Stream #9:0 (pcm_s16le) -> aresample:default
+  Stream #9:0 (mp3float) -> aresample:default
+  Stream #10:0 (pcm_s16le) -> aresample:default
+  Stream #11:0 (mp3float) -> aresample:default
+  Stream #12:0 (mp3float) -> aresample:default
+  Stream #13:0 (mp3float) -> aresample:default
+  Stream #14:0 (mp3float) -> aresample:default
+  Stream #15:0 (mp3float) -> aresample:default
+  Stream #16:0 (mp3float) -> aresample:default
+  Stream #17:0 (mp3float) -> aresample:default
   loudnorm:default -> Stream #0:0 (aac)
-Press [q] to stop, [?] for help
 Output #0, ipod, to '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/walkthrough/assets/master.m4a':
   Metadata:
     encoder         : Lavf62.3.100
   Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 192 kb/s
     Metadata:
       encoder         : Lavc62.11.100 aac
-size=       0KiB time=00:00:04.90 bitrate=   0.1kbits/s speed= 9.7x elapsed=0:00:00.50    size=     256KiB time=00:00:12.73 bitrate= 164.7kbits/s speed=12.5x elapsed=0:00:01.01    size=     512KiB time=00:00:22.46 bitrate= 186.7kbits/s speed=14.8x elapsed=0:00:01.51    size=     512KiB time=00:00:31.74 bitrate= 132.1kbits/s speed=15.7x elapsed=0:00:02.02    size=     768KiB time=00:00:40.70 bitrate= 154.6kbits/s speed=16.1x elapsed=0:00:02.52    size=    1024KiB time=00:00:49.94 bitrate= 168.0kbits/s speed=16.4x elapsed=0:00:03.03    size=    1280KiB time=00:01:00.16 bitrate= 174.3kbits/s speed=  17x elapsed=0:00:03.54    size=    1536KiB time=00:01:09.84 bitrate= 180.2kbits/s speed=17.2x elapsed=0:00:04.05    size=    1792KiB time=00:01:19.87 bitrate= 183.8kbits/s speed=17.5x elapsed=0:00:04.55    [out#0/ipod @ 0x7f7f89f38c80] video:0KiB audio:1992KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.822110%
-size=    2008KiB time=00:01:25.00 bitrate= 193.5kbits/s speed=17.3x elapsed=0:00:04.91    
-[aac @ 0x7f7f8ae215c0] Qavg: 47441.680
+size=       0KiB time=00:00:08.76 bitrate=   0.0kbits/s speed=17.5x elapsed=0:00:00.50    size=     256KiB time=00:00:20.56 bitrate= 102.0kbits/s speed=20.5x elapsed=0:00:01.00    size=     512KiB time=00:00:31.42 bitrate= 133.5kbits/s speed=20.9x elapsed=0:00:01.50    size=     768KiB time=00:00:42.75 bitrate= 147.2kbits/s speed=21.3x elapsed=0:00:02.01    size=    1024KiB time=00:00:54.33 bitrate= 154.4kbits/s speed=21.6x elapsed=0:00:02.51    size=    1536KiB time=00:01:05.64 bitrate= 191.7kbits/s speed=21.8x elapsed=0:00:03.01    size=    1792KiB time=00:01:17.46 bitrate= 189.5kbits/s speed=  22x elapsed=0:00:03.52    [out#0/ipod @ 0x7fd7a171e900] video:0KiB audio:1992KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.821970%
+size=    2008KiB time=00:01:25.00 bitrate= 193.6kbits/s speed=21.8x elapsed=0:00:03.89    
+[aac @ 0x7fd7a1738840] Qavg: 42371.777
