@@ -1,0 +1,55 @@
+{
+  "entry": {
+    "id": "02a059ab-5a95-4373-b12d-71875a5326b0",
+    "who": {
+      "kind": "agent",
+      "name": "codex"
+    },
+    "label": "Match every spoken claim to distinct real workflow evidence",
+    "startedAt": 1793890271815,
+    "endedAt": 1793893731685.7417,
+    "files": [
+      "delivery/kujo-hermes-walkthrough-480p.mp4",
+      "evidence/delivery-loudness.json",
+      "evidence/delivery-verification.json",
+      "evidence/loop-v5/blockers.md",
+      "evidence/loop-v5/iterations/001/action.md",
+      "evidence/loop-v5/iterations/001/context.md",
+      "evidence/loop-v5/iterations/001/diff.patch",
+      "evidence/loop-v5/iterations/001/eval.log",
+      "evidence/loop-v5/iterations/001/gate-decoded_subject_alignment.log",
+      "evidence/loop-v5/iterations/001/gate-delivery_decode_audio.log",
+      "evidence/loop-v5/iterations/001/gate-diff_check.log",
+      "evidence/loop-v5/iterations/001/gate-edit_and_recorded_evidence.log",
+      "evidence/loop-v5/iterations/001/gate-packwrite_context.log",
+      "evidence/loop-v5/iterations/001/verdict.yml",
+      "evidence/loop-v5/ledger.tsv",
+      "evidence/loop-v5/loop.yml",
+      "evidence/loop-v5/SUMMARY.md",
+      "evidence/v5-decoded/subjects-and-boundaries.jpg",
+      "evidence/v5-delivery-check.log",
+      "evidence/v5-history.json",
+      "evidence/v5-render.log",
+      "evidence/v5-subject-verification.log",
+      "evidence/v5-video-subject-verification.json",
+      "REVIEW.md",
+      "scripts/verify_edit.py",
+      "scripts/verify_video_subjects.py"
+    ],
+    "undone": false,
+    "pinned": false
+  },
+  "parts": [
+    "d5fd9421-a57b-4d4f-b0ce-a8c514bf481b",
+    "656ed947-cf8b-4d7a-8ab3-0fa8acc52a9c",
+    "2cd46402-61b3-4388-832f-2b8f15a0407d",
+    "89d78a7d-76c8-4e5f-a5c3-89adaec1f1d5",
+    "02a059ab-5a95-4373-b12d-71875a5326b0"
+  ],
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.16",
+    "updateAvailable": true,
+    "checkedAt": "2026-11-05T15:48:22.244Z"
+  }
+}
