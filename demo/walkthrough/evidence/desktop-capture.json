@@ -8,26 +8,33 @@
       "file": "assets/desktop-result.mp4",
       "source_start": 27.601999999999993,
       "duration": 11.5,
-      "sha256": "245762d7abce3842d73ab629846ff271addd72e98757e55f06f2da8cd55aa0fb"
+      "sha256": "62ecd9a2cadb1cbc25d7413924e3cc28a8cad5aedae0d5da01b5825fa4e2327b"
     },
     {
       "file": "assets/desktop-receipt.mp4",
       "source_start": 39.419999999999995,
       "duration": 11.5,
-      "sha256": "44f4b66171042364f2b3cbb4a069cfd0d1288404a87a4376828163682813f047"
+      "sha256": "646f999cc6e870e746cdd17ae0d60db6755228eb030b750b7feb621ec7bc9109"
     },
     {
       "file": "assets/desktop-inspect.mp4",
       "source_start": 52.55599999999999,
       "duration": 11.5,
-      "sha256": "64d81ef5e1cecd72007004f7c0e1e3ea304e3bbbefa65ce7dde0e874e54433ff"
+      "sha256": "215c0d90496747d0be3bdc56f5460daf3d43d9b395348ced1fdf8c32a1554cd3"
     },
     {
       "file": "assets/desktop-tools.mp4",
       "source_start": 70.0,
       "duration": 11.5,
-      "sha256": "5bec60e0a98d1e93c6ab332582fdc9835240cd3cabd08df21bb8c496e3216388"
+      "sha256": "290ab1ae79bbe7f98f47cbca85e1a0817a44cba1ea58e11d6feac18ce8d88095"
     }
   ],
-  "source_file": "assets/desktop-source.webm"
+  "source_file": "assets/desktop-source.webm",
+  "presentation_crop": {
+    "x": 0,
+    "y": 0,
+    "width": 1280,
+    "height": 712,
+    "reason": "Remove only the recorder\u2019s blank gray bottom padding; retain the full captured UI width."
+  }
 }

@@ -23,3 +23,7 @@ The user requested a benefits-led film for developers who live in Hermes, preser
 ## Desktop video revision 3
 
 The current video uses real recordings of Hermes’ official browser-hosted desktop workspace on Intel macOS, browsing the saved original Eval session. It does not claim a new GUI inference run. Keep the original CLI approval evidence. Remove the five-step footer, eyebrows, and fine print; preserve one headline per scene and glitch across both bumper joins. The original bumper sources remain unchanged. See walkthrough capture provenance and REVIEW before further edits.
+
+## Walkthrough framing correction — 2026-11-05
+
+Revision 4 supersedes the cropped revision 3 presentation. Keep every Hermes recording at full source width using contain sizing. Do not restore per-shot zooms or side crops: the user explicitly rejected chopped-off words. Both delivery sizes, source framing checks, and evidence are under demo/walkthrough.

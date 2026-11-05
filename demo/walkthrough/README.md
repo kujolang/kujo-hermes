@@ -74,3 +74,7 @@ The body uses recordings of the official Hermes desktop workspace, built from th
 Nine glitch overlays and matching sounds now include the intro and outro joins. The five-word rail, eyebrows, footnotes, and PackWrite phase counters are removed. One headline directs attention to the recorded interface. `evidence/desktop-capture.json` identifies capture and clip hashes; private launch tokens and profile state are excluded.
 
 To capture the desktop view again, use the isolated demo profile with the recorded session, enable `webapp.enabled`, then run `hermes webapp`. Never commit its one-use launch URL, authentication state, or profile. Choose Dark → Mono, UI scale 125%, chat text 150%. In Capabilities → Tools, search Kujo and open its toolset. In the saved Eval conversation, expand Kujo Inspect and Kujo Receipts. Record those actions at 1280 × 800. The committed raw recording preserves the exact source for this edit; re-recording depends on the local session database.
+
+## Revision 4: complete interface framing
+
+All seven recording scenes now fit the complete source width with `object-fit: contain`. No horizontal crop, pan, or zoom cuts off words. Only the desktop recorder’s blank bottom padding is removed before fitting the picture. The original approval recording also fits inside the frame. Narration, timing, nine glitches, and logo bumpers are unchanged. Smaller interface text is the tradeoff for showing the whole view.

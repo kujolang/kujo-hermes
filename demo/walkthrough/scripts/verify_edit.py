@@ -39,3 +39,17 @@ desktop=json.loads((r/'evidence/desktop-capture.json').read_text())
 for clip in desktop['clips']:
  assert hashlib.sha256((r/clip['file']).read_bytes()).hexdigest()==clip['sha256']
 assert hashlib.sha256((r/desktop['source_file']).read_bytes()).hexdigest()==desktop['source_sha256']
+
+# Preserve every horizontal source pixel: no per-shot zoom/pan or cover crop.
+for sc in t['scenes']:
+ if sc['id']=='context': continue
+ body=(r/'compositions'/(sc['id']+'.html')).read_text()
+ assert 'inset:0;width:100%;height:100%;object-fit:contain' in body
+ assert 'object-fit:fill' not in body and 'scale:' not in body
+ assert "tl.fromTo('.desktop-frame video'" not in body
+assert desktop['presentation_crop']['x']==0 and desktop['presentation_crop']['width']==1280
+print('PASS: all seven recording scenes fit their complete source width without zoom or side cropping.')
+
+for clip in desktop['clips']:
+ probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','json',str(r/clip['file'])]))
+ assert probe['streams'][0]['width']==1280 and probe['streams'][0]['height']==712

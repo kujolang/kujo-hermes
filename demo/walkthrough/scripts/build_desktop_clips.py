@@ -5,4 +5,4 @@ d=json.loads((r/'evidence/desktop-capture.json').read_text())
 source=r/d['source_file']
 assert hashlib.sha256(source.read_bytes()).hexdigest()==d['source_sha256']
 for c in d['clips']:
- subprocess.run(['ffmpeg','-nostdin','-v','error','-y','-ss',str(c['source_start']),'-i',str(source),'-t',str(c['duration']),'-vf','tpad=stop_mode=clone:stop_duration=3','-an','-c:v','libx264','-preset','fast','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',str(r/c['file'])],check=True)
+ subprocess.run(['ffmpeg','-nostdin','-v','error','-y','-ss',str(c['source_start']),'-i',str(source),'-t',str(c['duration']),'-vf','crop=1280:712:0:0,tpad=stop_mode=clone:stop_duration=3','-an','-c:v','libx264','-preset','fast','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',str(r/c['file'])],check=True)

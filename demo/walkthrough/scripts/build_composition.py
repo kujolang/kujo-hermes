@@ -47,8 +47,9 @@ for s in scenes:
   panel(s,b,css,js,1,'Catalog and routing explained · included bindings depend on installed prerequisites')
  elif n=='control':
   b=head('Your workspace. Your decision.','Approve this run in Hermes.')+f'<div id="approval-crop"><video muted class="clip" id="approval-recording" data-start="0" data-duration="{d}" src="assets/approval.mp4"></video></div>'
-  css='#approval-crop{position:absolute;left:130px;top:295px;width:1660px;height:500px;overflow:hidden}#approval-recording{position:absolute;width:2100px;height:980px;left:-24px;top:-15px;object-fit:fill}#control-callout{position:absolute;left:130px;top:825px;font-size:37px;color:#ccc}'
-  js="tl.fromTo('#approval-crop',{scale:.96},{scale:1,duration:.55,ease:'expo.out'},.05);"
+  css='#approval-crop{position:absolute;left:130px;top:180px;width:1660px;height:840px;background:#060606}#approval-recording{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}'
+  js="tl.fromTo('#approval-crop',{opacity:0},{opacity:1,duration:.3,ease:'power2.out'},.05);"
+
   panel(s,b,css,js,2,'Actual Hermes approval · local Qwen3.5 4B · waiting time shortened')
  elif n=='checks':
   b=head('Permission becomes a recorded run.','See exactly what passed.')+'<section id="suite"><div id="test-one"><span>✓</span><h2>Unit test</h2><p class="mono">python3 -m unittest discover -s tests</p></div><div id="test-two"><span>✓</span><h2>Implementation exists</h2><p class="mono">calculator.py</p></div></section><div id="counts"><strong>2 / 2</strong><p>checks passed</p><span>0 failed</span></div>'
@@ -82,17 +83,8 @@ for s in scenes:
  if s['id'] not in mapping: continue
  shot,title=mapping[s['id']]
  body=head('',title)+f'<div class="desktop-frame"><video muted class="clip" id="desktop-{s["id"]}" data-start="0" data-duration="{s["duration"]}" src="assets/desktop-{shot}.mp4"></video></div>'
- css='.desktop-frame{position:absolute;left:130px;top:190px;width:1660px;height:820px;overflow:hidden;border:1px solid #333;border-radius:12px;background:#101010}.desktop-frame video{position:absolute;width:1660px;height:1038px;top:-70px;left:0;object-fit:fill}'
- js="tl.fromTo('.desktop-frame',{y:18,opacity:0},{y:0,opacity:1,duration:.45,ease:'power3.out'},.05);"
- if shot=='inspect':
-  css+='.desktop-frame{top:370px;height:350px}.desktop-frame video{width:2656px;height:1660px;left:-150px;top:-520px}'
-  js+="tl.fromTo('.desktop-frame video',{x:0},{x:-45,duration:3,ease:'power2.inOut'},4);"
- elif shot in ('result','receipt'):
-  css+='.desktop-frame{top:310px;height:500px}.desktop-frame video{width:2324px;height:1452px;left:-140px;top:-535px}'
-  if shot=='result':js+="tl.fromTo('.desktop-frame video',{y:0},{y:-110,duration:1.4,ease:'power3.inOut'},2);"
- elif shot=='tools':
-  css+='.desktop-frame video{width:2100px;height:1312px;top:-240px;left:-220px}'
-  js+="tl.fromTo('.desktop-frame video',{scale:1},{scale:1.08,duration:2,ease:'power2.inOut'},2);"
+ css='.desktop-frame{position:absolute;left:130px;top:180px;width:1660px;height:840px;background:#060606}.desktop-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}'
+ js="tl.fromTo('.desktop-frame',{opacity:0},{opacity:1,duration:.3,ease:'power2.out'},.05);"
 
  panel(s,body,css,js)
 # Original bumper compositions are intentionally untouched.
