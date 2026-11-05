@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import tempfile
 import threading
 import time
 import uuid
@@ -127,13 +128,20 @@ class Service:
             return self._perform(item,data,argv,cwd,extra,cancel,record)
         except Exception as error:
             record.update({'status':'denied' if isinstance(error,PermissionError) else 'failed','error':{'type':type(error).__name__,'message':str(error)[:8192]}})
+            with self.lock:
+                job=self.jobs.get(invocation)
+                if job:
+                    job['status']='failed'
+                    job['done'].set()
             return self.finish(record)
 
     def _perform(self,item,data,argv,cwd,extra,cancel,record):
         secrets=[]
         try:
             env=self.environment(extra); secrets=[env[k] for k in self.config.secrets if k in env]
-            op=item.get('operation')
+            # Extension bindings always execute their reviewed argv, even if they
+            # carry a copied internal operation name.
+            op=None if item.get('extension') else item.get('operation')
             if op=='catalog': result=self.discover(limit=100)
             elif op=='receipts': result=self.receipts(limit=data.get('limit',20))
             elif op in ('watchdog','watchdog_record'): result=watchdog(data,op=='watchdog_record',env.get('WDG_API_AUTH_TOKEN',''))
@@ -157,6 +165,15 @@ class Service:
             record.update({'status':'failed','error':{'type':type(error).__name__,'message':str(error)[:8192]}})
         try:
             return self.finish(redact(record,secrets))
+        except Exception as error:
+            record['status']='failed'
+            failure={'ok':False,'status':'failed','invocation_id':record['invocation_id'],
+                'receipt_persisted':False,'error':{'type':type(error).__name__,
+                'message':redact(str(error),secrets)[:8192]}}
+            with self.lock:
+                job=self.jobs.get(record['invocation_id'])
+                if job: job['failure']=failure
+            return failure
         finally:
             with self.lock:
                 job=self.jobs.get(record['invocation_id'])
@@ -171,9 +188,11 @@ class Service:
         raw=encoded(record)
         if len(raw)>MAX_RECEIPT_BYTES: raise ValueError('Receipt exceeds 32 MiB storage limit')
         folder=self.directory(); path=folder/(record['receipt_id']+'.json')
-        # UUID filenames, exclusive creation; never follow existing symlinks.
-        fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
-        with os.fdopen(fd,'wb') as f: f.write(raw); f.flush(); os.fsync(f.fileno())
+        # Publish a complete fsynced file atomically, without replacing any existing
+        # receipt (including symlinks). Readers never observe a partial JSON file.
+        with tempfile.NamedTemporaryFile(dir=folder,prefix='.receipt-',suffix='.tmp') as f:
+            f.write(raw); f.flush(); os.fsync(f.fileno())
+            os.link(f.name,path)
         result={'ok':record['status']=='completed','status':record['status'],'receipt_id':record['receipt_id'],
             'receipt_digest':record['receipt_digest'],'ability_id':record['ability_id'],'error':record.get('error')}
         payload=record.get('result')
@@ -202,6 +221,7 @@ class Service:
     def status(self,invocation_id,cancel=False):
         with self.lock:
             job=self.jobs.get(invocation_id)
+            if job and job.get('failure'): return copy.deepcopy(job['failure'])
             if job and job['status']=='running':
                 if cancel: job['cancel'].set()
                 return {'invocation_id':invocation_id,'status':job['status'],'cancellation_requested':cancel}

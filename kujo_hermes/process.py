@@ -14,6 +14,8 @@ def terminate(proc):
 def run(argv, cwd, env, timeout, limit, cancel):
     if os.name != 'posix': raise RuntimeError('Supported execution hosts are macOS and Linux')
     started=time.monotonic()
+    if cancel.is_set():
+        return {'status':'cancelled','exit_code':None,'stdout':'','stderr':'','duration_ms':0}
     proc=subprocess.Popen(argv,cwd=cwd,env=env,stdin=subprocess.DEVNULL,
         stdout=subprocess.PIPE,stderr=subprocess.PIPE,start_new_session=True)
     selector=selectors.DefaultSelector(); streams={'stdout':bytearray(),'stderr':bytearray()}
