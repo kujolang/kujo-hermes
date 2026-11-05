@@ -10,9 +10,11 @@ DEFAULTS={'scout':'.kujo/scout','scent':'.kujo/scent','eval':'.kujo/eval','dispa
 
 def artifact_inventory(workspace,data,operation,max_files=128,max_bytes=10_000_000):
     root=Path(workspace).resolve(); targets=[]
+    base=(root/data.get('path','.')).resolve()
+    if not base.is_relative_to(root): raise PermissionError('Artifact path escapes trusted workspace')
     for key in ('output_dir','output_file','audit_dir','storage_dir','ledger_dir'):
-        if key in data: targets.append(root/data[key])
-    if operation in DEFAULTS: targets.append(root/DEFAULTS[operation])
+        if key in data: targets.append(base/data[key])
+    if operation in DEFAULTS: targets.append(base/DEFAULTS[operation])
     stack=list(targets); seen=set(); records=[]; total=0; examined=0; truncated=False
     while stack:
         p=stack.pop(); examined+=1

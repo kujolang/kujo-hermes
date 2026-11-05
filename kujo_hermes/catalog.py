@@ -68,8 +68,9 @@ class Catalog:
         return {k:v for k,v in self.all().items() if (k in ids or self.config.profile=='full') and k not in self.config.denied_abilities}
 
     def get(self, ability):
-        if ability not in self.exposed(): raise PermissionError('Ability absent, denied, or outside active profile: '+ability)
-        return copy.deepcopy(self.exposed()[ability])
+        entries=self.exposed()
+        if ability not in entries: raise PermissionError('Ability absent, denied, or outside active profile: '+ability)
+        return copy.deepcopy(entries[ability])
 
     def inputs(self, item, supplied):
         data=copy.deepcopy(supplied)

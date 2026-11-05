@@ -15,6 +15,9 @@ from .commands import plan, ENTRYPOINTS
 from .process import run
 from .network import watchdog
 
+# Independent of current subprocess settings; JSON escaping can expand output sixfold.
+MAX_RECEIPT_BYTES = 32 * 1024 * 1024
+
 
 def encoded(value): return json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()
 def digest(value): return hashlib.sha256(encoded(value)).hexdigest()
@@ -123,7 +126,7 @@ class Service:
                 return {'ok':True,'status':'running','invocation_id':invocation}
             return self._perform(item,data,argv,cwd,extra,cancel,record)
         except Exception as error:
-            record.update({'status':'denied' if isinstance(error,PermissionError) else 'failed','error':{'type':type(error).__name__,'message':str(error)}})
+            record.update({'status':'denied' if isinstance(error,PermissionError) else 'failed','error':{'type':type(error).__name__,'message':str(error)[:8192]}})
             return self.finish(record)
 
     def _perform(self,item,data,argv,cwd,extra,cancel,record):
@@ -145,12 +148,13 @@ class Service:
                 record['status']='completed' if outcome['status']=='completed' and outcome['exit_code']==0 else ('failed' if outcome['status']=='completed' else outcome['status'])
                 if record['status']!='completed': record['error']={'type':record['status'],'message':'Canonical command did not complete successfully'}
             if record['status']=='preflight': record['status']='completed'
-            Draft202012Validator(item['definition']['output_schema']).validate(result.get('structured',result))
+            # Preserve command evidence even when its output violates the contract.
             record['result']=result
+            Draft202012Validator(item['definition']['output_schema']).validate(result.get('structured',result))
             from .evidence import artifact_inventory
             record['artifacts']=artifact_inventory(record['workspace'],data,op)
         except Exception as error:
-            record.update({'status':'failed','error':{'type':type(error).__name__,'message':str(error)}})
+            record.update({'status':'failed','error':{'type':type(error).__name__,'message':str(error)[:8192]}})
         try:
             return self.finish(redact(record,secrets))
         finally:
@@ -164,10 +168,12 @@ class Service:
         record['completed_at_ms']=int(time.time()*1000)
         record['duration_ms']=record['completed_at_ms']-record['started_at_ms']
         record=redact(record); record['receipt_digest']=digest(record)
+        raw=encoded(record)
+        if len(raw)>MAX_RECEIPT_BYTES: raise ValueError('Receipt exceeds 32 MiB storage limit')
         folder=self.directory(); path=folder/(record['receipt_id']+'.json')
         # UUID filenames, exclusive creation; never follow existing symlinks.
         fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
-        with os.fdopen(fd,'wb') as f: f.write(encoded(record)); f.flush(); os.fsync(f.fileno())
+        with os.fdopen(fd,'wb') as f: f.write(raw); f.flush(); os.fsync(f.fileno())
         result={'ok':record['status']=='completed','status':record['status'],'receipt_id':record['receipt_id'],
             'receipt_digest':record['receipt_digest'],'ability_id':record['ability_id'],'error':record.get('error')}
         payload=record.get('result')
@@ -183,8 +189,8 @@ class Service:
             if not re.fullmatch(r'[a-f0-9-]{36}',receipt_id): raise ValueError('Invalid receipt ID')
             path=folder/(receipt_id+'.json')
             if path.is_symlink(): raise PermissionError('Receipt symlink forbidden')
-            with open(path,'rb') as f: raw=f.read(self.config.max_output_bytes*2+65537)
-            if len(raw)>self.config.max_output_bytes*2+65536: raise ValueError('Receipt exceeds limit')
+            with open(path,'rb') as f: raw=f.read(MAX_RECEIPT_BYTES+1)
+            if len(raw)>MAX_RECEIPT_BYTES: raise ValueError('Receipt exceeds 32 MiB storage limit')
             value=json.loads(raw); checksum=value.pop('receipt_digest')
             if digest(value)!=checksum: raise ValueError('Receipt integrity verification failed')
             value['receipt_digest']=checksum
@@ -215,7 +221,7 @@ class Service:
         if self.runtime_cache and self.runtime_cache[0]==key: return self.runtime_cache[1]
         result=run([binary,'--version'],str(self.data_dir.parent),{'PATH':'/usr/bin:/bin'},5,8192,threading.Event())
         version=result['stdout'].strip(); match=re.search(r'(\d+)\.(\d+)\.(\d+)',version)
-        if result['exit_code']!=0 or not match or not (1,6,0)<=tuple(map(int,match.groups()))<(2,0,0):
+        if result['status']!='completed' or result['exit_code']!=0 or not match or not (1,6,0)<=tuple(map(int,match.groups()))<(2,0,0):
             raise RuntimeError('Unsupported Kujo runtime: '+version+'; expected >=1.6,<2')
         self.runtime_cache=(key,version)
         return version
@@ -225,7 +231,7 @@ class Service:
         if binary:
             outcome=run([binary,'--version'],str(self.data_dir.parent),{'PATH':'/usr/bin:/bin'},5,8192,threading.Event())
             version=outcome['stdout'].strip(); m=re.search(r'(\d+)\.(\d+)\.(\d+)',version)
-            compatible=bool(m and (1,6,0)<=tuple(map(int,m.groups()))<(2,0,0))
+            compatible=bool(outcome['status']=='completed' and outcome['exit_code']==0 and m and (1,6,0)<=tuple(map(int,m.groups()))<(2,0,0))
         return {'ok':compatible,'runtime':binary,'runtime_version':version,'runtime_compatible':compatible,
             'profile':self.config.profile,'trusted_workspaces':list(self.config.trusted_workspaces),
             'capabilities':[{'id':k,**self.availability(v)} for k,v in self.catalog.all().items()],

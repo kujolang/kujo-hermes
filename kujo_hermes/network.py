@@ -27,7 +27,7 @@ def watchdog(data,record=False,token=''):
             'privacy':{'content_mode':'off','policy_version':'watchdog.privacy.v1','transformations':['metadata_only']}}]}
     req=urllib.request.Request(base+('/telemetry/v2/batches' if record else '/healthz'),data=json.dumps(body).encode() if body else None,
         headers={'Content-Type':'application/json',**({'Authorization':'Bearer '+token} if token else {})})
-    with urllib.request.build_opener(NoRedirect).open(req,timeout=5) as response:
+    with urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect).open(req,timeout=5) as response:
         raw=response.read(65537)
         if len(raw)>65536: raise ValueError('Watchdog response exceeds limit')
         return {'status':response.status,'body':json.loads(raw)}

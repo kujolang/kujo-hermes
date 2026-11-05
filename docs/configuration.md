@@ -46,7 +46,7 @@ The bundled catalog shows Abilities even when their dependencies are missing. In
 
 `kujo_execute` needs `ability`, `input` and absolute `workspace`. Optional `background:true` returns an invocation ID immediately after approval. Poll `kujo_status`; set `cancel:true` to terminate the owned process group. The adapter neither retries automatically nor replays CLI results by idempotency key. If an external operation times out, inspect evidence before retrying.
 
-`kujo_receipts` without an ID lists at most 50 records. With an ID it verifies the whole record and returns `limit` characters (up to 12000), `offset`, and `next_offset`. Full evidence stays in the active profile's plugin data directory. Updates do not erase it. Canonical tools' own receipts remain in their workspace artifact directories.
+`kujo_receipts` without an ID lists at most 50 records. With an ID it verifies the whole record and returns `limit` characters (up to 12000), `offset`, and `next_offset`. Receipt storage is capped at 32 MiB per record, independently of `max_output_bytes`, so JSON escaping and later reductions of the process output limit do not make existing receipts unreadable. Oversized records fail explicitly; evidence is never silently truncated. Error messages are bounded to 8192 characters; output-schema failures retain the command result in the receipt. Full evidence stays in the active profile's plugin data directory. Updates do not erase it. Canonical tools' own receipts remain in their workspace artifact directories.
 
 ## Troubleshooting
 
