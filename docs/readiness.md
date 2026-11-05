@@ -42,7 +42,7 @@ The verified operations are ready to use. Full tool coverage and marketplace sub
 
 ## Native setup and square film — November 5, 2026
 
-The public plugin now registers `hermes kujo setup` and `hermes kujo doctor` in Hermes's default in-process mode. Setup verifies the installed runtime, installs 26 pinned canonical source checkouts and writes the active profile through Hermes's configuration API. Workspace trust is explicit. Existing denials, trust and unrelated settings survive. Failed new fetches leave no partial checkout. Isolated-host profiles retain manual configuration; all six native tools still pass there.
+The public plugin now registers `hermes kujo setup` and `hermes kujo doctor` in Hermes's default in-process mode. Setup verifies the installed runtime, installs 26 pinned canonical source checkouts and writes the active profile through Hermes's configuration API. Workspace trust is explicit. Existing denials, trust and unrelated settings survive. Failed new fetches leave no partial checkout. Isolated-host profiles retain manual configuration; the native discovery, execution and receipt workflow still passes there.
 
 Evidence in `demo/square/evidence/` includes 61 passing unit tests, six native setup checks, the actual public GitHub install and successful setup capture, Doctor discovery of 51 bindings, and complete real-host workflows in both plugin modes plus the selected Python 3.14.9 environment. Host workflow approvals use the disclosed test callback; the film's approval excerpt comes from the original real free-model session. The supported Python run checks Scout, PackWrite summary, Spec, Eval, ShipCheck, Loop, denial, receipts and unload. This does not erase other tools' external prerequisites or the limitations above.
 

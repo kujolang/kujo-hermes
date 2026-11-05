@@ -1,0 +1,30 @@
+objective: "Deliver the 88-second square Kujo Hermes film with real native install, benefit-led matched evidence, complete framing, bumpers, glitches and mobile export"
+max_iterations: 1
+max_no_progress: 1
+max_consecutive_failures: 1
+allowed_actions: [read_files, edit_files, run_tests]
+blocked_actions: [deploy, production_config_change]
+eval_gates:
+  - id: native_install_and_host_evidence
+    command: "python3 demo/square/scripts/verify_native_evidence.py"
+    required: true
+  - id: source_and_narration_mapping
+    command: "python3 demo/square/scripts/verify_sources.py"
+    required: true
+  - id: decoded_subjects
+    command: "python3 demo/square/scripts/verify_video_subjects.py"
+    required: true
+  - id: delivery_and_audio
+    command: "python3 demo/square/scripts/verify_delivery.py"
+    required: true
+  - id: packwrite_context
+    command: "KUJO=$PWD/.local/runtime/kujo ../packwrite/bin/packwrite validate"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false
+  push: false
+memory:
+  enabled: false

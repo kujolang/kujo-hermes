@@ -2,6 +2,8 @@
 
 An 88-second square film for developers who work in Hermes. It shows the native installation path, then explains what context packs, contracts, checks and receipts let them do. The Kujo/Hermes bumpers and CMD-style glitches carry over from the landscape film. The ending asks viewers to install today.
 
+[Watch or download 1080 × 1080](delivery/kujo-hermes-square.mp4) · [Download 480 × 480 for mobile](delivery/kujo-hermes-square-480p.mp4)
+
 ## Install
 
 With Hermes 0.22.7+, its supported Python runtime, Git and an official Kujo runtime >=1.6,<2 installed, run this from a Git repository root:
