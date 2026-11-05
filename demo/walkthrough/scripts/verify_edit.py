@@ -28,7 +28,7 @@ text=' '.join(c['text'] for c in t['cues']).lower()
 assert not any(w in text for w in ('hackathon','contest','competition'))
 root=(r/'index.html').read_text();assert root.count('class="clip glitch-cut"')==9
 subprocess.run(['python3',str(r/'scripts/verify_evidence.py')],check=True)
-print('PASS: unchanged bumper sources, non-overlapping natural-speed narration, real check details, ten artifact hashes, nine CMD gates including both bumper boundaries, no contest copy.')
+print('PASS: unchanged bumper sources, non-overlapping natural-speed narration, original model-run check details and ten artifact hashes, nine CMD gates including both bumper boundaries, no contest copy.')
 
 for cut in (3.8,80.33): assert f'data-start="{round(cut-.25,4)}"' in root
 for sc in t['scenes']:

@@ -1,0 +1,196 @@
+{
+  "ok": true,
+  "decoded_checks": [
+    {
+      "time": 8.3832,
+      "expected_subject": "00-task",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.4936,
+      "threshold": 12,
+      "nearest_source": "00-task",
+      "nearest_wrong_source_difference": 4.4547,
+      "passed": true
+    },
+    {
+      "time": 14.2363,
+      "expected_subject": "01-spec",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.4984,
+      "threshold": 12,
+      "nearest_source": "01-spec",
+      "nearest_wrong_source_difference": 3.942,
+      "passed": true
+    },
+    {
+      "time": 19.8194,
+      "expected_subject": "02-packwrite",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.5893,
+      "threshold": 12,
+      "nearest_source": "02-packwrite",
+      "nearest_wrong_source_difference": 4.1425,
+      "passed": true
+    },
+    {
+      "time": 25.6425,
+      "expected_subject": "03-discovery",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.6141,
+      "threshold": 12,
+      "nearest_source": "03-discovery",
+      "nearest_wrong_source_difference": 4.7104,
+      "passed": true
+    },
+    {
+      "time": 29.7457,
+      "expected_subject": "04-inspection",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.5338,
+      "threshold": 12,
+      "nearest_source": "04-inspection",
+      "nearest_wrong_source_difference": 3.9561,
+      "passed": true
+    },
+    {
+      "time": 45.9682,
+      "expected_subject": "05-eval",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.5376,
+      "threshold": 12,
+      "nearest_source": "05-eval",
+      "nearest_wrong_source_difference": 4.7971,
+      "passed": true
+    },
+    {
+      "time": 55.6945,
+      "expected_subject": "06-receipt",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.5837,
+      "threshold": 12,
+      "nearest_source": "06-receipt",
+      "nearest_wrong_source_difference": 3.6954,
+      "passed": true
+    },
+    {
+      "time": 62.5475,
+      "expected_subject": "07-shipcheck",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.6095,
+      "threshold": 12,
+      "nearest_source": "07-shipcheck",
+      "nearest_wrong_source_difference": 4.985,
+      "passed": true
+    },
+    {
+      "time": 65.1375,
+      "expected_subject": "08-scout",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.5234,
+      "threshold": 12,
+      "nearest_source": "08-scout",
+      "nearest_wrong_source_difference": 3.6658,
+      "passed": true
+    },
+    {
+      "time": 68.2906,
+      "expected_subject": "09-dispatch",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.5368,
+      "threshold": 12,
+      "nearest_source": "09-dispatch",
+      "nearest_wrong_source_difference": 3.9476,
+      "passed": true
+    },
+    {
+      "time": 75.3469,
+      "expected_subject": "10-handoff",
+      "kind": "midpoint",
+      "mean_pixel_difference": 0.7,
+      "threshold": 12,
+      "nearest_source": "10-handoff",
+      "nearest_wrong_source_difference": 5.7514,
+      "passed": true
+    },
+    {
+      "time": 15.3863,
+      "expected_subject": "01-spec",
+      "kind": "before PackWrite",
+      "mean_pixel_difference": 0.4968,
+      "threshold": 12,
+      "nearest_source": "01-spec",
+      "nearest_wrong_source_difference": 3.9423,
+      "passed": true
+    },
+    {
+      "time": 15.6263,
+      "expected_subject": "02-packwrite",
+      "kind": "after PackWrite",
+      "mean_pixel_difference": 0.5907,
+      "threshold": 12,
+      "nearest_source": "02-packwrite",
+      "nearest_wrong_source_difference": 4.1415,
+      "passed": true
+    },
+    {
+      "time": 27.0325,
+      "expected_subject": "03-discovery",
+      "kind": "before Inspect",
+      "mean_pixel_difference": 0.6135,
+      "threshold": 12,
+      "nearest_source": "03-discovery",
+      "nearest_wrong_source_difference": 4.7105,
+      "passed": true
+    },
+    {
+      "time": 27.2725,
+      "expected_subject": "04-inspection",
+      "kind": "after Inspect",
+      "mean_pixel_difference": 0.5436,
+      "threshold": 12,
+      "nearest_source": "04-inspection",
+      "nearest_wrong_source_difference": 3.9611,
+      "passed": true
+    },
+    {
+      "time": 63.9375,
+      "expected_subject": "07-shipcheck",
+      "kind": "before Scout",
+      "mean_pixel_difference": 0.6092,
+      "threshold": 12,
+      "nearest_source": "07-shipcheck",
+      "nearest_wrong_source_difference": 4.9848,
+      "passed": true
+    },
+    {
+      "time": 64.1775,
+      "expected_subject": "08-scout",
+      "kind": "after Scout",
+      "mean_pixel_difference": 0.5234,
+      "threshold": 12,
+      "nearest_source": "08-scout",
+      "nearest_wrong_source_difference": 3.6659,
+      "passed": true
+    },
+    {
+      "time": 66.0975,
+      "expected_subject": "08-scout",
+      "kind": "before Dispatch",
+      "mean_pixel_difference": 0.5201,
+      "threshold": 12,
+      "nearest_source": "08-scout",
+      "nearest_wrong_source_difference": 3.6911,
+      "passed": true
+    },
+    {
+      "time": 66.3375,
+      "expected_subject": "09-dispatch",
+      "kind": "after Dispatch",
+      "mean_pixel_difference": 0.5368,
+      "threshold": 12,
+      "nearest_source": "09-dispatch",
+      "nearest_wrong_source_difference": 3.9476,
+      "passed": true
+    }
+  ],
+  "method": "Mean absolute RGB difference of full contained screen versus source clip; threshold 12/255 plus correct nearest-source classification with a 15% margin over every wrong subject"
+}
