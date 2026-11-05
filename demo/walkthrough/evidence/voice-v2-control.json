@@ -1,0 +1,15 @@
+{
+  "cue": "v2-control",
+  "text": "Here, a free local model runs checks on a Python project. Hermes asks before Eval executes. You approve this run.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "03cb6e4cc20046408d8df7fffd64b83416f20fb4292551ed5745f9db876083ed",
+  "audio_sha256": "2cddc9c34fd3d7c7f4cd4c31f53da739fbdbca4b840381c61522006298f17bc5",
+  "duration": 8.16,
+  "request_id": "5quEaqkJ7P4onZ9h4egN",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:12Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cue": "v2-evidence",
+  "text": "Open the receipt. It records the tool, command, approval, and evidence hashes. Kujo Hermes verifies its integrity. You can trace the run.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "e318e5572bf7d07470918e344b6685f19f42e88ecc30f0505fd7dfc4e7ac9149",
+  "audio_sha256": "8e8663f26684ca18d35ecd725837acb435f57f563e95f2f01a0ea572a85ca83e",
+  "duration": 9.44,
+  "request_id": "7jfpObnPcT3rDk0vNgrM",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:17Z"
+}

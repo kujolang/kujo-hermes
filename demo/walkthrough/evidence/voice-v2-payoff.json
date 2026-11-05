@@ -1,0 +1,15 @@
+{
+  "cue": "v2-payoff",
+  "text": "Keep your agent workflow. Add repeatable checks, clear permissions, and evidence for the next developer. That is accountability inside Hermes.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "55dfc52c6b6658a5e8822ccce95e7c7100c97273682f8d26744a845793bec052",
+  "audio_sha256": "9c18d757eaac3f943a36f187492282005916528064ce1cf580f867a9a0deadca",
+  "duration": 9.2,
+  "request_id": "7Byo9Y1EKwGwXuKmg9gN",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:23Z"
+}

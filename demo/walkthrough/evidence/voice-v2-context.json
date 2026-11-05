@@ -1,0 +1,15 @@
+{
+  "cue": "v2-context",
+  "text": "Kujo brings that evidence into Hermes. Spec checks the task contract. PackWrite keeps the work organized, so the next step starts with context.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "859300084c570ad5533a4df6796830c918431cba17e20ef55ff8e71d12aed1d9",
+  "audio_sha256": "e4a4e5f742e578e5f00634f584f10b02ca8371d72e2369be400a45a0fda0fdea",
+  "duration": 9.2,
+  "request_id": "r8jtcKjkaSiyoheTGDUD",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:07Z"
+}

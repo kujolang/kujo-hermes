@@ -1,0 +1,15 @@
+{
+  "cue": "v2-checks",
+  "text": "Eval confirms the unit test passed and the implementation exists. Two specific checks, with results you can inspect.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "d401d41727937285109051389c63c138470caac8ad84ad5eb0928a25f01aa792",
+  "audio_sha256": "7806209072b16398211b0b50a83f2c625bd39703f3c9a30f77df28a0cbdb114b",
+  "duration": 7.52,
+  "request_id": "8JKdPMigOpvuxkNyDcpO",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:14Z"
+}

@@ -1,0 +1,59 @@
+{
+  "repository": "kujolang/mcp",
+  "commit": "01a4f519203a36dfa64b796e22f022c8d5e00a8b",
+  "source": "demos/command-code-ollama-live-proof/index.html",
+  "motion": "Five staggered horizontal slice gates, stepped reversal, scan grid, brief chromatic fringes; adapted for body seams only. Original bumpers unchanged.",
+  "sound_assets": [
+    {
+      "id": "sfx_001",
+      "type": "sfx",
+      "path": ".media/audio/sfx/sfx_001.mp3",
+      "source": "bundled",
+      "description": "Low-key glitch texture \u2014 subtle digital shift, minimal transition that sits under other audio.",
+      "duration": 3.1,
+      "provenance": {
+        "provider": "bundled.sfx",
+        "prompt": "digital glitch impact transition",
+        "library_key": "glitch-3"
+      },
+      "advisory": {
+        "code": "not_found",
+        "message": "media-use: heygen CLI not found \u2014 it's the free path for bgm/image/voice/avatar-video. Install the CLI from https://developers.heygen.com/cli, then run: heygen auth login --oauth"
+      }
+    },
+    {
+      "id": "sfx_002",
+      "type": "sfx",
+      "path": ".media/audio/sfx/sfx_002.mp3",
+      "source": "bundled",
+      "description": "Punchy whoosh/impact \u2014 fast reveal or hard transition accent. Sync to the motion.",
+      "duration": 0.6,
+      "provenance": {
+        "provider": "bundled.sfx",
+        "prompt": "fast UI whoosh",
+        "library_key": "whoosh"
+      },
+      "advisory": {
+        "code": "not_found",
+        "message": "media-use: heygen CLI not found \u2014 it's the free path for bgm/image/voice/avatar-video. Install the CLI from https://developers.heygen.com/cli, then run: heygen auth login --oauth"
+      }
+    },
+    {
+      "id": "sfx_005",
+      "type": "sfx",
+      "path": ".media/audio/sfx/sfx_005.mp3",
+      "source": "bundled",
+      "description": "Punchy digital glitch \u2014 hard-cut accent or sudden reveal. Trigger on the hit; let the decay bleed into the next shot (J-cut).",
+      "duration": 2.6,
+      "provenance": {
+        "provider": "bundled.sfx",
+        "prompt": "short rising transition into brand reveal",
+        "library_key": "glitch-1"
+      },
+      "advisory": {
+        "code": "not_found",
+        "message": "media-use: heygen CLI not found \u2014 it's the free path for bgm/image/voice/avatar-video. Install the CLI from https://developers.heygen.com/cli, then run: heygen auth login --oauth"
+      }
+    }
+  ]
+}

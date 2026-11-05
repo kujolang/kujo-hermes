@@ -1,70 +1,95 @@
-"""Build editable scenes from recorded terminal frames and the real catalog."""
-import pathlib,json,html
-r=pathlib.Path(__file__).resolve().parents[1];timeline=json.loads((r/'timeline.json').read_text());cues={c['cue']:c for c in timeline['cues']};(r/'compositions').mkdir(exist_ok=True)
-base='''*{box-sizing:border-box}#root{position:absolute;inset:0;background:#060606;color:#f9f9f9;font-family:Inter,sans-serif;overflow:hidden}h1{position:absolute;left:96px;top:45px;margin:0;font-size:62px;font-weight:700;letter-spacing:-2px}.screen{position:absolute;left:60px;top:150px;width:1800px;height:840px;object-fit:contain}.note{position:absolute;left:96px;bottom:28px;margin:0;font-size:28px;color:#bababa}.line{position:absolute;left:96px;top:130px;width:1728px;height:2px;background:#505050}'''
-def scene(name,body,css='',js='',duration=5):
- content=f'''<template><style>{base}{css}</style><div id="root" data-composition-id="{name}" data-width="1920" data-height="1080" data-duration="{duration}">{body}</div><script>const tl=gsap.timeline({{paused:true}});{js}window.__timelines=window.__timelines||{{}};window.__timelines['{name}']=tl;</script></template>'''
- (r/'compositions'/(name+'.html')).write_text(content)
-# Registry logo-sting scale landing adapted to two official marks, without decorative rings.
-for name,duration in [('intro',3.8),('outro',4.67)]:
- content=f'''<div class="clip" id="{name}-plate" data-start="0" data-duration="{duration}"><div class="lockup" id="{name}-logos"><img src="assets/kujo-logomark.svg" alt="Official Kujo logo"><strong>Kujo</strong><span class="times">×</span><img src="assets/hermes-logo.png" alt="Official Hermes logo"><strong>Hermes</strong></div><p class="tag" id="{name}-tag">{'Native tools. Real evidence.' if name=='intro' else 'Trust at the speed of AI'}</p><p class="url">{'Kujo Hermes · v0.1.0' if name=='intro' else 'github.com/kujolang/kujo-hermes'}</p></div>'''
- css='''#root{background:var(--paper,#f9f9f9);color:#060606}.lockup{position:absolute;left:190px;top:345px;width:1540px;height:250px;display:flex;align-items:center;justify-content:center;gap:38px}.lockup img{width:225px;height:225px;object-fit:contain}.lockup strong{font-family:Departure,monospace;font-size:112px;font-weight:400}.times{font-size:68px;color:#737373;margin:0 12px}.tag{position:absolute;left:150px;top:665px;width:1620px;text-align:center;font-size:48px;letter-spacing:-1px}.url{position:absolute;left:150px;top:825px;width:1620px;text-align:center;font-size:30px;color:#505050}'''
- js=f"tl.fromTo('#{name}-logos',{{scale:1.09}},{{scale:1,duration:.5,ease:'expo.out'}},0);tl.fromTo('#{name}-tag',{{opacity:0,y:14}},{{opacity:1,y:0,duration:.35,ease:'power3.out'}},.8);"
- # Short bounded whole-lockup offsets retain official mark proportions.
- for t in [.18,.34]:js+=f"tl.to('#{name}-logos',{{x:12,duration:.033,repeat:1,yoyo:true,ease:'steps(1)'}},{t});"
- scene(name,content,css,js,duration)
-shots=[('setup','Start with your repository','doctor-0.png',3.8,12.07),('discover','Discover the right tool','discover-0.png',12.07,23.86),('request','Ask Hermes in plain English','checks-0.png',23.86,32.93),('approval','Approve what changes state','approval.mp4',32.93,42.64),('proof','Trace the result to its receipt','eval-result.png',42.64,53.79)]
-for name,title,file,start,end in shots:
- duration=end-start
- body=f'<h1 id="{name}-title">{title}</h1><div class="line"></div><img class="screen clip" id="{name}-screen" data-start="0" data-duration="{duration}" src="assets/{file}" alt="Actual recorded Hermes CLI"><p class="note">Actual Hermes CLI · local Qwen3.5 4B · waiting time shortened</p>'
- js=f"tl.fromTo('#{name}-title',{{opacity:0,x:-14}},{{opacity:1,x:0,duration:.25,ease:'power3.out'}},0);"
- if name=='setup':
-  body=body.replace('Actual Hermes CLI · local Qwen3.5 4B · waiting time shortened','Actual Hermes plugin doctor · six registered native tools')
-  body=body.replace('<img class="screen clip"', '<img style="top:520px;height:330px;object-fit:cover;object-position:top" class="screen clip"')
-  body+='<p style="position:absolute;left:150px;top:190px;font-size:48px;line-height:1.5">Install the plugin.<br>Configure your trusted repository.<br>Ask Hermes to run your checks.</p>'
- elif file.endswith('.mp4'):
-  body=body.replace('<img class="screen clip"','<video muted class="screen clip"').replace('alt="Actual recorded Hermes CLI">','></video>')
- scene(name,body,js=js,duration=duration)
-# Display the recorded tool response, not an unverified model paraphrase.
-if (r/'evidence/discover-session.json').exists():
- data=json.loads((r/'evidence/discover-session.json').read_text())
- actual=next(json.loads(m['content']) for m in data['messages'] if m.get('tool_name')=='kujo_discover')
- wanted=['kujo.shipcheck.repository.scan','kujo.packwrite.pack.summary','kujo.spec.contract.validate','kujo.eval.suite.run']
- available={x['id']:x for x in actual['abilities']}
- rows=''.join(f'<p>{html.escape(k)}</p>' for k in wanted if k in available)
- body='<h1>Discover the right tool</h1><div class="line"></div><video muted class="screen clip" id="discovery-call" data-start="0" data-duration="1.8" src="assets/discover.mp4"></video><section class="catalog clip" id="catalog-result" data-start="1.8" data-duration="9.99"><h2>Recorded catalog result · 51 bindings</h2>'+rows+'</section><p class="note">Actual Hermes tool response · excerpt · local Qwen3.5 4B</p>'
- scene('discover',body,'.catalog{position:absolute;left:150px;top:190px}.catalog h2{font-size:40px;color:#aaa;font-weight:400;margin-bottom:65px}.catalog p{font-family:Departure,monospace;font-size:48px;margin:44px 0}',"tl.fromTo('#catalog-result p',{opacity:0,y:10},{opacity:1,y:0,duration:.25,stagger:.2},1.8);",11.79)
+"""Build the benefits-led edit from verified recordings and measured narration.
 
-if (r/'evidence/checks-session.json').exists():
- data=json.loads((r/'evidence/checks-session.json').read_text())
- actual={d['ability_id']:d for m in data['messages'] if m.get('tool_name')=='kujo_execute' for d in [json.loads(m['content'])] if d.get('ok')}
- spec=actual['kujo.spec.contract.validate']['result']['structured'];pack=actual['kujo.packwrite.pack.summary']['result']['structured']
- assert spec['valid'] and not spec['errors'] and pack['ok'] and not pack['missing_files']
- body='<h1>Validate requirements and context</h1><div class="line"></div><video muted class="screen clip" id="checks-call" data-start="0" data-duration="3" src="assets/checks.mp4"></video><section class="result clip" id="checks-result" data-start="3" data-duration="6.07"><h2>Recorded tool results</h2><p>Spec: valid. Zero errors.</p><p>PackWrite: '+str(pack['phase_count'])+' phases.</p><span>No missing context files.</span></section><p class="note">Actual Kujo results through Hermes · excerpt · waiting time shortened</p>'
- scene('request',body,'.result{position:absolute;left:150px;top:200px}.result h2{font-size:40px;color:#aaa;font-weight:400;margin-bottom:65px}.result p{font-size:68px;font-weight:700;margin:45px 0}.result span{font-size:44px;color:#ccc}',"tl.fromTo('#checks-result p',{opacity:0,y:10},{opacity:1,y:0,duration:.25,stagger:.2},3);",9.07)
-
-if (r/'evidence/receipt-verification.json').exists():
- response=json.loads((r/'evidence/receipt-verification.json').read_text());receipt=json.loads(response['text'])
- assert response['verified'] and receipt['approval']['approved'] and receipt['status']=='completed'
- result=receipt['result']['structured']['data']
- body=f'<h1>Trace the result to its receipt</h1><div class="line"></div><section class="proof"><h2>Eval: {result["passed"]} passed. {result["failed"]} failed.</h2><p class="verified">Receipt integrity verified by Kujo Hermes</p><p>Ability: {receipt["ability_id"]}</p><p>Receipt: {receipt["receipt_id"]}</p><p class="command">Command excerpt: kujo run …/eval/main.kujo --interpreter -- run … --json</p><p class="hash">SHA-256: {receipt["receipt_digest"]}</p></section><p class="note">Recorded tool response · integrity verification does not establish release readiness</p>'
- scene('proof',body,'.proof{position:absolute;left:150px;top:185px;width:1620px}.proof h2{font-size:76px;margin:25px 0 45px}.proof p{font-family:Departure,monospace;font-size:36px;margin:38px 0}.proof .verified{font-family:Inter,sans-serif;font-size:44px;color:#ddd;margin-bottom:60px}.proof .command,.proof .hash{font-size:30px;color:#bbb}',"tl.fromTo('.proof h2',{opacity:0,y:10},{opacity:1,y:0,duration:.3},0);",11.15)
-
-# Tool families are editorial labels derived from the actual bundled catalog.
-groups=[('Check the change','ShipCheck · Eval · Spec','PatchBrief · ChangeBucket · Lens'),('Understand the repository','Scout · PackWrite · Scent','RAG · Concord'),('Run and trace the work','Dispatch · Workcell · Loop','RunLedger · Watchdog · Muzzle · Howl')]
-body='<h1>51 bindings. Six native tools.</h1><div class="line"></div>'
-js=''
-for i,(title,a,b) in enumerate(groups):
- start=i*5.05;duration=5.05 if i<2 else 5.13
- body+=f'<section class="family clip" id="family-{i}" data-start="{start}" data-duration="{duration}"><h2>{title}</h2><p>{a}</p><p>{b}</p></section>'
- js+=f"tl.fromTo('#family-{i} p',{{opacity:0,x:22}},{{opacity:1,x:0,duration:.3,stagger:.15,ease:'power3.out'}},{start+.15});"
-body+='<p class="note">Included bindings · availability depends on installed tools and prerequisites</p>'
-scene('breadth',body,'.family{position:absolute;left:150px;top:240px;width:1620px}.family h2{font-size:48px;color:#aaa;font-weight:400;margin:0 0 65px}.family p{font-size:66px;font-weight:700;line-height:1.35;margin:25px 0}',js,15.23)
-body='<h1>Less memorizing. More verifying.</h1><div class="line"></div><div id="benefit-copy"><p>Ask for the outcome.</p><p>Run repeatable checks.</p><p>Keep the execution evidence.</p></div><p class="note">Install Kujo Hermes → configure trusted roots → ask Hermes</p>'
-scene('benefit',body,'#benefit-copy{position:absolute;left:150px;top:240px}#benefit-copy p{font-size:72px;line-height:1.35;font-weight:700;margin:35px 0}',"tl.fromTo('#benefit-copy p',{opacity:0,x:25},{opacity:1,x:0,duration:.4,stagger:2.8,ease:'power3.out'},.3);",11.31)
-hosts=[('intro',0,3.8)]+[(n,s,e-s) for n,_,_,s,e in shots]+[('breadth',53.79,15.23),('benefit',69.02,11.31),('outro',80.33,4.67)]
-root='''<!doctype html><html lang="en" data-composition-variables='[{"id":"paper","label":"Paper color","type":"color","default":"#f9f9f9"}]'><head><meta charset="utf-8"><title>Kujo Hermes walkthrough</title><script src="assets/gsap.min.js"></script><style>@font-face{font-family:Departure;src:url('assets/DepartureMono-Regular.woff2')}*{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#060606}#root{position:relative;width:100%;height:100%}</style></head><body><div id="root" data-composition-id="main" data-start="0" data-duration="85" data-width="1920" data-height="1080">'''
-for name,start,duration in hosts:root+=f'<div class="clip" id="{name}" data-composition-id="{name}" data-composition-src="compositions/{name}.html" data-start="{start}" data-duration="{duration}" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>'
-root+='<audio class="clip" id="master-audio" src="assets/master.m4a" data-start="0" data-duration="85" data-track-index="2"></audio></div><script>window.__timelines=window.__timelines||{};window.__timelines.main=gsap.timeline({paused:true});</script></body></html>'
+Intro/outro are deliberately preserved. Editorial panels never impersonate Hermes.
+The stepped slice gates adapt the user's CMD film (mcp@01a4f51).
+"""
+import json, pathlib, html
+r=pathlib.Path(__file__).resolve().parents[1]
+story=json.loads((r/'story.json').read_text())
+voices={v['cue']:v for v in json.loads((r/'evidence/narration.json').read_text())}
+spare=(80.33-3.8-sum(voices[s['cue']]['duration'] for s in story['scenes']))/8
+assert spare>.5, 'Shorten narration; do not rush the voice to fit.'
+start=3.8; scenes=[];cues=[dict(voices['intro'],start=.7)]
+for s in story['scenes']:
+ duration=voices[s['cue']]['duration']+spare
+ scenes.append(dict(s,start=round(start,4),duration=round(duration,4)))
+ cues.append(dict(voices[s['cue']],start=round(start+.3,4)));start+=duration
+cues.append(dict(voices['outro'],start=80.33))
+(r/'timeline.json').write_text(json.dumps({'duration':85,'fps':30,'cues':cues,'scenes':scenes},indent=2)+'\n')
+receipt=json.loads(json.loads((r/'evidence/receipt-verification.json').read_text())['text'])
+contract=json.loads((r/'evidence/demo-contract.json').read_text());criterion=html.escape(contract['acceptance_criteria'][0])
+data=receipt['result']['structured']['data'];assert data['passed']==2 and data['failed']==0
+base='''*{box-sizing:border-box}#root{position:absolute;inset:0;background:#060606;color:#f9f9f9;font-family:Inter,sans-serif;overflow:hidden}h1,h2,p{margin:0}.stage{position:absolute;inset:0}.eyebrow{position:absolute;left:130px;top:106px;font-size:32px;color:#bdbdbd}.title{position:absolute;left:130px;top:164px;font-size:78px;letter-spacing:-2.5px;line-height:1.12}.foot{position:absolute;left:130px;bottom:55px;font-size:28px;color:#aaa}.rail{position:absolute;left:130px;top:926px;width:1660px;display:flex;justify-content:space-between;font-family:Departure,monospace;font-size:29px;color:#9a9a9a}.rail span{padding-bottom:18px;border-bottom:3px solid #444}.rail .active{color:white;border-color:white}.paper{background:#f9f9f9;color:#090909}.muted{color:#bdbdbd}.mono{font-family:Departure,monospace}.rule{height:2px;background:#555}.row{font-size:48px}.check{font-family:Departure,monospace}'''
+def rail(active):
+ return '<div class="rail">'+''.join(f'<span class="{"active" if n<=active else ""}">{v}</span>' for n,v in enumerate(['Task','Context','Permission','Checks','Receipt']))+'</div>'
+def panel(s,body,css,js,active=0,foot='Recorded evidence · editorial view · waiting time shortened'):
+ name=s['id'];dur=s['duration'];
+ out=f'''<template><style>{base}{css}</style><div id="root" data-composition-id="{name}" data-width="1920" data-height="1080" data-duration="{dur}"><div class="stage" id="{name}-stage">{body}</div>{rail(active)}<p class="foot">{foot}</p></div><script>const tl=gsap.timeline({{paused:true}});{js}window.__timelines=window.__timelines||{{}};window.__timelines['{name}']=tl;</script></template>'''
+ (r/'compositions'/(name+'.html')).write_text(out)
+def head(eye,title):return f'<p class="eyebrow">{eye}</p><h1 class="title">{title}</h1>'
+def reveal(sel,t,x=0):return f"tl.fromTo('{sel}',{{opacity:0,x:{x}}},{{opacity:1,x:0,duration:.38,ease:'power4.out'}},{t});"
+for s in scenes:
+ n=s['id'];d=s['duration']
+ if n=='question':
+  b=head('You live in Hermes.','Make every run explainable.')+'<div id="question-prompt"><p>Before I commit,<br>what can I verify?</p><span>Example request to Hermes</span></div><div id="question-answers"><p id="q-ran">What ran?</p><p id="q-passed">What passed?</p><p id="q-approved">What did I approve?</p></div>'
+  css='#question-prompt{position:absolute;left:130px;top:345px;width:860px;padding:55px 50px;border-left:6px solid white;background:#171717}#question-prompt p{font-size:70px;line-height:1.18;letter-spacing:-2px}#question-prompt span{display:block;font-size:28px;color:#aaa;margin-top:55px}#question-answers{position:absolute;left:1100px;top:375px}#question-answers p{font-size:46px;margin:0 0 62px}'
+  js="tl.fromTo('#question-prompt',{scale:.96,x:-50},{scale:1,x:0,duration:.6,ease:'expo.out'},.08);"+reveal('#q-ran',3.4,20)+reveal('#q-passed',4.8,20)+reveal('#q-approved',6,20)
+  panel(s,b,css,js,0,'Kujo Hermes · native developer tools and execution evidence')
+ elif n=='context':
+  b=head('Start with the task.','Give the work a clear contract.')+'<section id="contract"><p class="mono">Python demo repository</p><h2>Spec</h2><p class="statement">'+criterion+'</p><p id="contract-ok" class="status">VALID · 0 ERRORS</p></section><div id="handoff-arrow">→</div><section id="pack"><h2>PackWrite</h2><p class="statement">Execution context</p><div class="phase-track">'+''.join(f'<span id="phase-{i}">{i+1}</span>' for i in range(7))+'</div><p id="pack-ok" class="status">7 PHASES · NO MISSING FILES</p></section>'
+  css='#contract{position:absolute;left:130px;top:345px;width:700px;padding:42px;background:#f9f9f9;color:#090909}#contract .mono{font-size:29px;margin-bottom:30px}#contract h2,#pack h2{font-size:70px;letter-spacing:-2px}.statement{font-size:40px;margin-top:18px}.status{font-family:Departure,monospace;font-size:28px;margin-top:45px}#handoff-arrow{position:absolute;left:887px;top:494px;font-size:80px}#pack{position:absolute;left:1030px;top:390px;width:760px}.phase-track{display:flex;gap:14px;margin-top:30px}.phase-track span{width:70px;height:58px;border-bottom:3px solid white;font-size:32px;text-align:center;padding-top:5px}'
+  js="tl.fromTo('#contract',{x:-50,opacity:0},{x:0,opacity:1,duration:.5,ease:'expo.out'},.15);"+reveal('#contract-ok',3.1)+reveal('#handoff-arrow',4.2)+reveal('#pack',4.5,25)+''.join(reveal(f'#phase-{i}',5.2+i*.18) for i in range(7))+reveal('#pack-ok',7)
+  panel(s,b,css,js,1)
+ elif n=='routing':
+  b=head('Ask for the outcome.','Stay in the Hermes conversation.')+'<div class="route-source" id="route-source"><strong>Hermes</strong><p>Discover → inspect → execute</p><span>Six native tools</span></div><div id="route-wire"></div><section id="ability"><p class="mono">Kujo Ability</p><h2>Eval</h2><p>Run the repository checks</p><div id="schema"><span>workspace</span><span>arguments</span><span>approval policy</span></div></section><p id="route-note">51 catalog bindings. Schemas loaded when needed.</p>'
+  css='.route-source{position:absolute;left:130px;top:370px;width:755px;height:270px;padding:40px;background:#f9f9f9;color:#080808}.route-source strong{font-size:76px;letter-spacing:-2px}.route-source p{font-size:35px;margin-top:15px}.route-source span{font-size:28px;display:block;margin-top:23px}#route-wire{position:absolute;left:885px;top:505px;width:145px;height:4px;background:white;transform-origin:left}#ability{position:absolute;left:1070px;top:350px;width:720px}#ability .mono{font-size:28px;color:#bcbcbc}#ability h2{font-size:92px;margin-top:12px}#ability p:not(.mono){font-size:38px;margin-top:12px}#schema{display:flex;gap:20px;flex-wrap:wrap;margin-top:35px}#schema span{font-size:28px;border-bottom:2px solid #666;padding-bottom:12px}#route-note{position:absolute;left:130px;top:770px;font-size:43px;color:#ccc}'
+  js=reveal('#route-source',.15,-35)+"tl.fromTo('#route-wire',{scaleX:0},{scaleX:1,duration:.45,ease:'power2.inOut'},2);"+reveal('#ability',2.3,30)+reveal('#schema',4.6)+reveal('#route-note',6)
+  panel(s,b,css,js,1,'Catalog and routing explained · included bindings depend on installed prerequisites')
+ elif n=='control':
+  b=head('Your workspace. Your decision.','Approve this run in Hermes.')+f'<div id="approval-crop"><video muted class="clip" id="approval-recording" data-start="0" data-duration="{d}" src="assets/approval.mp4"></video></div><p id="control-callout">Eval runs commands and writes evidence.</p>'
+  css='#approval-crop{position:absolute;left:130px;top:295px;width:1660px;height:500px;overflow:hidden}#approval-recording{position:absolute;width:2100px;height:980px;left:-24px;top:-15px;object-fit:fill}#control-callout{position:absolute;left:130px;top:825px;font-size:37px;color:#ccc}'
+  js="tl.fromTo('#approval-crop',{scale:.96},{scale:1,duration:.55,ease:'expo.out'},.05);"+reveal('#control-callout',3.8)
+  panel(s,b,css,js,2,'Actual Hermes approval · local Qwen3.5 4B · waiting time shortened')
+ elif n=='checks':
+  b=head('Permission becomes a recorded run.','See exactly what passed.')+'<section id="suite"><div id="test-one"><span>✓</span><h2>Unit test</h2><p class="mono">python3 -m unittest discover -s tests</p></div><div id="test-two"><span>✓</span><h2>Implementation exists</h2><p class="mono">calculator.py</p></div></section><div id="counts"><strong>2 / 2</strong><p>checks passed</p><span>0 failed</span></div>'
+  css='#suite{position:absolute;left:130px;top:345px;width:1030px}#suite>div{position:relative;padding:28px 0 34px 75px;border-bottom:2px solid #444;margin-bottom:30px}#suite span{position:absolute;left:0;top:30px;font-size:52px}#suite h2{font-size:52px;letter-spacing:-1px}#suite p{font-size:29px;margin-top:23px;color:#bdbdbd}#counts{position:absolute;left:1270px;top:390px}#counts strong{font-size:130px;font-family:Departure,monospace;font-weight:400;letter-spacing:-10px}#counts p{font-size:43px;margin-top:20px}#counts>span{display:block;font-size:32px;margin-top:30px;color:#bdbdbd}'
+  js=reveal('#test-one',.6,-25)+reveal('#test-two',3.1,-25)+"tl.fromTo('#counts',{opacity:0,scale:.9},{opacity:1,scale:1,duration:.5,ease:'expo.out'},4.8);"
+  panel(s,b,css,js,3,'Actual Eval results · passing these checks does not establish release readiness')
+ elif n=='evidence':
+  b=head('The result stays attached to its evidence.','Open the receipt. Trace the run.')+'<section id="receipt"><div id="receipt-top"><span class="mono">EXECUTION RECEIPT</span><strong>Eval</strong></div><div id="receipt-command" class="receipt-row"><span>Command</span><p class="mono">kujo run …/eval/main.kujo … --json</p></div><div id="receipt-permission" class="receipt-row"><span>Approval</span><p>Required · approved</p></div><div id="receipt-hash" class="receipt-row"><span>Evidence</span><p>10 artifact hashes · SHA-256</p></div></section><div id="verified"><span>✓</span><h2>Integrity<br>verified</h2><p>Match the receipt<br>to this execution.</p></div><p id="receipt-id" class="mono">'+html.escape(receipt['receipt_id'])+'</p>'
+  css='#receipt{position:absolute;left:130px;top:315px;width:1050px;background:#f9f9f9;color:#090909;padding:34px 40px}#receipt-top{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #aaa;padding-bottom:25px}#receipt-top span{font-size:28px}#receipt-top strong{font-size:48px}.receipt-row{padding-top:24px;display:flex;gap:30px;align-items:baseline}.receipt-row>span{font-size:29px;width:170px}.receipt-row p{font-size:34px}.receipt-row .mono{font-size:28px}#verified{position:absolute;left:1270px;top:365px}#verified>span{font-size:60px}#verified h2{font-size:65px;line-height:1.04;margin:18px 0 28px;letter-spacing:-1px}#verified p{font-size:32px;line-height:1.4;color:#bbb}#receipt-id{position:absolute;left:170px;top:785px;font-size:29px;color:#aaa}'
+  js="tl.fromTo('#receipt',{y:40,opacity:0},{y:0,opacity:1,duration:.5,ease:'expo.out'},.1);"+reveal('#receipt-command',2.0)+reveal('#receipt-permission',3.3)+reveal('#receipt-hash',4.6)+reveal('#verified',6.7,20)+reveal('#receipt-id',7.4)
+  panel(s,b,css,js,4,'Actual receipt fields · command abbreviated · integrity is not a guarantee of correctness')
+ elif n=='tools':
+  b=head('Extend the same workflow.','One integration. A wider toolbox.')+'<div id="tool-stage">'
+  groups=[('ShipCheck','Check release readiness','Eval · Spec · PatchBrief · ChangeBucket · Lens'),('Scout','Find repository context','PackWrite · Scent · RAG · Concord'),('Dispatch','Run and trace workflows','Workcell · Loop · RunLedger · Watchdog')]
+  js=''
+  for i,(tool,benefit,more) in enumerate(groups):
+   t=i*d/3
+   b+=f'<div class="clip tool-page" id="tool-page-{i}" data-start="{t}" data-duration="{d/3}"><div class="tool-copy"><h2>{tool}</h2><p>{benefit}</p><span>{more}</span></div></div>'
+   js+=f"tl.fromTo('#tool-page-{i} .tool-copy',{{x:100,opacity:0}},{{x:0,opacity:1,duration:.45,ease:'expo.out'}},{t+.1});"
+  b+='</div><p id="tools-note">Discover what is installed. Inspect what it can do.</p>'
+  css='#tool-stage{position:absolute;left:130px;top:350px;width:1660px;height:420px}.tool-page{position:absolute;inset:0}.tool-copy h2{font-size:126px;letter-spacing:-5px}.tool-copy p{font-size:56px;margin-top:22px}.tool-copy span{display:block;font-size:32px;color:#bbb;margin-top:45px}#tools-note{position:absolute;left:130px;top:822px;font-size:35px;color:#bbb}'
+  panel(s,b,css,js,4,'Included tools, not additional demo runs · each retains its dependencies and permissions')
+ else:
+  b=head('For developers who work inside Hermes.','Keep the speed. Keep the evidence.')+'<div id="handoff"><p class="mono">A handoff the next developer can inspect</p><div id="handoff-line-one"><span>Task</span><strong>Contract + context</strong></div><div id="handoff-line-two"><span>Run</span><strong>Permission + checks</strong></div><div id="handoff-line-three"><span>Evidence</span><strong>Verified receipt</strong></div></div><p id="payoff-end">Accountability inside Hermes.</p>'
+  css='#handoff{position:absolute;left:130px;top:325px;width:1660px}#handoff>p{font-size:30px;color:#bdbdbd;margin-bottom:40px}#handoff>div{display:flex;gap:80px;border-bottom:1px solid #555;padding:17px 0}#handoff span{font-size:36px;width:220px;color:#bbb}#handoff strong{font-size:46px;font-weight:500}#payoff-end{position:absolute;left:130px;top:805px;font-size:50px}'
+  js=reveal('#handoff',.1)+reveal('#handoff-line-one',.5,-20)+reveal('#handoff-line-two',2.2,-20)+reveal('#handoff-line-three',4.1,-20)+reveal('#payoff-end',6.7)
+  panel(s,b,css,js,4,'Install Kujo Hermes · configure trusted roots · bring your repository')
+# Original bumper compositions are intentionally untouched.
+hosts=[('intro',0,3.8)]+[(s['id'],s['start'],s['duration']) for s in scenes]+[('outro',80.33,4.67)]
+# Five stepped slice gates from the actual CMD film. A subdued chromatic accent
+# appears only at seams; stable reading frames remain monochrome.
+gates=[s['start'] for s in scenes[1:]]
+css='''@font-face{font-family:Departure;src:url('assets/DepartureMono-Regular.woff2')}*{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#060606}#root{position:relative;width:100%;height:100%}.glitch-cut{position:absolute;inset:0;z-index:20;overflow:hidden;pointer-events:none}.glitch-bar{position:absolute;left:-8%;width:116%;background:#eee;transform-origin:0 50%;opacity:0}.glitch-bar:nth-child(1){top:7%;height:7%}.glitch-bar:nth-child(2){top:23%;height:2.5%;background:#36efff}.glitch-bar:nth-child(3){top:42%;height:14%;background:#0b0b0e}.glitch-bar:nth-child(4){top:66%;height:4%;background:#ff3158}.glitch-bar:nth-child(5){top:84%;height:10%}.glitch-grid{position:absolute;inset:0;opacity:0;background-image:linear-gradient(#ffffff26 1px,transparent 1px);background-size:100% 8px}'''
+root=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Kujo Hermes · Accountability inside Hermes</title><script src="assets/gsap.min.js"></script><style>{css}</style></head><body><div id="root" data-composition-id="main" data-start="0" data-duration="85" data-width="1920" data-height="1080">'
+for name,t,d in hosts:root+=f'<div class="clip" id="{name}" data-composition-id="{name}" data-composition-src="compositions/{name}.html" data-start="{t}" data-duration="{d}" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>'
+js='const tl=gsap.timeline({paused:true});'
+for i,cut in enumerate(gates):
+ t=round(cut-.25,4);sel=f'#glitch-{i}'
+ root+=f'<div class="clip glitch-cut" id="glitch-{i}" data-start="{t}" data-duration=".58" data-track-index="3" data-track-kind="graphics">'+''.join('<div class="glitch-bar" data-layout-ignore></div>' for _ in range(5))+'<div class="glitch-grid" data-layout-ignore></div></div>'
+ js+=f"tl.fromTo('{sel} .glitch-bar',{{opacity:0,x:-220,scaleX:.28}},{{opacity:.74,x:120,scaleX:1,duration:.08,stagger:.025,ease:'steps(1)'}},{t}).to('{sel} .glitch-bar',{{x:-90,duration:.06,stagger:.018,ease:'steps(1)'}},{t+.15}).to('{sel} .glitch-bar',{{opacity:0,x:340,duration:.1,stagger:.012,ease:'power4.in'}},{t+.29}).fromTo('{sel} .glitch-grid',{{opacity:0,x:-18}},{{opacity:.5,x:18,duration:.05,repeat:5,yoyo:true,ease:'steps(1)'}},{t+.04}).to('{sel} .glitch-grid',{{opacity:0,duration:.08}},{t+.44});"
+root+='<audio class="clip" id="master-audio" src="assets/master.m4a" data-start="0" data-duration="85" data-track-index="2"></audio></div><script>'+js+'window.__timelines=window.__timelines||{};window.__timelines.main=tl;</script></body></html>'
 (r/'index.html').write_text(root)
-print('Built',len(hosts),'editable scenes; 85 seconds')
+print('Built 10 scenes; preserved bumpers; 7 CMD-style glitch seams; 85 seconds.')
+for s in scenes:print(s['id'],s['start'],s['duration'])

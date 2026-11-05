@@ -15,3 +15,7 @@ Start with docs/readiness.md and submission/checklist.md. Preserve explicit huma
 ## Walkthrough video milestone — 2026-11-04
 
 The 85-second walkthrough is recorded and rendered at `demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4`, with official Kujo/Hermes logo bumpers and Siren V4 narration. Real local Qwen3.5 4B drove Hermes discovery, Spec validation, PackWrite summary, approved Eval, and receipt retrieval. The small model needed guided prompts and a receipt follow-up. Source recordings, exact tool responses, copied receipts, editable scenes, and verification scripts are under `demo/walkthrough/`. See its README and REVIEW before revising or publishing. Broader ecosystem certification gaps above remain unchanged; no external submission is authorized.
+
+## Walkthrough revision — 2026-11-04
+
+The user requested a benefits-led film for developers who live in Hermes, preserving both logo bumpers and matching the actual CMD glitch transitions. Revision 2 follows task/context → permission → checks → receipt → developer handoff. It reuses verified recording evidence and generates new Siren V4 body narration. The source of truth is `demo/walkthrough/story.json`; artifact and QA links remain in that directory. Contest context must not enter the narration. Keep both 1080p and mobile 480p delivery files.

@@ -1,0 +1,15 @@
+{
+  "cue": "v2-tools",
+  "text": "Go further with ShipCheck for release checks, Scout for repository context, and Dispatch for workflows. Installed tools share one Hermes integration.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "8bf6a8cee450431ea9d762cfbfab4b6efe2d6d028e63ef0100d2ab3550b4ebb3",
+  "audio_sha256": "0051130bd0d9a867a3ddf448ef9a0a59b3713690d02731b59353552ce7de2e2d",
+  "duration": 10.08,
+  "request_id": "AwveUZ7iszqenMS01UgV",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:20Z"
+}

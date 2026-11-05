@@ -13,3 +13,8 @@ evidence/approval-review/
 evidence/detail-review/*.png
 
 .waveform-cache/
+
+evidence/v2-review/*.png
+evidence/v2-details/*.png
+evidence/v2-contract-review/*.png
+!assets/cmd-sfx-*.mp3

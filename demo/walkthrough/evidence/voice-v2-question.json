@@ -1,0 +1,15 @@
+{
+  "cue": "v2-question",
+  "text": "Hermes can build the change. Before you trust the result, you need to know what ran, what passed, and what needs your approval.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "467bf9ed03fcd5b2dfad8768c006185393cb29256aed8d7e39088230ec2d809c",
+  "audio_sha256": "df4d95569c7e0d504f2ce4ea35e271d5ca45c1333bee0daf160101dd40720a2f",
+  "duration": 7.84,
+  "request_id": "5i4lJfDz28VmOK0Ui9Ad",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:04Z"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Verify the calculator",
+  "goal": "Prove addition works and preserve execution evidence.",
+  "version": "0.1.0",
+  "scope": "calculator.py and tests",
+  "acceptance_criteria": [
+    "2 + 3 returns 5",
+    "All unit tests pass"
+  ]
+}

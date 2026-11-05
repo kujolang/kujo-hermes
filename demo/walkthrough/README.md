@@ -1,8 +1,8 @@
 # Kujo Hermes walkthrough
 
-An 85-second walkthrough with official Kujo and Hermes logo bumpers, real Hermes CLI recordings, and ElevenLabs Siren narration. The local Qwen3.5 4B model runs through Ollama without an inference API fee. Narration uses an existing paid ElevenLabs account.
+An 85-second film about accountability inside Hermes: keep task context, approve execution, inspect checks, and retain a verifiable receipt. The original Kujo/Hermes bumpers surround a revised Siren V4 narration and seven glitch transitions adapted from the actual Kujo CMD film. The local Qwen3.5 4B model runs through Ollama without an inference API fee. Narration uses an existing paid ElevenLabs account.
 
-The video shows discovery, schema inspection, Spec validation, PackWrite context, approval for Eval, and receipt retrieval. The tool overview describes the bundled catalog; it does not claim every binding ran in this recording. See the main repository's compatibility and readiness documents for prerequisites and coverage.
+The video explains discovery and on-demand schemas, then uses recorded Spec, PackWrite, Eval, and receipt results. The native approval shot is real Hermes footage. Other panels are labeled editorial views of evidence, not recreated product UI. The tool overview describes the bundled catalog; it does not claim every binding ran in this recording. See the main repository's compatibility and readiness documents for prerequisites and coverage.
 
 ## Edit and render
 
@@ -54,3 +54,11 @@ The temporary Qwen3.5 models were removed after recording to free render space. 
 The final Loop evaluation is scoped to this video in `evidence/loop/`; the repository’s broader integration checklist retains its separate, partially certified state. PackWrite’s existing project handoff is updated without regenerating the pack.
 
 Use Hermes’ supported Python runtime for installation (3.14 for this release). The separate Linux 3.14 clean-install and end-to-end evidence is linked from the main README; this macOS recording does not replace that certification.
+
+## Revision 2
+
+`story.json` owns the revised narration. Generate only uncached takes with `python3 scripts/generate_voice.py`; this uses the authorized ElevenLabs account. Then run `build_composition.py` and `build_audio.py`. Generation is not needed to render the committed soundtrack. Original bumper compositions and voice takes are unchanged. All body narration plays at its original speed.
+
+The CMD reference is `kujolang/mcp@01a4f51`, `demos/command-code-ollama-live-proof/index.html`. Its five stepped horizontal slices and scan-grid timing drive the seven body seams. Three bundled CMD sound effects alternate under those cuts; provenance is recorded in `evidence/cmd-reference.json`. The approved marks are never distorted by those transitions.
+
+The source evidence is the same verified November 4 recording. This edit does not claim a new model run, a repository change, or additional tool certification. `evidence/v2-check.json` and `REVIEW.md` describe the revised visual checks.

@@ -1,0 +1,15 @@
+{
+  "cue": "v2-routing",
+  "text": "Ask for the outcome. Hermes discovers Kujo Abilities and loads their schemas on demand. You stay in the conversation.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "c0863c2a52a0ff77a3dcb12b5f1769b2d7e698fee96a08982b9d2c81009f1158",
+  "audio_sha256": "0314e30c297d8b6a7b0da008c7bd2a9f44fb6059c327cd0743aebeaf9ae00102",
+  "duration": 8.08,
+  "request_id": "fX7jjMfT2C87ztevrvI8",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-05T01:23:10Z"
+}

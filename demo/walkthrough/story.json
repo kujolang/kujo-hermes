@@ -1,0 +1,48 @@
+{
+  "revision": 2,
+  "duration": 85,
+  "intro_duration": 3.8,
+  "outro_start": 80.33,
+  "scenes": [
+    {
+      "id": "question",
+      "cue": "v2-question",
+      "text": "Hermes can build the change. Before you trust the result, you need to know what ran, what passed, and what needs your approval."
+    },
+    {
+      "id": "context",
+      "cue": "v2-context",
+      "text": "Kujo brings that evidence into Hermes. Spec checks the task contract. PackWrite keeps the work organized, so the next step starts with context."
+    },
+    {
+      "id": "routing",
+      "cue": "v2-routing",
+      "text": "Ask for the outcome. Hermes discovers Kujo Abilities and loads their schemas on demand. You stay in the conversation."
+    },
+    {
+      "id": "control",
+      "cue": "v2-control",
+      "text": "Here, a free local model runs checks on a Python project. Hermes asks before Eval executes. You approve this run."
+    },
+    {
+      "id": "checks",
+      "cue": "v2-checks",
+      "text": "Eval confirms the unit test passed and the implementation exists. Two specific checks, with results you can inspect."
+    },
+    {
+      "id": "evidence",
+      "cue": "v2-evidence",
+      "text": "Open the receipt. It records the tool, command, approval, and evidence hashes. Kujo Hermes verifies its integrity. You can trace the run."
+    },
+    {
+      "id": "tools",
+      "cue": "v2-tools",
+      "text": "Go further with ShipCheck for release checks, Scout for repository context, and Dispatch for workflows. Installed tools share one Hermes integration."
+    },
+    {
+      "id": "payoff",
+      "cue": "v2-payoff",
+      "text": "Keep your agent workflow. Add repeatable checks, clear permissions, and evidence for the next developer. That is accountability inside Hermes."
+    }
+  ]
+}

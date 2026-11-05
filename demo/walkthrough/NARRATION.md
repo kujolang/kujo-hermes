@@ -1,37 +1,44 @@
-# Narration — Siren / Eleven v4
+# Narration — Siren V4
 
-## intro · 0.7s
+Revision 2 centers the Hermes developer’s task, permission, and evidence. No contest mention. Original bumper lines are reused.
+
+## intro · 0.70s
 
 Kujo Hermes.
 
-## setup · 3.8s
+## v2-question · 4.10s
 
-Before you commit, ask Hermes to check your repository. Kujo Hermes connects the agent directly to Kujo's developer tools.
+Hermes can build the change. Before you trust the result, you need to know what ran, what passed, and what needs your approval.
 
-## discover · 12.07s
+## v2-context · 12.82s
 
-Start by discovering what's installed. ShipCheck checks release readiness. PackWrite organizes task context. Spec validates requirements, and Eval runs your checks.
+Kujo brings that evidence into Hermes. Spec checks the task contract. PackWrite keeps the work organized, so the next step starts with context.
 
-## request · 23.86s
+## v2-routing · 22.89s
 
-Here, a free local model drives Hermes. We ask it to inspect a Python project, validate its specification, and check the results.
+Ask for the outcome. Hermes discovers Kujo Abilities and loads their schemas on demand. You stay in the conversation.
 
-## approval · 32.93s
+## v2-control · 31.85s
 
-Hermes loads each tool's schema when it needs it. Operations that change state require approval. You decide what runs in your trusted workspace.
+Here, a free local model runs checks on a Python project. Hermes asks before Eval executes. You approve this run.
 
-## proof · 42.64s
+## v2-checks · 40.88s
 
-These are real tool results. Follow the receipt to see which Ability ran, its command, and evidence hashes. Execution success doesn't automatically mean release-ready.
+Eval confirms the unit test passed and the implementation exists. Two specific checks, with results you can inspect.
 
-## breadth · 53.79s
+## v2-evidence · 49.28s
 
-There are fifty-one bindings across code inspection, verification, workflows, and observability. Scout, Scent, Dispatch, RunLedger, and Watchdog extend the workflow. Workcell and Lens need their own prerequisites.
+Open the receipt. It records the tool, command, approval, and evidence hashes. Kujo Hermes verifies its integrity. You can trace the run.
 
-## benefit · 69.02s
+## v2-tools · 59.60s
 
-Less command memorization. Reusable context. Checks you can repeat, and results you can trace. Install the plugin, trust your repository, and ask Hermes.
+Go further with ShipCheck for release checks, Scout for repository context, and Dispatch for workflows. Installed tools share one Hermes integration.
+
+## v2-payoff · 70.55s
+
+Keep your agent workflow. Add repeatable checks, clear permissions, and evidence for the next developer. That is accountability inside Hermes.
 
 ## outro · 80.33s
 
 Kujo. Trust at the speed of AI.
+
