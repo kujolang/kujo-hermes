@@ -1,5 +1,6 @@
 # Demo storyboard — 86 seconds
 
+Recorded replacement: [88-second checkout film](../../demo/checkout-video/README.md), with its [actual timeline](../../demo/checkout-video/STORYBOARD.md). The real local-model run, operator approvals, missed approval timeout/retry and verification evidence are preserved there. The original proposal below remains historical.
 ## The memorable moment
 
 A 10% coupon makes a $50 cart cost **$50.99**. Hermes's initial code looks plausible. Kujo Eval exposes the exact assertion, `5099 != 4500`. The correction changes one expression; the same three tests pass. Both receipts survive. The benefit is concrete: catch an agent's regression and hand another developer the evidence.

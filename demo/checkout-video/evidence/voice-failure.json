@@ -1,0 +1,15 @@
+{
+  "cue": "failure",
+  "text": "Eval runs the real tests. Two pass. One fails. The receipt records the overcharge and the exact command, so the failure can be reproduced.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "f74b4245390256120d9191010a9c6cd2e531b3a3d74186f92a7e49c7d1f358e2",
+  "audio_sha256": "71d5fb92c433a191386cbe3d6f78c82d03ad7d5662a4e8c02c26d8f4b8671f0d",
+  "duration": 9.84,
+  "request_id": "yyOrQBgYYOThsv6tHSH5",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:16Z"
+}

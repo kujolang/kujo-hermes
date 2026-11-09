@@ -1,0 +1,17 @@
+{
+  "source": "demo/checkout-video/evidence/verify.cast",
+  "windows": [
+    [
+      0,
+      1.7,
+      2.0
+    ],
+    [
+      1.7,
+      5.0,
+      5.24
+    ]
+  ],
+  "duration": 7.24,
+  "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
+}

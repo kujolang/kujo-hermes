@@ -1,0 +1,15 @@
+{
+  "cue": "fix",
+  "text": "A free local Qwen model, running inside Hermes, changes the shipping calculation. The tests stay unchanged.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "7876540cf18920db361b6130fee7f4a1003c9cabea8c7981b5f97461fd025bd6",
+  "audio_sha256": "b5c4091c711a6d96e655329b2a4ab440f699c39fec19b75a6898288efc57ba3b",
+  "duration": 7.36,
+  "request_id": "zLqyAqHJLfFPPm0F5D8r",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:20Z"
+}

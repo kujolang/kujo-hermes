@@ -1,0 +1,15 @@
+{
+  "cue": "hook",
+  "text": "This checkout overcharges a customer by five dollars and ninety-nine cents. Let\u2019s ask Hermes to find the cause, with Kujo checking the work.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "b259cde20b582c5c6179ec3e4ddc7d96c228c4d75e6c4c3f30e09aa03e26b10b",
+  "audio_sha256": "955c01496a27aedf24ef3fc4ed119f57dcf1a250772189ab2eb5182d5c691b25",
+  "duration": 8.48,
+  "request_id": "TMm4DAtjW5fGcA5o1sdJ",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:01Z"
+}

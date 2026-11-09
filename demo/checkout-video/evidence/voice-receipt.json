@@ -1,0 +1,15 @@
+{
+  "cue": "receipt",
+  "text": "Both receipts remain available. You can trace the commands and check the evidence hashes after the conversation ends.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "e2c84a40d230f063f5d09c2365e5972e8930b684b58dd044c594f130ecf0062c",
+  "audio_sha256": "b764c9ec5fa9fd8933383a7bce40d3eb39df86171bfb705a51450dd3e16f2c17",
+  "duration": 6.32,
+  "request_id": "kbfpXS1dRlJEOek5nZNe",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:31Z"
+}

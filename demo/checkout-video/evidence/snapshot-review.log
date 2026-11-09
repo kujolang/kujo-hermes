@@ -1,0 +1,370 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing review frames (beats, seams, phone) from checkout-video
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+
+   Fonts: 6 loaded
+   Review: 29 beat(s) and 27 seam(s) within 0–88s
+[hyperframes] snapshot: frame 1/164 at 0.3s
+[hyperframes] snapshot: frame 2/164 at 1.6s
+[hyperframes] snapshot: frame 3/164 at 3.24s
+[hyperframes] snapshot: frame 4/164 at 3.5s
+[hyperframes] snapshot: frame 5/164 at 7.9s
+[hyperframes] snapshot: frame 6/164 at 12.64s
+[hyperframes] snapshot: frame 7/164 at 12.9s
+[hyperframes] snapshot: frame 8/164 at 17.1s
+[hyperframes] snapshot: frame 9/164 at 21.64s
+[hyperframes] snapshot: frame 10/164 at 21.9s
+[hyperframes] snapshot: frame 11/164 at 27.34s
+[hyperframes] snapshot: frame 12/164 at 33.12s
+[hyperframes] snapshot: frame 13/164 at 33.38s
+[hyperframes] snapshot: frame 14/164 at 38.46s
+[hyperframes] snapshot: frame 15/164 at 43.88s
+[hyperframes] snapshot: frame 16/164 at 44.14s
+[hyperframes] snapshot: frame 17/164 at 47.98s
+[hyperframes] snapshot: frame 18/164 at 52.16s
+[hyperframes] snapshot: frame 19/164 at 52.42s
+[hyperframes] snapshot: frame 20/164 at 56.94s
+[hyperframes] snapshot: frame 21/164 at 61.8s
+[hyperframes] snapshot: frame 22/164 at 62.06s
+[hyperframes] snapshot: frame 23/164 at 65.38s
+[hyperframes] snapshot: frame 24/164 at 69.04s
+[hyperframes] snapshot: frame 25/164 at 69.3s
+[hyperframes] snapshot: frame 26/164 at 74.9s
+[hyperframes] snapshot: frame 27/164 at 80.84s
+[hyperframes] snapshot: frame 28/164 at 81.1s
+[hyperframes] snapshot: frame 29/164 at 84.4s
+[hyperframes] snapshot: frame 30/164 at 2.75s
+[hyperframes] snapshot: frame 31/164 at 2.85s
+[hyperframes] snapshot: frame 32/164 at 2.95s
+[hyperframes] snapshot: frame 33/164 at 3.05s
+[hyperframes] snapshot: frame 34/164 at 3.15s
+[hyperframes] snapshot: frame 35/164 at 3s
+[hyperframes] snapshot: frame 36/164 at 3.1s
+[hyperframes] snapshot: frame 37/164 at 3.2s
+[hyperframes] snapshot: frame 38/164 at 3.3s
+[hyperframes] snapshot: frame 39/164 at 3.4s
+[hyperframes] snapshot: frame 40/164 at 3.33s
+[hyperframes] snapshot: frame 41/164 at 3.43s
+[hyperframes] snapshot: frame 42/164 at 3.53s
+[hyperframes] snapshot: frame 43/164 at 3.63s
+[hyperframes] snapshot: frame 44/164 at 3.73s
+[hyperframes] snapshot: frame 45/164 at 12.15s
+[hyperframes] snapshot: frame 46/164 at 12.25s
+[hyperframes] snapshot: frame 47/164 at 12.35s
+[hyperframes] snapshot: frame 48/164 at 12.45s
+[hyperframes] snapshot: frame 49/164 at 12.55s
+[hyperframes] snapshot: frame 50/164 at 12.4s
+[hyperframes] snapshot: frame 51/164 at 12.5s
+[hyperframes] snapshot: frame 52/164 at 12.6s
+[hyperframes] snapshot: frame 53/164 at 12.7s
+[hyperframes] snapshot: frame 54/164 at 12.8s
+[hyperframes] snapshot: frame 55/164 at 12.73s
+[hyperframes] snapshot: frame 56/164 at 12.83s
+[hyperframes] snapshot: frame 57/164 at 12.93s
+[hyperframes] snapshot: frame 58/164 at 13.03s
+[hyperframes] snapshot: frame 59/164 at 13.13s
+[hyperframes] snapshot: frame 60/164 at 21.15s
+[hyperframes] snapshot: frame 61/164 at 21.25s
+[hyperframes] snapshot: frame 62/164 at 21.35s
+[hyperframes] snapshot: frame 63/164 at 21.45s
+[hyperframes] snapshot: frame 64/164 at 21.55s
+[hyperframes] snapshot: frame 65/164 at 21.4s
+[hyperframes] snapshot: frame 66/164 at 21.5s
+[hyperframes] snapshot: frame 67/164 at 21.6s
+[hyperframes] snapshot: frame 68/164 at 21.7s
+[hyperframes] snapshot: frame 69/164 at 21.8s
+[hyperframes] snapshot: frame 70/164 at 21.73s
+[hyperframes] snapshot: frame 71/164 at 21.83s
+[hyperframes] snapshot: frame 72/164 at 21.93s
+[hyperframes] snapshot: frame 73/164 at 22.03s
+[hyperframes] snapshot: frame 74/164 at 22.13s
+[hyperframes] snapshot: frame 75/164 at 32.63s
+[hyperframes] snapshot: frame 76/164 at 32.73s
+[hyperframes] snapshot: frame 77/164 at 32.83s
+[hyperframes] snapshot: frame 78/164 at 32.93s
+[hyperframes] snapshot: frame 79/164 at 33.03s
+[hyperframes] snapshot: frame 80/164 at 32.88s
+[hyperframes] snapshot: frame 81/164 at 32.98s
+[hyperframes] snapshot: frame 82/164 at 33.08s
+[hyperframes] snapshot: frame 83/164 at 33.18s
+[hyperframes] snapshot: frame 84/164 at 33.28s
+[hyperframes] snapshot: frame 85/164 at 33.21s
+[hyperframes] snapshot: frame 86/164 at 33.31s
+[hyperframes] snapshot: frame 87/164 at 33.41s
+[hyperframes] snapshot: frame 88/164 at 33.51s
+[hyperframes] snapshot: frame 89/164 at 33.61s
+[hyperframes] snapshot: frame 90/164 at 43.39s
+[hyperframes] snapshot: frame 91/164 at 43.49s
+[hyperframes] snapshot: frame 92/164 at 43.59s
+[hyperframes] snapshot: frame 93/164 at 43.69s
+[hyperframes] snapshot: frame 94/164 at 43.79s
+[hyperframes] snapshot: frame 95/164 at 43.64s
+[hyperframes] snapshot: frame 96/164 at 43.74s
+[hyperframes] snapshot: frame 97/164 at 43.84s
+[hyperframes] snapshot: frame 98/164 at 43.94s
+[hyperframes] snapshot: frame 99/164 at 44.04s
+[hyperframes] snapshot: frame 100/164 at 43.97s
+[hyperframes] snapshot: frame 101/164 at 44.07s
+[hyperframes] snapshot: frame 102/164 at 44.17s
+[hyperframes] snapshot: frame 103/164 at 44.27s
+[hyperframes] snapshot: frame 104/164 at 44.37s
+[hyperframes] snapshot: frame 105/164 at 51.67s
+[hyperframes] snapshot: frame 106/164 at 51.77s
+[hyperframes] snapshot: frame 107/164 at 51.87s
+[hyperframes] snapshot: frame 108/164 at 51.97s
+[hyperframes] snapshot: frame 109/164 at 52.07s
+[hyperframes] snapshot: frame 110/164 at 51.92s
+[hyperframes] snapshot: frame 111/164 at 52.02s
+[hyperframes] snapshot: frame 112/164 at 52.12s
+[hyperframes] snapshot: frame 113/164 at 52.22s
+[hyperframes] snapshot: frame 114/164 at 52.32s
+[hyperframes] snapshot: frame 115/164 at 52.25s
+[hyperframes] snapshot: frame 116/164 at 52.35s
+[hyperframes] snapshot: frame 117/164 at 52.45s
+[hyperframes] snapshot: frame 118/164 at 52.55s
+[hyperframes] snapshot: frame 119/164 at 52.65s
+[hyperframes] snapshot: frame 120/164 at 61.31s
+[hyperframes] snapshot: frame 121/164 at 61.41s
+[hyperframes] snapshot: frame 122/164 at 61.51s
+[hyperframes] snapshot: frame 123/164 at 61.61s
+[hyperframes] snapshot: frame 124/164 at 61.71s
+[hyperframes] snapshot: frame 125/164 at 61.56s
+[hyperframes] snapshot: frame 126/164 at 61.66s
+[hyperframes] snapshot: frame 127/164 at 61.76s
+[hyperframes] snapshot: frame 128/164 at 61.86s
+[hyperframes] snapshot: frame 129/164 at 61.96s
+[hyperframes] snapshot: frame 130/164 at 61.89s
+[hyperframes] snapshot: frame 131/164 at 61.99s
+[hyperframes] snapshot: frame 132/164 at 62.09s
+[hyperframes] snapshot: frame 133/164 at 62.19s
+[hyperframes] snapshot: frame 134/164 at 62.29s
+[hyperframes] snapshot: frame 135/164 at 68.55s
+[hyperframes] snapshot: frame 136/164 at 68.65s
+[hyperframes] snapshot: frame 137/164 at 68.75s
+[hyperframes] snapshot: frame 138/164 at 68.85s
+[hyperframes] snapshot: frame 139/164 at 68.95s
+[hyperframes] snapshot: frame 140/164 at 68.8s
+[hyperframes] snapshot: frame 141/164 at 68.9s
+[hyperframes] snapshot: frame 142/164 at 69s
+[hyperframes] snapshot: frame 143/164 at 69.1s
+[hyperframes] snapshot: frame 144/164 at 69.2s
+[hyperframes] snapshot: frame 145/164 at 69.13s
+[hyperframes] snapshot: frame 146/164 at 69.23s
+[hyperframes] snapshot: frame 147/164 at 69.33s
+[hyperframes] snapshot: frame 148/164 at 69.43s
+[hyperframes] snapshot: frame 149/164 at 69.53s
+[hyperframes] snapshot: frame 150/164 at 80.35s
+[hyperframes] snapshot: frame 151/164 at 80.45s
+[hyperframes] snapshot: frame 152/164 at 80.55s
+[hyperframes] snapshot: frame 153/164 at 80.65s
+[hyperframes] snapshot: frame 154/164 at 80.75s
+[hyperframes] snapshot: frame 155/164 at 80.6s
+[hyperframes] snapshot: frame 156/164 at 80.7s
+[hyperframes] snapshot: frame 157/164 at 80.8s
+[hyperframes] snapshot: frame 158/164 at 80.9s
+[hyperframes] snapshot: frame 159/164 at 81s
+[hyperframes] snapshot: frame 160/164 at 80.93s
+[hyperframes] snapshot: frame 161/164 at 81.03s
+[hyperframes] snapshot: frame 162/164 at 81.13s
+[hyperframes] snapshot: frame 163/164 at 81.23s
+[hyperframes] snapshot: frame 164/164 at 81.33s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/video-state.json
+
+◇  164 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-01-at-0.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-02-at-1.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-03-at-3.24s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-04-at-3.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-05-at-7.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-06-at-12.64s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-07-at-12.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-08-at-17.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-09-at-21.64s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-10-at-21.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-11-at-27.34s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-12-at-33.12s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-13-at-33.38s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-14-at-38.46s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-15-at-43.88s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-16-at-44.14s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-17-at-47.98s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-18-at-52.16s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-19-at-52.42s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-20-at-56.94s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-21-at-61.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-22-at-62.06s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-23-at-65.38s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-24-at-69.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-25-at-69.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-26-at-74.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-27-at-80.84s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-28-at-81.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/beat-29-at-84.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-01-1-at-2.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-01-2-at-2.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-01-3-at-2.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-01-4-at-3.05s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-01-5-at-3.15s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-02-1-at-3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-02-2-at-3.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-02-3-at-3.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-02-4-at-3.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-02-5-at-3.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-03-1-at-3.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-03-2-at-3.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-03-3-at-3.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-03-4-at-3.63s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-03-5-at-3.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-04-1-at-12.15s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-04-2-at-12.25s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-04-3-at-12.35s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-04-4-at-12.45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-04-5-at-12.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-05-1-at-12.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-05-2-at-12.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-05-3-at-12.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-05-4-at-12.7s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-05-5-at-12.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-06-1-at-12.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-06-2-at-12.83s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-06-3-at-12.93s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-06-4-at-13.03s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-06-5-at-13.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-07-1-at-21.15s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-07-2-at-21.25s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-07-3-at-21.35s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-07-4-at-21.45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-07-5-at-21.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-08-1-at-21.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-08-2-at-21.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-08-3-at-21.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-08-4-at-21.7s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-08-5-at-21.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-09-1-at-21.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-09-2-at-21.83s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-09-3-at-21.93s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-09-4-at-22.03s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-09-5-at-22.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-10-1-at-32.63s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-10-2-at-32.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-10-3-at-32.83s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-10-4-at-32.93s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-10-5-at-33.03s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-11-1-at-32.88s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-11-2-at-32.98s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-11-3-at-33.08s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-11-4-at-33.18s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-11-5-at-33.28s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-12-1-at-33.21s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-12-2-at-33.31s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-12-3-at-33.41s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-12-4-at-33.51s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-12-5-at-33.61s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-13-1-at-43.39s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-13-2-at-43.49s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-13-3-at-43.59s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-13-4-at-43.69s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-13-5-at-43.79s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-14-1-at-43.64s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-14-2-at-43.74s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-14-3-at-43.84s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-14-4-at-43.94s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-14-5-at-44.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-15-1-at-43.97s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-15-2-at-44.07s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-15-3-at-44.17s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-15-4-at-44.27s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-15-5-at-44.37s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-16-1-at-51.67s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-16-2-at-51.77s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-16-3-at-51.87s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-16-4-at-51.97s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-16-5-at-52.07s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-17-1-at-51.92s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-17-2-at-52.02s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-17-3-at-52.12s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-17-4-at-52.22s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-17-5-at-52.32s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-18-1-at-52.25s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-18-2-at-52.35s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-18-3-at-52.45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-18-4-at-52.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-18-5-at-52.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-19-1-at-61.31s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-19-2-at-61.41s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-19-3-at-61.51s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-19-4-at-61.61s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-19-5-at-61.71s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-20-1-at-61.56s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-20-2-at-61.66s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-20-3-at-61.76s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-20-4-at-61.86s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-20-5-at-61.96s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-21-1-at-61.89s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-21-2-at-61.99s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-21-3-at-62.09s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-21-4-at-62.19s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-21-5-at-62.29s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-22-1-at-68.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-22-2-at-68.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-22-3-at-68.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-22-4-at-68.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-22-5-at-68.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-23-1-at-68.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-23-2-at-68.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-23-3-at-69s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-23-4-at-69.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-23-5-at-69.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-24-1-at-69.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-24-2-at-69.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-24-3-at-69.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-24-4-at-69.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-24-5-at-69.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-25-1-at-80.35s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-25-2-at-80.45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-25-3-at-80.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-25-4-at-80.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-25-5-at-80.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-26-1-at-80.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-26-2-at-80.7s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-26-3-at-80.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-26-4-at-80.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-26-5-at-81s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-27-1-at-80.93s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-27-2-at-81.03s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-27-3-at-81.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-27-4-at-81.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/seam-27-5-at-81.33s.png
+   Beat sheet (settled frame per scene): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-beats-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-beats-2.jpg
+     0.3s intro · 1.6s intro mid · 3.24s glitch-0 · 3.5s hook · 7.9s hook mid · 12.64s glitch-1 · 12.9s install · 17.1s install mid · 21.64s glitch-2 · 21.9s spec · 27.34s spec mid · 33.12s glitch-3 · 33.38s failure · 38.46s failure mid · 43.88s glitch-4 · 44.14s fix · 47.98s fix mid · 52.16s glitch-5 · 52.42s pass · 56.94s pass mid · 61.8s glitch-6 · 62.06s receipt · 65.38s receipt mid · 69.04s glitch-7 · 69.3s tools · 74.9s tools mid · 80.84s glitch-8 · 81.1s outro · 84.4s outro mid
+   Seam 1 at 2.95s (intro -> glitch-0): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-01.jpg
+   Seam 2 at 3.2s (glitch-0 -> hook): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-02.jpg
+   Seam 3 at 3.53s (hook -> glitch-1): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-03.jpg
+   Seam 4 at 12.35s (hook -> glitch-1): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-04.jpg
+   Seam 5 at 12.6s (glitch-1 -> install): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-05.jpg
+   Seam 6 at 12.93s (install -> glitch-2): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-06.jpg
+   Seam 7 at 21.35s (install -> glitch-2): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-07.jpg
+   Seam 8 at 21.6s (glitch-2 -> spec): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-08.jpg
+   Seam 9 at 21.93s (spec -> glitch-3): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-09.jpg
+   Seam 10 at 32.83s (spec -> glitch-3): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-10.jpg
+   Seam 11 at 33.08s (glitch-3 -> failure): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-11.jpg
+   Seam 12 at 33.41s (failure -> glitch-4): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-12.jpg
+   Seam 13 at 43.59s (failure -> glitch-4): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-13.jpg
+   Seam 14 at 43.84s (glitch-4 -> fix): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-14.jpg
+   Seam 15 at 44.17s (fix -> glitch-5): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-15.jpg
+   Seam 16 at 51.87s (fix -> glitch-5): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-16.jpg
+   Seam 17 at 52.12s (glitch-5 -> pass): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-17.jpg
+   Seam 18 at 52.45s (pass -> glitch-6): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-18.jpg
+   Seam 19 at 61.51s (pass -> glitch-6): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-19.jpg
+   Seam 20 at 61.76s (glitch-6 -> receipt): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-20.jpg
+   Seam 21 at 62.09s (receipt -> glitch-7): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-21.jpg
+   Seam 22 at 68.75s (receipt -> glitch-7): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-22.jpg
+   Seam 23 at 69s (glitch-7 -> tools): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-23.jpg
+   Seam 24 at 69.33s (tools -> glitch-8): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-24.jpg
+   Seam 25 at 80.55s (tools -> glitch-8): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-25.jpg
+   Seam 26 at 80.8s (glitch-8 -> outro): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-26.jpg
+   Seam 27 at 81.13s (outro -> end): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-seam-27.jpg
+   Phone sheet (beats at 360 px wide): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-phone-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/657b37b1-ce6c-42ca-b84f-66060a1b1d75/review-phone-2.jpg

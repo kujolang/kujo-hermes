@@ -1,0 +1,15 @@
+{
+  "cue": "intro",
+  "text": "Kujo Hermes.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "0446defd263c89d2438a6aa8f8f4de99f246442cf3aa2aed06c4782933ca261b",
+  "audio_sha256": "5626020849ef230edddf8102799f3b9a9d0cbc030aa2dd4002ac4ac5d8d260f3",
+  "duration": 1.36,
+  "request_id": "XfC3UWzLJkACiMOOoAY4",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-04T22:48:00Z"
+}

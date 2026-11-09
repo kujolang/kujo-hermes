@@ -1,0 +1,17 @@
+{
+  "source": "demo/checkout-video/evidence/charge-simple.cast",
+  "windows": [
+    [
+      0.26,
+      1.8,
+      1.6
+    ],
+    [
+      1.8,
+      5.9,
+      7.8
+    ]
+  ],
+  "duration": 9.4,
+  "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
+}

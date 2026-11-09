@@ -1,0 +1,22 @@
+{
+  "source": "demo/checkout-video/evidence/checkout.cast",
+  "windows": [
+    [
+      3446.9,
+      3448,
+      2.3
+    ],
+    [
+      3497.5,
+      3504.5,
+      3.5
+    ],
+    [
+      3504.5,
+      3511,
+      6.0
+    ]
+  ],
+  "duration": 11.8,
+  "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
+}

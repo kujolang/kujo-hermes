@@ -1,0 +1,294 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "time": 4.2,
+      "subject": "hook",
+      "mean_pixel_difference": 0.0613,
+      "nearest_source": "hook",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 7.9,
+      "subject": "hook",
+      "mean_pixel_difference": 0.104,
+      "nearest_source": "hook",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 12.0,
+      "subject": "hook",
+      "mean_pixel_difference": 0.1029,
+      "nearest_source": "hook",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 13.6,
+      "subject": "install",
+      "mean_pixel_difference": 0.0999,
+      "nearest_source": null,
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 17.1,
+      "subject": "install",
+      "mean_pixel_difference": 0.5438,
+      "nearest_source": null,
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 21.0,
+      "subject": "install",
+      "mean_pixel_difference": 1.9654,
+      "nearest_source": null,
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 22.6,
+      "subject": "spec",
+      "mean_pixel_difference": 0.5873,
+      "nearest_source": "spec",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 27.34,
+      "subject": "spec",
+      "mean_pixel_difference": 0.6618,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 32.48,
+      "subject": "spec",
+      "mean_pixel_difference": 0.6608,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 34.08,
+      "subject": "failure",
+      "mean_pixel_difference": 0.3942,
+      "nearest_source": "failure",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 38.46,
+      "subject": "failure",
+      "mean_pixel_difference": 0.6519,
+      "nearest_source": "failure",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 43.24,
+      "subject": "failure",
+      "mean_pixel_difference": 0.6606,
+      "nearest_source": "failure",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 44.84,
+      "subject": "fix",
+      "mean_pixel_difference": 0.0622,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 47.98,
+      "subject": "fix",
+      "mean_pixel_difference": 0.3463,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 51.52,
+      "subject": "fix",
+      "mean_pixel_difference": 0.3464,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 53.12,
+      "subject": "pass",
+      "mean_pixel_difference": 0.3532,
+      "nearest_source": "pass",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 56.94,
+      "subject": "pass",
+      "mean_pixel_difference": 0.6628,
+      "nearest_source": "pass",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 61.16,
+      "subject": "pass",
+      "mean_pixel_difference": 0.662,
+      "nearest_source": "pass",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 62.76,
+      "subject": "receipt",
+      "mean_pixel_difference": 0.0684,
+      "nearest_source": "receipt",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 65.38,
+      "subject": "receipt",
+      "mean_pixel_difference": 0.1466,
+      "nearest_source": "receipt",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 68.4,
+      "subject": "receipt",
+      "mean_pixel_difference": 0.1466,
+      "nearest_source": "receipt",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 70.0,
+      "subject": "tools",
+      "mean_pixel_difference": 0.6856,
+      "nearest_source": "tools",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 74.9,
+      "subject": "tools",
+      "mean_pixel_difference": 0.5955,
+      "nearest_source": "hook",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 80.2,
+      "subject": "tools",
+      "mean_pixel_difference": 0.6005,
+      "nearest_source": "hook",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    }
+  ],
+  "method": "24 actual decoded frames compared with contained source images; mean RGB difference <2.5/255 after a 1.5-pixel anti-aliasing normalization against each scene\u2019s actual time-matched source, allowing one 15 fps source-frame quantization interval and one pixel of CSS contain rounding. Nearest static source is diagnostic only, since recordings change over time."
+}

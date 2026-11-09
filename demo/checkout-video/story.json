@@ -1,0 +1,64 @@
+{
+  "duration": 88,
+  "fps": 30,
+  "intro": "Kujo Hermes.",
+  "outro": "Kujo. Trust at the speed of AI. Install Kujo Hermes today.",
+  "scenes": [
+    {
+      "id": "hook",
+      "cue": "hook",
+      "title": "A coupon should save money.",
+      "text": "This checkout overcharges a customer by five dollars and ninety-nine cents. Let\u2019s ask Hermes to find the cause, with Kujo checking the work.",
+      "shot": "hook"
+    },
+    {
+      "id": "install",
+      "cue": "install",
+      "title": "Two commands to connect.",
+      "text": "With Hermes, Kujo, and Git installed, add the plugin and run setup. Accept the prompts, then start a new conversation.",
+      "shot": "install"
+    },
+    {
+      "id": "spec",
+      "cue": "spec",
+      "title": "Define the expected result.",
+      "text": "Spec validates the task contract. Here, free shipping depends on the original cart total. Hermes asks for approval before Eval runs repository checks.",
+      "shot": "spec"
+    },
+    {
+      "id": "failure",
+      "cue": "failure",
+      "title": "Expected $45.00.\nCharged $50.99.",
+      "text": "Eval runs the real tests. Two pass. One fails. The receipt records the overcharge and the exact command, so the failure can be reproduced.",
+      "shot": "failure"
+    },
+    {
+      "id": "fix",
+      "cue": "fix",
+      "title": "Hermes fixes the cause.",
+      "text": "A free local Qwen model, running inside Hermes, changes the shipping calculation. The tests stay unchanged.",
+      "shot": "fix"
+    },
+    {
+      "id": "pass",
+      "cue": "pass",
+      "title": "All three checks pass.",
+      "text": "Hermes runs the same Eval suite again. All three checks pass. That verifies this behavior, not every possible checkout scenario.",
+      "shot": "pass"
+    },
+    {
+      "id": "receipt",
+      "cue": "receipt",
+      "title": "Keep the evidence.",
+      "text": "Both receipts remain available. You can trace the commands and check the evidence hashes after the conversation ends.",
+      "shot": "receipt"
+    },
+    {
+      "id": "tools",
+      "cue": "tools",
+      "title": "More tools. Same conversation.",
+      "text": "Discover tools for release review, repository inspection, and context preparation. ShipCheck, Scout, and PackWrite give Hermes more ways to support your development workflow.",
+      "shot": "tools"
+    }
+  ]
+}

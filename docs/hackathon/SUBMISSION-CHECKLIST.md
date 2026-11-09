@@ -32,11 +32,12 @@ Deadline verified on the organizer's official LinkedIn announcement: **November 
 - [x] Existing 88-second square film audited directly via decoded frames and source timing.
 - [x] Replacement 86-second storyboard and real checkout fixture prepared.
 - [x] README opens with concrete developer outcome; monochrome badges retained.
-- [ ] Record actual Hermes model conversation finding and correcting the checkout defect, or clearly label a developer-applied fix.
+- [x] Recorded a real Qwen3.5 4B Hermes conversation: Spec, failing Eval, model patch, unchanged tests passing, receipt retrieval and tool discovery. See `demo/checkout-video/evidence/run-verification.json`.
 - [ ] Export matching real evidence; preserve raw take and approval decisions.
-- [ ] Render/review replacement square film and downloadable 480p copy; verify duration <90 seconds, readable text, full screens, synchronized narration and audio by listening.
-- [ ] Confirm rights for voice/music/assets; use existing authorized material where suitable.
-- [ ] Final outro includes installation CTA; no unverified npm package claim or contest mention needed.
+- [x] Rendered 88-second square film and 480p copy; checked full screens, matching recorded subjects, complete decode and measured audio. See `demo/checkout-video/evidence/`.
+- [ ] Listen to the complete final film before posting; automated checks measured audio but did not audition it.
+- [x] Reused authorized music, logos and effects; new Siren V4 narration records the generation-time Creator tier and request provenance.
+- [x] Final outro retains the install CTA; installation uses the native Hermes commands.
 - [ ] Verify README/demo/catalog all describe the same candidate and boundaries.
 
 ## External submission — approval required

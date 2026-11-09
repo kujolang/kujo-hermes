@@ -1,0 +1,15 @@
+{
+  "cue": "spec",
+  "text": "Spec validates the task contract. Here, free shipping depends on the original cart total. Hermes asks for approval before Eval runs repository checks.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "cdbf687c5569218ec29a030985365e4c6691fa7616952cbae2839dfea8000453",
+  "audio_sha256": "41f0529f4054ec2ef5c4082dcae4792a00208f38beffcdfce0a09f1605885362",
+  "duration": 10.56,
+  "request_id": "o8UsHhbsREVSSazCycpn",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:10Z"
+}

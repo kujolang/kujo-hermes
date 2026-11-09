@@ -1,0 +1,73 @@
+diff --git a/.gitattributes b/.gitattributes
+index 035d8ce..a86ac35 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -4,3 +4,9 @@
+ demo/square/assets/gsap.min.js -whitespace
+ demo/square/evidence/*.log -whitespace
+ demo/square/evidence/loop/iterations/*/diff.patch -whitespace
++# Keep canonical Eval artifacts byte-exact: their hashes are checked independently.
++demo/checkout-video/evidence/run/before-snapshot/.kujo/eval/eval-report.md -whitespace
++demo/checkout-video/evidence/run/after-snapshot/.kujo/eval/eval-report.md.bak -whitespace
++# Vendored animation runtime and raw renderer output retain their original bytes.
++demo/checkout-video/assets/gsap.min.js -whitespace
++demo/checkout-video/evidence/*.log -whitespace
+diff --git a/README.md b/README.md
+index f64cf93..a82d0da 100644
+--- a/README.md
++++ b/README.md
+@@ -12,7 +12,7 @@ Kujo Hermes calls the official Kujo tools directly through its own native adapte
+ 
+ **Status:** native workflows verified with Hermes 0.22.7 and 0.23.0 and real Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
+ 
+-Watch the [square walkthrough](demo/square/README.md) for installation and developer benefits, or the [85-second landscape walkthrough](demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4). The films combine real native-tool evidence views with an excerpt from the free local model approval run. [Recording and reproduction details](demo/walkthrough/README.md).
++Watch the [88-second checkout walkthrough](demo/checkout-video/README.md): a free local model uses Kujo inside Hermes, corrects a regression, and reruns the same checks. Both receipts and the unchanged tests are independently verified. The film condenses recorded waits and includes a [480p mobile download](demo/checkout-video/delivery/kujo-hermes-checkout-480p.mp4). The [earlier tool overview](demo/square/README.md) remains available.
+ 
+ ## Install
+ 
+diff --git a/demo/checkout-video/scripts/verify_run.py b/demo/checkout-video/scripts/verify_run.py
+index 7710559..79759e8 100644
+--- a/demo/checkout-video/scripts/verify_run.py
++++ b/demo/checkout-video/scripts/verify_run.py
+@@ -2,6 +2,9 @@
+ import hashlib,json,pathlib,subprocess
+ root=pathlib.Path(__file__).resolve().parents[3];film=root/'demo/checkout-video';e=film/'evidence'
+ subprocess.run(['python3',str(root/'demo/checkout/verify.py'),str(e/'run')],check=True)
++contract=json.loads((e/'run/contract-receipt.json').read_text());claimed=contract.pop('receipt_digest')
++assert hashlib.sha256(json.dumps(contract,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()==claimed
++assert contract['ability_id']=='kujo.spec.contract.validate' and contract['result']['structured']['valid']
+ s=json.loads((e/'visible-session.json').read_text());calls=[];results=[]
+ for m in s['messages']:
+  if m.get('tool_calls'):
+diff --git a/docs/hackathon/DEMO-STORYBOARD.md b/docs/hackathon/DEMO-STORYBOARD.md
+index 6b19ac3..7382d4a 100644
+--- a/docs/hackathon/DEMO-STORYBOARD.md
++++ b/docs/hackathon/DEMO-STORYBOARD.md
+@@ -1,5 +1,6 @@
+ # Demo storyboard — 86 seconds
+ 
++Recorded replacement: [88-second checkout film](../../demo/checkout-video/README.md), with its [actual timeline](../../demo/checkout-video/STORYBOARD.md). The real local-model run, operator approvals, missed approval timeout/retry and verification evidence are preserved there. The original proposal below remains historical.
+ ## The memorable moment
+ 
+ A 10% coupon makes a $50 cart cost **$50.99**. Hermes's initial code looks plausible. Kujo Eval exposes the exact assertion, `5099 != 4500`. The correction changes one expression; the same three tests pass. Both receipts survive. The benefit is concrete: catch an agent's regression and hand another developer the evidence.
+diff --git a/docs/hackathon/SUBMISSION-CHECKLIST.md b/docs/hackathon/SUBMISSION-CHECKLIST.md
+index 6a8b62a..e318178 100644
+--- a/docs/hackathon/SUBMISSION-CHECKLIST.md
++++ b/docs/hackathon/SUBMISSION-CHECKLIST.md
+@@ -32,11 +32,12 @@ Deadline verified on the organizer's official LinkedIn announcement: **November
+ - [x] Existing 88-second square film audited directly via decoded frames and source timing.
+ - [x] Replacement 86-second storyboard and real checkout fixture prepared.
+ - [x] README opens with concrete developer outcome; monochrome badges retained.
+-- [ ] Record actual Hermes model conversation finding and correcting the checkout defect, or clearly label a developer-applied fix.
++- [x] Recorded a real Qwen3.5 4B Hermes conversation: Spec, failing Eval, model patch, unchanged tests passing, receipt retrieval and tool discovery. See `demo/checkout-video/evidence/run-verification.json`.
+ - [ ] Export matching real evidence; preserve raw take and approval decisions.
+-- [ ] Render/review replacement square film and downloadable 480p copy; verify duration <90 seconds, readable text, full screens, synchronized narration and audio by listening.
+-- [ ] Confirm rights for voice/music/assets; use existing authorized material where suitable.
+-- [ ] Final outro includes installation CTA; no unverified npm package claim or contest mention needed.
++- [x] Rendered 88-second square film and 480p copy; checked full screens, matching recorded subjects, complete decode and measured audio. See `demo/checkout-video/evidence/`.
++- [ ] Listen to the complete final film before posting; automated checks measured audio but did not audition it.
++- [x] Reused authorized music, logos and effects; new Siren V4 narration records the generation-time Creator tier and request provenance.
++- [x] Final outro retains the install CTA; installation uses the native Hermes commands.
+ - [ ] Verify README/demo/catalog all describe the same candidate and boundaries.
+ 
+ ## External submission — approval required

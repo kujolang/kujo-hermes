@@ -1,0 +1,112 @@
+{
+  "hook": {
+    "source": "evidence/charge-simple.cast",
+    "windows": [
+      [
+        0.26,
+        1.8,
+        1.6
+      ],
+      [
+        1.8,
+        5.9,
+        7.8
+      ]
+    ]
+  },
+  "spec": {
+    "source": "evidence/checkout.cast",
+    "windows": [
+      [
+        621.9,
+        623,
+        5.5
+      ],
+      [
+        715,
+        743,
+        5.98
+      ]
+    ]
+  },
+  "failure": {
+    "source": "evidence/checkout.cast",
+    "windows": [
+      [
+        851,
+        860,
+        3.6
+      ],
+      [
+        860,
+        867,
+        7.16
+      ]
+    ]
+  },
+  "fix": {
+    "source": "evidence/model-diff.cast",
+    "windows": [
+      [
+        0,
+        1.8,
+        2.5
+      ],
+      [
+        1.8,
+        5.9,
+        5.78
+      ]
+    ]
+  },
+  "receipt": {
+    "source": "evidence/verify.cast",
+    "windows": [
+      [
+        0,
+        1.7,
+        2.0
+      ],
+      [
+        1.7,
+        5.0,
+        5.24
+      ]
+    ]
+  },
+  "pass": {
+    "source": "evidence/checkout.cast",
+    "windows": [
+      [
+        3346,
+        3348,
+        2.5
+      ],
+      [
+        3362.9,
+        3370,
+        7.14
+      ]
+    ]
+  },
+  "tools": {
+    "source": "evidence/checkout.cast",
+    "windows": [
+      [
+        3446.9,
+        3448,
+        2.3
+      ],
+      [
+        3497.5,
+        3504.5,
+        3.5
+      ],
+      [
+        3504.5,
+        3511,
+        6.0
+      ]
+    ]
+  }
+}

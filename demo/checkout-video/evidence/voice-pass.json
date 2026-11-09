@@ -1,0 +1,15 @@
+{
+  "cue": "pass",
+  "text": "Hermes runs the same Eval suite again. All three checks pass. That verifies this behavior, not every possible checkout scenario.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "729e14ee3ecbe92d8d523c1064f1871b89b4d2c59ccb7192068862f741b56ba3",
+  "audio_sha256": "a320558040135aa35ac7d1ebfda5ac51a3f565e27b3ae736ec3eaefbd9cbe858",
+  "duration": 8.72,
+  "request_id": "D5wtSqww5kdE6Hl2rxFK",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:24Z"
+}

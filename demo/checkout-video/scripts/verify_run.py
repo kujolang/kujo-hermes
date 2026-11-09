@@ -2,6 +2,9 @@
 import hashlib,json,pathlib,subprocess
 root=pathlib.Path(__file__).resolve().parents[3];film=root/'demo/checkout-video';e=film/'evidence'
 subprocess.run(['python3',str(root/'demo/checkout/verify.py'),str(e/'run')],check=True)
+contract=json.loads((e/'run/contract-receipt.json').read_text());claimed=contract.pop('receipt_digest')
+assert hashlib.sha256(json.dumps(contract,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()==claimed
+assert contract['ability_id']=='kujo.spec.contract.validate' and contract['result']['structured']['valid']
 s=json.loads((e/'visible-session.json').read_text());calls=[];results=[]
 for m in s['messages']:
  if m.get('tool_calls'):

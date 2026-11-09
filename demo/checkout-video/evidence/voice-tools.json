@@ -1,0 +1,15 @@
+{
+  "cue": "tools",
+  "text": "Discover tools for release review, repository inspection, and context preparation. ShipCheck, Scout, and PackWrite give Hermes more ways to support your development workflow.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "e5e0ab85fa233a374019984a2a02ccc7a7cdf5020981282213b53bb6dfe994a0",
+  "audio_sha256": "3837174287462266621e8fe53234d71352943a758b5b6bb8daccc0e18cee9b26",
+  "duration": 10.88,
+  "request_id": "Nq4D3K4FEkljbrfAlzgd",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:35Z"
+}

@@ -1,0 +1,14 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+  Project   checkout-video
+  Studio    http://127.0.0.1:3002/#project/checkout-video
+  Server    http://127.0.0.1:3002
+  Desktop   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?src=cli
+
+  Background preview running (PID 42873).
+  Log: /Users/robertdevore/.local/state/hyperframes/previews/bdf601f2bdbbadaa.log
+
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+  Stopped background preview /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video
+

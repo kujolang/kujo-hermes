@@ -4,3 +4,10 @@
 demo/square/assets/gsap.min.js -whitespace
 demo/square/evidence/*.log -whitespace
 demo/square/evidence/loop/iterations/*/diff.patch -whitespace
+# Keep canonical Eval artifacts byte-exact: their hashes are checked independently.
+demo/checkout-video/evidence/run/before-snapshot/.kujo/eval/eval-report.md -whitespace
+demo/checkout-video/evidence/run/after-snapshot/.kujo/eval/eval-report.md.bak -whitespace
+# Vendored animation runtime and raw renderer output retain their original bytes.
+demo/checkout-video/assets/gsap.min.js -whitespace
+demo/checkout-video/evidence/*.log -whitespace
+demo/checkout-video/evidence/loop/iterations/*/diff.patch -whitespace

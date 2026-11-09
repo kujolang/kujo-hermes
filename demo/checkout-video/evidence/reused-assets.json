@@ -1,0 +1,57 @@
+[
+  {
+    "file": "assets/kujo-logomark.svg",
+    "source": "../square/assets/kujo-logomark.svg",
+    "sha256": "cecb66eae65116fadf29a93ce3adae28956b17cfaf1e8d9e0910c280935ef412"
+  },
+  {
+    "file": "assets/hermes-logo.png",
+    "source": "../square/assets/hermes-logo.png",
+    "sha256": "dc364cddcd5b80a8a24d2c40ee52a8839b562e8cbaa7e4ba04c3e2b8257fff9c"
+  },
+  {
+    "file": "assets/DepartureMono-Regular.woff2",
+    "source": "../square/assets/DepartureMono-Regular.woff2",
+    "sha256": "5b4fed1daa90708aa9c6ee1190abca9dc22164a1c1def0020386e46b61038cfb"
+  },
+  {
+    "file": "assets/gsap.min.js",
+    "source": "../square/assets/gsap.min.js",
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+  },
+  {
+    "file": "assets/music-original.wav",
+    "source": "../square/assets/music-original.wav",
+    "sha256": "9c3a2f31fc9180c4e0f162a213d4338f290e91cfa0c5ae85c27a7972e1fccd5d"
+  },
+  {
+    "file": "assets/cmd-sfx-001.mp3",
+    "source": "../square/assets/cmd-sfx-001.mp3",
+    "sha256": "7ebe61cfd0d69a2d35d9ee3a88c26025101e999d5cc6bfb2df410f820b433042"
+  },
+  {
+    "file": "assets/cmd-sfx-002.mp3",
+    "source": "../square/assets/cmd-sfx-002.mp3",
+    "sha256": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+  },
+  {
+    "file": "assets/cmd-sfx-005.mp3",
+    "source": "../square/assets/cmd-sfx-005.mp3",
+    "sha256": "760b72bdaad71f83350e2ef3a9d037daf58f44855a05a6cce25d990f1ffb888a"
+  },
+  {
+    "file": "assets/intro.mp3",
+    "source": "../square/assets/intro.mp3",
+    "sha256": "5626020849ef230edddf8102799f3b9a9d0cbc030aa2dd4002ac4ac5d8d260f3"
+  },
+  {
+    "file": "assets/outro.mp3",
+    "source": "../square/assets/outro.mp3",
+    "sha256": "e981a1095ad81aaa119e3e8f6a734f729a07164ac5779e6b6041603012b7fe3c"
+  },
+  {
+    "file": "assets/install.mp4",
+    "source": "../square/assets/install.mp4",
+    "sha256": "e66fc6f11fa3372c35a2eaeda5af6af742cc7923b3a3183af837d28c01371ecf"
+  }
+]

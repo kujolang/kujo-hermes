@@ -1,0 +1,15 @@
+{
+  "cue": "install",
+  "text": "With Hermes, Kujo, and Git installed, add the plugin and run setup. Accept the prompts, then start a new conversation.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "9d0557dc0856ca2924d42c3ba03a1ea59df2c2e06aa75d2a761f20ab6a3833a7",
+  "audio_sha256": "a1d60cdc08140d28f7d29efe1e07f2d344f2dcb704b2998d4255d952363c2b26",
+  "duration": 8.08,
+  "request_id": "Tmwar7PNqbzlOORRJGQE",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T15:05:05Z"
+}
