@@ -1,8 +1,8 @@
 # Kujo Hermes — checkout workflow
 
-An 88-second square walkthrough of Hermes investigating a checkout overcharge with
+A 70.2-second square showcase of Hermes investigating a checkout overcharge with
 Kujo Spec, Eval and execution receipts. Qwen3.5 4B runs locally through Ollama;
-there is no model API fee. Siren V4 provides the narration.
+there is no model API fee. Siren V4 provides the shorter narration. The upbeat instrumental comes from the user-owned Website Cloner film, with a music-led hold on the passing checks.
 
 The new recording uses Hermes 0.23.0 and the real native plugin. The script in
 `scripts/record.py` launches Hermes and supplies the first task. It does not modify
@@ -10,7 +10,7 @@ the implementation. The recording operator approves the repository checks once a
 to make the correction. The deterministic driver in `../checkout/run.py` is not
 used to perform that correction.
 
-[Watch 1080 square](delivery/kujo-hermes-checkout.mp4) · [Download 480 square](delivery/kujo-hermes-checkout-480p.mp4)
+[Watch 1080 square](delivery/kujo-hermes-checkout.mp4) · [Download 480 square](delivery/kujo-hermes-checkout-480p.mp4) · [Optional captions](delivery/kujo-hermes-checkout.vtt)
 
 ## Install the plugin
 

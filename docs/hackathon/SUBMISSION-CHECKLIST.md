@@ -34,7 +34,7 @@ Deadline verified on the organizer's official LinkedIn announcement: **November 
 - [x] README opens with concrete developer outcome; monochrome badges retained.
 - [x] Recorded a real Qwen3.5 4B Hermes conversation: Spec, failing Eval, model patch, unchanged tests passing, receipt retrieval and tool discovery. See `demo/checkout-video/evidence/run-verification.json`.
 - [ ] Export matching real evidence; preserve raw take and approval decisions.
-- [x] Rendered 88-second square film and 480p copy; checked full screens, matching recorded subjects, complete decode and measured audio. See `demo/checkout-video/evidence/`.
+- [x] Rendered 70-second square showcase and 480p copy; checked full screens, matching recorded subjects, complete decode and measured audio. See `demo/checkout-video/evidence/`.
 - [ ] Listen to the complete final film before posting; automated checks measured audio but did not audition it.
 - [x] Reused authorized music, logos and effects; new Siren V4 narration records the generation-time Creator tier and request provenance.
 - [x] Final outro retains the install CTA; installation uses the native Hermes commands.

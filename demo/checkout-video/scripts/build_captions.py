@@ -30,4 +30,4 @@ for cue in timeline['cues']:
     for start, end, text in segments:
         lines.extend([f"{timestamp(cue['start'] + start)} --> "
                       f"{timestamp(cue['start'] + end)}", text, ''])
-(root / 'delivery/kujo-hermes-checkout.vtt').write_text('\n'.join(lines) + '\n')
+(root / 'delivery/kujo-hermes-checkout.vtt').write_text('\n'.join(lines).rstrip() + '\n')

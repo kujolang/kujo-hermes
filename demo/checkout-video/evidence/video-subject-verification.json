@@ -4,9 +4,9 @@
     {
       "time": 4.2,
       "subject": "hook",
-      "mean_pixel_difference": 0.0613,
+      "mean_pixel_difference": 0.1041,
       "nearest_source": "hook",
-      "source_time_offset_seconds": -0.06666666666666667,
+      "source_time_offset_seconds": 0,
       "contain_rounding_pixels": [
         0,
         0
@@ -14,7 +14,7 @@
       "passed": true
     },
     {
-      "time": 7.9,
+      "time": 6.6,
       "subject": "hook",
       "mean_pixel_difference": 0.104,
       "nearest_source": "hook",
@@ -26,9 +26,9 @@
       "passed": true
     },
     {
-      "time": 12.0,
+      "time": 9.4,
       "subject": "hook",
-      "mean_pixel_difference": 0.1029,
+      "mean_pixel_difference": 0.104,
       "nearest_source": "hook",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -38,7 +38,223 @@
       "passed": true
     },
     {
-      "time": 13.6,
+      "time": 11.0,
+      "subject": "spec",
+      "mean_pixel_difference": 0.5874,
+      "nearest_source": "spec",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 13.5,
+      "subject": "spec",
+      "mean_pixel_difference": 0.6559,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 16.4,
+      "subject": "spec",
+      "mean_pixel_difference": 0.6562,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 18.0,
+      "subject": "failure",
+      "mean_pixel_difference": 0.3979,
+      "nearest_source": "failure",
+      "source_time_offset_seconds": 0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 20.0,
+      "subject": "failure",
+      "mean_pixel_difference": 0.6584,
+      "nearest_source": "failure",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 22.4,
+      "subject": "failure",
+      "mean_pixel_difference": 0.6578,
+      "nearest_source": "failure",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 24.0,
+      "subject": "fix",
+      "mean_pixel_difference": 0.0624,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 26.5,
+      "subject": "fix",
+      "mean_pixel_difference": 0.3471,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 29.4,
+      "subject": "fix",
+      "mean_pixel_difference": 0.3473,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 31.0,
+      "subject": "pass",
+      "mean_pixel_difference": 0.3515,
+      "nearest_source": "pass",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 34.0,
+      "subject": "pass",
+      "mean_pixel_difference": 0.6635,
+      "nearest_source": "pass",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 37.4,
+      "subject": "pass",
+      "mean_pixel_difference": 0.6635,
+      "nearest_source": "pass",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 39.0,
+      "subject": "receipt",
+      "mean_pixel_difference": 0.0685,
+      "nearest_source": "receipt",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 41.5,
+      "subject": "receipt",
+      "mean_pixel_difference": 0.1468,
+      "nearest_source": "receipt",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 44.4,
+      "subject": "receipt",
+      "mean_pixel_difference": 0.1468,
+      "nearest_source": "receipt",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 46.0,
+      "subject": "tools",
+      "mean_pixel_difference": 0.6916,
+      "nearest_source": "tools",
+      "source_time_offset_seconds": 0,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 49.5,
+      "subject": "tools",
+      "mean_pixel_difference": 0.6026,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 53.4,
+      "subject": "tools",
+      "mean_pixel_difference": 0.6024,
+      "nearest_source": "fix",
+      "source_time_offset_seconds": -0.06666666666666667,
+      "contain_rounding_pixels": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "time": 55.0,
       "subject": "install",
       "mean_pixel_difference": 0.0999,
       "nearest_source": null,
@@ -50,7 +266,7 @@
       "passed": true
     },
     {
-      "time": 17.1,
+      "time": 58.5,
       "subject": "install",
       "mean_pixel_difference": 0.5438,
       "nearest_source": null,
@@ -62,229 +278,13 @@
       "passed": true
     },
     {
-      "time": 21.0,
+      "time": 62.4,
       "subject": "install",
       "mean_pixel_difference": 1.9654,
       "nearest_source": null,
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
         1,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 22.6,
-      "subject": "spec",
-      "mean_pixel_difference": 0.5873,
-      "nearest_source": "spec",
-      "source_time_offset_seconds": 0,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 27.34,
-      "subject": "spec",
-      "mean_pixel_difference": 0.6618,
-      "nearest_source": "fix",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 32.48,
-      "subject": "spec",
-      "mean_pixel_difference": 0.6608,
-      "nearest_source": "fix",
-      "source_time_offset_seconds": 0,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 34.08,
-      "subject": "failure",
-      "mean_pixel_difference": 0.3942,
-      "nearest_source": "failure",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 38.46,
-      "subject": "failure",
-      "mean_pixel_difference": 0.6519,
-      "nearest_source": "failure",
-      "source_time_offset_seconds": 0,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 43.24,
-      "subject": "failure",
-      "mean_pixel_difference": 0.6606,
-      "nearest_source": "failure",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 44.84,
-      "subject": "fix",
-      "mean_pixel_difference": 0.0622,
-      "nearest_source": "fix",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 47.98,
-      "subject": "fix",
-      "mean_pixel_difference": 0.3463,
-      "nearest_source": "fix",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 51.52,
-      "subject": "fix",
-      "mean_pixel_difference": 0.3464,
-      "nearest_source": "fix",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 53.12,
-      "subject": "pass",
-      "mean_pixel_difference": 0.3532,
-      "nearest_source": "pass",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 56.94,
-      "subject": "pass",
-      "mean_pixel_difference": 0.6628,
-      "nearest_source": "pass",
-      "source_time_offset_seconds": 0,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 61.16,
-      "subject": "pass",
-      "mean_pixel_difference": 0.662,
-      "nearest_source": "pass",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 62.76,
-      "subject": "receipt",
-      "mean_pixel_difference": 0.0684,
-      "nearest_source": "receipt",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 65.38,
-      "subject": "receipt",
-      "mean_pixel_difference": 0.1466,
-      "nearest_source": "receipt",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 68.4,
-      "subject": "receipt",
-      "mean_pixel_difference": 0.1466,
-      "nearest_source": "receipt",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 70.0,
-      "subject": "tools",
-      "mean_pixel_difference": 0.6856,
-      "nearest_source": "tools",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 74.9,
-      "subject": "tools",
-      "mean_pixel_difference": 0.5955,
-      "nearest_source": "hook",
-      "source_time_offset_seconds": 0,
-      "contain_rounding_pixels": [
-        0,
-        0
-      ],
-      "passed": true
-    },
-    {
-      "time": 80.2,
-      "subject": "tools",
-      "mean_pixel_difference": 0.6005,
-      "nearest_source": "hook",
-      "source_time_offset_seconds": -0.06666666666666667,
-      "contain_rounding_pixels": [
-        0,
         0
       ],
       "passed": true

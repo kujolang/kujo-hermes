@@ -1,0 +1,38 @@
+
+## gate: actual_model_evidence
+$ python3 demo/checkout-video/scripts/verify_run.py
+before: receipt and 10 artifact hashes match
+after: receipt and 19 artifact hashes match
+PASS: the same tests failed before and passed after; stored artifacts match both receipts.
+{
+  "ok": true,
+  "model": "qwen3.5:hermes-checkout64k (Qwen3.5 4B, local Ollama)",
+  "session_id": "local-1f1a307eeaba52e1d5f0c1103929be74a31cdc2dd1a4bd638cc2b5dfdb89344b",
+  "native_tool_names": [
+    "kujo_discover",
+    "kujo_execute",
+    "kujo_inspect",
+    "kujo_receipts",
+    "patch",
+    "read_file"
+  ],
+  "tool_call_count": 15,
+  "receipts": [
+    "6edc0f6b-ace6-4b7e-8bc5-fa3b82fcb965",
+    "f730d459-b724-404d-8f6e-3d4500eb3ff2"
+  ],
+  "actual_model_edit": true,
+  "tests_unchanged": true,
+  "independent_receipt_and_artifact_verification": true,
+  "cast_sha256": "b75bdf07779d5170e6bd2cd1956e0c8e5d672f15bf195c5eaa7cafd7456551ed"
+}
+gate actual_model_evidence: pass
+
+## gate: exact_media_delivery
+$ python3 demo/checkout-video/scripts/verify_reports.py
+PASS: delivery hashes match the decoded, measured and source-matched files.
+gate exact_media_delivery: pass
+
+## gate: diff_check
+$ git diff --check
+gate diff_check: pass

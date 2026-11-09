@@ -1,0 +1,4 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+  Stopped background preview /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video
+

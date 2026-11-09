@@ -11,3 +11,4 @@ demo/checkout-video/evidence/run/after-snapshot/.kujo/eval/eval-report.md.bak -w
 demo/checkout-video/assets/gsap.min.js -whitespace
 demo/checkout-video/evidence/*.log -whitespace
 demo/checkout-video/evidence/loop/iterations/*/diff.patch -whitespace
+demo/checkout-video/evidence/showcase-loop/iterations/*/diff.patch -whitespace

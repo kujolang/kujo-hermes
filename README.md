@@ -12,7 +12,7 @@ Kujo Hermes calls the official Kujo tools directly through its own native adapte
 
 **Status:** native workflows verified with Hermes 0.22.7 and 0.23.0 and real Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
 
-Watch the [88-second checkout walkthrough](demo/checkout-video/README.md): a free local model uses Kujo inside Hermes, corrects a regression, and reruns the same checks. Both receipts and the unchanged tests are independently verified. The film condenses recorded waits and includes a [480p mobile download](demo/checkout-video/delivery/kujo-hermes-checkout-480p.mp4). The [earlier tool overview](demo/square/README.md) remains available.
+Watch the [70-second checkout showcase](demo/checkout-video/README.md): a free local model uses Kujo inside Hermes, corrects a regression, and reruns the same checks. Both receipts and the unchanged tests are independently verified. The film condenses recorded waits and includes a [480p mobile download](demo/checkout-video/delivery/kujo-hermes-checkout-480p.mp4). The [earlier tool overview](demo/square/README.md) remains available.
 
 ## Install
 

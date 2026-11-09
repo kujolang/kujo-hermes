@@ -1,0 +1,202 @@
+◆  Capturing review frames (beats, seams, phone) from checkout-video
+
+   Fonts: 6 loaded
+   Review: 29 beat(s) and 27 seam(s) within 0–70.2s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/video-state.json
+
+◇  164 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-01-at-0.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-02-at-1.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-03-at-3.24s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-04-at-3.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-05-at-6.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-06-at-10.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-07-at-10.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-08-at-13.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-09-at-17.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-10-at-17.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-11-at-20s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-12-at-23.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-13-at-23.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-14-at-26.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-15-at-30.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-16-at-30.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-17-at-34s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-18-at-38.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-19-at-38.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-20-at-41.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-21-at-45.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-22-at-45.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-23-at-49.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-24-at-54.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-25-at-54.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-26-at-58.5s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-27-at-63.04s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-28-at-63.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/beat-29-at-66.6s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-01-1-at-2.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-01-2-at-2.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-01-3-at-2.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-01-4-at-3.05s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-01-5-at-3.15s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-02-1-at-3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-02-2-at-3.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-02-3-at-3.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-02-4-at-3.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-02-5-at-3.4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-03-1-at-3.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-03-2-at-3.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-03-3-at-3.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-03-4-at-3.63s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-03-5-at-3.73s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-04-1-at-9.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-04-2-at-9.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-04-3-at-9.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-04-4-at-9.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-04-5-at-9.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-05-1-at-9.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-05-2-at-9.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-05-3-at-10s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-05-4-at-10.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-05-5-at-10.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-06-1-at-10.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-06-2-at-10.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-06-3-at-10.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-06-4-at-10.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-06-5-at-10.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-07-1-at-16.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-07-2-at-16.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-07-3-at-16.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-07-4-at-16.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-07-5-at-16.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-08-1-at-16.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-08-2-at-16.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-08-3-at-17s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-08-4-at-17.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-08-5-at-17.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-09-1-at-17.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-09-2-at-17.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-09-3-at-17.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-09-4-at-17.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-09-5-at-17.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-10-1-at-22.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-10-2-at-22.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-10-3-at-22.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-10-4-at-22.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-10-5-at-22.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-11-1-at-22.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-11-2-at-22.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-11-3-at-23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-11-4-at-23.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-11-5-at-23.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-12-1-at-23.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-12-2-at-23.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-12-3-at-23.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-12-4-at-23.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-12-5-at-23.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-13-1-at-29.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-13-2-at-29.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-13-3-at-29.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-13-4-at-29.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-13-5-at-29.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-14-1-at-29.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-14-2-at-29.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-14-3-at-30s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-14-4-at-30.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-14-5-at-30.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-15-1-at-30.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-15-2-at-30.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-15-3-at-30.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-15-4-at-30.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-15-5-at-30.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-16-1-at-37.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-16-2-at-37.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-16-3-at-37.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-16-4-at-37.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-16-5-at-37.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-17-1-at-37.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-17-2-at-37.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-17-3-at-38s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-17-4-at-38.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-17-5-at-38.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-18-1-at-38.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-18-2-at-38.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-18-3-at-38.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-18-4-at-38.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-18-5-at-38.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-19-1-at-44.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-19-2-at-44.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-19-3-at-44.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-19-4-at-44.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-19-5-at-44.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-20-1-at-44.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-20-2-at-44.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-20-3-at-45s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-20-4-at-45.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-20-5-at-45.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-21-1-at-45.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-21-2-at-45.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-21-3-at-45.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-21-4-at-45.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-21-5-at-45.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-22-1-at-53.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-22-2-at-53.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-22-3-at-53.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-22-4-at-53.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-22-5-at-53.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-23-1-at-53.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-23-2-at-53.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-23-3-at-54s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-23-4-at-54.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-23-5-at-54.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-24-1-at-54.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-24-2-at-54.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-24-3-at-54.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-24-4-at-54.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-24-5-at-54.53s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-25-1-at-62.55s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-25-2-at-62.65s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-25-3-at-62.75s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-25-4-at-62.85s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-25-5-at-62.95s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-26-1-at-62.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-26-2-at-62.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-26-3-at-63s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-26-4-at-63.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-26-5-at-63.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-27-1-at-63.13s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-27-2-at-63.23s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-27-3-at-63.33s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-27-4-at-63.43s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/seam-27-5-at-63.53s.png
+   Beat sheet (settled frame per scene): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-beats-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-beats-2.jpg
+     0.3s intro · 1.6s intro mid · 3.24s glitch-0 · 3.5s hook · 6.6s hook mid · 10.04s glitch-1 · 10.3s spec · 13.5s spec mid · 17.04s glitch-2 · 17.3s failure · 20s failure mid · 23.04s glitch-3 · 23.3s fix · 26.5s fix mid · 30.04s glitch-4 · 30.3s pass · 34s pass mid · 38.04s glitch-5 · 38.3s receipt · 41.5s receipt mid · 45.04s glitch-6 · 45.3s tools · 49.5s tools mid · 54.04s glitch-7 · 54.3s install · 58.5s install mid · 63.04s glitch-8 · 63.3s outro · 66.6s outro mid
+   Seam 1 at 2.95s (intro -> glitch-0): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-01.jpg
+   Seam 2 at 3.2s (glitch-0 -> hook): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-02.jpg
+   Seam 3 at 3.53s (hook -> glitch-1): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-03.jpg
+   Seam 4 at 9.75s (hook -> glitch-1): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-04.jpg
+   Seam 5 at 10s (glitch-1 -> spec): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-05.jpg
+   Seam 6 at 10.33s (spec -> glitch-2): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-06.jpg
+   Seam 7 at 16.75s (spec -> glitch-2): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-07.jpg
+   Seam 8 at 17s (glitch-2 -> failure): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-08.jpg
+   Seam 9 at 17.33s (failure -> glitch-3): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-09.jpg
+   Seam 10 at 22.75s (failure -> glitch-3): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-10.jpg
+   Seam 11 at 23s (glitch-3 -> fix): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-11.jpg
+   Seam 12 at 23.33s (fix -> glitch-4): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-12.jpg
+   Seam 13 at 29.75s (fix -> glitch-4): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-13.jpg
+   Seam 14 at 30s (glitch-4 -> pass): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-14.jpg
+   Seam 15 at 30.33s (pass -> glitch-5): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-15.jpg
+   Seam 16 at 37.75s (pass -> glitch-5): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-16.jpg
+   Seam 17 at 38s (glitch-5 -> receipt): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-17.jpg
+   Seam 18 at 38.33s (receipt -> glitch-6): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-18.jpg
+   Seam 19 at 44.75s (receipt -> glitch-6): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-19.jpg
+   Seam 20 at 45s (glitch-6 -> tools): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-20.jpg
+   Seam 21 at 45.33s (tools -> glitch-7): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-21.jpg
+   Seam 22 at 53.75s (tools -> glitch-7): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-22.jpg
+   Seam 23 at 54s (glitch-7 -> install): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-23.jpg
+   Seam 24 at 54.33s (install -> glitch-8): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-24.jpg
+   Seam 25 at 62.75s (install -> glitch-8): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-25.jpg
+   Seam 26 at 63s (glitch-8 -> outro): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-26.jpg
+   Seam 27 at 63.33s (outro -> end): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-seam-27.jpg
+   Phone sheet (beats at 360 px wide): /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-phone-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/showcase-review/review-phone-2.jpg

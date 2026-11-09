@@ -1,38 +1,34 @@
-# Checkout film review
+# Showcase review
 
-Creative status, November 9: the user finds this delivery too dry and prefers the
-upbeat showcase feel of today's Website Cloner film. The technical checks below
-do not constitute creative approval. [Showcase direction](SHOWCASE-DIRECTION.md)
-records the reference comparison and proposed revision; no replacement render has
-been produced by that review.
+The 70.2-second edit replaces the 88-second walkthrough. It uses the same verified
+Hermes session, bumpers and nine CMD glitches, including both bumper joins. The
+story now follows the overcharge through the model's correction and unchanged
+checks passing. Installation comes after the proof. Narration falls from about 77
+to 45.52 seconds. The passing result has more than five seconds without speech.
 
-The centerpiece is the same test failing before a real model edit and passing
-after it. The narration explains the customer impact before naming tools. The
-film keeps the established bumpers and glitches, including both bumper joins,
-and uses one headline over each complete source screen. It avoids a dashboard,
-extra keyword rows, and claims that receipt integrity proves general correctness.
+The user-owned Website Cloner instrumental supplies the musical pulse. It is
+pitch-preserving tempo-fitted to the film, with smooth ducking under Siren and a
+lift between cues. No customer images were reused. Optional WebVTT captions are
+separate, keeping the picture clear.
 
-The new checkout footage is a real Hermes CLI session with a local Qwen3.5 4B
-model. Supporting charge, git diff and independent-verifier shots execute real
-commands against that session's files and receipts. The installation shot is the
-previous genuine public installation capture. All edits are timestamped. The raw
-session includes long CPU waits and a missed approval, followed by an approved
-retry; the film does not claim real-time speed or uninterrupted autonomy.
+HyperFrames checks passed: zero errors, with ten retained structural warnings
+because the original glitch overlays cross scene boundaries in the root timeline.
+Beat, phone-size and bumper seam sheets were inspected. Complete source widths
+remain visible; headlines carry the main point while the actual terminal provides
+supporting evidence. Installation remains the weakest shot: its original terminal
+is wider, so two larger commands carry the instruction above the complete capture.
 
-HyperFrames checks passed with no runtime, layout, motion, contrast, craft or audio
-errors. Ten structural lint warnings are intentional: the nine existing glitch
-transitions live in the root so they span scene boundaries. The beat, seam and
-360-pixel sheets were inspected; a separate reviewer found no P0/P1 issues.
-The short blank lead-in to the charge shot was removed and resnapshotted.
+The original model recording and artifact hashes were reverified. The replay
+regression checks pass in the documented Hermes Python environment; system Python
+lacks pyte. No runtime dependency was added to the plugin.
 
-The terminal replay originally dropped words after emoji presentation selectors.
-That defect was fixed and covered by two regression checks. The raw recording
-was not changed. Complete terminal widths remain visible. Fine receipt details
-are supporting evidence at phone size; the headline and narration carry the point.
-The installation capture is still the weakest shot because its original terminal
-was wider than the new checkout recordings.
+Audio was measured, not auditioned. A separate static reviewer found no P0/P1 issues. The actual decoded frame at
+70.1 seconds was inspected to verify the ending. A human listening pass remains before public
+submission. The film condenses waits and operator pauses; it does not claim
+instantaneous or uninterrupted autonomous completion. Discovery of other tools is
+shown as discovery. Three passing checks cover the demonstrated cases only.
 
-Final delivery verification measures duration, dimensions, frame count, complete
-decode and loudness for both sizes. A separate check compares 24 decoded movie
-frames with their matching source footage. Audio is measured, not auditioned by
-the automated reviewer; a human listening pass remains before public submission.
+Final delivery measurements and decoded source comparisons are stored in
+`evidence/delivery-verification.json` and `evidence/video-subject-verification.json`.
+The editable source can be opened in the HyperFrames desktop app; the CLI preview
+also supports editing. No social post or contest submission is performed.
