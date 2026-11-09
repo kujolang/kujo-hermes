@@ -1,15 +1,15 @@
 {
   "cue": "show-pass",
-  "text": "The same checks now pass.",
+  "text": "Now the same three checks pass.",
   "provider": "ElevenLabs",
   "model": "eleven_v4",
-  "voice_name": "Siren",
-  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "voice_name": "Roger",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
   "generation_tier": "creator",
-  "request_sha256": "2406b1bca3a491327fa5358e1a000d81aadd9505ee564c8a8c6e74200dc0a151",
-  "audio_sha256": "ab828bb004a9daa70e57467911f6463cb09454ed93515b68c1e18e1c7eb97be2",
-  "duration": 2.0,
-  "request_id": "IAfDTDFQdGHZOktk4XKN",
-  "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:19Z"
+  "request_sha256": "503935e9e25c7a4f221597762e74e8c012692545a6de0979a02b8c9d6e2d281e",
+  "audio_sha256": "c9f11092390f569bc1191af0b2769f7d6e199fa2b2de9e99affbcf0076e21feb",
+  "duration": 2.24,
+  "request_id": "L3AMpoLCQTYEsAgkqNop",
+  "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "generated_at": "2026-11-09T17:48:56Z"
 }

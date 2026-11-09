@@ -1,15 +1,15 @@
 {
   "cue": "show-spec",
-  "text": "Spec defines the task contract. You approve the repository checks.",
+  "text": "Define expected behavior with Spec. You control approval for repository checks.",
   "provider": "ElevenLabs",
   "model": "eleven_v4",
-  "voice_name": "Siren",
-  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "voice_name": "Roger",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
   "generation_tier": "creator",
-  "request_sha256": "de35dda175da4bd018c14c70951c91a215ec75afab5b860e31ae4e8ed8e4c152",
-  "audio_sha256": "4f1031f4c12241f804459b28d51178f3b427dcb71e915043b5a72fb8ed63e3c8",
-  "duration": 4.96,
-  "request_id": "LlcGje45nmQeSPaFfhEY",
-  "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:13Z"
+  "request_sha256": "596db49852b56a8364886205fc87efd004e1875b999119375624afde91c72ee5",
+  "audio_sha256": "9eb76773918da32698b45cc4ed41f04161fe5937c0074e93d08cd7a36fe409da",
+  "duration": 6.0,
+  "request_id": "YL1WTz4FmAjv4Uw8Flqk",
+  "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "generated_at": "2026-11-09T17:48:50Z"
 }

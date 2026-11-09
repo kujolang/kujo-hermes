@@ -1,0 +1,6 @@
+{
+  "sha256": "0c9a181a2dcb9c10b79f73ddc582d0643927ec8ddbd440a425c036f0b3d4d9ae",
+  "bytes": 15820214,
+  "local_artifact": ".local/male-voice-loop/iterations/001/diff.patch",
+  "note": "The complete binary patch remains in the ignored local Loop run. Published source and media are versioned directly in Git; avoid duplicating all video bytes as patch text."
+}

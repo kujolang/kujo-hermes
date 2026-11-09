@@ -1,0 +1,16 @@
+{
+  "provider": "ElevenLabs",
+  "name": "Roger",
+  "catalog_name": "Roger - Laid-Back, Casual, Resonant",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+  "model": "eleven_v4",
+  "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75
+  },
+  "gender": "male",
+  "catalog_verified_at": "2026-11-09",
+  "direction": "Confident, conversational accountability showcase; retain room for the music and proof.",
+  "authorization": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "catalog_source": "Authenticated GET /v2/voices?page_size=100"
+}

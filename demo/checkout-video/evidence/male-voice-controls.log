@@ -1,0 +1,4 @@
+PASS: all ten cues use the selected voice; five explicit HER-meez inputs;
+canonical captions; no cue overlaps;
+both exact updated AAC masters installed; original video streams preserved.
+This verifies synthesis inputs and files, not a human listening judgment.

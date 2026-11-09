@@ -1,15 +1,15 @@
 {
   "cue": "show-failure",
-  "text": "Eval runs the tests and catches the overcharge.",
+  "text": "Eval exposes the failure, giving your agent evidence to act on.",
   "provider": "ElevenLabs",
   "model": "eleven_v4",
-  "voice_name": "Siren",
-  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "voice_name": "Roger",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
   "generation_tier": "creator",
-  "request_sha256": "ae05213da66f36112950ab137b692aad2a43d44e4db56d39be3420f6fc63875a",
-  "audio_sha256": "a109f4fc4c7bc7e7e8ea5ac26480426b9579641d10ea46802b8802a379c84436",
-  "duration": 3.2,
-  "request_id": "Iex7D1FHrDJCz8ezPQdx",
-  "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:15Z"
+  "request_sha256": "7832ba373000eaa4baf6f1c0222eca77fcd48257e2d087fddd779ffd2c5da9dd",
+  "audio_sha256": "c5d69c7df07c033ce340d85b733f7f165b26186884418200612c70d83b07ef1b",
+  "duration": 4.72,
+  "request_id": "pxh2VBOSvI0zzVGkAvte",
+  "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "generated_at": "2026-11-09T17:48:52Z"
 }

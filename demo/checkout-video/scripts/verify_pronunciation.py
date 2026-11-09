@@ -7,8 +7,12 @@ import subprocess
 root = pathlib.Path(__file__).resolve().parents[1]
 rule = json.loads((root / 'pronunciation.json').read_text())
 timeline = json.loads((root / 'timeline.json').read_text())
+voice_config = json.loads((root / 'voice.json').read_text())
 changed = []
 for cue in timeline['cues']:
+    assert cue['voice_id'] == voice_config['voice_id']
+    audio_file = root / 'assets' / (cue['cue'] + '.mp3')
+    assert hashlib.sha256(audio_file.read_bytes()).hexdigest() == cue['audio_sha256']
     if rule['word'] not in cue['text']:
         continue
     assert cue['model'] == rule['model']
@@ -37,6 +41,7 @@ for video in remux['videos']:
     path = root / video['file']
     assert stream_hash(path, '0:v:0') == video['before_video_sha256']
     assert stream_hash(path, '0:a:0') == master
-print('PASS: five explicit HER-meez inputs; canonical captions; no cue overlaps;')
+print('PASS: all ten cues use the selected voice; five explicit HER-meez inputs;')
+print('canonical captions; no cue overlaps;')
 print('both exact updated AAC masters installed; original video streams preserved.')
 print('This verifies synthesis inputs and files, not a human listening judgment.')

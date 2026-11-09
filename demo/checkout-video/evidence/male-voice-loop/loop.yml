@@ -1,0 +1,24 @@
+objective: "Verify Roger narration, accountability copy, preserved picture and updated delivery files"
+max_iterations: 1
+max_no_progress: 1
+max_consecutive_failures: 1
+allowed_actions: [read_files, run_tests]
+blocked_actions: [deploy, production_config_change, publish]
+eval_gates:
+  - id: pronunciation_controls
+    command: "python3 demo/checkout-video/scripts/verify_pronunciation.py"
+    required: true
+  - id: actual_model_evidence
+    command: "python3 demo/checkout-video/scripts/verify_run.py"
+    required: true
+  - id: exact_media_delivery
+    command: "python3 demo/checkout-video/scripts/verify_reports.py"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false
+  push: false
+memory:
+  enabled: false

@@ -4,10 +4,10 @@ The 70.2-second edit replaces the 88-second walkthrough. It uses the same verifi
 Hermes session, bumpers and nine CMD glitches, including both bumper joins. The
 story now follows the overcharge through the model's correction and unchanged
 checks passing. Installation comes after the proof. Narration falls from about 77
-to 46.16 seconds. The passing result has more than five seconds without speech.
+to 51.44 seconds. The passing result has more than five seconds without speech.
 
 The user-owned Website Cloner instrumental supplies the musical pulse. It is
-pitch-preserving tempo-fitted to the film, with smooth ducking under Siren and a
+pitch-preserving tempo-fitted to the film, with smooth ducking under Roger and a
 lift between cues. No customer images were reused. Optional WebVTT captions are
 separate, keeping the picture clear.
 
@@ -33,7 +33,7 @@ Final delivery measurements and decoded source comparisons are stored in
 The editable source can be opened in the HyperFrames desktop app; the CLI preview
 also supports editing. No social post or contest submission is performed.
 
-## Pronunciation correction
+## Pronunciation correction (previous Siren revision)
 
 The user heard the French fashion-brand pronunciation in the hook. All five
 spoken mentions were regenerated with Siren V4 using explicit English
@@ -47,3 +47,22 @@ match the prior verified edit, so its 24 source-frame comparisons remain applica
 Full decodes and loudness checks were rerun. Applied controls, cue fit, captions
 and exact AAC stream identity passed. This is not an audible pronunciation review;
 listening remains unverified. See `pronunciation.json` and `evidence/pronunciation-*`.
+
+## Male voice and accountability message
+
+The user requested a male ElevenLabs voice and stronger accountability positioning.
+Roger was selected from the current authenticated voice catalog; it labels him as
+a male American conversational voice. All ten cues were regenerated, including
+the bumpers. The generation cache now includes voice ID as well as model, settings
+and text, so changing speakers cannot silently reuse old takes.
+
+The script now states the value directly: repeatable checks, user approval of
+repository execution, a correction checked against unchanged tests, and retained
+evidence. It does not claim comparative superiority or universal correctness.
+The same full-screen footage supports each line. The explicit English Hermes
+pronunciation is retained.
+
+All cues fit their original windows. Exact video-stream hashes match the prior
+verified delivery; both AAC tracks match the new Roger master. Full decodes,
+loudness, voice receipts, pronunciation inputs and caption checks passed. Listening
+quality and audible pronunciation have not been independently auditioned.

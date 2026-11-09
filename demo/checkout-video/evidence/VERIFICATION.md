@@ -9,8 +9,8 @@
   10 before-artifacts, 19 after-artifacts and the unchanged test file. The Spec
   receipt digest and `valid` result were checked separately.
 - Both videos are 70.20 seconds, H.264/yuv420p, 30 fps, 2106 frames, AAC/48 kHz.
-  The master is 1080 square; the mobile copy is 480 square, 2,546,408 bytes.
-- Both complete decodes passed. Both measured −16.19 LUFS and −1.79 dBTP.
+  The master is 1080 square; the mobile copy is 480 square, 2,596,837 bytes.
+- Both complete decodes passed. Both measured -16.23 LUFS and -1.79 dBTP.
 - All 24 sampled source comparisons passed. They allow one source frame of timing
   quantization, one pixel of contain rounding and a 1.5-pixel anti-aliasing
   normalization between Chrome and Pillow. No video pixels were altered for this
@@ -34,7 +34,11 @@ Audio was measured, not auditioned. A human listening pass remains before postin
 Receipts are local integrity records, not signatures or proof of general code
 correctness. Three passing checks cover the stated fixture behavior only.
 
-The revised edit uses 46.16 seconds of Siren narration and the licensed, user-owned
+The revised edit uses 51.44 seconds of Roger narration and the licensed, user-owned
 Website Cloner instrumental. The actual decoded closing frame at 70.1 seconds
 shows both logos, the install invitation and the repository address. The original
 88-second version remains available in Git history at commit 69c8f0d.
+
+The male-voice revision regenerates all ten cues with Roger. The video streams
+are byte-identical to the earlier source-checked film. Updated narration, captions
+and source voice receipts remain available in this project.

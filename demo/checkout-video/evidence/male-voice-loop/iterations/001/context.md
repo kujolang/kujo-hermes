@@ -1,0 +1,56 @@
+# Context
+
+- objective: Verify Roger narration, accountability copy, preserved picture and updated delivery files
+- git_head: 69af6b2
+- changed_files:
+  - demo/checkout-video/BRIEF.md
+  - demo/checkout-video/README.md
+  - demo/checkout-video/REVIEW.md
+  - demo/checkout-video/SPEC.md
+  - demo/checkout-video/STORYBOARD.md
+  - demo/checkout-video/assets/intro.mp3
+  - demo/checkout-video/assets/master.m4a
+  - demo/checkout-video/assets/outro.mp3
+  - demo/checkout-video/assets/show-failure.mp3
+  - demo/checkout-video/assets/show-fix.mp3
+  - demo/checkout-video/assets/show-hook.mp3
+  - demo/checkout-video/assets/show-install.mp3
+  - demo/checkout-video/assets/show-pass.mp3
+  - demo/checkout-video/assets/show-receipt.mp3
+  - demo/checkout-video/assets/show-spec.mp3
+  - demo/checkout-video/assets/show-tools.mp3
+  - demo/checkout-video/delivery/kujo-hermes-checkout-480p.mp4
+  - demo/checkout-video/delivery/kujo-hermes-checkout.mp4
+  - demo/checkout-video/delivery/kujo-hermes-checkout.vtt
+  - demo/checkout-video/evidence/VERIFICATION.md
+  - demo/checkout-video/evidence/alignment-intro.json
+  - demo/checkout-video/evidence/alignment-outro.json
+  - demo/checkout-video/evidence/alignment-show-failure.json
+  - demo/checkout-video/evidence/alignment-show-fix.json
+  - demo/checkout-video/evidence/alignment-show-hook.json
+  - demo/checkout-video/evidence/alignment-show-install.json
+  - demo/checkout-video/evidence/alignment-show-pass.json
+  - demo/checkout-video/evidence/alignment-show-receipt.json
+  - demo/checkout-video/evidence/alignment-show-spec.json
+  - demo/checkout-video/evidence/alignment-show-tools.json
+  - demo/checkout-video/evidence/audio-mastering.json
+  - demo/checkout-video/evidence/audio-mix.log
+  - demo/checkout-video/evidence/delivery-loudness.json
+  - demo/checkout-video/evidence/delivery-verification.json
+  - demo/checkout-video/evidence/narration.json
+  - demo/checkout-video/evidence/pronunciation-remux.json
+  - demo/checkout-video/evidence/voice-intro.json
+  - demo/checkout-video/evidence/voice-outro.json
+  - demo/checkout-video/evidence/voice-show-failure.json
+  - demo/checkout-video/evidence/voice-show-fix.json
+  - demo/checkout-video/evidence/voice-show-hook.json
+  - demo/checkout-video/evidence/voice-show-install.json
+  - demo/checkout-video/evidence/voice-show-pass.json
+  - demo/checkout-video/evidence/voice-show-receipt.json
+  - demo/checkout-video/evidence/voice-show-spec.json
+  - demo/checkout-video/evidence/voice-show-tools.json
+  - demo/checkout-video/scripts/build_audio.py
+  - demo/checkout-video/scripts/generate_voice.py
+  - demo/checkout-video/scripts/verify_pronunciation.py
+  - demo/checkout-video/story.json
+  - demo/checkout-video/timeline.json

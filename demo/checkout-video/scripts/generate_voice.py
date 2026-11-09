@@ -1,9 +1,10 @@
-"""Generate requested Siren V4 narration; cached by text hash, never log credentials."""
+"""Generate configured narration; cached by voice and request hash, never log credentials."""
 import base64,hashlib,json,os,pathlib,subprocess,urllib.request,time
 root=pathlib.Path(__file__).resolve().parents[1];assets=root/'assets';evidence=root/'evidence'
 story=json.loads((root/'story.json').read_text())
 cues=[('intro','Kujo Hermes.')]+[(s['cue'],s['text']) for s in story['scenes']]+[('outro',story['outro'])]
-voice='eXpIbVcVbLo8ZJQDlDnl';model='eleven_v4'
+voice_config=json.loads((root/'voice.json').read_text())
+voice=voice_config['voice_id'];model=voice_config['model']
 key=os.environ.get('ELEVENLABS_API_KEY')
 if not key:key=subprocess.check_output(['security','find-generic-password','-s','kujo-videoops-elevenlabs','-a','videoops','-w'],stderr=subprocess.DEVNULL,text=True).strip()
 def request(path,payload=None):
@@ -17,8 +18,8 @@ pronunciation=json.loads((root/'pronunciation.json').read_text())
 records=[]
 for name,text in cues:
  speech_text=text.replace(pronunciation['word'],pronunciation['spoken'])
- payload={'text':speech_text,'model_id':model,'voice_settings':{'stability':0.5,'similarity_boost':0.75}}
- signature=hashlib.sha256(json.dumps(payload,sort_keys=True).encode()).hexdigest();file=assets/(name+'.mp3');receipt=evidence/('voice-'+name+'.json');pending=evidence/('voice-'+name+'.pending')
+ payload={'text':speech_text,'model_id':model,'voice_settings':voice_config['settings']}
+ signature=hashlib.sha256(json.dumps({'voice_id':voice,'payload':payload},sort_keys=True).encode()).hexdigest();file=assets/(name+'.mp3');receipt=evidence/('voice-'+name+'.json');pending=evidence/('voice-'+name+'.pending')
  if file.exists() and receipt.exists():
   old=json.loads(receipt.read_text())
   if old['request_sha256']==signature:records.append(old);continue
@@ -30,7 +31,7 @@ for name,text in cues:
   (evidence/('alignment-'+name+'.json')).write_text(json.dumps(alignment,indent=2)+'\n')
  assert len(audio)>1000;file.write_bytes(audio)
  duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(file)],text=True))
- record={'cue':name,'text':text,'provider':'ElevenLabs','model':model,'voice_name':'Siren','voice_id':voice,'generation_tier':tier,'request_sha256':signature,'audio_sha256':hashlib.sha256(audio).hexdigest(),'duration':duration,'request_id':request_id,'authorized_by':'User requested Siren V4 narration for this walkthrough','generated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
+ record={'cue':name,'text':text,'provider':'ElevenLabs','model':model,'voice_name':voice_config['name'],'voice_id':voice,'generation_tier':tier,'request_sha256':signature,'audio_sha256':hashlib.sha256(audio).hexdigest(),'duration':duration,'request_id':request_id,'authorized_by':voice_config['authorization'],'generated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
  if 'Hermes' in text:record.update(pronunciation=pronunciation,speech_text=speech_text)
  receipt.write_text(json.dumps(record,indent=2)+'\n');pending.unlink();records.append(record);print(name,round(duration,2),flush=True)
 (evidence/'narration.json').write_text(json.dumps(records,indent=2)+'\n')

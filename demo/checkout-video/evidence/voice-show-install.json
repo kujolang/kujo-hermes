@@ -1,17 +1,17 @@
 {
   "cue": "show-install",
-  "text": "With Hermes, Kujo and Git installed, add the plugin, run setup, and accept the prompts.",
+  "text": "With Hermes, Kujo and Git installed, two commands connect your workflow to Kujo.",
   "provider": "ElevenLabs",
   "model": "eleven_v4",
-  "voice_name": "Siren",
-  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "voice_name": "Roger",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
   "generation_tier": "creator",
-  "request_sha256": "db40e5e096d5b8ba58a50a06285609b08ef984fe38e567dce153c643c79dbf44",
-  "audio_sha256": "8a166ce7862ccf5502c20289da9c023bc8437f59f5e98008bffc37ebc06e2df5",
-  "duration": 6.08,
-  "request_id": "5N8aYPq57IFHZpGgYlpg",
-  "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:38:17Z",
+  "request_sha256": "047452b2069147c31598154d1f3129b66f60295d41dc8176285c36e3e318bb06",
+  "audio_sha256": "7715c4def52b1c93b3be4a08efae8af0f7efe5af4186f23eb74df7a109a5aa59",
+  "duration": 5.52,
+  "request_id": "oppn4VpFkUivpTBQNCMS",
+  "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "generated_at": "2026-11-09T17:49:03Z",
   "pronunciation": {
     "word": "Hermes",
     "intended_pronunciation": "HER-meez",
@@ -20,5 +20,5 @@
     "method": "native inline IPA",
     "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
   },
-  "speech_text": "With \"/\u02c8h\u025dmi\u02d0z/\", Kujo and Git installed, add the plugin, run setup, and accept the prompts."
+  "speech_text": "With \"/\u02c8h\u025dmi\u02d0z/\", Kujo and Git installed, two commands connect your workflow to Kujo."
 }

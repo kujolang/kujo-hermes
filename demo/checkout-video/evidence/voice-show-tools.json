@@ -1,15 +1,15 @@
 {
   "cue": "show-tools",
-  "text": "Discover Scout to inspect repositories, PackWrite to prepare context, and ShipCheck to review release readiness.",
+  "text": "Discover Scout for repository insight, PackWrite for focused context, and ShipCheck for release review.",
   "provider": "ElevenLabs",
   "model": "eleven_v4",
-  "voice_name": "Siren",
-  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "voice_name": "Roger",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
   "generation_tier": "creator",
-  "request_sha256": "d9e7875c11d2d546ff9d5c338407dbb6cdc7f0d85d6363f206cd44efeaab9e5e",
-  "audio_sha256": "5946f412433307ba87f5f96717d22c9352c607f7897b818cfe37ba3771a8a2b5",
-  "duration": 7.36,
-  "request_id": "gCJB3vVho8ceLB0M5ab0",
-  "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:23Z"
+  "request_sha256": "1aee9fb03eff6d6b00edacc60ad33f9a31174c004b3c9d551788c0166b48f4e6",
+  "audio_sha256": "8a83237a230238b6e545589dd609e9ad900aa82b52a535c0e764abe5b19033a0",
+  "duration": 7.12,
+  "request_id": "g0YsGpVS5vPJaFqeb33N",
+  "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "generated_at": "2026-11-09T17:49:01Z"
 }

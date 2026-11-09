@@ -8,7 +8,7 @@
       "id": "hook",
       "cue": "show-hook",
       "title": "A coupon should save money.",
-      "text": "This coupon adds a shipping charge it shouldn\u2019t. Give Hermes a check it can prove.",
+      "text": "Bring accountability to Hermes. Catch this checkout overcharge before you trust the result.",
       "shot": "hook",
       "duration": 6.8
     },
@@ -16,7 +16,7 @@
       "id": "spec",
       "cue": "show-spec",
       "title": "Set the expected behavior.",
-      "text": "Spec defines the task contract. You approve the repository checks.",
+      "text": "Define expected behavior with Spec. You control approval for repository checks.",
       "shot": "spec",
       "duration": 7
     },
@@ -24,7 +24,7 @@
       "id": "failure",
       "cue": "show-failure",
       "title": "Expected $45.00.\nCharged $50.99.",
-      "text": "Eval runs the tests and catches the overcharge.",
+      "text": "Eval exposes the failure, giving your agent evidence to act on.",
       "shot": "failure",
       "duration": 6
     },
@@ -32,7 +32,7 @@
       "id": "fix",
       "cue": "show-fix",
       "title": "Hermes fixes the cause.",
-      "text": "Hermes fixes the calculation using a free local model. The tests stay unchanged.",
+      "text": "Hermes corrects the calculation. The tests stay unchanged, so the comparison holds.",
       "shot": "fix",
       "duration": 7
     },
@@ -40,7 +40,7 @@
       "id": "pass",
       "cue": "show-pass",
       "title": "3 passed. 0 failed.",
-      "text": "The same checks now pass.",
+      "text": "Now the same three checks pass.",
       "shot": "pass",
       "duration": 8
     },
@@ -48,7 +48,7 @@
       "id": "receipt",
       "cue": "show-receipt",
       "title": "Evidence you can revisit.",
-      "text": "Keep the commands, results and evidence hashes after the chat ends.",
+      "text": "That\u2019s accountability you can inspect: what ran, what passed, and the evidence behind it.",
       "shot": "receipt",
       "duration": 7
     },
@@ -56,7 +56,7 @@
       "id": "tools",
       "cue": "show-tools",
       "title": "More tools. Same conversation.",
-      "text": "Discover Scout to inspect repositories, PackWrite to prepare context, and ShipCheck to review release readiness.",
+      "text": "Discover Scout for repository insight, PackWrite for focused context, and ShipCheck for release review.",
       "shot": "tools",
       "duration": 9
     },
@@ -64,7 +64,7 @@
       "id": "install",
       "cue": "show-install",
       "title": "Two commands to connect.",
-      "text": "With Hermes, Kujo and Git installed, add the plugin, run setup, and accept the prompts.",
+      "text": "With Hermes, Kujo and Git installed, two commands connect your workflow to Kujo.",
       "shot": "install",
       "duration": 9
     }

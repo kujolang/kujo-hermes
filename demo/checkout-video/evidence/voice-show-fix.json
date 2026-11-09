@@ -1,17 +1,17 @@
 {
   "cue": "show-fix",
-  "text": "Hermes fixes the calculation using a free local model. The tests stay unchanged.",
+  "text": "Hermes corrects the calculation. The tests stay unchanged, so the comparison holds.",
   "provider": "ElevenLabs",
   "model": "eleven_v4",
-  "voice_name": "Siren",
-  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "voice_name": "Roger",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
   "generation_tier": "creator",
-  "request_sha256": "253d09625fb1d623a3618f73bc288fc6cdae6783a5d5e6059da4126533a6d889",
-  "audio_sha256": "8363cd470be020bf404cb3b9b08aaf1c60a6b2d94954a29d7a90d378a30d782c",
-  "duration": 5.68,
-  "request_id": "0K0w5bggOjbC7aEpo93Y",
-  "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:38:14Z",
+  "request_sha256": "2109ec8e083c060c7d1ac6791152c1b3b992409c966398dd08ed738198efdd8b",
+  "audio_sha256": "85f821a93b80feecac8e078f2bd976c00b7b0f33ce8941144cadb612b448148f",
+  "duration": 6.08,
+  "request_id": "36Djp9WcOAsN9Y9kHEZD",
+  "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
+  "generated_at": "2026-11-09T17:48:55Z",
   "pronunciation": {
     "word": "Hermes",
     "intended_pronunciation": "HER-meez",
@@ -20,5 +20,5 @@
     "method": "native inline IPA",
     "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
   },
-  "speech_text": "\"/\u02c8h\u025dmi\u02d0z/\" fixes the calculation using a free local model. The tests stay unchanged."
+  "speech_text": "\"/\u02c8h\u025dmi\u02d0z/\" corrects the calculation. The tests stay unchanged, so the comparison holds."
 }

@@ -1,4 +1,4 @@
-"""Mix measured Siren cues, existing Kujo music, and original CMD transition SFX."""
+"""Mix measured voice cues, existing Kujo music, and original CMD transition SFX."""
 import json,pathlib,subprocess,re
 r=pathlib.Path(__file__).resolve().parents[1];timeline=json.loads((r/'timeline.json').read_text());cues=timeline['cues'];D=timeline['duration'];cmd=['ffmpeg','-nostdin','-y','-hide_banner'];filters=[]
 for i,c in enumerate(cues):
@@ -27,4 +27,4 @@ measured=json.loads(re.findall(r'\{\s*"input_i".*?\}',analysis.stderr,re.S)[-1])
 filter=f"loudnorm=I=-16:TP=-2:LRA=7:measured_I={measured['input_i']}:measured_TP={measured['input_tp']}:measured_LRA={measured['input_lra']}:measured_thresh={measured['input_thresh']}:offset={measured['target_offset']}:linear=true"
 subprocess.run(['ffmpeg','-nostdin','-y','-v','error','-i',str(raw),'-af',filter,'-ar','48000','-c:a','aac','-b:a','192k',str(r/'assets/master.m4a')],check=True)
 (r/'evidence/audio-mastering.json').write_text(json.dumps({'method':'Two-pass EBU R128; -16 LUFS, -2 dBTP pre-encode target; exact master remuxed into delivery','first_pass':measured,'second_pass_filter':filter},indent=2)+'\n')
-print('Mixed original-speed Siren, rhythmic music and CMD transitions;',D,'seconds.')
+print('Mixed original-speed narration, rhythmic music and CMD transitions;',D,'seconds.')
