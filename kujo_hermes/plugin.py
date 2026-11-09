@@ -9,9 +9,9 @@ STRING={'type':'string','minLength':1,'maxLength':4096}
 TOOLS={
  'kujo_discover':('Find Kujo engineering Abilities: ShipCheck, PackWrite, Eval, Spec, Scout, Workcell, Loop and more. Returns compact metadata; inspect a selected Ability before execution.',{'query':{'type':'string','maxLength':200},'refresh':{'type':'boolean'},'offset':{'type':'integer','minimum':0},'limit':{'type':'integer','minimum':1,'maximum':100}},[]),
  'kujo_inspect':('Get one canonical Kujo Ability input/output schema, effects, identity and installation status.',{'ability':STRING},['ability']),
- 'kujo_execute':('Execute a discovered Kujo Ability in an operator-trusted workspace. Mutations require Hermes approval; no approval boolean is accepted. Returns a verifiable receipt. Use background for long tasks.',{'ability':STRING,'input':{'type':'object'},'workspace':STRING,'background':{'type':'boolean'}},['ability','input','workspace']),
+ 'kujo_execute':('Execute a discovered Kujo Ability in an operator-trusted workspace. Mutations require Hermes approval; no approval boolean is accepted. Returns an execution receipt. ok means the command completed; inspect canonical check verdicts before claiming success. Use background for long tasks.',{'ability':STRING,'input':{'type':'object'},'workspace':STRING,'background':{'type':'boolean'}},['ability','input','workspace']),
  'kujo_status':('Inspect an execution or request cancellation, including child process cleanup.',{'invocation_id':STRING,'cancel':{'type':'boolean'}},['invocation_id']),
- 'kujo_receipts':('List recent execution receipts or retrieve a hash-verified receipt in bounded pages. limit is characters for a receipt, count when listing.',{'receipt_id':STRING,'limit':{'type':'integer','minimum':1,'maximum':12000},'offset':{'type':'integer','minimum':0}},[]),
+ 'kujo_receipts':('List recent execution receipts or retrieve a hash-verified receipt in bounded pages. Verification covers stored receipt content, not current files or code correctness. limit is characters for a receipt, count when listing.',{'receipt_id':STRING,'limit':{'type':'integer','minimum':1,'maximum':12000},'offset':{'type':'integer','minimum':0}},[]),
  'kujo_doctor':('Check Kujo runtime compatibility, installed sources, profile, workspace trust and receipt storage without running repository tasks.',{},[]),
 }
 

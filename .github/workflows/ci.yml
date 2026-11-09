@@ -12,6 +12,9 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: git diff --check
   host:
+    strategy:
+      matrix:
+        hermes: [v0.22.7, v0.23.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +22,7 @@ jobs:
         with:
           python-version: '3.14'
       - uses: astral-sh/setup-uv@v6
-      - run: git clone --depth 1 --branch v0.22.7 https://github.com/NousResearch/hermes-agent.git /tmp/hermes
+      - run: git clone --depth 1 --branch ${{ matrix.hermes }} https://github.com/NousResearch/hermes-agent.git /tmp/hermes
       - run: uv sync --project /tmp/hermes --locked --no-default-groups
         env:
           UV_PROJECT_ENVIRONMENT: /tmp/hermes-env
@@ -35,10 +38,14 @@ jobs:
       - run: npm ci --prefix scripts/ci-runtime --ignore-scripts
       - run: /tmp/hermes-env/bin/python scripts/install-sources.py --destination /tmp/kujo-sources --only shipcheck packwrite spec eval scout kujo-workflows
       - run: /tmp/hermes-env/bin/python tests/hermes_e2e.py --sources /tmp/kujo-sources --kujo scripts/ci-runtime/node_modules/@kujolang/kujo-linux-x64/bin/kujo --isolation host
+      - name: Reproduce checkout failure and correction through native tools
+        run: /tmp/hermes-env/bin/python demo/checkout/run.py --sources /tmp/kujo-sources --kujo scripts/ci-runtime/node_modules/@kujolang/kujo-linux-x64/bin/kujo --output /tmp/checkout-evidence --test-decisions
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: hermes-linux-e2e
+          name: hermes-linux-e2e-${{ matrix.hermes }}
           path: |
             evidence/hermes-e2e.json
             evidence/clean-install.txt
+            /tmp/checkout-evidence/run.json
+            /tmp/checkout-evidence/*-receipt.json
