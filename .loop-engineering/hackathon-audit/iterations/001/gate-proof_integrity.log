@@ -1,0 +1,3 @@
+before: receipt and 10 artifact hashes match
+after: receipt and 19 artifact hashes match
+PASS: the same tests failed before and passed after; stored artifacts match both receipts.

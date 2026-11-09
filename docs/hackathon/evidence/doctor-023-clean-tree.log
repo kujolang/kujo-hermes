@@ -1,0 +1,6 @@
+Plugin Doctor: 
+/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-hackathon-candidat
+e-s1lwamg6
+  manifest: kujo-hermes 0.1.0 (standalone)
+  OK: runtime discovery, manifest parsing, import, and registration passed
+  registrations: 6 tool(s), 2 hook(s)

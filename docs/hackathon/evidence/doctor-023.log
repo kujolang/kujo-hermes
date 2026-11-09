@@ -1,0 +1,9 @@
+Plugin Doctor: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes
+  ERROR: Refusing to stage 
+/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes: 
+/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes leads into Doctor's 
+temporary directory 
+/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/tmp/he
+rmes-plugin-doctor-icam7kof/plugins, so the copy would recurse into itself. 
+Point TMPDIR outside the plugin and remove links to it.
+  registrations: 0 tool(s), 0 hook(s)

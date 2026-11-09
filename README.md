@@ -4,11 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 [![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
-Use Kujo's developer tools inside Hermes to inspect repositories, prepare context, validate specifications, run checks and workflows, and retrieve execution receipts. Each tool supports its own set of languages; the plugin covers much more than Kujo language development.
+Check Hermes's code changes against real requirements, find regressions, and keep the execution evidence. Kujo Hermes brings Spec, Eval, ShipCheck, PackWrite and other Kujo developer tools into Hermes through six native tools.
+
+**A concrete example:** a coupon accidentally adds shipping to a customer's order. Kujo Eval reports the failing test; after the correction, the same tests pass. Both executions retain inspectable receipts. [Reproduce the checkout workflow](demo/checkout/README.md).
 
 Kujo Hermes calls the official Kujo tools directly through its own native adapter. It requires no CommandCode, Kujo CMD, Pi or OpenCode installation or plugin.
 
-**Status:** verified with real Hermes and Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
+**Status:** native workflows verified with Hermes 0.22.7 and 0.23.0 and real Kujo tools. Some operations still need external services, credentials, containers or additional bindings. See the [readiness report](docs/readiness.md) and [Ability inventory](docs/abilities.md) for tested operations and remaining gaps.
 
 Watch the [square walkthrough](demo/square/README.md) for installation and developer benefits, or the [85-second landscape walkthrough](demo/walkthrough/delivery/kujo-hermes-walkthrough.mp4). The films combine real native-tool evidence views with an excerpt from the free local model approval run. [Recording and reproduction details](demo/walkthrough/README.md).
 

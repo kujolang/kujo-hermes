@@ -1,0 +1,27 @@
+name: "Preserve free shipping when a coupon is applied"
+goal: "A customer whose original subtotal qualifies for free shipping must keep that benefit after a discount."
+version: "0.1.0"
+background: "A $50 cart with a ten percent coupon currently costs $50.99 because shipping is incorrectly added."
+scope: "Correct checkout.py without changing the public total function or shipping price."
+non_goals:
+  - "Taxes, currency conversion and payment processing"
+relevant_systems:
+  - "Python checkout totals"
+likely_files:
+  - "checkout.py"
+  - "test_checkout.py"
+acceptance_criteria:
+  - "total(5000, 10) returns 4500 cents"
+  - "total(4000, 0) returns 4599 cents"
+  - "total(5000, 0) returns 5000 cents"
+risks:
+  - risk: "A coupon unexpectedly increases the customer's total"
+    severity: "high"
+dependencies:
+  - "Python standard library"
+review_expectations:
+  - "Run all three unchanged tests through Kujo Eval before and after the fix"
+human_approval_points:
+  - "Before executing repository code"
+estimated_effort: "One small correction"
+priority: "high"

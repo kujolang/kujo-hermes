@@ -1,0 +1,39 @@
+Preparing the isolated Hermes runtime…
+  → Installing Python dependencies…
+  ✓ Installing Python dependencies
+dependency preparation failed: [Errno 28] No space left on device: '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/public-home/installs/5d31f7a37b96487b/pm-runtime/generations/dfd107ade2bc45b2a6690a0cdc0f990f/.publish-zovfbw8x'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/main.py", line 3543, in <module>
+    main()
+    ~~~~^^
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/main.py", line 3535, in main
+    rc = args.func(args)
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/main.py", line 1821, in _cmd
+    result = getattr(importlib.import_module(module), attr)(args)
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/plugins_cmd.py", line 1161, in plugins_command
+    handler(args)
+    ~~~~~~~^^^^^^
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/plugins_cmd.py", line 1128, in <lambda>
+    "validate": lambda args: _catalog().cmd_validate(
+                             ~~~~~~~~~~~~~~~~~~~~~~~^
+        args.path, as_json=getattr(args, "json", False), install_deps=getattr(args, "install_deps", False)),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/plugins_cmd_catalog.py", line 900, in cmd_validate
+    report = validate_plugin_dir(Path(path), probe)
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/plugin_validate.py", line 554, in validate_plugin_dir
+    recorded = _check_capabilities(report, manifest, plugin_dir, probe)
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/plugin_validate.py", line 423, in _check_capabilities
+    recorded, error = _run_capability_probe(plugin_dir, manifest, probe)
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/hermes/hermes_cli/plugin_validate.py", line 354, in _run_capability_probe
+    with tempfile.TemporaryDirectory(prefix="hermes-validate-") as scratch:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/public-home/tools/python-3.14.9+20261021-darwin-x64/lib/python3.14/tempfile.py", line 961, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/public-home/tools/python-3.14.9+20261021-darwin-x64/lib/python3.14/tempfile.py", line 435, in mkdtemp
+    _os.mkdir(file, 0o700)
+    ~~~~~~~~~^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: '/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/hermes-validate-j8lnlynq'

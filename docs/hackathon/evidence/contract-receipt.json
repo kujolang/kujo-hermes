@@ -1,0 +1,52 @@
+{
+  "ability_id": "kujo.spec.contract.validate",
+  "ability_version": "1.0.0",
+  "approval": {
+    "approved": false,
+    "required": false
+  },
+  "artifacts": {
+    "bytes_hashed": 0,
+    "files": [],
+    "truncated": false
+  },
+  "command": [
+    "/bin/bash",
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/spec/scripts/spec",
+    "validate",
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace/task.spec.yml",
+    "--json"
+  ],
+  "completed_at_ms": 1794235421675,
+  "cwd": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace",
+  "definition_digest": "9ae720f315922c292598b4d231ec130e866f2306e55b349c7ad50e338ee90d02",
+  "duration_ms": 3691,
+  "effects": [
+    {
+      "kind": "read",
+      "resource": "kujo.spec.contract"
+    }
+  ],
+  "host": "hermes",
+  "input_digest": "f6b0ede594fcb5b163d186eb42a8288874dabaf8da46caa60c5914401c97090b",
+  "invocation_id": "ad3f458f-3869-40b4-a9d2-2b439dbe8054",
+  "receipt_id": "ad3f458f-3869-40b4-a9d2-2b439dbe8054",
+  "request_digest": "5daea815f1f5decb4899226b45e829ac1701f118929a8889250fed09ad858917",
+  "result": {
+    "duration_ms": 3466,
+    "exit_code": 0,
+    "status": "completed",
+    "stderr": "",
+    "stdout_digest": "09c21b5aac2557bbf649848b4b1ac8ab6f7b445171af51890f6658a0a1a722f5",
+    "structured": {
+      "errors": [],
+      "valid": true,
+      "warnings": []
+    }
+  },
+  "schema": "kujo.hermes.receipt/v1",
+  "started_at_ms": 1794235417984,
+  "status": "completed",
+  "workspace": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace",
+  "receipt_digest": "1c3c4ba1324b65c9b9928b5eb0d5c05e4eb70c53c1b93ffcedd4e4e59f2484d3"
+}

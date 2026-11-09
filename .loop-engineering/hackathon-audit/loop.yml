@@ -1,0 +1,19 @@
+objective: "Audit the hackathon candidate, preserve native architecture, reproduce a real verification failure and correction, and prepare honest submission evidence"
+max_iterations: 2
+allowed_actions: [read_files, edit_files, run_tests]
+blocked_actions: [deploy, publish, external_submission]
+eval_gates:
+  - id: unit_tests
+    command: "python3 -m unittest discover -s tests"
+    required: true
+  - id: proof_integrity
+    command: "python3 demo/checkout/verify.py docs/hackathon/evidence"
+    required: true
+  - id: packwrite
+    command: "KUJO=$PWD/.local/runtime/kujo ../packwrite/bin/packwrite validate"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false

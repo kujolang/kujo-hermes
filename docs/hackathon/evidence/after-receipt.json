@@ -1,0 +1,237 @@
+{
+  "ability_id": "kujo.eval.suite.run",
+  "ability_version": "1.0.0",
+  "approval": {
+    "approved": true,
+    "id": "dbbd5684-afe2-4dad-bdfd-3714d5228061",
+    "required": true
+  },
+  "artifacts": {
+    "bytes_hashed": 18061,
+    "files": [
+      {
+        "bytes": 1496,
+        "path": ".kujo/eval/artifact-manifest.json",
+        "sha256": "9e42ecea5d11efa8369f2b73b046417164622f3ed1756c0fedad327384610601"
+      },
+      {
+        "bytes": 1496,
+        "path": ".kujo/eval/artifact-manifest.json.bak",
+        "sha256": "71f5fa676b73a246028e2ee5153627755c801b5570999dbcd0a099b644729ac1"
+      },
+      {
+        "bytes": 74,
+        "path": ".kujo/eval/badge.json",
+        "sha256": "2aa3373046f88b55b3bfa82133237b39ede7e84a993a24c06ded41a1626a62c7"
+      },
+      {
+        "bytes": 72,
+        "path": ".kujo/eval/badge.json.bak",
+        "sha256": "fbfc45f41d2104e147c8bd24832928b3bdf99f533056ff98024834810befd201"
+      },
+      {
+        "bytes": 961,
+        "path": ".kujo/eval/cli-summary.json",
+        "sha256": "5d9b849e88b791d371ef64f83eae0732527b5f0d8b71d5e1602f76150544d11d"
+      },
+      {
+        "bytes": 962,
+        "path": ".kujo/eval/cli-summary.json.bak",
+        "sha256": "3eece965ac2a3977b5c21da1ee597a0b70012667c0bc6ca99d74a5aea86b4768"
+      },
+      {
+        "bytes": 855,
+        "path": ".kujo/eval/eval-report.md",
+        "sha256": "e20efe489caac5c1588f7df46f4caeb2371feb12fab1e6246908f40d01c87f92"
+      },
+      {
+        "bytes": 1851,
+        "path": ".kujo/eval/eval-report.md.bak",
+        "sha256": "05cfb8705ad5fef1e3fb48c3fe756f3568bc03d1c68afc04fd96116c2e26d03a"
+      },
+      {
+        "bytes": 462,
+        "path": ".kujo/eval/eval-report.md.cache.json",
+        "sha256": "230718f870418fa6259609beb7ddd5cd41c04308f7fac8654a5c8dc65f43f956"
+      },
+      {
+        "bytes": 2125,
+        "path": ".kujo/eval/evaluation-result.json",
+        "sha256": "3c10116b37ff858850dbe9ccc4cb0c3ca3fc4b92b8534d8106ca1fb4ff61a00c"
+      },
+      {
+        "bytes": 2126,
+        "path": ".kujo/eval/evaluation-result.json.bak",
+        "sha256": "84bb5752a4dceea85938c734a57a72e719ef73637c51f881a69b88229605cd56"
+      },
+      {
+        "bytes": 215,
+        "path": ".kujo/eval/history.json",
+        "sha256": "32c9912b596d91477665f1e824ec1e5da23d90d3567248c3ac8df02872f3fb42"
+      },
+      {
+        "bytes": 108,
+        "path": ".kujo/eval/history.json.bak",
+        "sha256": "eaea9c3bc7f8bcf96181abac0ec049cdc2ff8dbec4044369d3cfa69ec998af9a"
+      },
+      {
+        "bytes": 2,
+        "path": ".kujo/eval/last_failures.json",
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "bytes": 41,
+        "path": ".kujo/eval/last_failures.json.bak",
+        "sha256": "ac67dffe870b6910c20977947a5c2963e11a631a9782a1ed6353f90e907db6f2"
+      },
+      {
+        "bytes": 2126,
+        "path": ".kujo/eval/last_run.json",
+        "sha256": "bae69aee2f5210390f9365d2b760bb4c700a9d0d54749cc573a5c7c4e791c9e5"
+      },
+      {
+        "bytes": 2652,
+        "path": ".kujo/eval/last_run.json.bak",
+        "sha256": "f8fac57bd137b5179f6dc4de74ecbd3d68f2fccde6a739d7ced8a270d6a6c11a"
+      },
+      {
+        "bytes": 219,
+        "path": ".kujo/eval/summary.json",
+        "sha256": "b005fba1ced372a69e89d1bac6036f10c3223e503eb3f5b359e67f6433f3791c"
+      },
+      {
+        "bytes": 218,
+        "path": ".kujo/eval/summary.json.bak",
+        "sha256": "717c45285dba3dd5fc6c3666e4c6582b433e1810982a0be58695b6536b3e6e8f"
+      }
+    ],
+    "truncated": false
+  },
+  "command": [
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/runtime/kujo",
+    "run",
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/sources/eval/main.kujo",
+    "--interpreter",
+    "--",
+    "run",
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace/eval.json",
+    "--output-dir",
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace/.kujo/eval",
+    "--json"
+  ],
+  "completed_at_ms": 1794235430055,
+  "cwd": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace",
+  "definition_digest": "49d21daa6eec56d440bbe63376870bb76a81c78ba5b558e8a6c943196e4722d3",
+  "duration_ms": 3727,
+  "effects": [
+    {
+      "kind": "external",
+      "resource": "kujo.eval.commands"
+    },
+    {
+      "kind": "write",
+      "resource": "kujo.eval.artifacts"
+    }
+  ],
+  "host": "hermes",
+  "input_digest": "c3654a499067690c20050d760d734b48ae5df67c7d1ca5cf64c05cfa4f9e17f7",
+  "invocation_id": "dbbd5684-afe2-4dad-bdfd-3714d5228061",
+  "receipt_id": "dbbd5684-afe2-4dad-bdfd-3714d5228061",
+  "request_digest": "b5b86ef9c132163176897a463c3822854aa9483485002405ecfe7438a95c3c36",
+  "result": {
+    "duration_ms": 3701,
+    "exit_code": 0,
+    "status": "completed",
+    "stderr": "",
+    "stdout_digest": "199697af69ad5c29426d98f4e6120869a4b26671577ea5462fd85cd071a88953",
+    "structured": {
+      "data": {
+        "active_policy_stage": "",
+        "cache_metric_bytes_reused": 0,
+        "cache_metric_candidates": 0,
+        "cache_metric_hits": 0,
+        "cache_metric_misses": 0,
+        "cache_metric_unique_files": 0,
+        "duration_ms": 2854,
+        "failed": 0,
+        "parallel_fallback_reason": "",
+        "parallel_mode": "serial",
+        "parallel_prefetch_duration_ms": 0,
+        "parallel_prefetched_files": 0,
+        "parallel_requested": false,
+        "parallel_used": false,
+        "parallel_workers": 1,
+        "passed": 3,
+        "skipped": 0,
+        "suite_description": "",
+        "suite_name": "checkout-coupon-regression",
+        "suite_version": "0.0.0",
+        "test_results": [
+          {
+            "check": "command_succeeds",
+            "description": "",
+            "details": {
+              "allowed_command_patterns": [],
+              "allowed_commands": [],
+              "blocked_arg_patterns": [],
+              "command": "python3 -m unittest test_checkout.CheckoutTests.test_below_threshold",
+              "command_pattern_match_mode": "substring",
+              "exit_code": 0,
+              "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+              "stdout": ""
+            },
+            "message": "Command succeeded (exit 0)",
+            "name": "Below threshold: shipping still applies",
+            "passed": true,
+            "skipped": false
+          },
+          {
+            "check": "command_succeeds",
+            "description": "",
+            "details": {
+              "allowed_command_patterns": [],
+              "allowed_commands": [],
+              "blocked_arg_patterns": [],
+              "command": "python3 -m unittest test_checkout.CheckoutTests.test_full_price_threshold",
+              "command_pattern_match_mode": "substring",
+              "exit_code": 0,
+              "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+              "stdout": ""
+            },
+            "message": "Command succeeded (exit 0)",
+            "name": "Full-price threshold: free shipping",
+            "passed": true,
+            "skipped": false
+          },
+          {
+            "check": "command_succeeds",
+            "description": "",
+            "details": {
+              "allowed_command_patterns": [],
+              "allowed_commands": [],
+              "blocked_arg_patterns": [],
+              "command": "python3 -m unittest test_checkout.CheckoutTests.test_discount_keeps_free_shipping",
+              "command_pattern_match_mode": "substring",
+              "exit_code": 0,
+              "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+              "stdout": ""
+            },
+            "message": "Command succeeded (exit 0)",
+            "name": "Coupon must not add a shipping charge",
+            "passed": true,
+            "skipped": false
+          }
+        ],
+        "timestamp": "",
+        "total": 3
+      },
+      "error": "",
+      "ok": true
+    }
+  },
+  "schema": "kujo.hermes.receipt/v1",
+  "started_at_ms": 1794235426328,
+  "status": "completed",
+  "workspace": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/checkout-final/workspace",
+  "receipt_digest": "200689af51adbded8b9e99f3a349992d5305d7910372cdda829aa5137354b151"
+}

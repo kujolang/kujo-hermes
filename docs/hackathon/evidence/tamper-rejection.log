@@ -1,0 +1,7 @@
+PASS: changed before-run summary.json was rejected by the independent verifier.
+Traceback (most recent call last):
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout/verify.py", line 35, in <module>
+    verify(p.parse_args().directory)
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout/verify.py", line 26, in verify
+    raise ValueError(stage+': artifact mismatch: '+item['path'])
+ValueError: before: artifact mismatch: .kujo/eval/summary.json

@@ -18,3 +18,7 @@ Local host tests used the existing Python 3.11 Hermes dependency environment aga
 
 
 Native onboarding was also exercised with Hermes's selected Python 3.14.9 environment on Intel macOS, using Kujo 1.8.0 and all 26 pinned source repositories. `demo/square/evidence/hermes-python314-e2e.json` records the actual loader, approval gate, workflow across six canonical tools and receipt checks. Launch Hermes with its selected interpreter: retaining an older recorder's interpreter after PM installs newer binary dependencies can fail to import them. This recording issue was corrected without changing policy. The native `kujo setup` and `kujo doctor` CLI commands require in-process plugin registration; isolated-host mode skips plugin CLI commands and uses the documented manual setup.
+
+## November 9 current-host audit
+
+The native loader, approval boundary, six canonical operations, receipt retrieval and unload also passed against official Hermes **0.23.0**, commit `2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`, using supported Python 3.14.9. A real failing/corrected checkout suite passed repeated reproduction through the native registry. See [the audit verification ledger](hackathon/evidence/VERIFICATION.md) for exact logs, dependency-preparation outcomes and final-pin status. CLI validation warnings in standalone demo drivers are disclosed; a pass after dependency preparation errors is not a clean-install certification.

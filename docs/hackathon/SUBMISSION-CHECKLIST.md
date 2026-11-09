@@ -1,0 +1,50 @@
+# Submission checklist
+
+Deadline verified on the organizer's official LinkedIn announcement: **November 11, 2026, 5 PM EST (22:00 UTC)**. Recheck for updates and inspect the form before sending. [Research and source-access limits](COMPETITIVE-ANALYSIS.md).
+
+## Product and candidate
+
+- [x] Standalone native plugin; no other agent plugin dependency.
+- [x] Public repository, MIT license, manifest and native entrypoint.
+- [x] Six tools and two hooks match declared registrations.
+- [x] Native commands, skill, cleanup, runtime/version checks and explicit setup documented.
+- [x] Current host 0.23.0 native workflow exercised with real tools; previous minimum-version evidence retained.
+- [x] Unit/security/lifecycle tests pass; actual failure/correction fixture repeats from new state.
+- [x] SHA-256 receipts and artifact snapshots can be independently checked.
+- [x] No global release enforcement, signature, universal correctness or all-tools-ready claim.
+- [ ] Exact final candidate commit validated after all product changes; record it below and in catalog YAML.
+- [ ] Clean plugin install and complete `--install-deps` preparation at that pin; do not rely on a validator's success line after dependency errors.
+- [ ] Current Linux CI matrix complete at final pin; retain logs/artifacts.
+- [ ] Review catalog warnings about private imports in standalone demo harnesses; do not claim zero warnings.
+
+## Official catalog admission
+
+- [ ] Copy `submission/kujo-hermes.yaml` to `NousResearch/hermes-agent/plugin-catalog/kujo-hermes.yaml` only after authorization.
+- [ ] Full 40-character tested SHA, quoted version, HTTPS public repo, truthful SemVer floor and platforms.
+- [x] Capabilities list matches tools/hooks; no undeclared middleware or required credentials.
+- [x] Bounded Python dependency; no bundled executables, core monkey patches, runtime self-updater or credential-file reads.
+- [x] Disclose source downloads, repository reads, subprocesses, possible provider calls, optional services, background jobs and local receipt storage.
+- [ ] Attach exact-pin doctor/validation logs, current CI result and native workflow evidence to PR draft.
+- [ ] Owner/major contributor opens PR; wait for catalog CI and answer review comments. Catalog listing requires human merge, separate from contest submission timing.
+
+## Film and public presentation
+
+- [x] Existing 88-second square film audited directly via decoded frames and source timing.
+- [x] Replacement 86-second storyboard and real checkout fixture prepared.
+- [x] README opens with concrete developer outcome; monochrome badges retained.
+- [ ] Record actual Hermes model conversation finding and correcting the checkout defect, or clearly label a developer-applied fix.
+- [ ] Export matching real evidence; preserve raw take and approval decisions.
+- [ ] Render/review replacement square film and downloadable 480p copy; verify duration <90 seconds, readable text, full screens, synchronized narration and audio by listening.
+- [ ] Confirm rights for voice/music/assets; use existing authorized material where suitable.
+- [ ] Final outro includes installation CTA; no unverified npm package claim or contest mention needed.
+- [ ] Verify README/demo/catalog all describe the same candidate and boundaries.
+
+## External submission — approval required
+
+- [x] Verified official announcement: four criteria, beyond-prompts preference, November 11 deadline, working demo under 90 seconds and submission links. Recheck for late changes before posting.
+- [ ] Open the authorized catalog PR; save public URL.
+- [ ] Upload the approved public demo to X and tag **@NousResearch**; save post URL.
+- [ ] Inspect the official form's actual fields and terms: https://form.typeform.com/to/FwJLvOln.
+- [ ] Submit PR and public demo links before the deadline; save confirmation. No form submission, post, release or external PR has been made by this audit.
+
+The local commit/push requested for development is not authorization to publish the contest entry. Evidence status and remaining actions are in [the verification ledger](evidence/VERIFICATION.md).

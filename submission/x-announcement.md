@@ -1,10 +1,11 @@
 Draft — do not post automatically:
 
-Built Kujo Hermes for the @NousResearch Hermes Agent Plugin Hackathon.
+A coupon made a $50 cart cost $50.99. Kujo Eval caught the regression. After the fix, the same checks passed—and both runs kept their evidence.
 
-Hermes can now discover Kujo engineering tools, inspect repositories, validate specs, run verification workflows and retrieve execution receipts through native tools—with human approval for mutations.
+Kujo Hermes brings native verification tools and execution receipts to Hermes.
 
-Demo: [insert public video URL]
-Source: https://github.com/kujolang/kujo-hermes
+@NousResearch
+Demo: [approved public video URL]
+https://github.com/kujolang/kujo-hermes
 
-Describe only the operations shown live. Do not claim every ecosystem operation is certified; link the readiness report.
+Use this only with the matching recorded workflow. Do not describe a fixture-driven correction as an autonomous model repair. Attach the reviewed video before posting.

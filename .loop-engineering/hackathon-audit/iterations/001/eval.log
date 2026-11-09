@@ -1,0 +1,25 @@
+
+## gate: unit_tests
+$ python3 -m unittest discover -s tests
+.............................................................
+----------------------------------------------------------------------
+Ran 61 tests in 97.982s
+
+OK
+gate unit_tests: pass
+
+## gate: proof_integrity
+$ python3 demo/checkout/verify.py docs/hackathon/evidence
+before: receipt and 10 artifact hashes match
+after: receipt and 19 artifact hashes match
+PASS: the same tests failed before and passed after; stored artifacts match both receipts.
+gate proof_integrity: pass
+
+## gate: packwrite
+$ KUJO=$PWD/.local/runtime/kujo ../packwrite/bin/packwrite validate
+Validation passed (0 warnings) for agent/
+gate packwrite: pass
+
+## gate: diff_check
+$ git diff --check
+gate diff_check: pass

@@ -1,0 +1,7 @@
+kujo.scout.repository.inspect completed 7c608c8b-5e9a-4aba-b567-45f4a4cc629c
+kujo.packwrite.pack.summary completed 3e5d0d19-860e-4116-9dcc-9f38e5fbd526
+kujo.spec.contract.validate completed 89d0ca75-bc94-46ab-8136-5a7a430a7d20
+kujo.eval.suite.run completed 025d173f-3757-4469-a7f6-7563e14b1db6
+kujo.shipcheck.repository.scan completed 65d4fa75-e581-48b4-b7d5-7ae2fa2dc0ca
+kujo.workflows.loop.run completed ec3ce13b-9181-4485-8bb8-44ec20c7e9b0
+PASS real Hermes load, discovery, denial, approval, canonical workflow, receipts, failure, unload

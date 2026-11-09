@@ -1,0 +1,5 @@
+BEFORE: $50 cart + 10% coupon should cost $45, not $50.99.
+{"phase": "before", "passed": 2, "failed": 1, "receipt": "e331840c-3319-41c7-84c1-e68f68601b7d"}
+FIX: use original subtotal for shipping eligibility. Tests remain unchanged.
+{"phase": "after", "passed": 3, "failed": 0, "receipt": "2d2b0d94-3c2d-4d26-ac8e-1e7e54ffc195"}
+PASS: real failure, unchanged tests, real correction, independently checked receipt hashes, clean unload.

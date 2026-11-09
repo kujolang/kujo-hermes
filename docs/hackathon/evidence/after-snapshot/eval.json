@@ -1,0 +1,10 @@
+{
+  "name": "checkout-coupon-regression",
+  "output_dir": ".kujo/eval",
+  "stop_on_failure": false,
+  "tests": [
+    {"name": "Below threshold: shipping still applies", "check": "command_succeeds", "params": {"command": "python3 -m unittest test_checkout.CheckoutTests.test_below_threshold"}},
+    {"name": "Full-price threshold: free shipping", "check": "command_succeeds", "params": {"command": "python3 -m unittest test_checkout.CheckoutTests.test_full_price_threshold"}},
+    {"name": "Coupon must not add a shipping charge", "check": "command_succeeds", "params": {"command": "python3 -m unittest test_checkout.CheckoutTests.test_discount_keeps_free_shipping"}}
+  ]
+}
