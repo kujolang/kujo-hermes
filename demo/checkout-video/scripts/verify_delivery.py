@@ -1,11 +1,11 @@
 """Verify the finished MP4, decode every frame, and measure its audio."""
 import hashlib,json,pathlib,re,subprocess
-r=pathlib.Path(__file__).resolve().parents[1];video=r/'delivery/kujo-hermes-checkout.mp4'
+r=pathlib.Path(__file__).resolve().parents[1];video=r/'delivery/kujo-hermes-checkout.mp4';D=json.loads((r/'timeline.json').read_text())['duration'];frames=round(D*30)
 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)],text=True))
 v=next(s for s in probe['streams'] if s['codec_type']=='video');a=next(s for s in probe['streams'] if s['codec_type']=='audio')
 assert (v['width'],v['height'],v['codec_name'],v['pix_fmt'])==(1080,1080,'h264','yuv420p')
-assert v['r_frame_rate']=='30/1' and int(v['nb_frames'])==2640
-assert 87.9<=float(probe['format']['duration'])<90
+assert v['r_frame_rate']=='30/1' and int(v['nb_frames'])==frames
+assert abs(float(probe['format']['duration'])-D)<.05 and D<90
 assert a['codec_name']=='aac' and a['sample_rate']=='48000'
 decode=subprocess.run(['ffmpeg','-nostdin','-v','error','-i',str(video),'-f','null','-'],capture_output=True,text=True,check=True)
 assert not decode.stderr.strip(),decode.stderr
@@ -19,8 +19,8 @@ mp=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-
 mv=next(x for x in mp['streams'] if x['codec_type']=='video')
 ma=next(x for x in mp['streams'] if x['codec_type']=='audio')
 assert (mv['width'],mv['height'],mv['codec_name'],mv['pix_fmt'])==(480,480,'h264','yuv420p')
-assert int(mv['nb_frames'])==2640 and ma['codec_name']=='aac'
-assert abs(float(mp['format']['duration'])-88)<0.05
+assert int(mv['nb_frames'])==frames and ma['codec_name']=='aac'
+assert abs(float(mp['format']['duration'])-D)<0.05
 md=subprocess.run(['ffmpeg','-nostdin','-v','error','-i',str(mobile),'-f','null','-'],capture_output=True,text=True,check=True)
 assert not md.stderr.strip(),md.stderr
 result['mobile']={'file':str(mobile.relative_to(r)),'sha256':hashlib.sha256(mobile.read_bytes()).hexdigest(),'bytes':mobile.stat().st_size,'width':480,'height':480,'duration_seconds':float(mp['format']['duration']),'full_decode':'passed'}

@@ -1,64 +1,72 @@
 {
-  "duration": 88,
+  "duration": 70.2,
   "fps": 30,
   "intro": "Kujo Hermes.",
   "outro": "Kujo. Trust at the speed of AI. Install Kujo Hermes today.",
   "scenes": [
     {
       "id": "hook",
-      "cue": "hook",
+      "cue": "show-hook",
       "title": "A coupon should save money.",
-      "text": "This checkout overcharges a customer by five dollars and ninety-nine cents. Let\u2019s ask Hermes to find the cause, with Kujo checking the work.",
-      "shot": "hook"
-    },
-    {
-      "id": "install",
-      "cue": "install",
-      "title": "Two commands to connect.",
-      "text": "With Hermes, Kujo, and Git installed, add the plugin and run setup. Accept the prompts, then start a new conversation.",
-      "shot": "install"
+      "text": "This coupon adds a shipping charge it shouldn\u2019t. Give Hermes a check it can prove.",
+      "shot": "hook",
+      "duration": 6.8
     },
     {
       "id": "spec",
-      "cue": "spec",
-      "title": "Define the expected result.",
-      "text": "Spec validates the task contract. Here, free shipping depends on the original cart total. Hermes asks for approval before Eval runs repository checks.",
-      "shot": "spec"
+      "cue": "show-spec",
+      "title": "Set the expected behavior.",
+      "text": "Spec defines the task contract. You approve the repository checks.",
+      "shot": "spec",
+      "duration": 7
     },
     {
       "id": "failure",
-      "cue": "failure",
+      "cue": "show-failure",
       "title": "Expected $45.00.\nCharged $50.99.",
-      "text": "Eval runs the real tests. Two pass. One fails. The receipt records the overcharge and the exact command, so the failure can be reproduced.",
-      "shot": "failure"
+      "text": "Eval runs the tests and catches the overcharge.",
+      "shot": "failure",
+      "duration": 6
     },
     {
       "id": "fix",
-      "cue": "fix",
+      "cue": "show-fix",
       "title": "Hermes fixes the cause.",
-      "text": "A free local Qwen model, running inside Hermes, changes the shipping calculation. The tests stay unchanged.",
-      "shot": "fix"
+      "text": "Hermes fixes the calculation using a free local model. The tests stay unchanged.",
+      "shot": "fix",
+      "duration": 7
     },
     {
       "id": "pass",
-      "cue": "pass",
-      "title": "All three checks pass.",
-      "text": "Hermes runs the same Eval suite again. All three checks pass. That verifies this behavior, not every possible checkout scenario.",
-      "shot": "pass"
+      "cue": "show-pass",
+      "title": "3 passed. 0 failed.",
+      "text": "The same checks now pass.",
+      "shot": "pass",
+      "duration": 8
     },
     {
       "id": "receipt",
-      "cue": "receipt",
-      "title": "Keep the evidence.",
-      "text": "Both receipts remain available. You can trace the commands and check the evidence hashes after the conversation ends.",
-      "shot": "receipt"
+      "cue": "show-receipt",
+      "title": "Evidence you can revisit.",
+      "text": "Keep the commands, results and evidence hashes after the chat ends.",
+      "shot": "receipt",
+      "duration": 7
     },
     {
       "id": "tools",
-      "cue": "tools",
+      "cue": "show-tools",
       "title": "More tools. Same conversation.",
-      "text": "Discover tools for release review, repository inspection, and context preparation. ShipCheck, Scout, and PackWrite give Hermes more ways to support your development workflow.",
-      "shot": "tools"
+      "text": "Discover Scout to inspect repositories, PackWrite to prepare context, and ShipCheck to review release readiness.",
+      "shot": "tools",
+      "duration": 9
+    },
+    {
+      "id": "install",
+      "cue": "show-install",
+      "title": "Two commands to connect.",
+      "text": "With Hermes, Kujo and Git installed, add the plugin, run setup, and accept the prompts.",
+      "shot": "install",
+      "duration": 9
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "cue": "show-spec",
+  "text": "Spec defines the task contract. You approve the repository checks.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "de35dda175da4bd018c14c70951c91a215ec75afab5b860e31ae4e8ed8e4c152",
+  "audio_sha256": "4f1031f4c12241f804459b28d51178f3b427dcb71e915043b5a72fb8ed63e3c8",
+  "duration": 4.96,
+  "request_id": "LlcGje45nmQeSPaFfhEY",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T17:12:13Z"
+}

@@ -1,0 +1,16 @@
+{
+  "provider": "ElevenLabs",
+  "request": {
+    "prompt": "Instrumental product film underscore, confident minimal electronic groove, 108 BPM, warm bass, dry understated percussion, delicate plucked synth texture, no vocals, no corporate piano, no dramatic trailer hits. Clear space for narration. Immediate clean pulse, subtle lift after twenty seconds, confident resolving ending.",
+    "music_length_ms": 65000,
+    "force_instrumental": true,
+    "model_id": "music_v1"
+  },
+  "bytes": 1040762,
+  "reuse": "User-owned Website Cloner music, reused for the requested matching showcase feel; no customer image assets copied.",
+  "source_sha256": "48c8942d041a545fdf2b44cbc9b965d41a0dfdbd44d7c474aac6872468c1ca6c",
+  "source_project": "Website Cloner v0.1.1 promo",
+  "source_generation_date": "2026-11-09",
+  "generation_tier_evidence": "Source PRODUCTION.md records Creator tier active at generation.",
+  "treatment": "Pitch-preserving atempo to 70.2 seconds; smooth voice ducking and final fade; original voice speed retained."
+}

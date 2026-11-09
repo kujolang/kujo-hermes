@@ -1,0 +1,15 @@
+{
+  "cue": "show-hook",
+  "text": "This coupon adds a shipping charge it shouldn\u2019t. Give Hermes a check it can prove.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "b3525a0ed0e1d423af77b853487205d2a459b006e3dbc1183a28d80441f28547",
+  "audio_sha256": "962bf0a493bac35433dcdb97ff7c6b812c1f4f1d3030dd6dd36583407e3077b1",
+  "duration": 5.2,
+  "request_id": "DmFTyGtIZVCacGNMWvXR",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T17:12:11Z"
+}

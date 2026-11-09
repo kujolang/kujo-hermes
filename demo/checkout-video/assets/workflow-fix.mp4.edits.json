@@ -1,17 +1,17 @@
 {
-  "source": "demo/checkout-video/evidence/model-diff.cast",
+  "source": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/model-diff.cast",
   "windows": [
     [
       0,
       1.8,
-      2.5
+      2.11353
     ],
     [
       1.8,
       5.9,
-      5.78
+      4.88647
     ]
   ],
-  "duration": 8.280000000000001,
+  "duration": 7.0,
   "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
 }

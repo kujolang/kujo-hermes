@@ -1,0 +1,15 @@
+{
+  "cue": "show-receipt",
+  "text": "Keep the commands, results and evidence hashes after the chat ends.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "97d1a7b7b1d50ae1ed70433361c28ec28bca882aade74f5f10d74715068d67cb",
+  "audio_sha256": "ffbc4cb99e97a6c6a214b6560b01af2101464831cbf0eda4e35610fc497c9bb1",
+  "duration": 4.56,
+  "request_id": "bjLBCWwZIm5681CW3gPK",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T17:12:20Z"
+}

@@ -7,6 +7,6 @@ for result in [r,r['mobile']]:
  p=root/result['file']
  assert hashlib.sha256(p.read_bytes()).hexdigest()==result['sha256'],p
  assert result['full_decode']=='passed' and result['duration_seconds']<90
-assert json.loads((root/'evidence/check.json').read_text())['ok']
+assert json.loads((root/'evidence/showcase-check.json').read_text())['ok']
 assert json.loads((root/'evidence/video-subject-verification.json').read_text())['ok']
 print('PASS: delivery hashes match the decoded, measured and source-matched files.')

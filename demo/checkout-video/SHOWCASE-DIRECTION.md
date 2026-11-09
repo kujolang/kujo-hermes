@@ -1,7 +1,8 @@
 # Showcase direction
 
-Review date: November 9, 2026. This is a proposed creative revision, not a new
-render or an approved script. The existing 88-second delivery remains unchanged.
+Review date: November 9, 2026. The user authorized production of this direction. The current edit is 70.2 seconds;
+see STORYBOARD.md for its measured timing. This document preserves the rationale
+for replacing the earlier 88-second walkthrough.
 
 ## What the reference does better
 

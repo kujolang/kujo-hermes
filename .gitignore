@@ -7,3 +7,7 @@ build/
 dist/
 .local/
 node_modules/
+# Regenerable full-resolution showcase review frames; contact sheets are retained.
+demo/checkout-video/evidence/showcase-review/*.png
+demo/checkout-video/evidence/showcase-review/early-beats.jpg
+demo/checkout-video/evidence/showcase-usage.json

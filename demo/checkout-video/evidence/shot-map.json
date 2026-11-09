@@ -2,73 +2,73 @@
   {
     "scene": "hook",
     "start": 3.2,
-    "duration": 9.4,
-    "cue": "hook",
+    "duration": 6.8,
+    "cue": "show-hook",
     "source": "assets/workflow-hook.mp4",
     "source_kind": "actual checkout function capture",
     "full_source_width": true
   },
   {
-    "scene": "install",
-    "start": 12.6,
-    "duration": 9.0,
-    "cue": "install",
-    "source": "assets/install.mp4",
-    "source_kind": "actual CLI capture",
-    "full_source_width": true
-  },
-  {
     "scene": "spec",
-    "start": 21.6,
-    "duration": 11.48,
-    "cue": "spec",
+    "start": 10.0,
+    "duration": 7,
+    "cue": "show-spec",
     "source": "assets/workflow-spec.mp4",
     "source_kind": "actual local-model Hermes CLI capture",
     "full_source_width": true
   },
   {
     "scene": "failure",
-    "start": 33.08,
-    "duration": 10.76,
-    "cue": "failure",
+    "start": 17.0,
+    "duration": 6,
+    "cue": "show-failure",
     "source": "assets/workflow-failure.mp4",
     "source_kind": "actual local-model Hermes CLI capture",
     "full_source_width": true
   },
   {
     "scene": "fix",
-    "start": 43.84,
-    "duration": 8.28,
-    "cue": "fix",
+    "start": 23.0,
+    "duration": 7,
+    "cue": "show-fix",
     "source": "assets/workflow-fix.mp4",
     "source_kind": "actual git diff of model edit",
     "full_source_width": true
   },
   {
     "scene": "pass",
-    "start": 52.12,
-    "duration": 9.64,
-    "cue": "pass",
+    "start": 30.0,
+    "duration": 8,
+    "cue": "show-pass",
     "source": "assets/workflow-pass.mp4",
     "source_kind": "actual local-model Hermes CLI capture",
     "full_source_width": true
   },
   {
     "scene": "receipt",
-    "start": 61.76,
-    "duration": 7.24,
-    "cue": "receipt",
+    "start": 38.0,
+    "duration": 7,
+    "cue": "show-receipt",
     "source": "assets/workflow-receipt.mp4",
     "source_kind": "actual independent receipt verification",
     "full_source_width": true
   },
   {
     "scene": "tools",
-    "start": 69.0,
-    "duration": 11.8,
-    "cue": "tools",
+    "start": 45.0,
+    "duration": 9,
+    "cue": "show-tools",
     "source": "assets/workflow-tools.mp4",
     "source_kind": "actual local-model Hermes CLI capture",
+    "full_source_width": true
+  },
+  {
+    "scene": "install",
+    "start": 54.0,
+    "duration": 9,
+    "cue": "show-install",
+    "source": "assets/install.mp4",
+    "source_kind": "actual CLI capture",
     "full_source_width": true
   }
 ]

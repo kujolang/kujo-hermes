@@ -1,19 +1,9 @@
 # Checkout: prove the correction
 
-An 88-second square film for developers who use Hermes. Show one reproducible
-failure, the local model's correction, unchanged checks passing, and saved evidence.
-The installation scene uses the existing genuine installation recording. All
-checkout scenes must come from the new model session, never the deterministic driver.
+70.2 seconds, 1080 square, 30 fps. Mobile export: 480 square H.264/AAC with fast start. Ten scenes; nine existing CMD glitches including both bumper joins. The full terminal sits in a 1008×720 contained area, with no crop. Installation uses a 1008×540 area and two large commands. Headings are 56–61 px; one per scene. Preserve both original brand bumpers.
 
-Keep the established Kujo/Hermes bumpers and CMD glitch at every cut, including
-both bumper boundaries. Use one short headline above a complete terminal screen.
-Black and white; small original glitch color accents. No dashboards, fabricated
-chat, cropped output, extra keyword rows, or claims of a release gate.
+Narration: authorized ElevenLabs V4 Siren, original speed, 45.52 seconds including bumpers. The pass scene has over five seconds without speech. Music: user-owned ElevenLabs Website Cloner instrumental, tempo-fitted from 65.045 to 70.2 seconds, ducked beneath each cue. Master target −16 LUFS, −2 dBTP before AAC encoding. Transition sounds at all nine joins.
 
-Model: Qwen3.5 4B via local Ollama inside Hermes. Local inference has no API fee.
-Narrator: existing authorized ElevenLabs V4 Siren voice. Condense waits, preserve
-causal order, and identify the terminal recording as edited in the provenance.
+All source screens show the real Qwen3.5 4B session or actual commands against its files. Source windows remain in edits.json. Spec validates the contract; Eval runs three checks. Discovery shows available Scout, PackWrite and ShipCheck capabilities, not their execution. Show the edited-time disclosure. Passing checks must not imply general correctness or an enforced release gate.
 
-Frame: 1080 square, 30 fps. Mobile export: 480 square H.264/AAC with fast start.
-Audio: original-speed voice, quiet existing music, restrained transition sounds.
-Each visual must show the operation named by its narration.
+BANNED: fake chat, invented tool results, cropped screen edges, dashboards, extra keyword rows, constant camera drift, dense narration and claims of instantaneous autonomous completion.

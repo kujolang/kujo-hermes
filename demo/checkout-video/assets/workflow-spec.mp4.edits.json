@@ -1,17 +1,17 @@
 {
-  "source": "demo/checkout-video/evidence/checkout.cast",
+  "source": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/checkout.cast",
   "windows": [
     [
       621.9,
       623,
-      5.5
+      3.35366
     ],
     [
       715,
       743,
-      5.98
+      3.64634
     ]
   ],
-  "duration": 11.48,
+  "duration": 7.0,
   "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
 }

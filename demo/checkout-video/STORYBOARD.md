@@ -1,18 +1,20 @@
-# Checkout walkthrough — 88 seconds
+# Showcase storyboard
 
-| Time | Screen | Narration purpose |
-|---|---|---|
-| 0–3.2 | Existing Kujo × Hermes bumper | Name the integration. |
-| 3.2–12.6 | Actual checkout function charge | Show the $5.99 overcharge. |
-| 12.6–21.6 | Existing real installation capture | Two commands, prerequisites and prompts. |
-| 21.6–33.08 | Real Spec execution and Eval approval | Define expected behavior and retain operator control. |
-| 33.08–43.84 | Failed Eval result | Two pass, one fails; reproducible evidence. |
-| 43.84–52.12 | Real model patch | Change the shipping threshold; keep tests. |
-| 52.12–61.76 | Same suite passes | Three pass, bounded claim. |
-| 61.76–69 | Actual receipts / independent verification | Preserve both runs and inspect their hashes. |
-| 69–80.8 | Actual native catalog discovery | Show release review, inspection and context tools. |
-| 80.8–88 | Existing branded outro and install CTA | Point to the public repository. |
+The real source windows are in `edits.json`; `evidence/shot-map.json` maps each scene to its source. All body shots use complete source screens. Each join uses the existing CMD glitch and a restrained sound hit.
 
-Every cut uses the established short CMD glitch, including the first and last.
-Each screen shows its full terminal width and one large caption. No keyword bar.
-Source timestamps and removed waits belong in each clip's `.edits.json`.
+| Time | Picture / on-screen headline | Siren narration |
+| --- | --- | --- |
+| 0–3.2 | Original Kujo × Hermes bumper | Kujo Hermes. |
+| 3.2–10 | A coupon should save money. (`hook` source) | This coupon adds a shipping charge it shouldn’t. Give Hermes a check it can prove. |
+| 10–17 | Set the expected behavior. (`spec` source) | Spec defines the task contract. You approve the repository checks. |
+| 17–23 | Expected $45.00. Charged $50.99. (`failure` source) | Eval runs the tests and catches the overcharge. |
+| 23–30 | Hermes fixes the cause. (`fix` source) | Hermes fixes the calculation using a free local model. The tests stay unchanged. |
+| 30–38 | 3 passed. 0 failed. (`pass` source) | The same checks now pass. |
+| 38–45 | Evidence you can revisit. (`receipt` source) | Keep the commands, results and evidence hashes after the chat ends. |
+| 45–54 | More tools. Same conversation. (`tools` source) | Discover Scout to inspect repositories, PackWrite to prepare context, and ShipCheck to review release readiness. |
+| 54–63 | Two commands to connect. (`install` source) | With Hermes, Kujo and Git installed, add the plugin, run setup, and accept the prompts. |
+| 63–70.2 | Original outro + install CTA + repository address | Kujo. Trust at the speed of AI. Install Kujo Hermes today. |
+
+The pass narration ends at 32.25 seconds. Hold the genuine passing result until 38 seconds; the music rises in that gap. Installation remains readable for nine seconds. Source recordings condense waits and operator pauses; the film does not imply real-time execution.
+
+Proof: `evidence/run` contains before/after artifacts and receipts; `evidence/VERIFICATION.md` explains the source session. `evidence/showcase-music-provenance.json` records the reused generated music; `evidence/narration.json` records new voice takes.

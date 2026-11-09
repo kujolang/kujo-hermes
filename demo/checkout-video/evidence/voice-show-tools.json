@@ -1,0 +1,15 @@
+{
+  "cue": "show-tools",
+  "text": "Discover Scout to inspect repositories, PackWrite to prepare context, and ShipCheck to review release readiness.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "d9e7875c11d2d546ff9d5c338407dbb6cdc7f0d85d6363f206cd44efeaab9e5e",
+  "audio_sha256": "5946f412433307ba87f5f96717d22c9352c607f7897b818cfe37ba3771a8a2b5",
+  "duration": 7.36,
+  "request_id": "gCJB3vVho8ceLB0M5ab0",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T17:12:23Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cue": "show-failure",
+  "text": "Eval runs the tests and catches the overcharge.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "ae05213da66f36112950ab137b692aad2a43d44e4db56d39be3420f6fc63875a",
+  "audio_sha256": "a109f4fc4c7bc7e7e8ea5ac26480426b9579641d10ea46802b8802a379c84436",
+  "duration": 3.2,
+  "request_id": "Iex7D1FHrDJCz8ezPQdx",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T17:12:15Z"
+}

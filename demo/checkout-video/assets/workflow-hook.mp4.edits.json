@@ -1,17 +1,17 @@
 {
-  "source": "demo/checkout-video/evidence/charge-simple.cast",
+  "source": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/evidence/charge-simple.cast",
   "windows": [
     [
       0.26,
       1.8,
-      1.6
+      1.15745
     ],
     [
       1.8,
       5.9,
-      7.8
+      5.64255
     ]
   ],
-  "duration": 9.4,
+  "duration": 6.8,
   "note": "Actual captured terminal output. Playback is condensed; holds and cuts are editorial."
 }

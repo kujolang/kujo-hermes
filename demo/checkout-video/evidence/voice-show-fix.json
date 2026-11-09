@@ -1,0 +1,15 @@
+{
+  "cue": "show-fix",
+  "text": "Hermes fixes the calculation using a free local model. The tests stay unchanged.",
+  "provider": "ElevenLabs",
+  "model": "eleven_v4",
+  "voice_name": "Siren",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "generation_tier": "creator",
+  "request_sha256": "d89349c25ee888c49727ce5def00d12f2e772bb938290d389246a0701be05a70",
+  "audio_sha256": "0f2da3767c2337d990fa76737851405420fd17a013ca14228600fd5229b1550e",
+  "duration": 5.76,
+  "request_id": "v7cnAxvzswWAe66KG8hQ",
+  "authorized_by": "User requested Siren V4 narration for this walkthrough",
+  "generated_at": "2026-11-09T17:12:17Z"
+}
