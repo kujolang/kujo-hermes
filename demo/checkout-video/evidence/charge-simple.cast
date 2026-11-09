@@ -1,0 +1,4 @@
+{"version":2,"width":40,"height":12,"timestamp":1794237577,"command":"python3 demo/checkout-video/scripts/record_charge.py","env":{"SHELL":"/bin/zsh"}}
+[0.249246, "o", "$ python3 show_charge.py\r\n"]
+[1.422739, "o", "Cart: $50.00 | Coupon: 10%\r\nCharged: $50.99\r\n"]
+[6.491576, "x", "0"]

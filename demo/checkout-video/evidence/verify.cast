@@ -1,0 +1,6 @@
+{"version":2,"width":60,"height":24,"timestamp":1794240308,"command":"python3 demo/checkout-video/scripts/record_verify.py","env":{"SHELL":"/bin/zsh"}}
+[0.092042, "o", "$ python3 demo/checkout/verify.py demo/checkout-video/evidence/run\r\n"]
+[1.168613, "o", "before: receipt and 10 artifact hashes match\r\n"]
+[1.178166, "o", "after: receipt and 19 artifact hashes match\r\n"]
+[1.178447, "o", "PASS: the same tests failed before and passed after; stored artifacts match both receipts.\r\n"]
+[5.19866, "x", "0"]
