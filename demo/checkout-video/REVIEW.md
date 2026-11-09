@@ -1,5 +1,11 @@
 # Checkout film review
 
+Creative status, November 9: the user finds this delivery too dry and prefers the
+upbeat showcase feel of today's Website Cloner film. The technical checks below
+do not constitute creative approval. [Showcase direction](SHOWCASE-DIRECTION.md)
+records the reference comparison and proposed revision; no replacement render has
+been produced by that review.
+
 The centerpiece is the same test failing before a real model edit and passing
 after it. The narration explains the customer impact before naming tools. The
 film keeps the established bumpers and glitches, including both bumper joins,
