@@ -13,4 +13,3 @@ Preparing the isolated Hermes runtime…
 
 Plugin installed but not enabled. Run `hermes plugins enable kujo-hermes` to
 activate.
-
