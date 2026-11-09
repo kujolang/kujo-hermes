@@ -1,0 +1,16 @@
+Warning: custom (unreviewed) source — not from the Hermes catalog.
+Cloning https://github.com/kujolang/kujo-hermes...
+Preparing the isolated Hermes runtime…
+  → Installing Python dependencies…
+  ✓ Installing Python dependencies
+
+╭──────────────────────────────── ✓ Installed ─────────────────────────────────╮
+│ Plugin installed: https://github.com/kujolang/kujo-hermes                    │
+│ Location:                                                                    │
+│ /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hackathon/in │
+│ stall-home/plugins/kujo-hermes                                               │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Plugin installed but not enabled. Run `hermes plugins enable kujo-hermes` to
+activate.
+

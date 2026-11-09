@@ -1,0 +1,23 @@
+{
+  "run_id": 42637870905,
+  "url": "https://github.com/kujolang/kujo-hermes/actions/runs/42637870905",
+  "commit": "6f847b98aae1260b22bff9579b341f0e11225af6",
+  "jobs": [
+    {
+      "id": 129230745016,
+      "name": "host (v0.22.7)",
+      "conclusion": "success"
+    },
+    {
+      "id": 129230745019,
+      "name": "unit",
+      "conclusion": "success"
+    },
+    {
+      "id": 129230745614,
+      "name": "host (v0.23.0)",
+      "conclusion": "success"
+    }
+  ],
+  "full_logs": "Original job logs available at the public run URL; excerpts retain relevant observed outputs."
+}

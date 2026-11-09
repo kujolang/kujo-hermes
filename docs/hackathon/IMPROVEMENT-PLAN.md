@@ -4,8 +4,8 @@ The missing element is a complete, memorable engineering outcome. No new dashboa
 
 | Priority | Change | Judging impact | Effort / risk | Decision and evidence |
 |---|---|---|---|---|
-| P0 | Replace stale catalog pin with the tested candidate | Validity, reliability | 15 min / low | Prepare after implementation commit; verify exact tree before external PR. Original pin omitted recent setup and hardening. |
-| P0 | Validate current stable Hermes and clean install | Reliability | 1–2 h / low | Native 0.23.0 workflow passed. Official validator and dependency install evidence must be judged separately; see checklist for actual outcome. CI now covers 0.22.7 and 0.23.0. |
+| P0 | Replace stale catalog pin with the tested candidate | Validity, reliability | 15 min / low | Fixed: pins tested candidate 6f847b9. Current Linux CI and local public installation passed. Original pin omitted recent setup and hardening. |
+| P0 | Validate current stable Hermes and clean install | Reliability | 1–2 h / low | Completed: native workflows, official validation/dependency preparation and clean installs passed. CI covers 0.22.7 and 0.23.0. Earlier failed attempts remain documented. |
 | P0 | Remove ambiguity between command success, checks and receipt integrity | Reliability, honesty | 30 min / low | Native descriptions and engineering skill clarified. No claim that ShipCheck blocks arbitrary release actions. |
 | P0 | Preserve submission prerequisites and disclosures | Admission | 30 min / low | Runtime remains a separate prerequisite; setup fetches 26 sources; optional service/container/browser requirements remain visible. |
 | P1 | Real regression → correction → unchanged checks → both receipts | Usefulness, demo, creativity | 1–2 h / low | Implemented checkout fixture through real Hermes gate/registry and canonical Spec/Eval; repeated twice. Correction is explicitly fixture-driven, not attributed to an LLM. |
@@ -22,4 +22,4 @@ The missing element is a complete, memorable engineering outcome. No new dashboa
 
 Do not publish on a failed catalog validation, dependency resolution or mismatched pin. Do not hide an external blocker behind an old passing log. Do not add a feature to rescue a weak story when an existing verified workflow already tells it. Substantial additions need owner approval.
 
-The three highest-impact remaining actions are: record the real correction workflow in Hermes; obtain a clean current-version installation/validation result at the final pin; submit the exact reviewed candidate, matching demo and disclosures before the deadline. Publication remains owner-authorized work.
+The three highest-impact remaining actions are: record the real correction workflow in Hermes; rehearse the first-use flow with a developer unfamiliar with Kujo; submit the exact reviewed candidate, matching demo and disclosures before the deadline. Publication remains owner-authorized work.

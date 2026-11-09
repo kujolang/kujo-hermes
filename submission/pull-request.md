@@ -16,6 +16,8 @@ Disclosures:
 - Opt-in background operations have timeout, cancellation and unload cleanup. No persistent service starts automatically.
 - Local receipts are redacted SHA-256 records, not signed attestations. Operators manage retention.
 
+Tested candidate: `6f847b98aae1260b22bff9579b341f0e11225af6`. CI https://github.com/kujolang/kujo-hermes/actions/runs/42637870905 passed on Hermes 0.22.7 and 0.23.0, including clean install and the native checkout correction workflow.
+
 Validation: attach the checked commit's `hermes plugins validate --install-deps`, real host E2E, canonical integration results and readiness report. Report any dependency-network failure separately from manifest validation.
 
 See docs/readiness.md for remaining gaps: browser and container prerequisites, producer gateways, Foreman discovery and untested deployments or platforms. This tool-only integration does not add a Desktop dashboard. Attach the matching real workflow demo.

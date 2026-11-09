@@ -12,10 +12,10 @@ Deadline verified on the organizer's official LinkedIn announcement: **November 
 - [x] Unit/security/lifecycle tests pass; actual failure/correction fixture repeats from new state.
 - [x] SHA-256 receipts and artifact snapshots can be independently checked.
 - [x] No global release enforcement, signature, universal correctness or all-tools-ready claim.
-- [ ] Exact final candidate commit validated after all product changes; record it below and in catalog YAML.
-- [ ] Clean plugin install and complete `--install-deps` preparation at that pin; do not rely on a validator's success line after dependency errors.
-- [ ] Current Linux CI matrix complete at final pin; retain logs/artifacts.
-- [ ] Review catalog warnings about private imports in standalone demo harnesses; do not claim zero warnings.
+- [x] Candidate `6f847b98aae1260b22bff9579b341f0e11225af6` validated in CI; catalog YAML pins that exact tested implementation. Later commits record audit/validation outcomes only.
+- [x] Clean Linux plugin install and complete validation at that pin passed on both supported host versions; local fresh-profile dependency preparation also passed.
+- [x] Linux CI run 42637870905 passed all three jobs: unit, host 0.22.7, host 0.23.0. Logs and artifacts retained.
+- [x] Catalog private-import warnings in standalone demonstration harnesses reviewed and disclosed; not claimed warning-free.
 
 ## Official catalog admission
 

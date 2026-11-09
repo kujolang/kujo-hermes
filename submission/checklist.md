@@ -1,13 +1,9 @@
 # Manual submission checklist
 
-Sources reviewed: [catalog submission](https://hermes-agent.nousresearch.com/docs/developer-guide/plugins/catalog-submission), [canonical catalog rules](https://github.com/NousResearch/hermes-agent/blob/main/plugin-catalog/README.md).
+Use the [current submission checklist](../docs/hackathon/SUBMISSION-CHECKLIST.md) and [verification ledger](../docs/hackathon/evidence/VERIFICATION.md). The catalog candidate pins `6f847b98aae1260b22bff9579b341f0e11225af6`; clean installation, native workflows and official validation passed on Hermes 0.22.7 and 0.23.0 in CI.
 
-- [ ] Review the readiness report and confirm the intended submission scope.
-- [ ] Check the catalog file pins the exact reviewed 40-character commit.
-- [ ] Run `hermes plugins validate <checkout-at-pin> --install-deps` with working network access and read every warning.
-- [ ] With explicit authorization, open the catalog PR containing `plugin-catalog/kujo-hermes.yaml` and the prepared disclosure text.
-- [ ] Record the real <90-second demo using demo/script.md; verify audio, text and actual receipts.
-- [ ] With explicit authorization, post the public demo on X and tag @NousResearch.
-- [ ] With explicit authorization, submit both links through https://form.typeform.com/to/FwJLvOln.
+The [86-second storyboard](../docs/hackathon/DEMO-STORYBOARD.md) and [reproducible checkout fixture](../demo/checkout/README.md) supersede the earlier demo plan for this entry. The replacement real conversation video still needs recording and review.
 
-User-provided deadline: November 11, 2026, 5:00 PM EST. Verify the live form and event terms before submission. No catalog PR, release, X post or form submission is authorized by this preparation task.
+Deadline: November 11, 2026, 5 PM EST, verified in [Nous Research's official announcement](https://kn.linkedin.com/company/nousresearch). Recheck for changes and inspect the live form before sending.
+
+No catalog PR, release, X post or form submission has been authorized. The remaining external actions require owner approval: open the catalog PR, post the reviewed video tagging @NousResearch, and submit both links through https://form.typeform.com/to/FwJLvOln. The organizer allows form submission once the PR is open; catalog merge is separate.

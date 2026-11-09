@@ -1,0 +1,14 @@
+2026-11-09T14:46:05.8895209Z ##[group]Installed versions
+2026-11-09T14:46:18.7572209Z Installed 67 packages in 54ms
+2026-11-09T14:46:19.6092366Z Installed 6 packages in 2ms
+2026-11-09T14:46:23.9299820Z Plugin Doctor: /home/runner/work/kujo-hermes/kujo-hermes
+2026-11-09T14:46:23.9300802Z   OK: runtime discovery, manifest parsing, import, and registration passed
+2026-11-09T14:46:29.7612458Z Installed 4 packages in 1ms
+2026-11-09T14:46:41.7073696Z Installed 73 packages in 51ms
+2026-11-09T14:47:01.8140491Z Validation passed.
+2026-11-09T14:47:18.2701709Z Installed 4 packages in 5ms
+2026-11-09T14:47:20.2471417Z ╭───────────────────────────── ✓ Installed ─────────────────────────────╮
+2026-11-09T14:47:28.7320642Z PASS real Hermes load, discovery, denial, approval, canonical workflow, receipts, failure, unload
+2026-11-09T14:47:30.3963596Z {"phase": "before", "passed": 2, "failed": 1, "receipt": "c19d7b4c-e6c1-493e-b5be-37c16994d308"}
+2026-11-09T14:47:30.6435882Z {"phase": "after", "passed": 3, "failed": 0, "receipt": "b8a9ff93-c62a-489c-bd6e-828653b4945a"}
+2026-11-09T14:47:30.6462519Z PASS: real failure, unchanged tests, real correction, independently checked receipt hashes, clean unload.

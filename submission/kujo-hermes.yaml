@@ -1,6 +1,6 @@
 name: kujo-hermes
 repo: https://github.com/kujolang/kujo-hermes
-sha: 61e3b216570bcd40e5fb5c3f489278440086fcfa
+sha: 6f847b98aae1260b22bff9579b341f0e11225af6
 description: >-
   Native discovery and execution of Kujo engineering, context, verification and
   orchestration tools with explicit human approvals and local execution receipts.
