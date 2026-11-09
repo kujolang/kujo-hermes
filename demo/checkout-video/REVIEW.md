@@ -4,7 +4,7 @@ The 70.2-second edit replaces the 88-second walkthrough. It uses the same verifi
 Hermes session, bumpers and nine CMD glitches, including both bumper joins. The
 story now follows the overcharge through the model's correction and unchanged
 checks passing. Installation comes after the proof. Narration falls from about 77
-to 45.52 seconds. The passing result has more than five seconds without speech.
+to 46.16 seconds. The passing result has more than five seconds without speech.
 
 The user-owned Website Cloner instrumental supplies the musical pulse. It is
 pitch-preserving tempo-fitted to the film, with smooth ducking under Siren and a
@@ -32,3 +32,18 @@ Final delivery measurements and decoded source comparisons are stored in
 `evidence/delivery-verification.json` and `evidence/video-subject-verification.json`.
 The editable source can be opened in the HyperFrames desktop app; the CLI preview
 also supports editing. No social post or contest submission is performed.
+
+## Pronunciation correction
+
+The user heard the French fashion-brand pronunciation in the hook. All five
+spoken mentions were regenerated with Siren V4 using explicit English
+`/ˈhɝmiːz/` (HER-meez) input. Captions retain “Hermes.” The provider's
+[documented inline IPA support](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4)
+avoids a separate pronunciation-dictionary permission requirement. The dictionary
+creation request was rejected with HTTP 401; no dictionary was created.
+
+Both deliverables were remuxed with the updated master. Exact video-stream hashes
+match the prior verified edit, so its 24 source-frame comparisons remain applicable.
+Full decodes and loudness checks were rerun. Applied controls, cue fit, captions
+and exact AAC stream identity passed. This is not an audible pronunciation review;
+listening remains unverified. See `pronunciation.json` and `evidence/pronunciation-*`.

@@ -6,6 +6,7 @@ import re
 root = pathlib.Path(__file__).resolve().parents[1]
 timeline = json.loads((root / 'timeline.json').read_text())
 lines = ['WEBVTT', '']
+pronunciation = json.loads((root / 'pronunciation.json').read_text())
 
 
 def timestamp(seconds):
@@ -28,6 +29,7 @@ for cue in timeline['cues']:
                              alignment['character_end_times_seconds'][end - 1],
                              match.group().strip()))
     for start, end, text in segments:
+        text = text.replace(pronunciation['spoken'], pronunciation['word'])
         lines.extend([f"{timestamp(cue['start'] + start)} --> "
                       f"{timestamp(cue['start'] + end)}", text, ''])
 (root / 'delivery/kujo-hermes-checkout.vtt').write_text('\n'.join(lines).rstrip() + '\n')

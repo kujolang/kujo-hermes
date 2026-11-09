@@ -1,19 +1,34 @@
 # Context
 
-- objective: Verify the 70-second musical showcase against real model evidence and delivered files
-- git_head: e7aee4e
+- objective: Verify the pronunciation correction, preserved video streams and updated delivery files
+- git_head: 6af0b5a
 - changed_files:
-  - .gitattributes
-  - README.md
-  - demo/checkout-video/README.md
   - demo/checkout-video/REVIEW.md
+  - demo/checkout-video/SPEC.md
+  - demo/checkout-video/assets/intro.mp3
+  - demo/checkout-video/assets/master.m4a
+  - demo/checkout-video/assets/outro.mp3
+  - demo/checkout-video/assets/show-fix.mp3
+  - demo/checkout-video/assets/show-hook.mp3
+  - demo/checkout-video/assets/show-install.mp3
   - demo/checkout-video/delivery/kujo-hermes-checkout-480p.mp4
   - demo/checkout-video/delivery/kujo-hermes-checkout.mp4
+  - demo/checkout-video/delivery/kujo-hermes-checkout.vtt
   - demo/checkout-video/evidence/VERIFICATION.md
+  - demo/checkout-video/evidence/alignment-show-fix.json
+  - demo/checkout-video/evidence/alignment-show-hook.json
+  - demo/checkout-video/evidence/alignment-show-install.json
+  - demo/checkout-video/evidence/audio-mastering.json
   - demo/checkout-video/evidence/audio-mix.log
-  - demo/checkout-video/evidence/decoded-subjects.jpg
   - demo/checkout-video/evidence/delivery-loudness.json
   - demo/checkout-video/evidence/delivery-verification.json
-  - demo/checkout-video/evidence/video-subject-verification.json
-  - docs/hackathon/DEMO-STORYBOARD.md
-  - docs/hackathon/SUBMISSION-CHECKLIST.md
+  - demo/checkout-video/evidence/narration.json
+  - demo/checkout-video/evidence/showcase-loop/loop.yml
+  - demo/checkout-video/evidence/voice-intro.json
+  - demo/checkout-video/evidence/voice-outro.json
+  - demo/checkout-video/evidence/voice-show-fix.json
+  - demo/checkout-video/evidence/voice-show-hook.json
+  - demo/checkout-video/evidence/voice-show-install.json
+  - demo/checkout-video/scripts/build_captions.py
+  - demo/checkout-video/scripts/generate_voice.py
+  - demo/checkout-video/timeline.json

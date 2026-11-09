@@ -1,10 +1,13 @@
-objective: "Verify the 70-second musical showcase against real model evidence and delivered files"
+objective: "Verify the pronunciation correction, preserved video streams and updated delivery files"
 max_iterations: 1
 max_no_progress: 1
 max_consecutive_failures: 1
 allowed_actions: [read_files, run_tests]
 blocked_actions: [deploy, production_config_change, publish]
 eval_gates:
+  - id: pronunciation_controls
+    command: "python3 demo/checkout-video/scripts/verify_pronunciation.py"
+    required: true
   - id: actual_model_evidence
     command: "python3 demo/checkout-video/scripts/verify_run.py"
     required: true

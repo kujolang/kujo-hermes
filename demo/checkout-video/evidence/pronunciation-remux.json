@@ -1,0 +1,18 @@
+{
+  "master_sha256": "9350b2baabacc468745ee99cce9818b1221e338c2018b113c740e5284fddd160",
+  "videos": [
+    {
+      "file": "delivery/kujo-hermes-checkout.mp4",
+      "before_video_sha256": "SHA256=f6d4b0962ae287800ef9e7e53cd2c11fa0ee55ab6ee34488439eb07b2d4d592c",
+      "after_video_sha256": "SHA256=f6d4b0962ae287800ef9e7e53cd2c11fa0ee55ab6ee34488439eb07b2d4d592c",
+      "video_unchanged": true
+    },
+    {
+      "file": "delivery/kujo-hermes-checkout-480p.mp4",
+      "before_video_sha256": "SHA256=ca2defc24ae82b8f39a0e1e39801636bb9e6e86e25527ddb7f2aadb5940ffd88",
+      "after_video_sha256": "SHA256=ca2defc24ae82b8f39a0e1e39801636bb9e6e86e25527ddb7f2aadb5940ffd88",
+      "video_unchanged": true
+    }
+  ],
+  "method": "Stream-copy video and AAC master; no picture re-encode."
+}

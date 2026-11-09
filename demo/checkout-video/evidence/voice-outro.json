@@ -6,10 +6,19 @@
   "voice_name": "Siren",
   "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
   "generation_tier": "creator",
-  "request_sha256": "70fa118637b2977c553381a4b9bb990d02f3fedfc4c89a2add5ea82a3ac8994f",
-  "audio_sha256": "e981a1095ad81aaa119e3e8f6a734f729a07164ac5779e6b6041603012b7fe3c",
-  "duration": 5.04,
-  "request_id": "D1kBhXIlXQ1mwquDgCuV",
+  "request_sha256": "8b40ce648b8cf8d0d3b2afedf6ea445f4b677c996cac8b5f32617e5917771176",
+  "audio_sha256": "d4c2ebedda33a4899095ad711f1ab9c5aa6915702db479cb9afefac8d5230c7c",
+  "duration": 5.36,
+  "request_id": "PxMz8dvEbPeaWCXc93HY",
   "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-05T17:43:07Z"
+  "generated_at": "2026-11-09T17:38:19Z",
+  "pronunciation": {
+    "word": "Hermes",
+    "intended_pronunciation": "HER-meez",
+    "spoken": "\"/\u02c8h\u025dmi\u02d0z/\"",
+    "model": "eleven_v4",
+    "method": "native inline IPA",
+    "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
+  },
+  "speech_text": "Kujo. Trust at the speed of AI. Install Kujo \"/\u02c8h\u025dmi\u02d0z/\" today."
 }

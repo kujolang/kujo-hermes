@@ -1,4 +1,11 @@
 
+## gate: pronunciation_controls
+$ python3 demo/checkout-video/scripts/verify_pronunciation.py
+PASS: five explicit HER-meez inputs; canonical captions; no cue overlaps;
+both exact updated AAC masters installed; original video streams preserved.
+This verifies synthesis inputs and files, not a human listening judgment.
+gate pronunciation_controls: pass
+
 ## gate: actual_model_evidence
 $ python3 demo/checkout-video/scripts/verify_run.py
 before: receipt and 10 artifact hashes match

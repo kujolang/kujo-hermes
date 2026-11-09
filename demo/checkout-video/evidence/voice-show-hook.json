@@ -6,10 +6,19 @@
   "voice_name": "Siren",
   "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
   "generation_tier": "creator",
-  "request_sha256": "b3525a0ed0e1d423af77b853487205d2a459b006e3dbc1183a28d80441f28547",
-  "audio_sha256": "962bf0a493bac35433dcdb97ff7c6b812c1f4f1d3030dd6dd36583407e3077b1",
+  "request_sha256": "be9971efc7ba9786e5dee4488b4fb9f650fffe1e4102249c6d03d83f7a9f24f4",
+  "audio_sha256": "ecab7eb7f1964044aabbaace23bc64b8898f7011ecddc3a8b7e02e0af89e087a",
   "duration": 5.2,
-  "request_id": "DmFTyGtIZVCacGNMWvXR",
+  "request_id": "PYLvJWQ472gFC3iljvKZ",
   "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:11Z"
+  "generated_at": "2026-11-09T17:38:12Z",
+  "pronunciation": {
+    "word": "Hermes",
+    "intended_pronunciation": "HER-meez",
+    "spoken": "\"/\u02c8h\u025dmi\u02d0z/\"",
+    "model": "eleven_v4",
+    "method": "native inline IPA",
+    "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
+  },
+  "speech_text": "This coupon adds a shipping charge it shouldn\u2019t. Give \"/\u02c8h\u025dmi\u02d0z/\" a check it can prove."
 }

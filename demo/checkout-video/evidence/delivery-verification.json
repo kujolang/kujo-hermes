@@ -1,8 +1,8 @@
 {
   "ok": true,
   "file": "delivery/kujo-hermes-checkout.mp4",
-  "sha256": "a906f95ecdb59926ba1c5a6b59df2024516eead66fbef341ccf353d4400bb5cb",
-  "bytes": 4757099,
+  "sha256": "13e124350199ff1f5c9e07c5881f4d4010cb1a93e4ae358b2c30061d975dcb6a",
+  "bytes": 4757337,
   "duration_seconds": 70.2,
   "width": 1080,
   "height": 1080,
@@ -13,17 +13,17 @@
   "sample_rate": 48000,
   "full_decode": "passed",
   "integrated_lufs": -16.19,
-  "true_peak_dbtp": -1.78,
+  "true_peak_dbtp": -1.79,
   "listening_review": false,
   "mobile": {
     "file": "delivery/kujo-hermes-checkout-480p.mp4",
-    "sha256": "f84d1f1ddf8443863d8cd864d31ad2fa9ad44b7d10e74010cab97a43b2c655b2",
-    "bytes": 2546170,
+    "sha256": "b84b5165c44e9651f379448fd403622086d68ae1aa1894d594f222ddb4745d8a",
+    "bytes": 2546408,
     "width": 480,
     "height": 480,
     "duration_seconds": 70.2,
     "full_decode": "passed",
     "integrated_lufs": -16.19,
-    "true_peak_dbtp": -1.78
+    "true_peak_dbtp": -1.79
   }
 }

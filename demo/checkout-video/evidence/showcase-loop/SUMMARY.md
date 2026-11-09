@@ -10,7 +10,7 @@ success
 
 ## Verification
 
-- passed: actual_model_evidence, exact_media_delivery, diff_check
+- passed: pronunciation_controls, actual_model_evidence, exact_media_delivery, diff_check
 - blocked: none
 - failed: none
 

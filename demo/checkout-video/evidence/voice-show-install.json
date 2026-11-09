@@ -6,10 +6,19 @@
   "voice_name": "Siren",
   "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
   "generation_tier": "creator",
-  "request_sha256": "d125b7c58e6ddf85bc42194ba2303749d228c170d8d1c0269f334f4b1b5af8bd",
-  "audio_sha256": "4ec5ef045e21cb0100e5cd0357da6c16ce846c35ab789abfcf6624f3f7502ac4",
+  "request_sha256": "db40e5e096d5b8ba58a50a06285609b08ef984fe38e567dce153c643c79dbf44",
+  "audio_sha256": "8a166ce7862ccf5502c20289da9c023bc8437f59f5e98008bffc37ebc06e2df5",
   "duration": 6.08,
-  "request_id": "0nZ8ufq1nOgobSisJhGu",
+  "request_id": "5N8aYPq57IFHZpGgYlpg",
   "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:26Z"
+  "generated_at": "2026-11-09T17:38:17Z",
+  "pronunciation": {
+    "word": "Hermes",
+    "intended_pronunciation": "HER-meez",
+    "spoken": "\"/\u02c8h\u025dmi\u02d0z/\"",
+    "model": "eleven_v4",
+    "method": "native inline IPA",
+    "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
+  },
+  "speech_text": "With \"/\u02c8h\u025dmi\u02d0z/\", Kujo and Git installed, add the plugin, run setup, and accept the prompts."
 }

@@ -1,13 +1,13 @@
 WEBVTT
 
-00:00:00.650 --> 00:00:02.010
+00:00:00.650 --> 00:00:02.490
 Kujo Hermes.
 
-00:00:03.450 --> 00:00:07.290
-This coupon adds a shipping charge it shouldn’t. Give Hermes a
+00:00:03.450 --> 00:00:07.250
+This coupon adds a shipping charge it shouldn’t. Give Hermes
 
-00:00:07.290 --> 00:00:08.730
-check it can prove.
+00:00:07.250 --> 00:00:08.730
+a check it can prove.
 
 00:00:10.250 --> 00:00:14.570
 Spec defines the task contract. You approve the repository
@@ -18,11 +18,11 @@ checks.
 00:00:17.250 --> 00:00:20.530
 Eval runs the tests and catches the overcharge.
 
-00:00:23.250 --> 00:00:27.730
-Hermes fixes the calculation using a free local model. The tests
+00:00:23.250 --> 00:00:27.330
+Hermes fixes the calculation using a free local model. The
 
-00:00:27.730 --> 00:00:29.090
-stay unchanged.
+00:00:27.330 --> 00:00:29.010
+tests stay unchanged.
 
 00:00:30.250 --> 00:00:32.330
 The same checks now pass.
@@ -39,11 +39,11 @@ Discover Scout to inspect repositories, PackWrite to prepare
 00:00:49.010 --> 00:00:52.690
 context, and ShipCheck to review release readiness.
 
-00:00:54.250 --> 00:00:59.090
-With Hermes, Kujo and Git installed, add the plugin, run setup,
+00:00:54.250 --> 00:00:58.330
+With Hermes, Kujo and Git installed, add the plugin, run
 
-00:00:59.090 --> 00:01:00.410
-and accept the prompts.
+00:00:58.330 --> 00:01:00.410
+setup, and accept the prompts.
 
-00:01:03.350 --> 00:01:08.390
+00:01:03.350 --> 00:01:08.790
 Kujo. Trust at the speed of AI. Install Kujo Hermes today.

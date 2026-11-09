@@ -1,0 +1,8 @@
+{
+  "word": "Hermes",
+  "intended_pronunciation": "HER-meez",
+  "spoken": "\"/ˈhɝmiːz/\"",
+  "model": "eleven_v4",
+  "method": "native inline IPA",
+  "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
+}

@@ -6,10 +6,19 @@
   "voice_name": "Siren",
   "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
   "generation_tier": "creator",
-  "request_sha256": "d89349c25ee888c49727ce5def00d12f2e772bb938290d389246a0701be05a70",
-  "audio_sha256": "0f2da3767c2337d990fa76737851405420fd17a013ca14228600fd5229b1550e",
-  "duration": 5.76,
-  "request_id": "v7cnAxvzswWAe66KG8hQ",
+  "request_sha256": "253d09625fb1d623a3618f73bc288fc6cdae6783a5d5e6059da4126533a6d889",
+  "audio_sha256": "8363cd470be020bf404cb3b9b08aaf1c60a6b2d94954a29d7a90d378a30d782c",
+  "duration": 5.68,
+  "request_id": "0K0w5bggOjbC7aEpo93Y",
   "authorized_by": "User requested Siren V4 narration for this walkthrough",
-  "generated_at": "2026-11-09T17:12:17Z"
+  "generated_at": "2026-11-09T17:38:14Z",
+  "pronunciation": {
+    "word": "Hermes",
+    "intended_pronunciation": "HER-meez",
+    "spoken": "\"/\u02c8h\u025dmi\u02d0z/\"",
+    "model": "eleven_v4",
+    "method": "native inline IPA",
+    "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
+  },
+  "speech_text": "\"/\u02c8h\u025dmi\u02d0z/\" fixes the calculation using a free local model. The tests stay unchanged."
 }
