@@ -1,0 +1,36 @@
+{
+  "release": "v0.1.0",
+  "release_sha": "7817d3ca8b085b4582b59d13f9e6262778dcdd1c",
+  "catalog_sha": "4f7b27ef0216cf6284af42fb23f5211a22befd0b",
+  "duration": 73.2,
+  "preserve_picture_seconds": [
+    3.2,
+    54.0
+  ],
+  "new_picture_seconds": [
+    [
+      0,
+      3.2
+    ],
+    [
+      54,
+      73.2
+    ]
+  ],
+  "reason": "Retain verified matching workflow footage; rerender release bumper and installation/outro section only.",
+  "installation_prerequisites": [
+    "Hermes 0.23.0",
+    "official Kujo 1.8.0",
+    "Git",
+    "cached pinned canonical sources"
+  ],
+  "unpublished": [
+    "catalog PR",
+    "X post",
+    "contest form"
+  ],
+  "original_video_sha256": "ee035e7e12c36ae069d5e9f5435ec493fdfa002c62fa897e5927e7fd373fdbb5",
+  "original_video_commit": "7817d3ca8b085b4582b59d13f9e6262778dcdd1c",
+  "installation_footage": "Existing successful pre-release Hermes 0.22.7 capture from demo/square; extended hold for narration",
+  "fresh_install_recording": "Blocked locally: disk-full preparations and stale managed-runtime source; failed casts retained"
+}

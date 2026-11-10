@@ -1,10 +1,10 @@
 # Kujo Hermes — checkout workflow
 
-A 70.2-second square showcase of Hermes investigating a checkout overcharge with
+A 73.2-second square showcase of Hermes investigating a checkout overcharge with
 Kujo Spec, Eval and execution receipts. Qwen3.5 4B runs locally through Ollama;
 there is no model API fee. Roger V4 provides the shorter narration. The upbeat instrumental comes from the user-owned Website Cloner film, with a music-led hold on the passing checks.
 
-The new recording uses Hermes 0.23.0 and the real native plugin. The script in
+The original model recording uses Hermes 0.23.0 and the real native plugin. The script in
 `scripts/record.py` launches Hermes and supplies the first task. It does not modify
 the implementation. The recording operator approves the repository checks once and asks the model
 to make the correction. The deterministic driver in `../checkout/run.py` is not
@@ -26,10 +26,23 @@ Some Abilities need additional tools or service credentials. See the project REA
 
 ## Recording and evidence
 
-The existing installation capture comes from `../square`; its provenance and
-uncut terminal recordings remain there. The checkout session uses a narrow terminal
-so the full screen fits the square frame. The Mac was locked during this session,
-so this is a real Hermes CLI recording, not a desktop-app recording.
+Installation footage reuses the successful native command recordings from
+`../square`, made with Hermes 0.22.7 before the official release. Its original
+provenance remains there. The install commands and setup behavior are unchanged.
+The official release and documentation-corrected catalog candidate are separately
+verified by clean-install CI on Hermes 0.22.7 and 0.23.0. The new release bumper and
+narration do not turn this footage into a fresh installation recording.
+
+New local takes are retained as failures: a rejected tag ref, two disk-full
+source-environment preparations, and a managed-environment source-reference
+failure. A restored-source retry also exhausted local disk. No failed output is
+used as successful installation footage. Prerequisites are Hermes, Kujo and Git;
+waits are condensed. The source screen is held for the longer spoken cue.
+
+The model workflow remains the original verified recording. It was not rerun or
+relabeled as a new release-day model session. The narrow terminal keeps the full
+source screen visible in the square frame. This is Hermes CLI footage, not a
+Desktop-app recording.
 
 `evidence/checkout.cast` preserves the terminal output and source timing.
 `scripts/cast_video.py` replays those terminal cells, condensing waits through
@@ -90,3 +103,15 @@ workspace. No approval policy was bypassed.
 Replay uses pyte 0.8.2, Pillow and the Mac system Menlo font. Emoji presentation
 selectors are removed for pyte compatibility; no result words are substituted.
 The original cast remains the source of truth.
+
+For another installation capture, use an installed supported Hermes CLI and
+`record_release_install.py --home /absolute/test-home --workspace /absolute/demo-repo`.
+It pins the tested catalog SHA, accepts native prompts through the terminal, and
+requires enough disk for Hermes dependency preparation. The failed takes retain
+the exact earlier invocation, before the recorder gained explicit path options.
+
+The release revision re-renders 0–3.2 and 54–73.2 seconds and preserves the
+verified workflow picture between them. `scripts/assemble_release.py` joins
+those renders to the previous master (recorded SHA in `release-delivery-plan.json`)
+and creates both exports. A complete HyperFrames render of `index.html` is also
+supported; the final AAC master is remuxed without changing its audio.

@@ -1,0 +1,8 @@
+{"version":2,"width":68,"height":24,"timestamp":1794277951,"command":"python3 demo/checkout-video/scripts/record_release_install.py","env":{"SHELL":"/bin/zsh"}}
+[0.147571, "o", "\r\n$ hermes plugins install kujolang/kujo-hermes --ref v0.1.0\r\n"]
+[2.558834, "o", "Warning: custom (unreviewed) source — not from the Hermes catalog.\r\n"]
+[3.412124, "o", "Cloning https://github.com/kujolang/kujo-hermes.git...\r\n"]
+[3.467581, "o", "Error: --ref must be a full 40-character commit SHA.\r\n"]
+[3.617343, "o", "Traceback (most recent call last):\r\n"]
+[3.617898, "o", "  File \"/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/scripts/record_release_install.py\", line 18, in <module>\r\n    subprocess.run(command, check=True)\r\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\r\n  File \"/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/square/public-home/tools/python-3.14.9+20261021-darwin-x64/lib/python3.14/subprocess.py\", line 578, in run\r\n    raise CalledProcessError(retcode, process.args,\r\n                             output=stdout, stderr=stderr)\r\nsubprocess.CalledProcessError: Command '['hermes', 'plugins', 'install', 'kujolang/kujo-hermes', '--ref', 'v0.1.0']' returned non-zero exit status 1.\r\n"]
+[3.628569, "x", "1"]

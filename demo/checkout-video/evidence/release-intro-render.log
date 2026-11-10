@@ -1,0 +1,131 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+◆  Rendering checkout-video → /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/release-intro.mp4
+   30fps · high · 1 workers
+   GPU: browser GPU (auto-detect)
+
+
+  Lint: 0 error(s), 10 warning(s) — run `hyperframes lint` for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+
+Checking browser...
+Browser: cache
+[INFO] [plan] stage {"stage":"copy","ms":1283}
+[INFO] [Compiler] Fetched 11 font face(s) for "Inter" from Google Fonts (cached to /Users/robertdevore/.cache/hyperframes/fonts/inter)
+[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families
+[INFO] [Compiler] Embedded local font file: assets/DepartureMono-Regular.woff2 (22 KB → data URI)
+[INFO] Compiled composition metadata {"entryFile":"index.html","staticDuration":73.2,"width":1080,"height":1080,"videoCount":8,"audioCount":1,"renderModeHints":{"recommendScreenshot":false,"reasons":[]}}
+[WARN] [Compiler] WARNING: Video "hook-source" has sparse keyframes (max interval: 6.8s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-hook.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[INFO] [plan] stage {"stage":"compile","ms":1382}
+[WARN] [Compiler] WARNING: Video "failure-source" has sparse keyframes (max interval: 6s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-failure.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[WARN] [Compiler] WARNING: Video "fix-source" has sparse keyframes (max interval: 7s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-fix.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[WARN] [Compiler] WARNING: Video "pass-source" has sparse keyframes (max interval: 8s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-pass.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[WARN] [Compiler] WARNING: Video "spec-source" has sparse keyframes (max interval: 3.33s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-spec.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[INFO] [plan] stage {"stage":"probe","ms":226}
+[WARN] [Compiler] WARNING: Video "tools-source" has sparse keyframes (max interval: 4.2s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-tools.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[WARN] [Compiler] WARNING: Video "install-source" has sparse keyframes (max interval: 5.07s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/install.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[WARN] [Compiler] WARNING: Video "receipt-source" has sparse keyframes (max interval: 7s). Long GOPs can make preview seeking slower; rendering is unaffected. If preview seeking is slow, re-encode with: ffmpeg -i "assets/workflow-receipt.mp4" -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy output.mp4
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[INFO] [plan] stage {"stage":"reference_background","ms":1766}
+[INFO] [plan] extract phases {"resolveMs":0,"cachePublishFailures":0,"cacheGcEvictions":0,"cacheGcBytesFreed":0,"cacheAgedPartialsCleared":0,"hdrProbeMs":0,"hdrPreflightMs":0,"hdrPreflightCount":0,"vfrProbeMs":0,"vfrPreflightMs":0,"vfrPreflightCount":0,"extractMs":7390,"cacheHits":0,"cacheMisses":8,"transientRetries":0}
+[INFO] [plan] stage {"stage":"extract","ms":12369}
+[INFO] [plan] stage {"stage":"prehash","ms":2642}
+[INFO] [audio] phases {"prepare":793,"groups":0,"mix":821,"master":0,"encode":6264,"guard":1136}
+[INFO] [plan] stage {"stage":"audio","ms":9249}
+[INFO] [plan] stage {"stage":"freeze","ms":32}
+[INFO] [Render:trace] {"phase":"capture_chunk","status":"start","elapsedMs":1239,"chunkIndex":0}
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[initSession:screenshot] page.goto start (1ms)
+[initSession:screenshot] page.goto start (0ms)
+[initSession:screenshot] page.goto start (0ms)
+[Browser:WARN] [.WebGL-0x13c001dd800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[initSession:screenshot] page.goto start (1ms)
+[initSession:screenshot] page.goto complete (672ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] page.goto complete (784ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] page.goto complete (514ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] page.goto complete (516ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] GSAP proxy flush complete (1629ms)
+[initSession:screenshot] GSAP proxy flush complete (1615ms)
+[initSession:screenshot] GSAP proxy flush complete (1147ms)
+[initSession:screenshot] GSAP proxy flush complete (1133ms)
+[initSession:screenshot] pollHfReady complete (1653ms)
+[initSession:screenshot] pollHfReady complete (1633ms)
+[initSession:screenshot] pollHfReady complete (1163ms)
+[initSession:screenshot] pollHfReady complete (1149ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1679ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1680ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1660ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1660ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1191ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1192ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1190ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1190ms)
+[initSession:screenshot] media + fonts + tailwind ready (1198ms)
+[initSession:screenshot] media + fonts + tailwind ready (1810ms)
+[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1303ms)
+[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1305ms)
+[initSession:screenshot] media + fonts + tailwind ready (1322ms)
+[initSession:screenshot] media + fonts + tailwind ready (1795ms)
+[WARN] [renderChunk] Browser capability probe selected screenshot capture for the entire chunk {"chunkIndex":0}
+[WARN] [Render] Capture attempt made no forward progress; composition is likely structurally broken, not retrying. {"attempt":0,"frameCount":96,"remainingCount":96,"workers":4}
+[INFO] [Render:trace] {"phase":"capture_chunk","status":"error","elapsedMs":4280,"durationMs":3041,"message":"[Parallel] Capture failed: Worker 0: [renderChunk] probe selected screenshot capture; Worker 1: Parallel worker cancelled; Worker 2: Parallel worker cancelled; Worker 3: Parallel worker cancelled","chunkIndex":0}
+[WARN] [renderChunk] BeginFrame capture failed; retrying the entire chunk once in screenshot mode {"chunkIndex":0,"error":"[Parallel] Capture failed: Worker 0: [renderChunk] probe selected screenshot capture; Worker 1: Parallel worker cancelled; Worker 2: Parallel worker cancelled; Worker 3: Parallel worker cancelled"}
+[INFO] [Render:trace] {"phase":"capture_chunk","status":"start","elapsedMs":4294,"chunkIndex":0}
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, screenshot, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=darwin)
+[initSession:screenshot] page.goto start (0ms)
+[initSession:screenshot] page.goto start (1ms)
+[initSession:screenshot] page.goto start (0ms)
+[Browser:WARN] [.WebGL-0x114001cd800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[initSession:screenshot] page.goto start (0ms)
+[initSession:screenshot] page.goto complete (668ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] page.goto complete (792ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] page.goto complete (503ms)
+[initSession:screenshot] page.goto complete (471ms)
+[initSession:screenshot] GSAP proxy flush complete (499ms)
+[initSession:screenshot] GSAP proxy flush complete (568ms)
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:screenshot] GSAP proxy flush complete (1681ms)
+[initSession:screenshot] GSAP proxy flush complete (1673ms)
+[initSession:screenshot] pollHfReady complete (1754ms)
+[initSession:screenshot] pollHfReady complete (1742ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1818ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1818ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1814ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1815ms)
+[initSession:screenshot] pollHfReady complete (1350ms)
+[initSession:screenshot] media + fonts + tailwind ready (1836ms)
+[initSession:screenshot] pollHfReady complete (1400ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1414ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1414ms)
+[initSession:screenshot] pollSubCompositionTimelines complete (ready) (1375ms)
+[initSession:screenshot] applyVideoMetadataHints complete (1375ms)
+[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1862ms)
+[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1862ms)
+[initSession:screenshot] media + fonts + tailwind ready (1382ms)
+[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1399ms)
+[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1399ms)
+[initSession:screenshot] media + fonts + tailwind ready (1941ms)
+[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1945ms)
+[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1945ms)
+[initSession:screenshot] media + fonts + tailwind ready (1520ms)
+[initSession:screenshot] captureBeyondViewport downgraded: page content fits the capture viewport (1526ms)
+[initSession:screenshot] static-frame dedup: disabled (before-capture hook / video injection active) (1526ms)
+[INFO] [Render:trace] {"phase":"capture_chunk","status":"end","elapsedMs":8793,"durationMs":4499,"chunkIndex":0}
+[INFO] [Render] Encoded frames while capturing {"framesFed":75,"totalFrames":96}
+
+◇  /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/release-intro.mp4
+   211.7 KB · rendered in 39.2s
+   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?src=cli

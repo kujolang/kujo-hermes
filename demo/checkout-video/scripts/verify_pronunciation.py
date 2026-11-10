@@ -36,12 +36,12 @@ def stream_hash(path, stream):
 
 
 master = stream_hash(root / 'assets/master.m4a', '0:a:0')
-remux = json.loads((root / 'evidence/pronunciation-remux.json').read_text())
-for video in remux['videos']:
-    path = root / video['file']
-    assert stream_hash(path, '0:v:0') == video['before_video_sha256']
+# This revision changes the release/installation picture. Source matching is
+# checked separately; both exports must still contain the exact AAC master.
+for name in ('kujo-hermes-checkout.mp4', 'kujo-hermes-checkout-480p.mp4'):
+    path = root / 'delivery' / name
     assert stream_hash(path, '0:a:0') == master
 print('PASS: all ten cues use the selected voice; five explicit HER-meez inputs;')
 print('canonical captions; no cue overlaps;')
-print('both exact updated AAC masters installed; original video streams preserved.')
+print('both exports contain the exact updated AAC master.')
 print('This verifies synthesis inputs and files, not a human listening judgment.')

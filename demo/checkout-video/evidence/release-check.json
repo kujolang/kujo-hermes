@@ -1,0 +1,335 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 10,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 3 has 9 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-0\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-0",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-0\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-1",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-2",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-3",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-4",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-5\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-5",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-6\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-6",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-6\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-7\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-7",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-7\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"glitch-8\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#glitch-8",
+        "dataAttributes": {},
+        "sourceFile": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"glitch-8\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 11
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 73.2,
+    "samples": [
+      4.067,
+      12.2,
+      20.333,
+      28.467,
+      36.6,
+      44.733,
+      52.867,
+      61,
+      69.133
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      4.067,
+      20.333,
+      36.6,
+      52.867,
+      69.133
+    ],
+    "checked": 11,
+    "passed": 11
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Real Hermes session · waits condensed\" renders at 27 px for 6.87 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Real Hermes session · waits condensed",
+        "selector": "#hook > div:nth-of-type(1) > p:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hook.html",
+        "bbox": {
+          "x": 72,
+          "y": 220,
+          "width": 506.59,
+          "height": 33
+        },
+        "time": 3.248,
+        "times": [
+          3.248
+        ],
+        "fontPx": 27,
+        "floorPx": 28,
+        "seconds": 6.87,
+        "elements": [
+          {
+            "selector": "#hook > div:nth-of-type(1) > p:nth-of-type(1)",
+            "text": "Real Hermes session · waits condensed",
+            "fontPx": 27,
+            "time": 3.248,
+            "seconds": 6.87
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Same three checkout checks · tests unchanged\" renders at 27 px for 7.99 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Same three checkout checks · tests unchanged",
+        "selector": "#pass > div:nth-of-type(1) > p:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/pass.html",
+        "bbox": {
+          "x": 72,
+          "y": 220,
+          "width": 605.23,
+          "height": 33
+        },
+        "time": 30.104,
+        "times": [
+          30.104
+        ],
+        "fontPx": 27,
+        "floorPx": 28,
+        "seconds": 7.995,
+        "elements": [
+          {
+            "selector": "#pass > div:nth-of-type(1) > p:nth-of-type(1)",
+            "text": "Same three checkout checks · tests unchanged",
+            "fontPx": 27,
+            "time": 30.104,
+            "seconds": 7.995
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 586
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "857b8c60-ce2b-4e7e-98e3-6c173bf716cd",
+    "revision": null,
+    "report": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/checks/857b8c60-ce2b-4e7e-98e3-6c173bf716cd.json",
+    "attribution": "inputs-changed"
+  },
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.27",
+    "updateAvailable": true,
+    "checkedAt": "2026-11-10T02:32:32.711Z",
+    "skillsOutdated": 4,
+    "skillsMissing": 0
+  }
+}

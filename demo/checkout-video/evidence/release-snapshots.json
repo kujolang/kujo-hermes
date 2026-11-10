@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "outputDir": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d",
+  "frames": [
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-00-at-1.5s.png",
+      "time": 1.5
+    },
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-01-at-55s.png",
+      "time": 55
+    },
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-02-at-60s.png",
+      "time": 60
+    },
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-03-at-65.8s.png",
+      "time": 65.8
+    },
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-04-at-66.1s.png",
+      "time": 66.1
+    },
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-05-at-70s.png",
+      "time": 70
+    },
+    {
+      "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/frame-06-at-72.95s.png",
+      "time": 72.95
+    }
+  ],
+  "contactSheets": [
+    "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video/.hyperframes/artifacts/snapshots/a9142dab-83cf-4741-824b-ff09a4d8a22d/contact-sheet.jpg"
+  ],
+  "_meta": {
+    "version": "0.9.13",
+    "latestVersion": "0.9.27",
+    "updateAvailable": true,
+    "checkedAt": "2026-11-10T02:32:32.711Z",
+    "skillsOutdated": 4,
+    "skillsMissing": 0
+  }
+}

@@ -1,0 +1,16 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+  Lint: 0 error(s), 10 warning(s) — see the Lint badge in Studio, or run `hyperframes lint` for full output.
+
+┌  hyperframes preview
+
+  Project   checkout-video
+  Studio    http://localhost:3002/#project/checkout-video
+  Server    http://localhost:3002
+  Desktop   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.studio/studio/download?src=cli
+
+  Running in the background. Log: /Users/robertdevore/.local/state/hyperframes/previews/bdf601f2bdbbadaa.log
+  Changes reload automatically in the studio.
+
+  Stop with: hyperframes preview "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/demo/checkout-video" --stop
+

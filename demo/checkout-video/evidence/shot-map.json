@@ -65,7 +65,7 @@
   {
     "scene": "install",
     "start": 54.0,
-    "duration": 9,
+    "duration": 12,
     "cue": "show-install",
     "source": "assets/install.mp4",
     "source_kind": "actual CLI capture",

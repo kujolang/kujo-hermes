@@ -1,6 +1,6 @@
 # Showcase review
 
-The 70.2-second edit replaces the 88-second walkthrough. It uses the same verified
+The 73.2-second edit replaces the 88-second walkthrough. It uses the same verified
 Hermes session, bumpers and nine CMD glitches, including both bumper joins. The
 story now follows the overcharge through the model's correction and unchanged
 checks passing. Installation comes after the proof. Narration falls from about 77
@@ -66,3 +66,17 @@ All cues fit their original windows. Exact video-stream hashes match the prior
 verified delivery; both AAC tracks match the new Roger master. Full decodes,
 loudness, voice receipts, pronunciation inputs and caption checks passed. Listening
 quality and audible pronunciation have not been independently auditioned.
+
+## Official-release revision — November 9
+
+The opening now identifies the official v0.1.0 release. Installation receives twelve seconds, the existing verified install capture and new Roger narration. Existing workflow footage stays unchanged; its provenance remains the original free-model session. The ending keeps the established branding and install CTA. The final duration is 73.2 seconds.
+
+A recording probe caught the unsupported `--ref v0.1.0` instruction. Current docs and public release notes now use a full SHA for exact-pin installation; the simple on-screen command omits `--ref`. The original release tag/assets were not rewritten. A disk-full preparation attempt is preserved separately.
+
+The editable preview is available through `npx hyperframes@0.9.13 preview --background`; the HyperFrames desktop app can open the same project: https://hyperframes.studio/studio/download?src=cli . Render, source-match and audio checks must be refreshed for the delivered hashes. Full listening remains an owner pre-publication check.
+
+Production note: the working HyperFrames preview responds at http://localhost:3002/. The new release bumper was rendered and visually inspected at full resolution. The runtime source override used for engineering tests was removed for the final installation recording so the command runs through the already-installed Hermes distribution, matching the advertised prerequisite. Earlier source-environment disk failures remain in the raw evidence.
+
+Final installation decision: the attempted fresh local capture could not complete because of disk limits and a borrowed managed-runtime source reference. The delivered installation picture reuses the previously successful Hermes 0.22.7 recording, held for the longer cue. Release/candidate clean-install correctness is independently established by passing CI; no fresh local-install success is claimed. Failed casts are retained.
+
+Final verification: both exports decode completely at 73.2 seconds; 24 decoded source-match checks pass. Master loudness -16.26 LUFS, peak -1.64 dBTP; mobile also passes. Ten Roger cues, five explicit HER-meez synthesis inputs, no cue overlap and exact AAC master matching pass. Decoded scene contact sheet and release seam snapshots were visually reviewed; no cropped screen edges were observed. Installation terminal details are the smallest text; the two larger commands carry the required action. Full audio was measured, not listened to.

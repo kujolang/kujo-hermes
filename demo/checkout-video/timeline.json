@@ -1,5 +1,5 @@
 {
-  "duration": 70.2,
+  "duration": 73.2,
   "fps": 30,
   "scenes": [
     {
@@ -68,10 +68,10 @@
     {
       "id": "install",
       "cue": "show-install",
-      "title": "Two commands to connect.",
-      "text": "With Hermes, Kujo and Git installed, two commands connect your workflow to Kujo.",
+      "title": "Official release. Two commands.",
+      "text": "Install the official release in two commands, with Hermes, Kujo and Git ready. Accept the prompts, then start a new conversation.",
       "shot": "install",
-      "duration": 9,
+      "duration": 12,
       "start": 54.0
     }
   ],
@@ -233,18 +233,18 @@
     },
     {
       "cue": "show-install",
-      "text": "With Hermes, Kujo and Git installed, two commands connect your workflow to Kujo.",
+      "text": "Install the official release in two commands, with Hermes, Kujo and Git ready. Accept the prompts, then start a new conversation.",
       "provider": "ElevenLabs",
       "model": "eleven_v4",
       "voice_name": "Roger",
       "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
       "generation_tier": "creator",
-      "request_sha256": "047452b2069147c31598154d1f3129b66f60295d41dc8176285c36e3e318bb06",
-      "audio_sha256": "7715c4def52b1c93b3be4a08efae8af0f7efe5af4186f23eb74df7a109a5aa59",
-      "duration": 5.52,
-      "request_id": "oppn4VpFkUivpTBQNCMS",
+      "request_sha256": "8262e4c48007ccb99317f6f1faa988784efb17d34d8486443503cd678d2d110a",
+      "audio_sha256": "8389684e01ce548c12900220bcf241a7e1889e0c12fb04e134233a27c0b73c35",
+      "duration": 9.12,
+      "request_id": "LE8VpxHaEUbEAH9m4Pjr",
       "authorized_by": "User requested a male ElevenLabs voice and stronger accountability messaging.",
-      "generated_at": "2026-11-09T17:49:03Z",
+      "generated_at": "2026-11-10T02:33:00Z",
       "pronunciation": {
         "word": "Hermes",
         "intended_pronunciation": "HER-meez",
@@ -253,7 +253,7 @@
         "method": "native inline IPA",
         "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
       },
-      "speech_text": "With \"/\u02c8h\u025dmi\u02d0z/\", Kujo and Git installed, two commands connect your workflow to Kujo.",
+      "speech_text": "Install the official release in two commands, with \"/\u02c8h\u025dmi\u02d0z/\", Kujo and Git ready. Accept the prompts, then start a new conversation.",
       "start": 54.25
     },
     {
@@ -279,7 +279,7 @@
         "documentation": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#ipa-with-eleven-v4"
       },
       "speech_text": "Kujo. Trust at the speed of AI. Install Kujo \"/\u02c8h\u025dmi\u02d0z/\" today.",
-      "start": 63.35
+      "start": 66.35
     }
   ]
 }

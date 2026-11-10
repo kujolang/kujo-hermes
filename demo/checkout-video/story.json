@@ -1,5 +1,5 @@
 {
-  "duration": 70.2,
+  "duration": 73.2,
   "fps": 30,
   "intro": "Kujo Hermes.",
   "outro": "Kujo. Trust at the speed of AI. Install Kujo Hermes today.",
@@ -63,10 +63,10 @@
     {
       "id": "install",
       "cue": "show-install",
-      "title": "Two commands to connect.",
-      "text": "With Hermes, Kujo and Git installed, two commands connect your workflow to Kujo.",
+      "title": "Official release. Two commands.",
+      "text": "Install the official release in two commands, with Hermes, Kujo and Git ready. Accept the prompts, then start a new conversation.",
       "shot": "install",
-      "duration": 9
+      "duration": 12
     }
   ]
 }

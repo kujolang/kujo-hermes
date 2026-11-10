@@ -4,9 +4,9 @@
     {
       "time": 4.2,
       "subject": "hook",
-      "mean_pixel_difference": 0.1041,
+      "mean_pixel_difference": 0.1054,
       "nearest_source": "hook",
-      "source_time_offset_seconds": 0,
+      "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
         0,
         0
@@ -16,7 +16,7 @@
     {
       "time": 6.6,
       "subject": "hook",
-      "mean_pixel_difference": 0.104,
+      "mean_pixel_difference": 0.105,
       "nearest_source": "hook",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -28,7 +28,7 @@
     {
       "time": 9.4,
       "subject": "hook",
-      "mean_pixel_difference": 0.104,
+      "mean_pixel_difference": 0.105,
       "nearest_source": "hook",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -40,7 +40,7 @@
     {
       "time": 11.0,
       "subject": "spec",
-      "mean_pixel_difference": 0.5874,
+      "mean_pixel_difference": 0.6035,
       "nearest_source": "spec",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -52,7 +52,7 @@
     {
       "time": 13.5,
       "subject": "spec",
-      "mean_pixel_difference": 0.6559,
+      "mean_pixel_difference": 0.6756,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -64,7 +64,7 @@
     {
       "time": 16.4,
       "subject": "spec",
-      "mean_pixel_difference": 0.6562,
+      "mean_pixel_difference": 0.6762,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -76,7 +76,7 @@
     {
       "time": 18.0,
       "subject": "failure",
-      "mean_pixel_difference": 0.3979,
+      "mean_pixel_difference": 0.4065,
       "nearest_source": "failure",
       "source_time_offset_seconds": 0.06666666666666667,
       "contain_rounding_pixels": [
@@ -88,9 +88,9 @@
     {
       "time": 20.0,
       "subject": "failure",
-      "mean_pixel_difference": 0.6584,
+      "mean_pixel_difference": 0.6761,
       "nearest_source": "failure",
-      "source_time_offset_seconds": -0.06666666666666667,
+      "source_time_offset_seconds": 0.06666666666666667,
       "contain_rounding_pixels": [
         0,
         0
@@ -100,7 +100,7 @@
     {
       "time": 22.4,
       "subject": "failure",
-      "mean_pixel_difference": 0.6578,
+      "mean_pixel_difference": 0.675,
       "nearest_source": "failure",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -112,7 +112,7 @@
     {
       "time": 24.0,
       "subject": "fix",
-      "mean_pixel_difference": 0.0624,
+      "mean_pixel_difference": 0.063,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -124,7 +124,7 @@
     {
       "time": 26.5,
       "subject": "fix",
-      "mean_pixel_difference": 0.3471,
+      "mean_pixel_difference": 0.3557,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -136,7 +136,7 @@
     {
       "time": 29.4,
       "subject": "fix",
-      "mean_pixel_difference": 0.3473,
+      "mean_pixel_difference": 0.3562,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -148,7 +148,7 @@
     {
       "time": 31.0,
       "subject": "pass",
-      "mean_pixel_difference": 0.3515,
+      "mean_pixel_difference": 0.3618,
       "nearest_source": "pass",
       "source_time_offset_seconds": 0,
       "contain_rounding_pixels": [
@@ -160,7 +160,7 @@
     {
       "time": 34.0,
       "subject": "pass",
-      "mean_pixel_difference": 0.6635,
+      "mean_pixel_difference": 0.6785,
       "nearest_source": "pass",
       "source_time_offset_seconds": 0,
       "contain_rounding_pixels": [
@@ -172,7 +172,7 @@
     {
       "time": 37.4,
       "subject": "pass",
-      "mean_pixel_difference": 0.6635,
+      "mean_pixel_difference": 0.6795,
       "nearest_source": "pass",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -184,7 +184,7 @@
     {
       "time": 39.0,
       "subject": "receipt",
-      "mean_pixel_difference": 0.0685,
+      "mean_pixel_difference": 0.0686,
       "nearest_source": "receipt",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -196,7 +196,7 @@
     {
       "time": 41.5,
       "subject": "receipt",
-      "mean_pixel_difference": 0.1468,
+      "mean_pixel_difference": 0.1477,
       "nearest_source": "receipt",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -208,7 +208,7 @@
     {
       "time": 44.4,
       "subject": "receipt",
-      "mean_pixel_difference": 0.1468,
+      "mean_pixel_difference": 0.1477,
       "nearest_source": "receipt",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -220,7 +220,7 @@
     {
       "time": 46.0,
       "subject": "tools",
-      "mean_pixel_difference": 0.6916,
+      "mean_pixel_difference": 0.7095,
       "nearest_source": "tools",
       "source_time_offset_seconds": 0,
       "contain_rounding_pixels": [
@@ -232,7 +232,7 @@
     {
       "time": 49.5,
       "subject": "tools",
-      "mean_pixel_difference": 0.6026,
+      "mean_pixel_difference": 0.6215,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -244,7 +244,7 @@
     {
       "time": 53.4,
       "subject": "tools",
-      "mean_pixel_difference": 0.6024,
+      "mean_pixel_difference": 0.6164,
       "nearest_source": "fix",
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -256,7 +256,7 @@
     {
       "time": 55.0,
       "subject": "install",
-      "mean_pixel_difference": 0.0999,
+      "mean_pixel_difference": 0.0969,
       "nearest_source": null,
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -266,9 +266,9 @@
       "passed": true
     },
     {
-      "time": 58.5,
+      "time": 60.0,
       "subject": "install",
-      "mean_pixel_difference": 0.5438,
+      "mean_pixel_difference": 0.077,
       "nearest_source": null,
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
@@ -278,9 +278,9 @@
       "passed": true
     },
     {
-      "time": 62.4,
+      "time": 65.4,
       "subject": "install",
-      "mean_pixel_difference": 1.9654,
+      "mean_pixel_difference": 1.9098,
       "nearest_source": null,
       "source_time_offset_seconds": -0.06666666666666667,
       "contain_rounding_pixels": [
