@@ -1,0 +1,7 @@
+dependency lock still held after 10.0s; continuing without it (/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/installs/5d31f7a37b96487b/.install.lock)
+Plugin Doctor: 
+/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-202611
+09/native/kujo-hermes
+  manifest: kujo-hermes 0.1.0 (standalone)
+  OK: runtime discovery, manifest parsing, import, and registration passed
+  registrations: 6 tool(s), 2 hook(s)

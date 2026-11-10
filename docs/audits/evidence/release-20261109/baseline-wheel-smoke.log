@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/baseline-wheel/kujo_hermes/catalog.py", line 63, in all
+    return self.entries if self.entries is not None else self.refresh()
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/baseline-wheel/kujo_hermes/catalog.py", line 39, in refresh
+    entries=read_json(ROOT/'catalog/abilities.json')
+  File "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/baseline-wheel/kujo_hermes/catalog.py", line 16, in read_json
+    with open(path, 'rb') as f: raw = f.read(2_097_153)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/baseline-wheel/catalog/abilities.json'

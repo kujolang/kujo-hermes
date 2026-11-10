@@ -1,0 +1,111 @@
+  → Resolving Python dependencies…
+  ✓ Resolving Python dependencies
+  → Installing Python dependencies…
+  ✗ Installing Python dependencies failed; last 80 lines of output:
+      Downloading pygments (1.2MiB)
+      Downloading openai (1.6MiB)
+      Downloading resvg-py (1.2MiB)
+      Downloading pillow (5.3MiB)
+      Downloading pydantic-core (2.1MiB)
+      Downloading pillow-heif (4.6MiB)
+      Downloading firecrawl-anydoc (3.3MiB)
+         Building cryptography==50.0.2
+       Downloaded pygments
+       Downloaded resvg-py
+            Built kujo-hermes @ file:///Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/installs/5d31f7a37b96487b/environments/ed98799cc1a3408b817ffc7732772d94/workspace/plugin-sources/kujo-hermes-8eadbe705b4cd2c5
+       Downloaded openai
+       Downloaded pydantic-core
+       Downloaded firecrawl-anydoc
+            Built hermes-agent @ file:///Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/installs/5d31f7a37b96487b/environments/ed98799cc1a3408b817ffc7732772d94/workspace
+       Downloaded pillow-heif
+       Downloaded pillow
+      error: Failed to build `cryptography==50.0.2`
+        cause: The build backend returned an error
+        cause: Call to `maturin.build_wheel` failed (exit status: 1)
+               [stdout]
+               Running `maturin pep517 build-wheel -i /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/builds-v0/.tmp8aKFun/bin/python --compatibility off`
+               [stderr]
+               🍹 Building a mixed python/rust project
+               🐍 Found CPython 3.14 at /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/builds-v0/.tmp8aKFun/bin/python
+               🔗 Found pyo3 bindings with abi3 support
+               📡 Using build options locked from pyproject.toml
+               💻 Using `MACOSX_DEPLOYMENT_TARGET=10.12` for x86_64-apple-darwin by default
+                  Compiling proc-macro2 v1.0.107
+                  Compiling unicode-ident v1.0.24
+                  Compiling quote v1.0.47
+                  Compiling shlex v2.0.1
+                  Compiling target-lexicon v0.13.5
+                  Compiling find-msvc-tools v0.1.9
+                  Compiling pkg-config v0.3.33
+                  Compiling vcpkg v0.2.15
+                  Compiling libc v0.2.189
+                  Compiling openssl v0.10.81
+                  Compiling foreign-types-shared v0.1.1
+                  Compiling heck v0.5.0
+                  Compiling foreign-types v0.3.2
+                  Compiling itoa v1.0.18
+                  Compiling cc v1.4.0
+                  Compiling cfg-if v1.0.4
+                  Compiling bitflags v2.13.1
+                  Compiling once_cell v1.21.4
+                  Compiling cryptography-openssl v0.50.2 (/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/src/rust/cryptography-openssl)
+                  Compiling cryptography-key-parsing v0.50.2 (/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/src/rust/cryptography-key-parsing)
+                  Compiling base64 v0.23.0
+                  Compiling self_cell v1.3.0
+                  Compiling pem v4.0.0
+                  Compiling pyo3-build-config v0.29.2
+                  Compiling openssl-sys v0.9.117
+                  Compiling syn v2.0.119
+                  Compiling pyo3-ffi v0.29.2
+                  Compiling pyo3 v0.29.2
+                  Compiling cryptography-cffi v0.50.2 (/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/src/rust/cryptography-cffi)
+                  Compiling cryptography-rust v0.50.2 (/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/src/rust)
+                  Compiling pyo3-macros-backend v0.29.2
+                  Compiling asn1_derive v0.24.1
+                  Compiling openssl-macros v0.1.1
+                  Compiling asn1 v0.24.1
+                  Compiling cryptography-x509 v0.50.2 (/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/src/rust/cryptography-x509)
+               error: failed to build archive at `/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/target/release/deps/libpyo3_macros_backend-4038b84cb7d807b6.rlib`: No space left on device (os error 28)
+               error: could not compile `pyo3-macros-backend` (lib) due to 1 previous error
+               warning: build failed, waiting for other jobs to finish...
+               error: failed to write to `/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/target/release/deps/rmetaw7sSUq/full.rmeta`: No space left on device (os error 28)
+               error: could not compile `openssl` (lib) due to 1 previous error
+               rustc-LLVM ERROR: IO failure on output stream: No space left on device
+               error: could not compile `cryptography-x509` (lib)
+               Caused by:
+                 No space left on device (os error 28)
+               Caused by:
+                 failed to parse process output: `/Users/robertdevore/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rustc --crate-name cryptography_x509 --edition=2021 src/rust/cryptography-x509/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no -C overflow-checks=on --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=91b59bf03568ef73 -C extra-filename=-b175e46473b5529f --out-dir /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/target/release/deps -C strip=debuginfo -L dependency=/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/target/release/deps --extern asn1=/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/target/release/deps/libasn1-fc966f9209c7839e.rmeta -C link-arg=-undefined -C link-arg=dynamic_lookup` (exit status: 101)
+               💥 maturin failed
+                 Caused by: Failed to build a native library through cargo
+                 Caused by: Cargo build finished with "exit status: 101": `env -u CARGO CARGO_ENCODED_RUSTFLAGS="-C\u{1f}link-arg=-undefined\u{1f}-C\u{1f}link-arg=dynamic_lookup" MACOSX_DEPLOYMENT_TARGET="10.12" PYO3_BUILD_EXTENSION_MODULE="1" PYO3_CONFIG_FILE="/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/target/maturin/pyo3-config-x86_64-apple-darwin-3.14-abi3.txt" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/builds-v0/.tmp8aKFun/bin/python" PYTHON_SYS_EXECUTABLE="/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/builds-v0/.tmp8aKFun/bin/python" "cargo" "rustc" "--profile" "release" "--message-format" "json-render-diagnostics" "--locked" "--manifest-path" "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/sdists-v10/pypi/cryptography/50.0.2/u82e55uUlK_xzCnH/src/src/rust/Cargo.toml" "--lib" "--" "-C" "link-args=-Wl,-install_name,@rpath/cryptography.hazmat.bindings._rust.abi3.so"`
+               Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/builds-v0/.tmp8aKFun/bin/python', '--compatibility', 'off'] returned non-zero exit status 1
+      hint: `cryptography` (v50.0.2) was included because `hermes-agent` (v0.0.0) depends on `cryptography`
+      hint: Build failures usually indicate a problem with the package or the build environment
+dependency preparation failed: venv: uv sync exited 1: 2e55uUlK_xzCnH/src/src/rust/Cargo.toml" "--lib" "--" "-C" "link-args=-Wl,-install_name,@rpath/cryptography.hazmat.bindings._rust.abi3.so"`
+         Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/validation-home/cache/uv/builds-v0/.tmp8aKFun/bin/python', '--compatibility', 'off'] returned non-zero exit status 1
+
+hint: `cryptography` (v50.0.2) was included because `hermes-agent` (v0.0.0) depends on `cryptography`
+
+hint: Build failures usually indicate a problem with the package or the build environment — retry, or run `hermes pm doctor`
+
+✓ manifest — plugin.yaml parses
+✓ manifest fields — name, version, description present
+✓ requires_hermes — spec '>=0.22.7' parses
+✓ config schema — shape valid
+✓ requires_env — all entries UPPER_SNAKE
+✓ oauth — not declared
+✓ loadable — entry: __init__.py
+✓ python dependencies — 1 requirements from pyproject
+✓ capability probe — register() ran in isolation
+✓ declared tools — matches registrations
+✓ declared hooks — matches registrations
+✓ declared middleware — matches registrations
+✓ built-in tool collisions — no collisions
+✓ security scan — safe
+✓ no core override — no runtime rebinds of Hermes core
+◆ Isolation — runs in the plugin host (plugins.isolation: host)
+  · ctx.register_cli_command() is skipped in the host (`hermes <command>` 
+subcommands are wired into the local CLI parser)
+
+Validation passed.

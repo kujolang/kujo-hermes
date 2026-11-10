@@ -1,0 +1,7 @@
+Processing ./.local/hardening-20261109/dist/kujo_hermes-0.1.0-py3-none-any.whl
+Installing collected packages: kujo-hermes
+Successfully installed kujo-hermes-0.1.0
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: /Users/robertdevore/2026/Kujolang/kujo-repos/kujo-hermes/.local/hardening-20261109/venv/bin/python -m pip install --upgrade pip
+Installed wheel: 51 Abilities and all runtime resources verified
