@@ -10,3 +10,6 @@ dependencies = ["jsonschema>=4.23,<5"]
 license = {text = "MIT"}
 [tool.setuptools.packages.find]
 include = ["kujo_hermes*"]
+
+[tool.setuptools.cmdclass]
+build_py = "build_support.BuildPy"

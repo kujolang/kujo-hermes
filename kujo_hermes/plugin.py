@@ -1,8 +1,8 @@
 """Only this module knows Hermes APIs."""
 import json
-from pathlib import Path
 from jsonschema import Draft202012Validator
 from .config import Config
+from .resources import ROOT
 from .service import Service, redact
 
 STRING={'type':'string','minLength':1,'maxLength':4096}
@@ -40,5 +40,5 @@ def register(ctx):
     from .setup import parser_setup, handler as cli_handler
     ctx.register_cli_command('kujo', help='Set up Kujo sources, workspace trust and diagnostics', setup_fn=parser_setup, handler_fn=cli_handler)
     ctx.register_command('kujo',lambda raw: json.dumps(service.doctor() if raw.strip()=='doctor' else service.discover()),description='Kujo catalog or doctor')
-    ctx.register_skill('kujo-engineering', Path(__file__).resolve().parent.parent / 'skills/kujo-engineering/SKILL.md', description='Kujo engineering tools and verified workflows')
+    ctx.register_skill('kujo-engineering', ROOT / 'skills/kujo-engineering/SKILL.md', description='Kujo engineering tools and verified workflows')
     ctx.on_unload(service.close)

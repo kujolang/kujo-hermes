@@ -3,3 +3,4 @@ recursive-include catalog *.json
 recursive-include skills *.md
 recursive-include docs *.md *.json
 recursive-include scripts *.py
+include build_support.py

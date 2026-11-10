@@ -38,7 +38,20 @@ def digest(value): return hashlib.sha256(encoded(value)).hexdigest()
 
 def redact(value, secrets=()):
     if isinstance(value,dict):
-        return {k:('[REDACTED]' if re.fullmatch(r'(?:access[_-]?token|refresh[_-]?token|token|password|secret|api[_-]?key|authorization)',k,re.I) else redact(v,secrets)) for k,v in value.items()}
+        result = {}
+        for key, item in value.items():
+            clean_key = redact(key, secrets)
+            # Redaction can collapse distinct keys. Keep every value without
+            # returning a secret in a key or silently overwriting evidence.
+            unique_key = clean_key
+            suffix = 2
+            while unique_key in result:
+                unique_key = f'{clean_key}#{suffix}'
+                suffix += 1
+            result[unique_key] = ('[REDACTED]' if re.fullmatch(
+                r'(?:access[_-]?token|refresh[_-]?token|token|password|secret|api[_-]?key|authorization)',
+                key, re.I) else redact(item, secrets))
+        return result
     if isinstance(value,list): return [redact(x,secrets) for x in value]
     if isinstance(value,str):
         for secret in secrets:

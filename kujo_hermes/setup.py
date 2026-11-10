@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 from .config import Config
+from .resources import ROOT
 
 
 def parser_setup(parser):
@@ -70,7 +71,7 @@ def run_setup(args):
         version = service.check_runtime()
     finally:
         service.close()
-    lock = Path(__file__).resolve().parents[1]/'catalog/sources.lock.json'
+    lock = ROOT/'catalog/sources.lock.json'
     count = len(json.loads(lock.read_text())['sources'])
     print('Kujo Hermes setup')
     print('Runtime:', version)
@@ -81,7 +82,7 @@ def run_setup(args):
     if args.dry_run:
         print('Dry run: no sources fetched and no configuration saved.')
         return
-    installer = Path(__file__).resolve().parents[1]/'scripts/install-sources.py'
+    installer = ROOT/'scripts/install-sources.py'
     subprocess.run([sys.executable, str(installer), '--destination', settings['ecosystem_root']], check=True)
     # Re-read after network I/O; refuse a concurrent policy change. Hermes owns atomic writes.
     with host_config._CONFIG_LOCK:

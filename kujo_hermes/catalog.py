@@ -5,7 +5,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator
 from .vendor.ability import ability_definition_digest_v2
 
-ROOT = Path(__file__).resolve().parent.parent
+from .resources import ROOT
 MAX_INPUT_BYTES = 65536
 
 def validate_input_size(value):
