@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "candidate": "4f7b27ef0216cf6284af42fb23f5211a22befd0b",
+  "release": "v0.1.0",
+  "runtime_matches_release": true,
+  "video_seconds": 73.2,
+  "mobile_sha256": "949a102decb369400a197b3ea11c22482fa75d03dee6bae4dbbdee9284992d5a",
+  "installation_footage": "Earlier successful native recording; release candidate verified separately in CI",
+  "external_submission": "Not sent; catalog PR, X post and form require authorization",
+  "listening_review": false
+}

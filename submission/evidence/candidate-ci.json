@@ -1,0 +1,240 @@
+{
+  "run_id": 42743837185,
+  "url": "https://github.com/kujolang/kujo-hermes/actions/runs/42743837185",
+  "candidate": "4f7b27ef0216cf6284af42fb23f5211a22befd0b",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "id": 129591092557,
+      "name": "unit",
+      "url": "https://github.com/kujolang/kujo-hermes/actions/runs/42743837185/job/129591092557",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip install -e .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip install build",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m build",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check-wheel.py dist/kujo_hermes-*.whl",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/package-release.py --output dist",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check-release.py dist/kujo-hermes-*-plugin.zip",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run git diff --check",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 129591092883,
+      "name": "host (v0.23.0)",
+      "url": "https://github.com/kujolang/kujo-hermes/actions/runs/42743837185/job/129591092883",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@v6",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run git clone --depth 1 --branch v0.23.0 https://github.com/NousResearch/hermes-agent.git /tmp/hermes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv sync --project /tmp/hermes --locked --no-default-groups",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv pip install --python /tmp/hermes-env/bin/python -e .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins doctor \"$PWD\"",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate \"$PWD\" --install-deps",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install plugin into a clean Hermes home",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm ci --prefix scripts/ci-runtime --ignore-scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python scripts/install-sources.py --destination /tmp/kujo-sources --only shipcheck packwrite spec eval scout kujo-workflows",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python tests/hermes_e2e.py --sources /tmp/kujo-sources --kujo scripts/ci-runtime/node_modules/@kujolang/kujo-linux-x64/bin/kujo --isolation host",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce checkout failure and correction through native tools",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@v6",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 129591092886,
+      "name": "host (v0.22.7)",
+      "url": "https://github.com/kujolang/kujo-hermes/actions/runs/42743837185/job/129591092886",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run astral-sh/setup-uv@v6",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run git clone --depth 1 --branch v0.22.7 https://github.com/NousResearch/hermes-agent.git /tmp/hermes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv sync --project /tmp/hermes --locked --no-default-groups",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv pip install --python /tmp/hermes-env/bin/python -e .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins doctor \"$PWD\"",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python -m hermes_cli.main plugins validate \"$PWD\" --install-deps",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install plugin into a clean Hermes home",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm ci --prefix scripts/ci-runtime --ignore-scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python scripts/install-sources.py --destination /tmp/kujo-sources --only shipcheck packwrite spec eval scout kujo-workflows",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run /tmp/hermes-env/bin/python tests/hermes_e2e.py --sources /tmp/kujo-sources --kujo scripts/ci-runtime/node_modules/@kujolang/kujo-linux-x64/bin/kujo --isolation host",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce checkout failure and correction through native tools",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run astral-sh/setup-uv@v6",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

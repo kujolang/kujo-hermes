@@ -1,11 +1,10 @@
-Draft — do not post automatically:
+# Draft X post
 
-A coupon made a $50 cart cost $50.99. Kujo Eval caught the regression. After the fix, the same checks passed—and both runs kept their evidence.
+Kujo Hermes v0.1.0 is out. A free local model finds a checkout regression, fixes it, and reruns unchanged tests—with receipts for both runs.
 
-Kujo Hermes brings native verification tools and execution receipts to Hermes.
+Native tools. Human approvals. Evidence you can inspect.
 
 @NousResearch
-Demo: [approved public video URL]
 https://github.com/kujolang/kujo-hermes
 
-Use this only with the matching recorded workflow. Do not describe a fixture-driven correction as an autonomous model repair. Attach the reviewed video before posting.
+Attach `demo/checkout-video/delivery/kujo-hermes-checkout.mp4`. Do not post this instruction paragraph. After approval and publication, record the X URL in the submission handoff. No public post has been made.

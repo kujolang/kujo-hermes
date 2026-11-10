@@ -16,10 +16,18 @@ Disclosures:
 - Opt-in background operations have timeout, cancellation and unload cleanup. No persistent service starts automatically.
 - Local receipts are redacted SHA-256 records, not signed attestations. Operators manage retention.
 
-Tested candidate: `6f847b98aae1260b22bff9579b341f0e11225af6`. CI https://github.com/kujolang/kujo-hermes/actions/runs/42637870905 passed on Hermes 0.22.7 and 0.23.0, including clean install and the native checkout correction workflow.
+Catalog candidate (release runtime plus corrected installation docs): `4f7b27ef0216cf6284af42fb23f5211a22befd0b`. Release-runtime CI https://github.com/kujolang/kujo-hermes/actions/runs/42742232654 passed on Hermes 0.22.7 and 0.23.0, including clean install and the native checkout correction workflow.
 
 Validation: attach the checked commit's `hermes plugins validate --install-deps`, real host E2E, canonical integration results and readiness report. Report any dependency-network failure separately from manifest validation.
 
 See docs/readiness.md for remaining gaps: browser and container prerequisites, producer gateways, Foreman discovery and untested deployments or platforms. This tool-only integration does not add a Desktop dashboard. Attach the matching real workflow demo.
 
 The validator warns about private Hermes imports in standalone demo drivers, which use the real loader, registry and approval transport for reproduction. They are not imported by plugin registration. The native setup writer also depends on Hermes configuration helpers; current-host execution and the compatibility floor are tested separately. Dependency-preparation errors, if any, must be disclosed even when the validation report passes.
+
+The accompanying 73.2-second square film uses a real Qwen3.5 4B conversation through Hermes. The model makes the code correction; source timings, approval decisions, unchanged tests and independently verified receipts are retained. Installation footage reuses the successful earlier native recording; the official release and catalog candidate have separate clean-install CI evidence. Failed fresh local captures are retained and not shown as successful.
+
+Release: https://github.com/kujolang/kujo-hermes/releases/tag/v0.1.0
+
+Demo source and download: https://github.com/kujolang/kujo-hermes/tree/main/demo/checkout-video
+
+Exact catalog candidate [CI 42743837185](https://github.com/kujolang/kujo-hermes/actions/runs/42743837185) passed all three jobs: unit/package checks and real Hermes 0.22.7/0.23.0 clean installation, validation and workflows.
