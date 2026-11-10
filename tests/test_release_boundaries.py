@@ -17,6 +17,8 @@ class ReleaseBoundaryTests(unittest.TestCase):
         self.assertNotIn('sensitive', json.dumps(result))
         self.assertEqual(sorted(result.values()), ['first', 'second', 'third'])
         self.assertEqual(redact(result, ['sensitive']), result)
+        collisions = {"\x00" * i: i for i in range(1000)}
+        self.assertEqual(sorted(redact(collisions).values()), list(range(1000)))
 
     def test_secret_json_keys_are_removed_from_response_and_receipt(self):
         with tempfile.TemporaryDirectory() as temp:
