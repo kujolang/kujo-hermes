@@ -27,7 +27,7 @@ Some tools need additional dependencies. Hermes installs `jsonschema>=4.23,<5` w
 With Hermes, Kujo and Git installed, run these commands from your repository:
 
 ```sh
-hermes plugins install kujolang/kujo-hermes
+hermes plugins install kujolang/kujo-hermes --ref v0.1.0
 hermes kujo setup --trust-workspace .
 ```
 
@@ -38,6 +38,8 @@ Start a new conversation, or restart a running gateway. Ask: “Run ShipCheck an
 Preview setup with `--dry-run`. Use `--kujo-bin /absolute/path/to/kujo`, `--sources /absolute/path/to/sources`, or `--profile review` to customize it. Omitting `--trust-workspace` adds no trust grant. Existing changed source checkouts are never overwritten.
 
 The native CLI commands use Hermes's default `in_process` plugin mode. Profiles using `plugins.isolation: host` do not expose plugin CLI commands; use the manual configuration below without changing the isolation policy. Managed profiles require operator configuration.
+
+Official release archives and package checks are documented in [release packaging](docs/releasing.md).
 
 ### Manual installation
 
