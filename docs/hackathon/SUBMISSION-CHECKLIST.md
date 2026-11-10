@@ -24,13 +24,13 @@ Use `demo/checkout-video/evidence/delivery-verification.json`, `video-subject-ve
 
 The film uses Roger V4 narration, not the older Siren version. Generation receipts preserve Creator-tier licensing and pronunciation controls. Source footage and music provenance remain in the demo directory. Local installation failures are retained rather than described as successful takes. No universal correctness, global release gate or signed-attestation claim is made.
 
-## External actions — not authorized yet
+## External actions
 
-- [ ] Open a PR adding `submission/kujo-hermes.yaml` to `NousResearch/hermes-agent/plugin-catalog/kujo-hermes.yaml`; use the prepared PR body and attach exact-pin evidence.
+- [x] Opened [catalog PR #152397](https://github.com/NousResearch/hermes-agent/pull/152397), adding only `plugin-catalog/kujo-hermes.yaml` with exact-pin evidence.
 - [ ] Confirm catalog CI and respond to review. Listing requires a maintainer merge.
 - [ ] Post the reviewed under-90-second MP4 on X tagging **@NousResearch**.
 - [ ] Submit the PR and X URLs through [the official form](https://form.typeform.com/to/FwJLvOln) and retain confirmation before the deadline.
 
-The live form was inspected on November 9: six questions, starting with required Plugin Title. No fields were filled or submitted; remaining fields and terms require review during submission. The release is public, but the catalog PR, X post and contest entry have not been sent. See [the owner handoff](../../submission/checklist.md).
+The live form was inspected on November 9: six questions, starting with required Plugin Title. No fields were filled or submitted; remaining fields and terms require review during submission. The release and catalog PR are public. X publication and the contest form remain pending and require authorization. See [the owner handoff](../../submission/checklist.md).
 
 Exact catalog candidate [CI 42743837185](https://github.com/kujolang/kujo-hermes/actions/runs/42743837185) passed all three jobs: unit/package checks and real Hermes 0.22.7/0.23.0 clean installation, validation and workflows.

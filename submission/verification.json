@@ -6,6 +6,10 @@
   "video_seconds": 73.2,
   "mobile_sha256": "949a102decb369400a197b3ea11c22482fa75d03dee6bae4dbbdee9284992d5a",
   "installation_footage": "Earlier successful native recording; release candidate verified separately in CI",
-  "external_submission": "Not sent; catalog PR, X post and form require authorization",
+  "external_submission": {
+    "catalog_pr": "https://github.com/NousResearch/hermes-agent/pull/152397",
+    "x_post": null,
+    "form_submitted": false
+  },
   "listening_review": false
 }

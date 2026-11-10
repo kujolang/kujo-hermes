@@ -1,0 +1,13 @@
+{
+  "catalog_pr": "https://github.com/NousResearch/hermes-agent/pull/152397",
+  "state": "open",
+  "draft": false,
+  "head_sha": "2b946059cd489b13483c961993b08e1aa6c7e380",
+  "candidate": "4f7b27ef0216cf6284af42fb23f5211a22befd0b",
+  "files": [
+    "plugin-catalog/kujo-hermes.yaml"
+  ],
+  "catalog_checks": "No check runs reported at verification; maintainer review pending",
+  "x_post": null,
+  "form_submitted": false
+}

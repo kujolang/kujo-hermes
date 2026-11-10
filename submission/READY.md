@@ -12,6 +12,8 @@
 
 **Files to use:** `kujo-hermes.yaml`, `pull-request.md`, `x-announcement.md`, and `checklist.md`. The full-resolution MP4 is the public-post asset; the 480p copy is for mobile review.
 
-**Still needed:** owner listening/visual approval, authorization to open the catalog PR and post on X, the resulting two public URLs, and the final form submission. No entry has been submitted. The official form has six questions; only its welcome screen and first required Plugin Title were inspected, without entering data.
+**Catalog PR opened:** [https://github.com/NousResearch/hermes-agent/pull/152397](https://github.com/NousResearch/hermes-agent/pull/152397). It adds only the catalog entry at the tested pin. No upstream check runs were reported at verification; maintainer review is pending.
+
+**Still needed:** owner listening/visual review, authorization to post on X, its public URL, and final form submission. The catalog PR is public; the X post and form have not been sent. The official form has six questions; only its welcome screen and first required Plugin Title were inspected.
 
 Deadline: November 11, 2026, 5 PM EST. Recheck the [official announcement](https://nousresearch.net/) and [catalog requirements](https://hermes-agent.nousresearch.com/docs/developer-guide/plugins/catalog-submission) before sending.

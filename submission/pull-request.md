@@ -4,7 +4,7 @@ Kujo Hermes gives Hermes native discovery, inspection and execution of Kujo engi
 
 The included checkout reproduction validates a task contract, records a real failed Eval (2 passed / 1 failed), applies a disclosed one-line fixture correction, then records the same tests passing (3 / 0). A standard-library verifier checks saved receipt and artifact hashes. This deterministic driver is not presented as an autonomous model run.
 
-The plugin registers six tools, `pre_tool_call` and `post_approval_response` hooks, `/kujo`, a bundled engineering skill and unload cleanup. No core overrides. The catalog pin must identify the exact validated source commit.
+The plugin registers six tools, `pre_tool_call` and `post_approval_response` hooks, `/kujo`, a bundled engineering skill and unload cleanup. No core overrides. The entry pins the exact validated source commit. Native setup is available through `hermes kujo`; the plugin adds no Desktop dashboard.
 
 Disclosures:
 
@@ -18,9 +18,12 @@ Disclosures:
 
 Catalog candidate (release runtime plus corrected installation docs): `4f7b27ef0216cf6284af42fb23f5211a22befd0b`. Release-runtime CI https://github.com/kujolang/kujo-hermes/actions/runs/42742232654 passed on Hermes 0.22.7 and 0.23.0, including clean install and the native checkout correction workflow.
 
-Validation: attach the checked commit's `hermes plugins validate --install-deps`, real host E2E, canonical integration results and readiness report. Report any dependency-network failure separately from manifest validation.
+Validation and evidence:
 
-See docs/readiness.md for remaining gaps: browser and container prerequisites, producer gateways, Foreman discovery and untested deployments or platforms. This tool-only integration does not add a Desktop dashboard. Attach the matching real workflow demo.
+- [Exact candidate CI](https://github.com/kujolang/kujo-hermes/actions/runs/42743837185): all three jobs passed, including unit/package checks and real Hermes 0.22.7/0.23.0 clean installation, Doctor, `plugins validate --install-deps`, canonical operations and checkout correction.
+- [Readiness and limitations](https://github.com/kujolang/kujo-hermes/blob/4f7b27ef0216cf6284af42fb23f5211a22befd0b/docs/readiness.md): browser/container prerequisites, producer gateways, Foreman discovery and untested deployments/platforms.
+- [Download the 73.2-second 1080p square demo](https://raw.githubusercontent.com/kujolang/kujo-hermes/a617957bb244604f4d536152038c6cd8263effaa/demo/checkout-video/delivery/kujo-hermes-checkout.mp4).
+- [Recording provenance and verification](https://github.com/kujolang/kujo-hermes/tree/a617957bb244604f4d536152038c6cd8263effaa/demo/checkout-video).
 
 The validator warns about private Hermes imports in standalone demo drivers, which use the real loader, registry and approval transport for reproduction. They are not imported by plugin registration. The native setup writer also depends on Hermes configuration helpers; current-host execution and the compatibility floor are tested separately. Dependency-preparation errors, if any, must be disclosed even when the validation report passes.
 
@@ -28,6 +31,3 @@ The accompanying 73.2-second square film uses a real Qwen3.5 4B conversation thr
 
 Release: https://github.com/kujolang/kujo-hermes/releases/tag/v0.1.0
 
-Demo source and download: https://github.com/kujolang/kujo-hermes/tree/main/demo/checkout-video
-
-Exact catalog candidate [CI 42743837185](https://github.com/kujolang/kujo-hermes/actions/runs/42743837185) passed all three jobs: unit/package checks and real Hermes 0.22.7/0.23.0 clean installation, validation and workflows.

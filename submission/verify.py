@@ -29,6 +29,6 @@ provenance = json.loads((root/'demo/square/evidence/installation-provenance.json
 assert provenance['hermes_version'] == '0.22.7'
 assert json.loads((video/'evidence/video-subject-verification.json').read_text())['ok']
 assert json.loads((video/'evidence/release-check.json').read_text())['ok']
-result = {'ok': True, 'candidate': catalog['sha'], 'release': 'v0.1.0', 'runtime_matches_release': True, 'video_seconds': report['duration_seconds'], 'mobile_sha256': report['mobile']['sha256'], 'installation_footage': 'Earlier successful native recording; release candidate verified separately in CI', 'external_submission': 'Not sent; catalog PR, X post and form require authorization', 'listening_review': report['listening_review']}
+result = {'ok': True, 'candidate': catalog['sha'], 'release': 'v0.1.0', 'runtime_matches_release': True, 'video_seconds': report['duration_seconds'], 'mobile_sha256': report['mobile']['sha256'], 'installation_footage': 'Earlier successful native recording; release candidate verified separately in CI', 'external_submission': {'catalog_pr': json.loads((root/'submission/evidence/catalog-pr.json').read_text())['catalog_pr'], 'x_post': None, 'form_submitted': False}, 'listening_review': report['listening_review']}
 (root/'submission/verification.json').write_text(json.dumps(result, indent=2)+'\n')
 print(json.dumps(result, indent=2))

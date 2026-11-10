@@ -14,10 +14,10 @@ The plugin is released as [v0.1.0](https://github.com/kujolang/kujo-hermes/relea
 ## Owner actions still required
 
 1. Watch and listen to the complete final film. Automated audio measurements and pronunciation controls are checked, but they do not replace listening.
-2. Authorize the catalog PR and X post. These have not been published.
+2. Review [catalog PR #152397](https://github.com/NousResearch/hermes-agent/pull/152397) and respond to maintainer feedback. Authorize the X post; it has not been published.
 3. Save the public PR URL and X post URL, then submit them through [the official form](https://form.typeform.com/to/FwJLvOln) before **November 11, 2026, 5 PM EST**.
 
-The live form was opened on November 9: it has six questions and begins with a required Plugin Title. No fields were filled or sent. Later required fields and terms must be reviewed during the authorized submission. The two public URLs do not exist yet; the preparation files do not invent them.
+The live form was opened on November 9: it has six questions and begins with a required Plugin Title. No fields were filled or sent. Later required fields and terms must be reviewed during the authorized submission. The catalog PR URL is recorded in `evidence/catalog-pr.json`; the X URL remains pending.
 
 Official references: [catalog admission](https://hermes-agent.nousresearch.com/docs/developer-guide/plugins/catalog-submission), [Nous announcement](https://nousresearch.net/), and [form](https://form.typeform.com/to/FwJLvOln).
 
