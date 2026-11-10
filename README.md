@@ -27,7 +27,7 @@ Some tools need additional dependencies. Hermes installs `jsonschema>=4.23,<5` w
 With Hermes, Kujo and Git installed, run these commands from your repository:
 
 ```sh
-hermes plugins install kujolang/kujo-hermes --ref v0.1.0
+hermes plugins install kujolang/kujo-hermes
 hermes kujo setup --trust-workspace .
 ```
 
