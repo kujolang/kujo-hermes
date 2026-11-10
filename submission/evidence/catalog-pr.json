@@ -7,7 +7,8 @@
   "files": [
     "plugin-catalog/kujo-hermes.yaml"
   ],
-  "catalog_checks": "No check runs reported at verification; maintainer review pending",
+  "catalog_checks": "action_required: upstream maintainer approval required",
   "x_post": null,
-  "form_submitted": false
+  "form_submitted": false,
+  "catalog_ci_url": "https://github.com/NousResearch/hermes-agent/actions/runs/42748294492"
 }

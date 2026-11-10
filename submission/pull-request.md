@@ -30,4 +30,3 @@ The validator warns about private Hermes imports in standalone demo drivers, whi
 The accompanying 73.2-second square film uses a real Qwen3.5 4B conversation through Hermes. The model makes the code correction; source timings, approval decisions, unchanged tests and independently verified receipts are retained. Installation footage reuses the successful earlier native recording; the official release and catalog candidate have separate clean-install CI evidence. Failed fresh local captures are retained and not shown as successful.
 
 Release: https://github.com/kujolang/kujo-hermes/releases/tag/v0.1.0
-

@@ -12,7 +12,7 @@
 
 **Files to use:** `kujo-hermes.yaml`, `pull-request.md`, `x-announcement.md`, and `checklist.md`. The full-resolution MP4 is the public-post asset; the 480p copy is for mobile review.
 
-**Catalog PR opened:** [https://github.com/NousResearch/hermes-agent/pull/152397](https://github.com/NousResearch/hermes-agent/pull/152397). It adds only the catalog entry at the tested pin. No upstream check runs were reported at verification; maintainer review is pending.
+**Catalog PR opened:** [https://github.com/NousResearch/hermes-agent/pull/152397](https://github.com/NousResearch/hermes-agent/pull/152397). It adds only the catalog entry at the tested pin. Upstream catalog CI requires maintainer approval before it can run; review is pending.
 
 **Still needed:** owner listening/visual review, authorization to post on X, its public URL, and final form submission. The catalog PR is public; the X post and form have not been sent. The official form has six questions; only its welcome screen and first required Plugin Title were inspected.
 
